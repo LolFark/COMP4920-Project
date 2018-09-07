@@ -3761,3 +3761,147 @@ SWCH9002 | Contraception - SWCH9002  |  Faculty of Medicine |  |  |  | http://l
 SWCH9003 | Clinical Reproductive Endocrinology - SWCH9003  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9003.html
 SWCH9004 | Clinical Reproductive Medicine 1 - SWCH9004  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9004.html
 SWCH9005 | Clinical Reproductive Medicine 2 - SWCH9005  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9005.html
+SWCH9006 | Laboratory Aspects of ART - SWCH9006  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9006.html
+SWCH9007 | Menopause - SWCH9007  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9007.html
+SWCH9009 | Ethics And Law In Reproductive Medicine - SWCH9009  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9009.html
+SWCH9011 | Reproductive, Perinatal Epidemiology&Biostatistics - SWCH9011  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9011.html
+SWCH9012 | The Impact of Infections on Reproductive Health - SWCH9012  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9012.html
+SWCH9013 | Common Gynaecological & Urogynaecological Condition - SWCH9013  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9013.html
+SWCH9014 | Antenatal Care - SWCH9014  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9014.html
+SWCH9015 | Children's & Adolescent Gynaecology - SWCH9015  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9015.html
+SWCH9016 | Cancer in Women - SWCH9016  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9016.html
+SWCH9017 | Applied Reproductive Anatomy and Physiology - SWCH9017  |  Faculty of Medicine |  |  |  SWCH9001 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9017.html
+SWCH9019 | Research Project in Reproductive or Women's Health - SWCH9019  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9019.html
+SWCH9031 | Postnatal Care of the Mother and Her Baby - SWCH9031  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9031.html
+TABL1710 | Business and the Law - TABL1710  |  UNSW Business School |  |  Must not be enrolled in Law single and dual programs. |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL1710.html
+TABL2712 | Business, Ethics and the Law - TABL2712  |  UNSW Business School |  | LEGT1710 or TABL1710 or 12 UOC offered by the UNSW Business |  TABL3016, ATAX0016, TABL5916, ATAX0116 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL2712.html
+TABL2721 | Business Law in Action - TABL2721  |  UNSW Business School |  |  LEGT1710 or TABL1710 |  LEGT7721 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL2721.html
+TABL2731 | Marketing and Distribution Law - TABL2731  |  UNSW Business School |  | LEGT1710 or TABL1710 or 12 UOC offered by the UNSW Business |  LEGT1731 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL2731.html
+TABL2732 | Franchising - TABL2732  |  UNSW Business School |  | LEGT1710 or TABL1710 or 12 UOC offered by the UNSW Business |  LEGT1733 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL2732.html
+TABL2741 | Business Entities - TABL2741  |  UNSW Business School |  |  (LEGT1710 or TABL1710) and must not be enrolled in Law single and |  LEGT7741 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL2741.html
+TABL2751 | Business Taxation - TABL2751  |  UNSW Business School |  |  TABL1710 or LAWS1052 or JURD7152. Excluded |  TABL1710 or LAWS1052 or JURD7152. Excluded
+ LEGT3751, LEGT7751 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL2751.html
+TABL2756 | International Business Tax - TABL2756  |  UNSW Business School |  |  LEGT1710 or TABL1710 or LAWS1052 or JURD7152 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL2756.html
+TABL2790 | Legal Environment of Asian Business - TABL2790  |  UNSW Business School |  |  LEGT1710 or TABL1710 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL2790.html
+TABL2792 | Real Property Law - TABL2792  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL2792.html
+TABL3003 | Taxation of Corporations - TABL3003  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  ATAX0503, TABL5503, ATAX0403 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3003.html
+TABL3005 | Taxation of Trusts - TABL3005  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  ATAX0305, ATAX0505, TABL5505 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3005.html
+TABL3006 | Tax Litigation - TABL3006  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  ATAX0306, ATAX0506, TABL5506, ATAX0406 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3006.html
+TABL3007 | Taxation of Corporate Finance - TABL3007  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  ATAX0307, ATAX0507, TABL5507 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3007.html
+TABL3010 | Taxation of Superannuation - TABL3010  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 UOC completed in program 4620 |  ATAX0310, ATAX0510, TABL5510, ATAX0410 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3010.html
+TABL3016 | Critical Perspectives and Ethics - TABL3016  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  TABL2712, TABL5916, ATAX0116 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3016.html
+TABL3020 | Principles of Australian International Taxation - TABL3020  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  ATAX0320, ATAX0520, TABL5520, ATAX0420 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3020.html
+TABL3022 | GST:Design and Structure - TABL3022  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  ATAX0322, ATAX0522, TABL5522 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3022.html
+TABL3023 | Principles of Goods and Services Tax Law - TABL3023  |  UNSW Business School |  |  ATAX0001 or LEGT2751 or TABL2751 or TABL1001 or 48 units of |  ATAX0323, ATAX0523, TABL5523, ATAX0423 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3023.html
+TABL3025 | Taxation of Employee Remuneration - TABL3025  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  ATAX0325, ATAX0525, TABL5525, ATAX0425 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3025.html
+TABL3026 | Taxation and Investment Regulation in China - TABL3026  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 UOC completed in program 4620 |  ATAX0326, ATAX0526, TABL5526, ATAX0426 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3026.html
+TABL3028 | International Tax: Design and Structure - TABL3028  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  ATAX0328, ATAX0528, TABL5528 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3028.html
+TABL3040 | Self Managed Superannuation Funds Law - TABL3040  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3040.html
+TABL3044 | Comparative Tax Systems - TABL3044  |  UNSW Business School |  |  TABL2751 or LEGT2751 or 48 units of credit completed in BTax. |  ATAX0341, TABL5544 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3044.html
+TABL3055 | Taxation of Property Transactions - TABL3055  |  UNSW Business School |  |  |  ATAX0055 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3055.html
+TABL3732 | International Franchise Law - TABL3732  |  UNSW Business School |  |  LEGT1710 or TABL1710 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3732.html
+TABL3741 | Insolvency Law - TABL3741  |  UNSW Business School |  |  LEGT1710 or TABL1710 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3741.html
+TABL3752 | Capital Gains Tax - TABL3752  |  UNSW Business School |  |  LEGT2751 or TABL2751 or LAWS3147 |  LEGT7753 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3752.html
+TABL3755 | Taxation of Business Entities - TABL3755  |  UNSW Business School |  |  LEGT2751 or TABL2751 or LAWS3147 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3755.html
+TABL3757 | Corporate Tax Strategy - TABL3757  |  UNSW Business School |  |  LEGT2751 or TABL2751 or LAWS3147 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3757.html
+TABL3761 | Law of Banking and Finance - TABL3761  |  UNSW Business School |  | LEGT1710 or TABL1710 or 12 UOC offered by the UNSW Business |  LEGT1761, LEGT2761 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3761.html
+TABL3781 | Intellectual Property for Business - TABL3781  |  UNSW Business School |  |  LEGT1710 or TABL1710 Excluded |  LEGT1710 or TABL1710 Excluded
+ JURD7617, LAWS8017, TABL5517 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3781.html
+TABL3791 | International Business Law - TABL3791  |  UNSW Business School |  | LEGT1710 or TABL1710 or 12 UOC offered by the UNSW Business |  LEGT1715, LEGT1791, LEGT2791 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL3791.html
+TABL4721 | Special Topic in Business Law - TABL4721  |  UNSW Business School |  |  LEGT1710 or TABL1710 |  LEGT7821 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL4721.html
+TABL4722 | Special Topic in Taxation - TABL4722  |  UNSW Business School |  |  LEGT2751 or TABL2751 or LAWS3147 |  LEGT7822 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TABL4722.html
+TABL5503 | Taxation of Corporations - TABL5503  |  UNSW Business School |  |  |  ATAX0503, TABL3003, ATAX0603 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5503.html
+TABL5504 | Asia Pacific Tax Regimes - TABL5504  |  UNSW Business School |  |  |  ATAX0304 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5504.html
+TABL5505 | Taxation of Trusts - TABL5505  |  UNSW Business School |  |  |  ATAX0305, ATAX0505, TABL3005, ATAX0605 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5505.html
+TABL5506 | Tax Litigation - TABL5506  |  UNSW Business School |  |  |  ATAX0306, ATAX0506, TABL3006, ATAX0606 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5506.html
+TABL5507 | Taxation of Corporate Finance - TABL5507  |  UNSW Business School |  |  |  ATAX0307, ATAX0507, TABL3007, ATAX0607 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5507.html
+TABL5508 | International Tax: Anti-Avoidance - TABL5508  |  UNSW Business School |  |  |  ATAX0308, ATAX0508 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5508.html
+TABL5510 | Taxation of Superannuation - TABL5510  |  UNSW Business School |  |  |  ATAX0310, ATAX0510, TABL3010, ATAX0610 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5510.html
+TABL5511 | Legal Foundations of Business - TABL5511  |  UNSW Business School |  |  |  TABL5512 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5511.html
+TABL5512 | Legal Foundations for Accountants - TABL5512  |  UNSW Business School |  |  must be enrolled in program 8409 or 8415 |  TABL5511 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5512.html
+TABL5515 | Taxation of Capital Gains - TABL5515  |  UNSW Business School |  |  |  ATAX0311, ATAX0511 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5515.html
+TABL5517 | Intellectual Property for Business - TABL5517  |  UNSW Business School |  |  TABL5511 or LEGT5511 or permission from the Head of School. |  JURD7617, LAWS8017, TABL3781 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5517.html
+TABL5518 | Consolidations and Group Structures - TABL5518  |  UNSW Business School |  |  |  ATAX0318, ATAX0518 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5518.html
+TABL5520 | Principles of Australian International Taxation - TABL5520  |  UNSW Business School |  |  |  ATAX0320, ATAX0520, TABL3020, ATAX0620 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5520.html
+TABL5522 | Goods and Services Tax: Design and Structure - TABL5522  |  UNSW Business School |  |  |  ATAX0322, ATAX0522, TABL3022, ATAX0622 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5522.html
+TABL5523 | Principles of Goods and Services Tax Law - TABL5523  |  UNSW Business School |  |  |  ATAX0323, ATAX0523, TABL3023, ATAX0623 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5523.html
+TABL5524 | Legal Environment of Asian Business - TABL5524  |  UNSW Business School |  |  LEGT1710 or TABL1710 or LEGT5511 or TABL5511 or LEGT5512 or |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5524.html
+TABL5525 | Taxation of Employee Remuneration - TABL5525  |  UNSW Business School |  |  |  ATAX0325, ATAX0525, TABL3025, ATAX0625 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5525.html
+TABL5526 | Taxation and Investment Regulation in China - TABL5526  |  UNSW Business School |  |  |  ATAX0326, ATAX0526, TABL3026, ATAX0626 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5526.html
+TABL5527 | Taxation Strategies in Financial Planning - TABL5527  |  UNSW Business School |  |  |  ATAX0327, ATAX0527 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5527.html
+TABL5528 | International Tax: Design and Structure - TABL5528  |  UNSW Business School |  |  |  ATAX0328, ATAX0528, TABL3028, ATAX0628 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5528.html
+TABL5537 | Double Tax Agreements - TABL5537  |  UNSW Business School |  |  |  ATAX0337, ATAX0537 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5537.html
+TABL5538 | Tax Planning and Anti Avoidance Provisions - TABL5538  |  UNSW Business School |  |  |  ATAX0338, ATAX0538 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5538.html
+TABL5540 | Self Managed Superannuation Funds Law - TABL5540  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5540.html
+TABL5541 | Corporations and Business Associations Law - TABL5541  |  UNSW Business School |  LEGT5511 or TABL5511 or LEGT5512 or TABL5512 |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5541.html
+TABL5544 | Comparative Tax Systems - TABL5544  |  UNSW Business School |  |  |  ATAX0341, TABL3044, ATAX0641 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5544.html
+TABL5550 | Principles of Tax Transfer Pricing - TABL5550  |  UNSW Business School |  |  |  ATAX0350 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5550.html
+TABL5551 | Taxation Law - TABL5551  |  UNSW Business School |  LEGT5511 or TABL5511 or LEGT5512 or TABL5512 |  |  TABL1001, ATAX0001, TABL5901, ATAX0100 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5551.html
+TABL5552 | Capital Gains Tax - TABL5552  |  UNSW Business School |  |  LEGT5551 or TABL5551 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5552.html
+TABL5555 | Taxation of Property Transactions - TABL5555  |  UNSW Business School |  |  |  ATAX0355, ATAX0555 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5555.html
+TABL5557 | Corporate Law, Tax and Strategy - TABL5557  |  UNSW Business School |  | (LEGT5551 or TABL5551) and (LEGT5541 or TABL5541) |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5557.html
+TABL5562 | Business Law in a Global Economy - TABL5562  |  UNSW Business School |  |  |  JURD7593, JURD7710, LAWS8210 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5562.html
+TABL5571 | Franchising - TABL5571  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5571.html
+TABL5575 | Tax Policy - TABL5575  |  UNSW Business School |  |  |  ATAX0301, ATAX0501 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5575.html
+TABL5580 | Current Research Problems in Taxation - TABL5580  |  UNSW Business School |  |  |  ATAX0516 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5580.html
+TABL5581 | International Tax Research - TABL5581  |  UNSW Business School |  |  |  ATAX0529 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5581.html
+TABL5582 | Taxation of Business Entities - TABL5582  |  UNSW Business School |  |  LEGT5551 or TABL5551 |  LEGT7752 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5582.html
+TABL5583 | International Business Taxation - TABL5583  |  UNSW Business School |  |  LEGT5551 or TABL5551 |  LEGT7791 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5583.html
+TABL5584 | Special Topic in Business Law - TABL5584  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5584.html
+TABL5585 | Special Topic in Taxation - TABL5585  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5585.html
+TABL5741 | Insolvency Law - TABL5741  |  UNSW Business School |  |  TABL5512 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5741.html
+TABL5805 | Research Methods in Taxation and Business Law - TABL5805  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5805.html
+TABL5901 | Principles of Australian Taxation Law - TABL5901  |  UNSW Business School |  |  |  TABL1001, ATAX0001, TABL5551 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5901.html
+TABL5904 | Framework of Commercial Law - TABL5904  |  UNSW Business School |  |  |  TABL1004, ATAX0004 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TABL5904.html
+Course TABL5810 not found in handbook. Moving on.
+TELE3113 | Analogue and Digital Communications - TELE3113  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TELE3113.html
+TELE3118 | Network Technologies - TELE3118  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TELE3118.html
+TELE3119 | Trusted Networks - TELE3119  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TELE3119.html
+TELE4642 | Network Performance - TELE4642  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TELE4642.html
+TELE4651 | Wireless Communication Technolgies - TELE4651  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TELE4651.html
+TELE4652 | Mobile and Satelllite Communications Systems - TELE4652  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TELE4652.html
+TELE4653 | Digital Modulation and Coding - TELE4653  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/TELE4653.html
+TELE9751 | Switching Systems Architecture - TELE9751  |  Faculty of Engineering |  |  |  TELE4363, TELE9301 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TELE9751.html
+TELE9752 | Network Operations and Control - TELE9752  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TELE9752.html
+TELE9753 | Advanced Wireless Communications - TELE9753  |  Faculty of Engineering |  |  |  TELE4353, TELE9344 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TELE9753.html
+TELE9754 | Coding and Information Theory - TELE9754  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TELE9754.html
+TELE9755 | Microwave Circuits, Theory and Techniques - TELE9755  |  Faculty of Engineering |  |  |  ELEC9353 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TELE9755.html
+TELE9757 | Quantum Communications - TELE9757  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/TELE9757.html
+Course TELE9781 not found in handbook. Moving on.
+Course TELE9782 not found in handbook. Moving on.
+UDES0001 | Urban Design Studio 1 - UDES0001  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0001.html
+UDES0002 | Urban Design Studio 2 - UDES0002  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0002.html
+UDES0003 | Urban Design Studio 3 - UDES0003  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0003.html
+UDES0004 | History and Theory of Urban Development and Design - UDES0004  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0004.html
+UDES0006 | Case Studies in Urban Development and Design - UDES0006  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0006.html
+UDES0008 | Planning and Urban Development - UDES0008  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0008.html
+UDES0009 | Urban Landscape and Heritage - UDES0009  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0009.html
+UDES0010 | Communication in Urban Design - UDES0010  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0010.html
+UDES0011 | Urban Design Research Project - UDES0011  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0011.html
+UDES0012 | Elements of Urban Design - UDES0012  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0012.html
+UDES0013 | Urban Design Graphics - UDES0013  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/UDES0013.html
+VISN1101 | Seeing the World: Perspectives from Vision Science - VISN1101  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/VISN1101.html
+VISN1111 | Geometrical & Physical Optics - VISN1111  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/VISN1111.html
+VISN1221 | Visual Optics - VISN1221  |  Faculty of Science |  |  VISN1111 |  VISN2131 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/VISN1221.html
+VISN2111 | Ocular Anatomy and Physiology - VISN2111  |  Faculty of Science |  |  VISN1211 or VISN1101 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/VISN2111.html
+VISN2211 | Organisation and Function of the Visual System - VISN2211  |  Faculty of Science |  |  VISN2111 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/VISN2211.html
+VISN2231 | Introduction to Ocular Disease - VISN2231  |  Faculty of Science |  |  VISN2111 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/VISN2231.html
+VISN3111 | Development and Aging of the Visual System - VISN3111  |  Faculty of Science |  |  VISN2211 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/VISN3111.html
+VISN3211 | New Developments in Vision Science - VISN3211  |  Faculty of Science |  |  VISN3111 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/VISN3211.html
+VISN4003 | Vision Science Honours - VISN4003  |  Faculty of Science |  |  Enrolled in VISN Honours |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/VISN4003.html
+Course YENG9741 not found in handbook. Moving on.
+YMED1002 | College Mathematics - YMED1002  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/YMED1002.html
+YMED1003 | General Biology - YMED1003  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/YMED1003.html
+YMED1004 | Human Anatomy and Physiology 1 - YMED1004  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/YMED1004.html
+YMED1006 | Human Anatomy and Physiology 2 - YMED1006  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/YMED1006.html
+YMED1008 | Introduction to Global Health - YMED1008  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/YMED1008.html
+YMED5000 | Integrated Emergency Management - YMED5000  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/YMED5000.html
+YMED5001 | Homeland Security - YMED5001  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/YMED5001.html
+YMED5002 | Hazards Governance - YMED5002  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/YMED5002.html
+YMED5003 | Public Management - YMED5003  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/YMED5003.html
+YMED5004 | IT in Emergency Management - YMED5004  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/YMED5004.html
+YMED5005 | Community Resilience and Recovery - YMED5005  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/YMED5005.html
+YMED5006 | Interoperability for Emergency Managers - YMED5006  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/YMED5006.html
+YMED5007 | Critical Incident Stress Management - YMED5007  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/YMED5007.html
+YMED5009 | |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/YMED5009.html
+YMED5010 | GIS and Analysis - YMED5010  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/YMED5010.html
