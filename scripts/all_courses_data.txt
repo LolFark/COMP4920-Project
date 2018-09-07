@@ -3160,3 +3160,604 @@ MUSC3704 | Performance Laboratory 6 (Creative Practice/Music Pedagogy) - MUSC370
 MUSC3801 | Creative Projects in Performance and Composition - MUSC3801  |  Faculty of Arts and Social Sciences |  |  MUSC2801 and enrolment in the Music Creative Practice stream in a |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3801.html
 MUSC3802 | Music Analysis - MUSC3802  |  Faculty of Arts and Social Sciences |  |  24uoc in MUSC courses and enrolment in one of the following |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3802.html
 MUSC3804 | Educating the musical novice - MUSC3804  |  Faculty of Arts and Social Sciences |  |  24uoc in MUSC courses and enrolment in the Music Pedagogy stream |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3804.html
+MUSC3805 | Audio Culture - MUSC3805  |  Faculty of Arts and Social Sciences |  |  24uoc in MUSC courses and enrolment in a Music single or dual |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3805.html
+MUSC3806 | Synergies in Sound Technology - MUSC3806  |  Faculty of Arts and Social Sciences |  |  MUSC2803 and enrolment in the Sonic Arts stream in a Music single |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3806.html
+MUSC3807 | MusiCultures - MUSC3807  |  Faculty of Arts and Social Sciences |  |  24uoc in MUSC courses, and enrolment in a Music single or dual |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3807.html
+MUSC3808 | Becoming a Performer - MUSC3808  |  Faculty of Arts and Social Sciences |  |  MUSC2802 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3808.html
+MUSC4009 | Music Honours - MUSC4009  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Music honours program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4009.html
+MUSC4010 | Music Honours - MUSC4010  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Music honours program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4010.html
+MUSC4011 | Music Honours - MUSC4011  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Music honours program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4011.html
+MUSC4012 | Music Honours - MUSC4012  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Music honours program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4012.html
+MUSC4013 | Music Creative Practice Honours Project - MUSC4013  |  Faculty of Arts and Social Sciences |  |  144 units of credits overall, including level 1, 2, and 3 core |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4013.html
+MUSC4014 | Music Creative Practice Honours Project - MUSC4014  |  Faculty of Arts and Social Sciences |  |  144 units of credits overall, including level 1, 2, and 3 core |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4014.html
+MUSC4015 | Music Honours Thesis - MUSC4015  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Music honours program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4015.html
+MUSC4016 | Music Honours Thesis - MUSC4016  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Music honours program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4016.html
+MUSC4017 | Music Honours Thesis - MUSC4017  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Music honours program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4017.html
+MUSC4101 | Critical Investigation in Music - MUSC4101  |  Faculty of Arts and Social Sciences |  |  Level 1, 2 and 3 core Music courses and enrolment in a Music |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4101.html
+MUSC4102 | Critical Practice in Music - MUSC4102  |  Faculty of Arts and Social Sciences |  |  MUSC4101, and enrolment in a Music single or dual program. Or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4102.html
+MUSC4103 | Advanced Studies in Music History and Culture 1 - MUSC4103  |  Faculty of Arts and Social Sciences |  |  30uoc at level 1 including MUSC1603 and MUSC1604 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4103.html
+MUSC4104 | Advanced Studies in Music History & Culture 2 - MUSC4104  |  Faculty of Arts and Social Sciences |  |  MUSC4103. Or 30uoc at level 1 including MUSC1603 and MUSC1604, |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4104.html
+MUSC4701 | Performance Laboratory 7 - MUSC4701  |  Faculty of Arts and Social Sciences |  |  MUSC3702 or MUSC3704, and enrolment in a Music single or dual |  MUSC4703 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4701.html
+MUSC4702 | Performance Laboratory 8 - MUSC4702  |  Faculty of Arts and Social Sciences |  |  MUSC4701. Or MUSC3702 or MUSC3704, and enrolment in Music/ |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4702.html
+MUSC4703 | Performance Laboratory 7 (Music Creative Practice) - MUSC4703  |  Faculty of Arts and Social Sciences |  |  MUSC3702 or MUSC3704 and enrolment in the Music Creative Practice |  MUSC4701 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4703.html
+MUSC4704 | Performance Laboratory 8 (Creative Practice) - MUSC4704  |  Faculty of Arts and Social Sciences |  |  MUSC4703. Or MUSC3702 or MUSC3704, and enrolment in the Music |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC4704.html
+Course MUSC8301 not found in handbook. Moving on.
+Course MUSC8302 not found in handbook. Moving on.
+NANO1001 | Nanotechnology 1 - NANO1001  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NANO1001.html
+NANO2002 | Nanotechnology 2 - NANO2002  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NANO2002.html
+NANO3001 | Advanced Nanomaterials - NANO3001  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NANO3001.html
+NANO4004 | Nanotechnology Project - NANO4004  |  Faculty of Science |  |  Enrolled in Medicinal Chemistry Honours |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NANO4004.html
+Course NCHR9000 not found in handbook. Moving on.
+Course NCHR9050 not found in handbook. Moving on.
+NEUR2201 | Neuroscience Fundamentals - NEUR2201  |  Faculty of Medicine |  | 12UOC of BABS or BIOS courses; or 12UOC of PSYC courses |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR2201.html
+NEUR3101 | Muscle and Motor Control - NEUR3101  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR3101.html
+NEUR3121 | Molecular & Cellular Neuroscience - NEUR3121  |  Faculty of Medicine |  |  PHSL2101 or PHSL2121 or PHSL2501 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR3121.html
+NEUR3211 | Neuroscience Research Seminars - NEUR3211  |  Faculty of Medicine |  |  ANAT3411 or NEUR3121 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR3211.html
+NEUR3221 | Neurophysiology - NEUR3221  |  Faculty of Medicine |  |  PHSL2101 or PHSL2121 or PHSL2501 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR3221.html
+NEUR4411 | Behavioural Perspectives in Neuroscience - NEUR4411  |  Faculty of Medicine |  |  Enrolled in Neuroscience Honours Plan |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR4411.html
+NEUR4421 | Biomedical Perspectives in Neuroscience - NEUR4421  |  Faculty of Medicine |  |  Enrolled in Neuroscience Honours Plan |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR4421.html
+NEUR4441 | Neuroscience Research 6UOC - NEUR4441  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR4441.html
+NEUR4442 | Neuroscience Research 12UOC - NEUR4442  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR4442.html
+NEUR4443 | Neuroscience Research 18UOC - NEUR4443  |  Faculty of Medicine |  |  Enrolled in Neuroscience Honours |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR4443.html
+NEUR4444 | Neuroscience Research 24UOC - NEUR4444  |  Faculty of Medicine |  |  Enrolled in Neuroscience Honours Plan |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/NEUR4444.html
+Course OBST9001 not found in handbook. Moving on.
+Course OBST9002 not found in handbook. Moving on.
+OPTM2133 | The Clinical Environment - OPTM2133  |  Faculty of Science |  VISN1111&VISN1221&VISN1101 Corequisite |  VISN1111&VISN1221&VISN1101 Corequisite |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM2133.html
+OPTM2190 | Introduction to Clinical Optometry - OPTM2190  |  Faculty of Science |  |  |  OPTM2111 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM2190.html
+OPTM2233 | Optical Dispensing - OPTM2233  |  Faculty of Science |  |  VISN1111 and VISN1221 and OPTM2133 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM2233.html
+OPTM3111 | Optometry 3A - OPTM3111  |  Faculty of Science |  VISN2111 and VISN2211 and (OPTM2291 or OPTM2211); Corequisite |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM3111.html
+OPTM3131 | Ocular Disease 3A - OPTM3131  |  Faculty of Science |  VISN2231; Corequisite |  VISN2231; Corequisite |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM3131.html
+OPTM3211 | Optometry 3B - OPTM3211  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM3211.html
+OPTM3231 | Ocular Disease 3B - OPTM3231  |  Faculty of Science |  |  OPTM3131 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM3231.html
+OPTM4110 | Optometry 4A - OPTM4110  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM4110.html
+OPTM4131 | Clinical Optometry 4A - OPTM4131  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM4131.html
+OPTM4151 | Ocular Therapeutics 4A - OPTM4151  |  Faculty of Science |  PHAR3306, OPTM3131, OPTM3231; Corequisite |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM4151.html
+OPTM4211 | Optometry 4B - OPTM4211  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM4211.html
+OPTM4231 | Clinical Optometry 4B - OPTM4231  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM4231.html
+OPTM4251 | Ocular Therapeutics 4B - OPTM4251  |  Faculty of Science |  OPTM4151; Corequisite |  OPTM4151; Corequisite |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM4251.html
+OPTM4271 | Professional Optometry - OPTM4271  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM4271.html
+OPTM4291 | Optometry, Medicine & Patient Management - OPTM4291  |  Faculty of Science |  |  OPTM3231 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM4291.html
+OPTM5111 | Clinical Optometry 5A - OPTM5111  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM5111.html
+OPTM5131 | Specialist Clinical Optometry 5A - OPTM5131  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM5131.html
+OPTM5151 | Clinical Ocular Therapeutics 5A - OPTM5151  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM5151.html
+OPTM5171 | Research Project 5A - OPTM5171  |  Faculty of Science |  |  OPTM4211, OPTM4231, PSYC4111 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM5171.html
+OPTM5211 | Clinical Optometry 5B - OPTM5211  |  Faculty of Science |  |  OPTM5111 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM5211.html
+OPTM5231 | Specialist Clinical Optometry 5B - OPTM5231  |  Faculty of Science |  |  OPTM5131 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM5231.html
+OPTM5251 | Clinical Ocular Therapeutics 5B - OPTM5251  |  Faculty of Science |  |  OPTM5151 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM5251.html
+OPTM5271 | Research Project 5B - OPTM5271  |  Faculty of Science |  |  OPTM5171 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/OPTM5271.html
+OPTM6400 | Optometric Preclinical Practice - OPTM6400  |  Faculty of Science |  |  Enrolment in 3182 or 8095 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM6400.html
+OPTM6411 | Contact Lenses - OPTM6411  |  Faculty of Science |  |  OPTM6400 or OPTM3211 and OPTM3231 and VISN3211 Exclusion |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM6411.html
+OPTM6412 | Clinical Optometry 4A - OPTM6412  |  Faculty of Science |  |  OPTM6400 or (OPTM3211 and OPTM3231 and PHAR3306 and VISN3211) Co |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM6412.html
+OPTM6413 | Anterior Eye Therapeutics - OPTM6413  |  Faculty of Science |  |  OPTM6400 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM6413.html
+OPTM6421 | Binocular Vision, Paediatrics and Low Vision - OPTM6421  |  Faculty of Science |  |  OPTM6400 or OPTM6411 Exclusion |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM6421.html
+OPTM6422 | Clinical Optometry 4B - OPTM6422  |  Faculty of Science |  |  OPTM6412 and OPTM6411 and OPTM6413 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM6422.html
+OPTM6423 | Therapeutics and the Posterior Eye - OPTM6423  |  Faculty of Science |  |  OPTM6413 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM6423.html
+OPTM6424 | Professional Optometry - OPTM6424  |  Faculty of Science |  |  OPTM6412 and OPTM6411 and OPTM6400 and enrolment in program 3182 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM6424.html
+OPTM7001 | Introduction to Community Eye Health - OPTM7001  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7001.html
+OPTM7002 | Epidemiology & Biostatistics for Needs Assessment - OPTM7002  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7002.html
+OPTM7003 | Epidemiology of Blinding Eye Diseases - OPTM7003  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7003.html
+OPTM7004 | Advocacy and Education in Community Eye Health - OPTM7004  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7004.html
+OPTM7005 | Eye Health Economics and Sustainability - OPTM7005  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7005.html
+OPTM7006 | Eye Care Program Management - OPTM7006  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7006.html
+OPTM7007 | Community Eye Health Project - OPTM7007  |  Faculty of Science |  |  OPTM7001, OPTM7002, OPTM7003, OPTM7004, OPTM7005, OPTM7006 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7007.html
+OPTM7103 | Behavioural Optometry 1 - OPTM7103  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7103.html
+OPTM7104 | Advanced Contact Lens Studies 1 - OPTM7104  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7104.html
+OPTM7108 | Research Skills in Optometry - OPTM7108  |  Faculty of Science |  |  |  OPTM7308 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7108.html
+OPTM7115 | Visual Neuroscience - OPTM7115  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7115.html
+OPTM7117 | Ocular Therapy 2 - OPTM7117  |  Faculty of Science |  |  OPTM7213 or OPTM7309 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7117.html
+OPTM7205 | Specialty Contact Lens Studies - OPTM7205  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7205.html
+OPTM7213 | Ocular Therapy - OPTM7213  |  Faculty of Science |  |  Enrolment in 7436 Grad Cert (Ocular Therapeutics) |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7213.html
+OPTM7301 | Advanced Clinical Optometry - OPTM7301  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7301.html
+OPTM7302 | Evidence Based Optometry - OPTM7302  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7302.html
+OPTM7308 | Research Project - OPTM7308  |  Faculty of Science |  |  |  OPTM7108 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7308.html
+OPTM7444 | Business Skills in Optometry - OPTM7444  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7444.html
+OPTM7511 | Advanced Ocular Disease 1 - OPTM7511  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7511.html
+OPTM7521 | Advanced Ocular Disease 2 - OPTM7521  |  Faculty of Science |  |  OPTM7511 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM7521.html
+OPTM8511 | Clinical paediatrics, low vision and colour vision - OPTM8511  |  Faculty of Science |  |  OPTM6422 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM8511.html
+OPTM8512 | Clinical Optometry 5A - OPTM8512  |  Faculty of Science |  |  OPTM6421 and OPTM6422 and OPTM6423 and OPTM6424 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM8512.html
+OPTM8513 | Clinical Ocular Therapy 5A - OPTM8513  |  Faculty of Science |  |  OPTM6411 and OPTM6413 and OPTM6423 and OPTM6422 and OPTM6421 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM8513.html
+OPTM8518 | Optometry Research Project A - OPTM8518  |  Faculty of Science |  |  OPTM6412 and OPTM6422 Exclusion |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM8518.html
+OPTM8521 | Clinical Contact Lenses - OPTM8521  |  Faculty of Science |  |  OPTM6411 and OPTM6422 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM8521.html
+OPTM8522 | Clinical Optometry 5B - OPTM8522  |  Faculty of Science |  |  OPTM6421 and OPTM6422 and OPTM6423 and OPTM6424 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM8522.html
+OPTM8523 | Clinical Ocular Therapy 5B - OPTM8523  |  Faculty of Science |  |  OPTM8513 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM8523.html
+OPTM8528 | Optometry Research Project B - OPTM8528  |  Faculty of Science |  |  OPTM6412 and OPTM6422 and OPTM8518 and enrolment in program 3182 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/OPTM8528.html
+Course OPTM0001 not found in handbook. Moving on.
+Course OPTM0002 not found in handbook. Moving on.
+PATH2201 | Processes in Disease - PATH2201  |  Faculty of Medicine |  |  ANAT2241 plus any one of ANAT2111, ANAT1521, PHSL2101, BIOC2101, |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PATH2201.html
+PATH2202 | Processes in Disease for Health & Exercise Science - PATH2202  |  Faculty of Medicine |  |  ANAT2111 or ANAT1551 and BIOC2181 and PHSL2501 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PATH2202.html
+PATH3205 | Molecular Basis of Inflammation and Infection - PATH3205  |  Faculty of Medicine |  |  PATH2201 or PATH2202 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PATH3205.html
+PATH3206 | Cancer Pathology - PATH3206  |  Faculty of Medicine |  |  PATH2201 or PATH2202 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PATH3206.html
+PATH3207 | Musculoskeletal Diseases - PATH3207  |  Faculty of Medicine |  |  PATH2201 or PATH2202, ANAT2111 or ANAT2511 or ANAT1521 or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PATH3207.html
+PHAR2011 | Introductory Pharmacology and Toxicology - PHAR2011  |  Faculty of Medicine |  |  6UOC level 1 Biology (preferably BABS1201), 12 UOC level 1 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHAR2011.html
+PHAR3101 | Drug Discovery, Design and Development - PHAR3101  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHAR3101.html
+PHAR3102 | Molecular Pharmacology - PHAR3102  |  Faculty of Medicine |  |  PHAR2011 or PHAR2211. Highly recommended BIOC2201 or BIOC2291 or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHAR3102.html
+PHAR3111 | Clinical Pharmacology for Health and Exercise Science - PHAR3111  |  Faculty of Medicine |  |  PHSL2101 or 2121 or 2501 or 2201 or 2221 or 2502 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHAR3111.html
+PHAR3202 | Neuropharmacology - PHAR3202  |  Faculty of Medicine |  |  PHAR2011 or NEUR2201 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHAR3202.html
+PHAR3251 | Clinical and Experimental Pharmacology - PHAR3251  |  Faculty of Medicine |  | PHAR2011 or PHAR2211, Highly recommended PHSL2201 and BIOC 2101 or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHAR3251.html
+PHAR3306 | Pharmacology for Optometry - PHAR3306  |  Faculty of Medicine |  |  VISN2111, PHSL2101, PHSL2201 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHAR3306.html
+PHAR9101 | Introduction to the Therapeutics Industry - PHAR9101  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9101.html
+PHAR9104 | Regulatory Affairs - PHAR9104  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9104.html
+PHAR9111 | Pharmaceutics - PHAR9111  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9111.html
+PHAR9113 | International Regulatory Affairs - PHAR9113  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9113.html
+PHAR9114 | Health Technology Assessment in Australia - PHAR9114  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9114.html
+PHAR9115 | Advanced Health Technology Assessment - PHAR9115  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9115.html
+PHAR9116 | Clinical Trial Management - PHAR9116  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9116.html
+PHAR9117 | Cancer Therapeutics - PHAR9117  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9117.html
+PHAR9118 | Therapeutics - PHAR9118  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9118.html
+PHAR9120 | Clinical Trials - PHAR9120  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9120.html
+PHAR9121 | Pharmacovigilance - PHAR9121  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9121.html
+PHAR9122 | Medical Affairs - PHAR9122  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9122.html
+PHAR9124 | Pharmaceutical Medicine Internship - PHAR9124  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHAR9124.html
+PHCM1001 | International Indigenous Health - PHCM1001  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHCM1001.html
+PHCM4013 | Influencing Health Beliefs and Health Behaviours - PHCM4013  |  Faculty of Medicine |  |  HESC3504 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHCM4013.html
+PHCM9010 | Community Development - PHCM9010  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9010.html
+PHCM9012 | Health Promotion & Social Perspectives of Health - PHCM9012  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9012.html
+PHCM9041 | Foundations in Public Health & Health Care Systems - PHCM9041  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9041.html
+PHCM9050 | Immunisation Policy and Practice - PHCM9050  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9050.html
+PHCM9082 | Advanced Health Economics & Financial Management - PHCM9082  |  Faculty of Medicine |  |  PHCM9441 or PHCM9351 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9082.html
+PHCM9100 | Academic Practice - PHCM9100  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9100.html
+PHCM9103 | Independent Study 6 Units of Credit - PHCM9103  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9103.html
+PHCM9108 | Program Design and Evaluation - PHCM9108  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9108.html
+PHCM9120 | Qualitative Research Methods - PHCM9120  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9120.html
+PHCM9129 | Prevention and Management of Chronic Disease - PHCM9129  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9129.html
+PHCM9132 | Applied Research Methods for Public Health - PHCM9132  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9132.html
+PHCM9143 | Internship - PHCM9143  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9143.html
+PHCM9148 | Project (6 uoc) - PHCM9148  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9148.html
+PHCM9150 | Major Project (18 uoc) - PHCM9150  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9150.html
+PHCM9151 | Major Project-Part A (9uoc) - PHCM9151  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9151.html
+PHCM9152 | Major Project-Part B (9uoc) - PHCM9152  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9152.html
+PHCM9331 | Ethics and Law in Public Health - PHCM9331  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9331.html
+PHCM9381 | Policy Studies - PHCM9381  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9381.html
+PHCM9391 | Strategy, Policy & Change - PHCM9391  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9391.html
+PHCM9440 | Economic Evaluation in Healthcare - PHCM9440  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9440.html
+PHCM9441 | Healthcare Economics and Financial Management - PHCM9441  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9441.html
+PHCM9443 | Hlth Economics & Finance for Developing Countries - PHCM9443  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9443.html
+PHCM9471 | Comparative Health Care Systems - PHCM9471  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9471.html
+PHCM9498 | Epidemiology and Statistics for Public Health - PHCM9498  |  Faculty of Medicine |  |  |  PHCM9781 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9498.html
+PHCM9517 | Advanced Biostatistics and statistical computing - PHCM9517  |  Faculty of Medicine |  |  PHCM9498 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9517.html
+PHCM9518 | Advanced Epidemiology - PHCM9518  |  Faculty of Medicine |  |  PHCM9498 or PHCM9499 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9518.html
+PHCM9522 | Politics, Surveillance and Public Health - PHCM9522  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9522.html
+PHCM9604 | Tobacco, Alcohol and Illicit Drugs - PHCM9604  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9604.html
+PHCM9605 | International Health - PHCM9605  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9605.html
+PHCM9606 | Reproductive, Maternal & Children's Health - PHCM9606  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9606.html
+PHCM9609 | Rural and Remote International Health - PHCM9609  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9609.html
+PHCM9612 | Environmental Health - PHCM9612  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9612.html
+PHCM9615 | Principles & Practice of Primary Health Care - PHCM9615  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9615.html
+PHCM9617 | Contemporary Issues in Ageing - PHCM9617  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9617.html
+PHCM9622 | The Global HIV Epidemic: Social Aspects and Impacts - PHCM9622  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9622.html
+PHCM9626 | Inequalities and Health - PHCM9626  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9626.html
+PHCM9628 | Health Impact Assessment - PHCM9628  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9628.html
+PHCM9630 | Public Health Perspectives of Indigenous Health - PHCM9630  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9630.html
+PHCM9632 | Indigenous Health & Wellbeing Across the Lifespan - PHCM9632  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9632.html
+PHCM9662 | Health Aspects of Crises,Emergencies and Disasters - PHCM9662  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9662.html
+PHCM9701 | Health Leadership & Workforce Management - PHCM9701  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9701.html
+PHCM9731 | Outbreak Investigation - PHCM9731  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9731.html
+PHCM9748 | Clinical Governance & Risk Management - PHCM9748  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9748.html
+PHCM9761 | Public Health Aspects of Mental Health - PHCM9761  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9761.html
+PHCM9781 | Evidence-informed Decision-making - PHCM9781  |  Faculty of Medicine |  |  |  PHCM9498 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9781.html
+PHCM9782 | Current Challenges in Infectious Diseases - PHCM9782  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9782.html
+PHCM9783 | Communicable Disease Control in HE & D - PHCM9783  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9783.html
+PHCM9784 | Tropical Disease Control - PHCM9784  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9784.html
+PHCM9785 | Predictive modelling in public health - PHCM9785  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9785.html
+PHCM9786 | Global Non-Communicable Disease - PHCM9786  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9786.html
+PHCM9787 | Infection Prevention and Control in the Healthcare - PHCM9787  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9787.html
+PHCM9788 | Infectious Diseases Intelligence - PHCM9788  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9788.html
+PHCM9789 | Bioterrorism and Health Intelligence - PHCM9789  |  Faculty of Medicine |  |  Students who are not enrolled in a postgraduate program in the |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHCM9789.html
+Course PHCM9001 not found in handbook. Moving on.
+Course PHCM9002 not found in handbook. Moving on.
+Course PHCM9005 not found in handbook. Moving on.
+Course PHCM9006 not found in handbook. Moving on.
+Course PHCM9007 not found in handbook. Moving on.
+Course PHCM9008 not found in handbook. Moving on.
+Course PHCM9200 not found in handbook. Moving on.
+Course PHCM9201 not found in handbook. Moving on.
+Course PHCM9820 not found in handbook. Moving on.
+Course PHCM9821 not found in handbook. Moving on.
+Course PHCM9822 not found in handbook. Moving on.
+Course PHIL4924 not found in handbook. Moving on.
+Course PHIL5404 not found in handbook. Moving on.
+PHOP9012 | Health Promotion and Social Perspectives of Health - PHOP9012  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHOP9012.html
+PHOP9108 | Program Design and Evaluation - PHOP9108  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHOP9108.html
+PHOP9498 | Epidemiology and Statistics for Public Health - PHOP9498  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHOP9498.html
+PHOP9605 | International Health - PHOP9605  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHOP9605.html
+PHOP9606 | Reproductive Maternal and Children's Health - PHOP9606  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHOP9606.html
+PHOP9609 | Rural and Remote International Health - PHOP9609  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHOP9609.html
+PHOP9748 | Clinical Governance and Risk Management - PHOP9748  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHOP9748.html
+PHSL2101 | Physiology 1A - PHSL2101  |  Faculty of Medicine |  |  6 UOC from level 1 Biology (BABS1201 pref); and 6 UOC of Level 1 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHSL2101.html
+PHSL2121 | Principles of Physiology A - PHSL2121  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHSL2121.html
+PHSL2201 | Physiology 1B - PHSL2201  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHSL2201.html
+PHSL2221 | Principles of Physiology B - PHSL2221  |  Faculty of Medicine |  |  PHSL2121 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHSL2221.html
+PHSL2501 | Human Physiology A - PHSL2501  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHSL2501.html
+PHSL2502 | Human Physiology B - PHSL2502  |  Faculty of Medicine |  |  PHSL2501. |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHSL2502.html
+PHSL3211 | Cardiovascular Physiology and Pathophysiology - PHSL3211  |  Faculty of Medicine |  |  PHSL2101 or PHSL2121 or PHSL 2501, PHSL2201 or PHSL2221 or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHSL3211.html
+PHSL3221 | Endocrine, Reproductive and Developmental Physiology - PHSL3221  |  Faculty of Medicine |  |  PHSL2101 or PHSL2121 or PHSL2501, PHSL2201 or PHSL2221 or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHSL3221.html
+PHTN4661 | Optical Circuits and Fibres - PHTN4661  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHTN4661.html
+PHTN4662 | Photonic Networks - PHTN4662  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHTN4662.html
+PHYS1110 | Everyday Physics - PHYS1110  |  Faculty of Science |  |  |  PHYS1111, PHYS1149, PHYS9110 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1110.html
+PHYS1111 | Fundamentals of Physics - PHYS1111  |  Faculty of Science |  |  |  PHYS1110, PHYS1149, PHYS9110 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1111.html
+PHYS1121 | Physics 1A - PHYS1121  |  Faculty of Science |  MATH1131 or MATH1141 or MATH1151 |  |  PHYS1131, PHYS1141, PHYS9120 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1121.html
+PHYS1131 | Higher Physics 1A - PHYS1131  |  Faculty of Science |  MATH1131 or MATH1141 or MATH1151 |  |  PHYS1121, PHYS1141, PHYS9120 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1131.html
+PHYS1141 | Higher Physics 1A (Special) - PHYS1141  |  Faculty of Science |  MATH1131 or MATH1141 or MATH1151 |  |  PHYS1121, PHYS1131, PHYS9120 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1141.html
+PHYS1149 | Physics 1A (Aviation) - PHYS1149  |  Faculty of Science |  |  |  PHYS1110, PHYS1111, PHYS9110 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1149.html
+PHYS1160 | Introduction to Astronomy - PHYS1160  |  Faculty of Science |  |  |  GENS4001 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1160.html
+PHYS1211 | Energy and Environmental Physics - PHYS1211  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1211.html
+PHYS1221 | Physics 1B - PHYS1221  |  Faculty of Science |  PHYS1121 or PHYS1131 or PHYS1141; Corequisite |  PHYS1121 or PHYS1131 or PHYS1141; Corequisite |  PHYS1231, PHYS1241 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1221.html
+PHYS1231 | Higher Physics 1B - PHYS1231  |  Faculty of Science |  MATH1231 or MATH1241 or MATH1251 |  PHYS1131 or PHYS1141 or a mark of 65 or above in PHYS1121; |  PHYS1221, PHYS1241 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1231.html
+PHYS1241 | Higher Physics 1B (Special) - PHYS1241  |  Faculty of Science |  |  |  PHYS1221, PHYS1231 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS1241.html
+PHYS2111 | Quantum Physics - PHYS2111  |  Faculty of Science |  |  (PHYS1221 or PHYS1231 or PHYS1241) and (MATH1231 or MATH1241) |  PHYS2110 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS2111.html
+PHYS2113 | Classical Mechanics and Special Relativity - PHYS2113  |  Faculty of Science |  |  (PHYS1221 or PHYS1231 or PHYS1241) and (MATH1231 or MATH1241) |  PHYS2120 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS2113.html
+PHYS2114 | Electromagnetism - PHYS2114  |  Faculty of Science |  |  (PHYS1221 or PHYS1231 or PHYS1241) and (MATH2069 or MATH2011 or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS2114.html
+PHYS2801 | Atmospheric Science - PHYS2801  |  Faculty of Science |  |  |  CLIM2001, PHYS2810 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS2801.html
+PHYS3111 | Quantum Mechanics - PHYS3111  |  Faculty of Science |  |  (MATH2069 or MATH2521 or MATH2621) and (PHYS2111 or PHYS2110) |  PHYS3011 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS3111.html
+PHYS3112 | Experimental and Computational Physics - PHYS3112  |  Faculty of Science |  |  (PHYS2111 or PHYS2113 or PHYS2114 or PHYS2110) and (MATH2089 or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS3112.html
+PHYS3113 | Thermal Physics and Statistical Mechanics - PHYS3113  |  Faculty of Science |  |  PHYS2111 or PHYS2110 Exclusion |  PHYS3021 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS3113.html
+PHYS3114 | Electrodynamics - PHYS3114  |  Faculty of Science |  |  (PHYS2114 or PHYS2210) and PHYS2113. Exclusion |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS3114.html
+PHYS3115 | Particle Physics and the Early Universe - PHYS3115  |  Faculty of Science |  |  (PHYS2111 or PHYS2110) and (PHYS2114 or PHYS2210) and PHYS2113 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS3115.html
+PHYS3116 | Astrophysics - PHYS3116  |  Faculty of Science |  |  (MATH2069 or MATH2011 or MATH2111) and (PHYS2111 or PHYS2110). |  PHYS2160 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS3116.html
+PHYS3117 | Physics Laboratory - PHYS3117  |  Faculty of Science |  |  PHYS3112 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS3117.html
+PHYS3118 | Solid State Physics and Devices - PHYS3118  |  Faculty of Science |  |  (PHYS2111 or PHYS2110) and PHYS3113. Exclusions |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS3118.html
+PHYS4011 | Physics Research Project 1A - PHYS4011  |  Faculty of Science |  |  Enrolment in Physics Honours |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS4011.html
+PHYS4012 | Physics Research Project 1B - PHYS4012  |  Faculty of Science |  |  Enrolled in Physics Honours Plan |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS4012.html
+Course PHYS4013 not found in handbook. Moving on.
+PHYS4014 | Physics Honours Coursework B - PHYS4014  |  Faculty of Science |  |  Enrolled in Physics Honours Plan |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS4014.html
+PHYS4021 | Physics Research Project 2A - PHYS4021  |  Faculty of Science |  |  Enrolled in Physics Honours Plan |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS4021.html
+PHYS4022 | Physics Research Project 2B - PHYS4022  |  Faculty of Science |  |  Enrolled in Physics Honours Plan |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PHYS4022.html
+Course PHYS4200 not found in handbook. Moving on.
+PHYS5006 | Physics Research Project (6 UOC) - PHYS5006  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS5006.html
+PHYS5012 | Physics Research Project (12 UOC) - PHYS5012  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS5012.html
+PHYS5018 | Physics Research Project (18 UOC) - PHYS5018  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS5018.html
+PHYS5024 | Physics Research Project (24 UOC) - PHYS5024  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS5024.html
+PHYS9110 | Everyday Physics for Teachers - PHYS9110  |  Faculty of Science |  |  Enrolment in 7440 |  PHYS1110, PHYS1111, PHYS1149 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS9110.html
+PHYS9120 | Mechanics for Teachers - PHYS9120  |  Faculty of Science |  |  PHYS9110 and enrolment in program 7440 |  PHYS1121, PHYS1131, PHYS1141 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS9120.html
+PHYS9130 | Electromagnetism for Teachers - PHYS9130  |  Faculty of Science |  |  PHYS9120 and enrolment in program 7440 Exclusion |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS9130.html
+PHYS9140 | Modern and Thermal Physics for Teachers - PHYS9140  |  Faculty of Science |  |  PHYS9130 and enrolment in program 7440 Exclusion |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS9140.html
+PHYS9383 | Advanced Physics - PHYS9383  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS9383.html
+PHYS9483 | Advanced Theoretical Physics 1 - PHYS9483  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS9483.html
+PHYS9583 | Advanced Theoretical Physics 2 - PHYS9583  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS9583.html
+PHYS9683 | Advanced Astrophysics - PHYS9683  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS9683.html
+PHYS9983 | Advanced Experimental Physics - PHYS9983  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PHYS9983.html
+Course PHYS9103 not found in handbook. Moving on.
+Course PHYS9113 not found in handbook. Moving on.
+PLAN0081 | Work Experience - PLAN0081  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN0081.html
+PLAN0082 | Work Experience - PLAN0082  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN0082.html
+PLAN1001 | Introduction to Planning - PLAN1001  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN1001.html
+PLAN1002 | Sustainability and Environment - PLAN1002  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN1002.html
+PLAN1003 | Urban Society, History, Theory - PLAN1003  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN1003.html
+PLAN1004 | City & Regional Economics - PLAN1004  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN1004.html
+PLAN1005 | Design & Communication Fundamentals for Planners - PLAN1005  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN1005.html
+PLAN1006 | Planning Techniques & Analysis - PLAN1006  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN1006.html
+PLAN1007 | Development Processes: Feasibility & Finance - PLAN1007  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN1007.html
+PLAN2001 | Strategic Planning - PLAN2001  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN2001.html
+PLAN2002 | GIS & Urban Informatics - PLAN2002  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN2002.html
+PLAN2003 | Urban Design - PLAN2003  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN2003.html
+PLAN2004 | Equitable Cities - PLAN2004  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN2004.html
+PLAN2005 | Planning Law & Administration - PLAN2005  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN2005.html
+PLAN2006 | Urban Management & Development Assessment - PLAN2006  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN2006.html
+PLAN2007 | City Building: Transport & Infrastructure - PLAN2007  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN2007.html
+PLAN2122 | History, Heritage and the Built Environment - PLAN2122  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN2122.html
+PLAN3001 | Practice: Communication, Participation, Engagement - PLAN3001  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN3001.html
+PLAN3002 | Practice: Building, Using Evidence - PLAN3002  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN3002.html
+PLAN3003 | Practice: Professionalism, Ethics, Politics - PLAN3003  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN3003.html
+PLAN3004 | Practice: Development - PLAN3004  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN3004.html
+PLAN3005 | Practice: Governance & Policy - PLAN3005  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN3005.html
+PLAN3671 | Transport, Land Use and Environment - PLAN3671  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN3671.html
+PLAN4001 | Research Design - PLAN4001  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN4001.html
+PLAN4002 | Plan Making Studio - PLAN4002  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN4002.html
+PLAN4003 | Planning Thesis - PLAN4003  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN4003.html
+PLAN4031 | Research Design - PLAN4031  |  Built Environment |  |  PLAN0081, PLAN0082, PLAN3032, PLAN3015 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN4031.html
+Course PLAN4052 not found in handbook. Moving on.
+PLAN4132 | Thesis Project - PLAN4132  |  Built Environment |  |  PLAN4031 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN4132.html
+PLAN4142 | Professionalism, Ethics and Politics - PLAN4142  |  Built Environment |  |  PLAN0081, PLAN0082, PLAN3032, PLAN3015 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PLAN4142.html
+PLAN7122 | Planning Project - PLAN7122  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7122.html
+PLAN7140 | Land & Environment Law - PLAN7140  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7140.html
+PLAN7141 | Land Use Policy & Practice - PLAN7141  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7141.html
+PLAN7142 | City Equity & Wellbeing - PLAN7142  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7142.html
+PLAN7143 | Urban Design - PLAN7143  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7143.html
+PLAN7144 | Planning History, Theory and Culture - PLAN7144  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7144.html
+PLAN7145 | City Building - Infrastructure Planning - PLAN7145  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7145.html
+PLAN7146 | City Economics, Urban Development & Finance - PLAN7146  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7146.html
+PLAN7147 | Planning Techniques & Analysis - PLAN7147  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7147.html
+PLAN7148 | Strategic Spatial Planning - PLAN7148  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7148.html
+PLAN7149 | Planning Thesis - PLAN7149  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7149.html
+PLAN7156 | Housing Policy and Finance - PLAN7156  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7156.html
+PLAN7157 | Engaging Communities - PLAN7157  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7157.html
+PLAN7320 | Housing Management and Markets - PLAN7320  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7320.html
+PLAN7321 | Implementing Urban Regeneration Projects - PLAN7321  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PLAN7321.html
+Course PLAN7330 not found in handbook. Moving on.
+POLS5100 | International Relations Internship - POLS5100  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Master of International Relations, Master of |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5100.html
+POLS5102 | Australia in the World - POLS5102  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5102.html
+POLS5113 | Thesis - POLS5113  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5113.html
+POLS5120 | Global Politics: The Globalisation of World Politics - POLS5120  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5120.html
+POLS5121 | International Organisations and Global Politics - POLS5121  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5121.html
+POLS5122 | The International Political Economy - POLS5122  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5122.html
+POLS5125 | The Politics of International Law - POLS5125  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5125.html
+POLS5127 | China and Asia-Pacific Security - POLS5127  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5127.html
+POLS5129 | The Foreign Policies of the Great Powers - POLS5129  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5129.html
+POLS5130 | International Peace & Security - POLS5130  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5130.html
+POLS5131 | Terrorism and Political Violence - POLS5131  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5131.html
+POLS5160 | The Middle East and Global Politics - POLS5160  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5160.html
+POLS5161 | Developing Countries & the International System - POLS5161  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/POLS5161.html
+POLY3000 | Polymer Science - POLY3000  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/POLY3000.html
+PSCY9901 | Law and Mental Health - PSCY9901  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSCY9901.html
+PSCY9904 | Administration, Institutions and Services - PSCY9904  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSCY9904.html
+PSCY9911 | Mental Disorders, Personality Disorders & Crime - PSCY9911  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSCY9911.html
+PSCY9912 | Substance abuse Unusual behaviours & Special Group - PSCY9912  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSCY9912.html
+PSCY9914 | Families, Children & Adolescents - PSCY9914  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSCY9914.html
+PSYC1001 | Psychology 1A - PSYC1001  |  Faculty of Science |  |  |  GENS9001 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC1001.html
+PSYC1011 | Psychology 1B - PSYC1011  |  Faculty of Science |  |  |  GENS9002 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC1011.html
+PSYC1021 | Introduction to Psychological Applications - PSYC1021  |  Faculty of Science |  |  |  SCIF1101, SCIF1102, SCIF1111, SCIF1121, SCIF1131 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC1021.html
+PSYC1022 | The Psychology of Addiction - PSYC1022  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC1022.html
+PSYC1023 | Abnormal Psychology - PSYC1023  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC1023.html
+PSYC1024 | Clinical Perspectives on Anxiety, Mood and Stress - PSYC1024  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC1024.html
+PSYC1025 | Psychology of Work - PSYC1025  |  Faculty of Science |  |  |  GENS9005, PSYC3141 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC1025.html
+PSYC1027 | Forensic Psychology: Crime, Courts and Corrections - PSYC1027  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC1027.html
+PSYC1031 | Psychological Science of Resilience - PSYC1031  |  Faculty of Science |  |  |  SCIF0007 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC1031.html
+PSYC1111 | Measuring Mind and Behaviour - PSYC1111  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC1111.html
+PSYC2001 | Research Methods 2 - PSYC2001  |  Faculty of Science |  |  PSYC1001, PSYC1011, PSYC1111 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC2001.html
+PSYC2061 | Social and Developmental Psychology - PSYC2061  |  Faculty of Science |  |  PSYC1001, PSYC1011 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC2061.html
+PSYC2071 | Perception and Cognition - PSYC2071  |  Faculty of Science |  |  PSYC1001, PSYC1011 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC2071.html
+PSYC2081 | Learning and Physiological Psychology - PSYC2081  |  Faculty of Science |  |  PSYC1001, PSYC1011 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC2081.html
+PSYC2101 | Assessment, Personality & Psychopathology - PSYC2101  |  Faculty of Science |  |  PSYC1001; Exclusion |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC2101.html
+PSYC3001 | Research Methods 3 - PSYC3001  |  Faculty of Science |  |  PSYC2001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3001.html
+PSYC3011 | Research and Applications of Psychology - PSYC3011  |  Faculty of Science |  |  PSYC2001, PSYC2061, PSYC2071, PSYC2081, PSYC2101 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3011.html
+PSYC3051 | Physiological Psychology - PSYC3051  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3051.html
+PSYC3121 | Social Psychology - PSYC3121  |  Faculty of Science |  |  PSYC2001 and PSYC2061 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3121.html
+PSYC3211 | Cognitive Science - PSYC3211  |  Faculty of Science |  |  PSYC2001 , PSYC2071 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3211.html
+PSYC3221 | Vision and Brain - PSYC3221  |  Faculty of Science |  |  PSYC2001, PSYC2071 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3221.html
+PSYC3241 | Psychobiology of Memory and Motivation - PSYC3241  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3241.html
+PSYC3301 | Psychology and Law - PSYC3301  |  Faculty of Science |  |  PSYC2001 and PSYC2061 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3301.html
+PSYC3311 | Language and Cognition - PSYC3311  |  Faculty of Science |  |  PSYC2001 , PSYC2071 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3311.html
+PSYC3331 | Health Psychology - PSYC3331  |  Faculty of Science |  |  (PSYC2001 , PSYC2061 or PSYC2101) or (HESC3504 and enrolment in |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3331.html
+PSYC3341 | Developmental Psychology - PSYC3341  |  Faculty of Science |  |  PSYC2001 and PSYC2061 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3341.html
+PSYC3361 | Psychology Research Internship - PSYC3361  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3361.html
+PSYC3371 | Multivariate Data Analysis for Psychology - PSYC3371  |  Faculty of Science |  |  PSYC3001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC3371.html
+PSYC4073 | Honours Research Project A - PSYC4073  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC4073.html
+PSYC4083 | Honours Research Project B - PSYC4083  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC4083.html
+PSYC4093 | Psychology 4A - PSYC4093  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC4093.html
+PSYC4103 | Psychology 4B - PSYC4103  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PSYC4103.html
+PSYC7000 | Research & Evaluation Methods - PSYC7000  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7000.html
+PSYC7001 | Psychological Assessment 1 - PSYC7001  |  Faculty of Science |  |  |  PSYC7129 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7001.html
+PSYC7204 | Child Clinical Psychology - PSYC7204  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7204.html
+PSYC7210 | Clinical Neuropsychology - PSYC7210  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7210.html
+PSYC7212 | Experimental Clinical Psychology 1 - PSYC7212  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7212.html
+PSYC7220 | Psychology of Health and Illness - PSYC7220  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7220.html
+PSYC7221 | Experimental Clinical Psychology 2 - PSYC7221  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7221.html
+PSYC7222 | Experimental Clinical Psychology 3 - PSYC7222  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7222.html
+PSYC7223 | Professional and Ethical Practice (Clinical) 1 - PSYC7223  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7223.html
+PSYC7224 | Professional and Ethical Practice (Clinical) 2 - PSYC7224  |  Faculty of Science |  |  PSYC7223 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7224.html
+PSYC7225 | Professional and Ethical Practice (Clinical) 3 - PSYC7225  |  Faculty of Science |  |  PSYC7224 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7225.html
+PSYC7226 | Professional and Ethical Practice (Clinical) 4 - PSYC7226  |  Faculty of Science |  |  PSYC7225 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7226.html
+PSYC7227 | Research Thesis (Clinical) 1 - PSYC7227  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7227.html
+PSYC7228 | Research Thesis (Clinical) 2 - PSYC7228  |  Faculty of Science |  |  PSYC7227 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7228.html
+PSYC7400 | Interventions in Forensic Psychology 1 - PSYC7400  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7400.html
+PSYC7401 | Interventions in Forensic Psychology 2 - PSYC7401  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7401.html
+PSYC7402 | Applications of Forensic Psychology - PSYC7402  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7402.html
+PSYC7403 | Experimental Psychology and Law - PSYC7403  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7403.html
+PSYC7409 | Professional and Ethical Practice (Forensic) 1 - PSYC7409  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7409.html
+PSYC7410 | Professional and Ethical Practice (Forensic) 2 - PSYC7410  |  Faculty of Science |  |  PSYC7409. |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7410.html
+PSYC7411 | Professional and Ethical Practice (Forensic) 3 - PSYC7411  |  Faculty of Science |  |  PSYC7410 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7411.html
+PSYC7412 | Professional and Ethical Practice (Forensic) 4 - PSYC7412  |  Faculty of Science |  |  PSYC7411 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7412.html
+PSYC7413 | Research Thesis (Forensic) 1 - PSYC7413  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7413.html
+PSYC7414 | Research Thesis (Forensic) 2 - PSYC7414  |  Faculty of Science |  |  PSYC7413 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PSYC7414.html
+Course PSYC8000 not found in handbook. Moving on.
+Course PSYC8001 not found in handbook. Moving on.
+PTRL1001 | Introduction to Petroleum Engineering and Geology - PTRL1001  |  Faculty of Engineering |  |  |  PTRL1010 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL1001.html
+PTRL2010 | Business Practices in the Petroleum Industry - PTRL2010  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL2010.html
+PTRL2019 | Reservoir Engineering A - PTRL2019  |  Faculty of Engineering |  |  MATH1231 or MATH1241. |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL2019.html
+PTRL2020 | Petrophysics - PTRL2020  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL2020.html
+PTRL2030 | Field Development Geology - PTRL2030  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL2030.html
+PTRL3001 | Reservoir Engineering B - PTRL3001  |  Faculty of Engineering |  | PTRL2019 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL3001.html
+PTRL3002 | Reservoir Characterisation and Simulation - PTRL3002  |  Faculty of Engineering |  | PTRL3001,GEOS3321 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL3002.html
+PTRL3003 | Field Development Geology and Geophysics - PTRL3003  |  Faculty of Engineering |  | GEOS3321 |  GEOS3331 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL3003.html
+PTRL3015 | Well Drilling Equipment and Operations - PTRL3015  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL3015.html
+PTRL3022 | Design Project for Petroleum Engineers - PTRL3022  |  Faculty of Engineering |  | CEIC2001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL3022.html
+PTRL3023 | Formation Evaluation - PTRL3023  |  Faculty of Engineering |  | PTRL3001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL3023.html
+PTRL3025 | Petroleum Economics - PTRL3025  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL3025.html
+PTRL4010 | Integrated Oil & Gas Field Evaluation "A" - PTRL4010  |  Faculty of Engineering |  |  PTRL2010,PTRL3002,PTRL3003,PTRL3023,PTRL3025 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL4010.html
+PTRL4011 | Integrated Oil/Gas Field Evaluation "B" (Thesis) - PTRL4011  |  Faculty of Engineering |  | PTRL4010 |  PTRL4041 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL4011.html
+PTRL4012 | Enhanced Oil and Gas Recovery - PTRL4012  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL4012.html
+PTRL4017 | Well Technology - PTRL4017  |  Faculty of Engineering |  | PTRL3015 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL4017.html
+PTRL4020 | Natural Gas Engineering - PTRL4020  |  Faculty of Engineering |  | PTRL3001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL4020.html
+PTRL4021 | Petroleum Production Engineering - PTRL4021  |  Faculty of Engineering |  | PTRL3001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL4021.html
+PTRL4024 | Drilling Fluids and Cementing - PTRL4024  |  Faculty of Engineering |  | PTRL3003,PTRL3015 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL4024.html
+PTRL4040 | Research Thesis A - PTRL4040  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL4040.html
+PTRL4041 | Research Thesis B - PTRL4041  |  Faculty of Engineering |  |  |  PTRL4011 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL4041.html
+PTRL5100 | Geomechanics A - PTRL5100  |  Faculty of Engineering |  | PTRL2019 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL5100.html
+PTRL5003 | Well Pressure Testing - PTRL5003  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5003.html
+PTRL5004 | Numerical Reservoir Simulation - PTRL5004  |  Faculty of Engineering |  |  PTRL5007 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5004.html
+PTRL5005 | Design Project for Petroleum Engineers - PTRL5005  |  Faculty of Engineering |  |  Completion of 36 UOC |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5005.html
+PTRL5006 | Field Development Geology for Petroleum Engineers - PTRL5006  |  Faculty of Engineering |  |  PTRL5013 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5006.html
+PTRL5007 | Fundamentals of Reservoir Engineering B - PTRL5007  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5007.html
+PTRL5008 | Petroleum Production Economics - PTRL5008  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5008.html
+PTRL5009 | Well Drilling Equipment and Operations - PTRL5009  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5009.html
+PTRL5010 | Natural Gas Engineering - PTRL5010  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5010.html
+PTRL5011 | Petroleum Production Engineering - PTRL5011  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5011.html
+PTRL5012 | Enhanced Oil and Gas Recovery - PTRL5012  |  Faculty of Engineering |  PTRL5007 |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5012.html
+PTRL5013 | Petroleum Geology - PTRL5013  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5013.html
+PTRL5014 | Petroleum Geophysics - PTRL5014  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5014.html
+PTRL5016 | Well Completions and Stimulation - PTRL5016  |  Faculty of Engineering |  |  PTRL5019&PTRL5009 OR PTRL2019&PTRL5009 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5016.html
+PTRL5019 | Fundamentals of Reservoir Engineering A - PTRL5019  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5019.html
+PTRL5021 | Reservoir Characterisation - PTRL5021  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5021.html
+PTRL5022 | Drilling Systems Design & Optimisation - PTRL5022  |  Faculty of Engineering |  |  PTRL5009/6009 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5022.html
+PTRL5024 | Drilling Fluids and Cementing Techniques - PTRL5024  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5024.html
+PTRL5100 | Geomechanics A - PTRL5100  |  Faculty of Engineering |  | PTRL2019 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/PTRL5100.html
+PTRL5102 | Digital Core Analysis - PTRL5102  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5102.html
+PTRL5107 | Petrophysics - PTRL5107  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL5107.html
+PTRL6001 | Reservoir Engineering 1 - PTRL6001  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6001.html
+PTRL6003 | Well Pressure Testing - PTRL6003  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6003.html
+PTRL6004 | Numerical Reservoir Simulation - PTRL6004  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6004.html
+PTRL6006 | Introduction to Field Development Geology - PTRL6006  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6006.html
+PTRL6007 | Reservoir Engineering II - PTRL6007  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6007.html
+PTRL6008 | Petroleum Production Economics - PTRL6008  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6008.html
+PTRL6009 | Well Drilling Equipment and Operations - PTRL6009  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6009.html
+PTRL6012 | Drilling Mud - Formulation, Selection and Maintenance - PTRL6012  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6012.html
+PTRL6016 | Well Completions and Stimulation - PTRL6016  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6016.html
+PTRL6021 | Reservoir Characterisation - PTRL6021  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6021.html
+PTRL6025 | Well Control & Blowout Prevention - PTRL6025  |  Faculty of Engineering |  |  PTRL5009/6009 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6025.html
+PTRL6027 | Casing Design & Cementing - PTRL6027  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6027.html
+PTRL6028 | |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6028.html
+PTRL6029 | Directional Horizontal and Multilateral Drilling - PTRL6029  |  Faculty of Engineering |  |  enrolment in Petroleum Open Learning program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6029.html
+PTRL6032 | Coal Seam Gas Engineering - PTRL6032  |  Faculty of Engineering |  | PTRL2019 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6032.html
+PTRL6107 | Formation Evaluation - PTRL6107  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL6107.html
+PTRL7011 | Petroleum Engineering Project A - PTRL7011  |  Faculty of Engineering |  |  Completion of 36 UOC |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL7011.html
+PTRL7012 | Petroleum Engineering Project B - PTRL7012  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/PTRL7012.html
+Course PTRL6100 not found in handbook. Moving on.
+Course PTRL6101 not found in handbook. Moving on.
+Course REGZ9000 not found in handbook. Moving on.
+Course REGZ9070 not found in handbook. Moving on.
+REGZ9075 | Academic Skills 1 - REGZ9075  |  DVC (A) Board of Studies |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/REGZ9075.html
+REGZ9076 | Academic Skills 2 - REGZ9076  |  DVC (A) Board of Studies |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/REGZ9076.html
+Course REGZ9077 not found in handbook. Moving on.
+Course REGZ9255 not found in handbook. Moving on.
+Course REGZ9990 not found in handbook. Moving on.
+REST0001 | Property Performance Analysis - REST0001  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/REST0001.html
+REST0004 | Property Investment and Finance - REST0004  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/REST0004.html
+REST0005 | Property Valuation - REST0005  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/REST0005.html
+REST0006 | Property Development and Feasibility Analysis - REST0006  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/REST0006.html
+REST0007 | Asset and Facilities Management - REST0007  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/REST0007.html
+REST0010 | Property Industry Application - REST0010  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/REST0010.html
+REST0018 | Research Project - REST0018  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/REST0018.html
+REST0019 | Real Property Law - REST0019  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/REST0019.html
+RISK2001 | Fundamentals of Risk and Risk Management - RISK2001  |  UNSW Business School |  |  ACTL1101 and ACCT1501 and (MATH1241 or MATH1251) |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/RISK2001.html
+RISK3002 | Risk Tools - RISK3002  |  UNSW Business School |  |  ACTL1101 and MATH1251 Co-requisite |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/RISK3002.html
+RISK3003 | Risk Decisions - RISK3003  |  UNSW Business School |  |  RISK2001 and (ACTL2131 or MATH2901) |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/RISK3003.html
+RISK3009 | Risk Management Strategies - RISK3009  |  UNSW Business School |  |  RISK2001 and ACTL2111 and (ACTL2131 or MATH2901) |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/RISK3009.html
+RISK5001 | Fundamentals of Risk and Risk Management - RISK5001  |  UNSW Business School |  | Enrolment in Program 8418 or 8428 or 8404 or 8417 or 8411 or 8416 |  ACTL6001 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/RISK5001.html
+RISK5002 | Risk Tools - RISK5002  |  UNSW Business School |  |  |  ACTL6002 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/RISK5002.html
+RISK5003 | Risk Decisions - RISK5003  |  UNSW Business School |  |  |  ACTL6003 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/RISK5003.html
+RISK5009 | Risk Management Strategies - RISK5009  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/RISK5009.html
+SCIF1004 | Science and the Cinema - SCIF1004  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SCIF1004.html
+SCIF1111 | Perspectives in Medical Science - SCIF1111  |  Faculty of Science |  |  |  PSYC1021, SCIF1101, SCIF1102, SCIF1121, SCIF1131 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SCIF1111.html
+SCIF1131 | Introductory Skills for Science - SCIF1131  |  Faculty of Science |  |  |  PSYC1021, SCIF1102, SCIF1111, SCIF1121 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SCIF1131.html
+SCIF2041 | Research Internship A - SCIF2041  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SCIF2041.html
+SCIF2199 | Science Work Placement - SCIF2199  |  Faculty of Science |  |  48 units of credit. Students must have a WAM of 65 or above to be |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SCIF2199.html
+SCIF3041 | Research Internship B - SCIF3041  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SCIF3041.html
+SCIF3900 | Aviation and Sustainable Tourism - SCIF3900  |  Faculty of Science |  |  |  AVIA3900 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SCIF3900.html
+SENG2011 | Workshop on Reasoning about Programs - SENG2011  |  Faculty of Engineering |  |  COMP2111. |  SENG2010 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SENG2011.html
+SENG2021 | Software Engineering Workshop 2B - SENG2021  |  Faculty of Engineering |  |  SENG1031 or COMP1531, and enrolment in a BE or BE(Hons) Software |  SENG2020 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SENG2021.html
+SENG3011 | Software Engineering Workshop 3 - SENG3011  |  Faculty of Engineering |  |  SENG2021 |  SENG3010 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SENG3011.html
+SENG4904 | Industrial Training 1 - SENG4904  |  Faculty of Engineering |  |  Enrolment in Software Engineering Co-op Program. |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SENG4904.html
+SENG4906 | Industrial Training 3 - SENG4906  |  Faculty of Engineering |  |  SENG4905. |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SENG4906.html
+SENG4907 | Industrial Training 4 - SENG4907  |  Faculty of Engineering |  |  SENG4906. |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SENG4907.html
+SENG4920 | Ethics and Management - SENG4920  |  Faculty of Engineering |  |  SENG3011 |  BINF4920, COMP2920, COMP4920, SENG4921 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SENG4920.html
+SOCF5103 | Research Issues in Counselling Social Work - SOCF5103  |  Faculty of Arts and Social Sciences |  |  SOCF5101 and SOCF5102 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOCF5103.html
+SOCF5104 | Counselling Practice A - SOCF5104  |  Faculty of Arts and Social Sciences |  |  SOCF5101 and SOCF5102 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOCF5104.html
+SOCF5105 | Counselling Practice B - SOCF5105  |  Faculty of Arts and Social Sciences |  |  SOCF5104 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOCF5105.html
+SOCF5106 | Selected Practice Topics - SOCF5106  |  Faculty of Arts and Social Sciences |  |  SOCF5104 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOCF5106.html
+SOCF5107 | Professional Practice Research Project - SOCF5107  |  Faculty of Arts and Social Sciences |  |  SOCF5103, or equivalent postgraduate research course, and a |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOCF5107.html
+SOCW1001 | Introduction to Social Work - SOCW1001  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW1001.html
+SOCW1004 | Lifespan, Health and Resilience - SOCW1004  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW1004.html
+SOCW2003 | Social Work with Sole Clients and Groups - SOCW2003  |  Faculty of Arts and Social Sciences |  |  SOCW1001 and SOCW1004, and enrolment in a Social Work program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW2003.html
+SOCW2006 | Social Work Practice - Community Work - SOCW2006  |  Faculty of Arts and Social Sciences |  |  SOCW1001 and enrolment in a Social Work Program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW2006.html
+SOCW2008 | Culture, Identity and Diversity - SOCW2008  |  Faculty of Arts and Social Sciences |  |  SOCW1001 and SOCW1004, and enrolment in a Social Work program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW2008.html
+SOCW2009 | Social Work with Sole Clients and Families - SOCW2009  |  Faculty of Arts and Social Sciences |  |  SOCW2003 and enrolment in a Social Work Program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW2009.html
+SOCW2100 | Aboriginal People and Social Work - SOCW2100  |  Faculty of Arts and Social Sciences |  |  SOCW1001 and enrolment in a Social Work Program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW2100.html
+SOCW3001 | Social Work Practice - Level Three Placement - SOCW3001  |  Faculty of Arts and Social Sciences |  SOCW1001, SOCW1003, SOCW2003, SOCW2006; Corequisite |  SOCW1001, SOCW1003, SOCW2003, SOCW2006; Corequisite |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW3001.html
+SOCW3006 | Socio-Legal Practice in Social Work Settings - SOCW3006  |  Faculty of Arts and Social Sciences |  |  SOCW3009, SOCW3011 and enrolment in a Social Work program. |  Students enrolled in 4787 Social Work (Honours)/Law. | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW3006.html
+SOCW3009 | Ethics and Reflective Practice - SOCW3009  |  Faculty of Arts and Social Sciences |  SOCW3011 |  ARTS1871, PSYC1001, SOCW2006, SOCW2008, SOCW2009, SOCW2100, |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW3009.html
+SOCW3010 | Organisational Practice - SOCW3010  |  Faculty of Arts and Social Sciences |  |  SOCW3009, SOCW3011 and enrolment in a Social Work Program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW3010.html
+SOCW3011 | Social Work Practice - Level Three Placement - SOCW3011  |  Faculty of Arts and Social Sciences |  SOCW3009 |  ARTS1871, PSYC1001, SOCW2006, SOCW2008, SOCW2009, SOCW2100, |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW3011.html
+SOCW4003 | Advanced Social Work Practice Methods - SOCW4003  |  Faculty of Arts and Social Sciences |  |  SOCW3006, SOCW3010, SRAP3000 and enrolment in a Social Work |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW4003.html
+SOCW4010 | Social Work Practice - Level Four Placement - SOCW4010  |  Faculty of Arts and Social Sciences |  |  120 uoc overall including 24uoc in core Level 4 SOCW courses |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW4010.html
+SOCW4011 | Evidence and Practice Based Research - SOCW4011  |  Faculty of Arts and Social Sciences |  |  SOCW3006, SOCW3010, SRAP3000 and enrolment in a Social Work |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW4011.html
+SOCW4012 | Mental Health and Trauma in Social Work Practice - SOCW4012  |  Faculty of Arts and Social Sciences |  |  SOCW3006, SOCW3010, SRAP3000 and enrolment in a Social Work |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW4012.html
+SOCW4013 | Child and Family Welfare Practice - SOCW4013  |  Faculty of Arts and Social Sciences |  |  SOCW3006, SOCW3010, SRAP3000 and enrolment in a Social Work |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW4013.html
+SOCW4014 | Social Work Practice: Level 4 Placement - SOCW4014  |  Faculty of Arts and Social Sciences |  |  168uoc overall including SOCW4003, SOCW4011, SOCW4012, and |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW4014.html
+SOCW4015 | Honours Research Thesis - SOCW4015  |  Faculty of Arts and Social Sciences |  |  168 UOC overall, SOCW4003, SOCW4011, SOCW4012, SOCW4013, |  SOCW4016 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW4015.html
+SOCW4016 | Social Work Honours Advanced Practice Portfolio - SOCW4016  |  Faculty of Arts and Social Sciences |  |  168uoc overall including SOCW4003, SOCW4011, SOCW4012, and |  SOCW4015 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOCW4016.html
+SOCW7851 | Community Development - SOCW7851  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOCW7851.html
+SOCW7852 | Politics of International Aid - SOCW7852  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOCW7852.html
+SOCW7855 | Rights Based Project Design and Evaluation - SOCW7855  |  Faculty of Arts and Social Sciences |  |  COMD5000, COMD5001, or SOCW7851 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOCW7855.html
+SOCW7857 | Refugees and Forced Migration - SOCW7857  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOCW7857.html
+SOCW7881 | |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOCW7881.html
+SOLA1070 | Sustainable Energy - SOLA1070  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA1070.html
+SOLA2051 | Project in Photovoltaics and Renewable Energy 1 - SOLA2051  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA2051.html
+SOLA2052 | Project in Photovoltaics and Renewable Energy 2 - SOLA2052  |  Faculty of Engineering |  |  SOLA2051 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA2052.html
+SOLA2060 | Introduction to Electronic Devices - SOLA2060  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA2060.html
+SOLA2540 | Applied Photovoltaics - SOLA2540  |  Faculty of Engineering |  |  |  SOLA3540 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA2540.html
+SOLA3010 | Low Energy Buildings and Photovoltaics - SOLA3010  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA3010.html
+SOLA3020 | Photovoltaic Technology and Manufacturing - SOLA3020  |  Faculty of Engineering |  |  SOLA2540 |  SOLA2020 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA3020.html
+SOLA3507 | Solar Cells - SOLA3507  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA3507.html
+SOLA4012 | Photovoltaic Systems Design - SOLA4012  |  Faculty of Engineering |  |  SOLA2540 |  SOLA5054 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA4012.html
+SOLA4910 | Thesis Part A - SOLA4910  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA4910.html
+SOLA4911 | Thesis Part B - SOLA4911  |  Faculty of Engineering |  |  SOLA4910 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA4911.html
+SOLA5050 | Renewable Energy Policy - SOLA5050  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5050.html
+SOLA5051 | Life Cycle Assessment - SOLA5051  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5051.html
+SOLA5052 | Biomass - SOLA5052  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5052.html
+SOLA5053 | Wind Energy Converters - SOLA5053  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5053.html
+SOLA5056 | Sustainable Energy for Developing Countries - SOLA5056  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5056.html
+SOLA5057 | Energy Efficiency - SOLA5057  |  Faculty of Engineering |  |  |  GSOE9017, GSOE9121, SOLA9017 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5057.html
+SOLA3010 | Low Energy Buildings and Photovoltaics - SOLA3010  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA3010.html
+SOLA3020 | Photovoltaic Technology and Manufacturing - SOLA3020  |  Faculty of Engineering |  |  SOLA2540 |  SOLA2020 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA3020.html
+SOLA3507 | Solar Cells - SOLA3507  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA3507.html
+SOLA4012 | Photovoltaic Systems Design - SOLA4012  |  Faculty of Engineering |  |  SOLA2540 |  SOLA5054 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA4012.html
+SOLA5050 | Renewable Energy Policy - SOLA5050  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5050.html
+SOLA5052 | Biomass - SOLA5052  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5052.html
+SOLA5053 | Wind Energy Converters - SOLA5053  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5053.html
+SOLA5056 | Sustainable Energy for Developing Countries - SOLA5056  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5056.html
+SOLA5057 | Energy Efficiency - SOLA5057  |  Faculty of Engineering |  |  |  GSOE9017, GSOE9121, SOLA9017 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOLA5057.html
+SOLA9001 | Photovoltaics - SOLA9001  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOLA9001.html
+SOLA9101 | Advanced Photovoltaics - SOLA9101  |  Faculty of Engineering |  |  SOLA9001 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOLA9101.html
+SOLA9102 | Advanced Solar Cell Characterisation - SOLA9102  |  Faculty of Engineering |  |  SOLA9001 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOLA9102.html
+SOLA9103 | RE System Modelling & Analysis - SOLA9103  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOLA9103.html
+SOLA9104 | Hybrid Renewable Energy Systems - SOLA9104  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOLA9104.html
+SOLA9120 | Advanced Photovoltaic Manufacturing - SOLA9120  |  Faculty of Engineering |  |  SOLA3020 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOLA9120.html
+SOLA9914 | Project Report - SOLA9914  |  Faculty of Engineering |  |  Completion of 36 UOC |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOLA9914.html
+SOLA9915 | Project Report - SOLA9915  |  Faculty of Engineering |  |  SOLA9914 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SOLA9915.html
+SOMS1501 | Inside the Criminal Mind - SOMS1501  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOMS1501.html
+SOMS3001 | SOMS Research Internship - SOMS3001  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOMS3001.html
+SOMS3232 | Cellular Mechanisms of Health and Disease - SOMS3232  |  Faculty of Medicine |  |  BIOC2101 or BABS2202 or ANAT3231 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOMS3232.html
+SOMS4001 | School of Medical Sciences Honours (Full Time) - SOMS4001  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOMS4001.html
+SOMS4002 | School of Medical Sciences Honours (Part-time) - SOMS4002  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SOMS4002.html
+Course SOSS9000 not found in handbook. Moving on.
+Course SOSS9050 not found in handbook. Moving on.
+Course SPRC9000 not found in handbook. Moving on.
+Course SPRC9050 not found in handbook. Moving on.
+SRAP1000 | Policy and Society - SRAP1000  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP1000.html
+SRAP1001 | Social Research and Society - SRAP1001  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP1001.html
+SRAP2001 | Qualitative Social Research - SRAP2001  |  Faculty of Arts and Social Sciences |  |  SRAP1001 or SLSP1001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP2001.html
+SRAP2002 | Policy Analysis - SRAP2002  |  Faculty of Arts and Social Sciences |  |  SRAP1000 or SLSP1000 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP2002.html
+SRAP3000 | Policy and Social Theory - SRAP3000  |  Faculty of Arts and Social Sciences |  |  SRAP2002 or SLSP2002 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP3000.html
+SRAP3001 | Quantitative Social Research - SRAP3001  |  Faculty of Arts and Social Sciences |  |  SRAP1001 or SLSP1001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP3001.html
+SRAP3002 | Social Research and Policy Project - SRAP3002  |  Faculty of Arts and Social Sciences |  |  SRAP2002, SRAP3000 and SRAP3001; or SLSP2002, SLSP3000 and |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP3002.html
+SRAP3006 | Social Research and Policy in the Workplace - SRAP3006  |  Faculty of Arts and Social Sciences |  |  SRAP1000, SRAP1001, SRAP2001, SRAP2002, DIPP1112 and enrolment in |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP3006.html
+SRAP4051 | Social Research and Policy Honours - SRAP4051  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Social Science and Policy honours program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP4051.html
+SRAP4052 | Social Research and Policy Honours - SRAP4052  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Social Science and Policy honours program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP4052.html
+SRAP4054 | Social Research and Policy Honours - SRAP4054  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Social Science and Policy honours program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/SRAP4054.html
+SRAP5001 | Policy Analysis - SRAP5001  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5001.html
+SRAP5004 | Policy, Regulation and Governance - SRAP5004  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5004.html
+SRAP5018 | Power, Politics and Policy - SRAP5018  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Master of Dev. Studies, Master of Policy |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5018.html
+SRAP5019 | Changing Social Policy - SRAP5019  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5019.html
+SRAP5021 | Policy, Advocacy and Activism in the Digital Age - SRAP5021  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5021.html
+SRAP5022 | Public Financial Management - SRAP5022  |  Faculty of Arts and Social Sciences |  |  Enrolment in Master of Public Administration, or Master of Public |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5022.html
+SRAP5101 | Research Methods and Project Design - SRAP5101  |  Faculty of Arts and Social Sciences |  |  Enrolment in Master of Development Studies, Master of IR, Master |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5101.html
+SRAP5102 | Theory, Ethics and Research Impact - SRAP5102  |  Faculty of Arts and Social Sciences |  |  Enrolment in Stream A of the Master or Development Studies or |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5102.html
+SRAP5103 | Research Report - SRAP5103  |  Faculty of Arts and Social Sciences |  |  Enrolment in Master of Development Studies, Int. Relations or |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5103.html
+SRAP5104 | Research Project - SRAP5104  |  Faculty of Arts and Social Sciences |  |  Enrolment in Master of Development Studies, Int. Relations or |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5104.html
+SRAP5106 | Academic Writing in the Social Sciences - SRAP5106  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Social Sciences program |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SRAP5106.html
+Course SRAP9001 not found in handbook. Moving on.
+Course SRAP9501 not found in handbook. Moving on.
+Course STAM9000 not found in handbook. Moving on.
+Course STAM9050 not found in handbook. Moving on.
+Course SURG9001 not found in handbook. Moving on.
+Course SURG9002 not found in handbook. Moving on.
+Course SURG9003 not found in handbook. Moving on.
+Course SURG9004 not found in handbook. Moving on.
+Course SURG9005 not found in handbook. Moving on.
+Course SURG9006 not found in handbook. Moving on.
+Course SURG9007 not found in handbook. Moving on.
+Course SURG9008 not found in handbook. Moving on.
+SUSD0001 | Sustainable Development and the Urban Environment - SUSD0001  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SUSD0001.html
+SUSD0002 | Building Ecology and Life Cycle Thinking - SUSD0002  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SUSD0002.html
+SUSD0003 | Energy and the Built Environment - SUSD0003  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SUSD0003.html
+SUSD0004 | Sustainability and Habitability - SUSD0004  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SUSD0004.html
+SUSD0007 | Integrated Design Studio - SUSD0007  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SUSD0007.html
+SUSD0009 | Environmental Auditing - SUSD0009  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SUSD0009.html
+SUSD0010 | Managing the Sustainable Built Environment - SUSD0010  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SUSD0010.html
+SUSD0015 | Graduate Research Project - SUSD0015  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SUSD0015.html
+SUSD0016 | Sustainable Infrastructure - SUSD0016  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SUSD0016.html
+SWCH9001 | Basic Reproductive Physiology - SWCH9001  |  Faculty of Medicine |  |  |  SWCH9017 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9001.html
+SWCH9002 | Contraception - SWCH9002  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9002.html
+SWCH9003 | Clinical Reproductive Endocrinology - SWCH9003  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9003.html
+SWCH9004 | Clinical Reproductive Medicine 1 - SWCH9004  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9004.html
+SWCH9005 | Clinical Reproductive Medicine 2 - SWCH9005  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/SWCH9005.html
