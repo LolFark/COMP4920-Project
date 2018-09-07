@@ -2766,3 +2766,397 @@ MBAX9132 | Intrapreneurship - MBAX9132  |  UNSW Business School |  |  |  | http
 MBAX9134 | Change Management Research Project - MBAX9134  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MBAX9134.html
 MBAX9135 | Business Analytics - MBAX9135  |  UNSW Business School |  |  must be enrolled in Program 8355, 8625, 8616, 5950, 5457, 7315, |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MBAX9135.html
 MBAX9136 | Silicon Valley Study Tour - MBAX9136  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MBAX9136.html
+MBAX9137 | Advanced Finance - MBAX9137  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MBAX9137.html
+MBAX9138 | Financial Analysis - MBAX9138  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MBAX9138.html
+MBAX9139 | Entrepreneurial Finance - MBAX9139  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MBAX9139.html
+MBAX9140 | Global Finance - MBAX9140  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MBAX9140.html
+MBAX9141 | Mergers and Acquisitions - MBAX9141  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MBAX9141.html
+MBAX9141 | Mergers and Acquisitions - MBAX9141  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MBAX9141.html
+Course MBAX9142 not found in handbook. Moving on.
+Course MBAX9143 not found in handbook. Moving on.
+Course MBAX9202 not found in handbook. Moving on.
+Course MDCN9001 not found in handbook. Moving on.
+Course MDCN9002 not found in handbook. Moving on.
+Course MDCN9003 not found in handbook. Moving on.
+Course MDCN9004 not found in handbook. Moving on.
+Course MDCN9005 not found in handbook. Moving on.
+Course MDCN9006 not found in handbook. Moving on.
+Course MDCN9007 not found in handbook. Moving on.
+Course MDCN9008 not found in handbook. Moving on.
+Course MDCN9009 not found in handbook. Moving on.
+Course MDCN9010 not found in handbook. Moving on.
+Course MDCN9011 not found in handbook. Moving on.
+Course MDCN9012 not found in handbook. Moving on.
+Course MDCN9014 not found in handbook. Moving on.
+Course MDCN9015 not found in handbook. Moving on.
+Course MDCN9016 not found in handbook. Moving on.
+MDIA1000 | Working with Time, Space and Experience - MDIA1000  |  Faculty of Arts and Social Sciences |  |  Enrolment in a single or dual award Media program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA1000.html
+MDIA1002 | Media & Communication Contexts - MDIA1002  |  Faculty of Arts and Social Sciences |  |  Enrolment in a single or dual award Media program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA1002.html
+MDIA1003 | Public Relations and Advertising Foundations - MDIA1003  |  Faculty of Arts and Social Sciences |  |  Enrolment in a single or dual award Media program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA1003.html
+MDIA1004 | News Fundamentals - MDIA1004  |  Faculty of Arts and Social Sciences |  |  Enrolment in a single or dual award Media program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA1004.html
+MDIA1005 | Creative Sound Technologies - MDIA1005  |  Faculty of Arts and Social Sciences |  |  Enrolment in a single or dual award Media program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA1005.html
+MDIA1006 | Mediated Storytelling - MDIA1006  |  Faculty of Arts and Social Sciences |  |  Enrolment in a single or dual award Media program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA1006.html
+MDIA2000 | Animating Media - MDIA2000  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1, including MDIA1000 or MDIA1005 or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA2000.html
+MDIA2001 | Bodies and Interfaces - MDIA2001  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1, including MDIA1000 or MDIA1005 or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA2001.html
+MDIA2002 | Analysing Media Communication - MDIA2002  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1 including MDIA1002 or MDIA1004 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA2002.html
+MDIA2003 | Advanced Media Writing - MDIA2003  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1 including MDIA1002 or MDIA1004 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA2003.html
+MDIA2005 | Advertising: The Creative Dimensions - MDIA2005  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1 including MDIA1002 or MDIA1003 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA2005.html
+MDIA2006 | Communication Strategies - MDIA2006  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1 including MDIA1002 or MDIA1003 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA2006.html
+MDIA2007 | Political Communication - MDIA2007  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1 including MDIA1002 or MDIA1003 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA2007.html
+MDIA2008 | Broadcast Media Practices - MDIA2008  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1, and enrolment in a single or dual |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA2008.html
+MDIA2010 | Serious Games - MDIA2010  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA2010.html
+MDIA2011 | Media Design for Change - MDIA2011  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1 includingÂ¿MDIA1002 or MDIA1003. Or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA2011.html
+MDIA3000 | Discourse and Promotion - MDIA3000  |  Faculty of Arts and Social Sciences |  |  96 units of credit overall including MDIA2005 or MDIA2006 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3000.html
+MDIA3002 | Multiplatform Media - MDIA3002  |  Faculty of Arts and Social Sciences |  |  96 units of credit overall, including MDIA2002 or MDIA2003 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3002.html
+MDIA3003 | Professional Portfolio - MDIA3003  |  Faculty of Arts and Social Sciences |  |  96 units of credit overall, including 6 units of credit Level 2 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3003.html
+MDIA3004 | Festivals and Exhibitions - MDIA3004  |  Faculty of Arts and Social Sciences |  |  96 units of credit overall, and enrolment in a single or dual |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3004.html
+MDIA3005 | Social Innovation and Engagement - MDIA3005  |  Faculty of Arts and Social Sciences |  |  96 units of credit overall including MDIA2005 or MDIA2006 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3005.html
+MDIA3006 | Production Studio - MDIA3006  |  Faculty of Arts and Social Sciences |  |  96 units of credit overall, including ARTS2065 or ARTS2066 or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3006.html
+MDIA3007 | Media Internship - MDIA3007  |  Faculty of Arts and Social Sciences |  |  96 units of credit overall, and enrolment in a Media single or |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3007.html
+MDIA3008 | Issues and Crisis Communication - MDIA3008  |  Faculty of Arts and Social Sciences |  |  96 units of credit overall including MDIA2005 or MDIA2006 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3008.html
+MDIA3009 | Brand communications and cultures - MDIA3009  |  Faculty of Arts and Social Sciences |  |  96 units of credit overall including MDIA2005 or MDIA2006 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3009.html
+MDIA3010 | |  Faculty of Arts and Social Sciences |  |  96 units of credit overall, including MDIA2002 or MDIA2003 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3010.html
+MDIA3011 | Communication Design: Multimodality, Meaning and Media - MDIA3011  |  Faculty of Arts and Social Sciences |  |  48 units of credit overall, including ARTS2093 or ARTS2094 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA3011.html
+MDIA4000 | Media Honours - MDIA4000  |  Faculty of Arts and Social Sciences |  |  Enrolment in honours in Media, Culture and Technology or honours |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA4000.html
+MDIA4001 | Media Honours - MDIA4001  |  Faculty of Arts and Social Sciences |  |  Enrolment in honours in Media, Culture and Technology or honours |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA4001.html
+MDIA4002 | Media Honours - MDIA4002  |  Faculty of Arts and Social Sciences |  |  Enrolment in honours in Media, Culture and Technology or honours |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA4002.html
+MDIA4003 | Media Honours - MDIA4003  |  Faculty of Arts and Social Sciences |  |  Enrolment in honours in Media, Culture and Technology or honours |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MDIA4003.html
+MDIA5000 | Understanding Contemporary Media - MDIA5000  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Journalism & Communication, PR & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5000.html
+MDIA5001 | Writing for Media - MDIA5001  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Journalism & Communication, PR & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5001.html
+MDIA5002 | Broadcast Journalism - MDIA5002  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Journalism & Communication, PR & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5002.html
+MDIA5003 | Online and Mobile Media - MDIA5003  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Journalism & Communication, PR & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5003.html
+MDIA5004 | Media and Public Relations - MDIA5004  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Journalism & Communication, PR & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5004.html
+MDIA5005 | Sports, Media and Culture - MDIA5005  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Journalism & Communication, PR & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5005.html
+MDIA5006 | Feature Writing - MDIA5006  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Journalism & Communication, PR & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5006.html
+MDIA5007 | Media Ethics and Law - MDIA5007  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Journalism & Communication, PR & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5007.html
+MDIA5008 | Media Research Project - MDIA5008  |  Faculty of Arts and Social Sciences |  |  24uoc overall and enrolment in the Master of Journalism & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5008.html
+MDIA5010 | Literary and Narrative Journalism Practice - MDIA5010  |  Faculty of Arts and Social Sciences |  |  Enrolment in Master of Journalism & Communication (stream A). Or |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5010.html
+MDIA5011 | |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5011.html
+MDIA5021 | Advertising and creativity - MDIA5021  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate PR & Advertising or Journalism & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5021.html
+MDIA5022 | Corporate and Interpersonal Communication - MDIA5022  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate PR & Advertising or Journalism & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5022.html
+MDIA5023 | Public Relations Strategy - MDIA5023  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate PR & Advertising or Journalism & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5023.html
+MDIA5024 | Advertising Strategy - MDIA5024  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate PR & Advertising or Journalism & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5024.html
+MDIA5027 | Understanding Digital Cultures - MDIA5027  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate PR & Advertising or Journalism & |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5027.html
+MDIA5028 | Critical Perspectives on Public Relations and Advertising - MDIA5028 |  Faculty of Arts and Social Sciences |  |  Enrolment in Public Relations & Advertising (stream A) . Or 24 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5028.html
+MDIA5030 | Brand Cultures - MDIA5030  |  Faculty of Arts and Social Sciences |  |  Enrolment in Public Relations & Advertising (stream A) . Or 24 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5030.html
+MDIA5100 | Industry Internship - MDIA5100  |  Faculty of Arts and Social Sciences |  |  24 units of credits overall and enrolment in the a postgraduate |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MDIA5100.html
+MECH3091 | Co-Operative Training A - MECH3091  |  Faculty of Engineering |  |  144 units of credit |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH3091.html
+MECH3092 | Co-Operative Training B - MECH3092  |  Faculty of Engineering |  |  144 units of credit |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH3092.html
+MECH3110 | Mechanical Design 1 - MECH3110  |  Faculty of Engineering |  |  MMAN2100, MMAN2400 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH3110.html
+MECH3610 | Advanced Thermofluids - MECH3610  |  Faculty of Engineering |  |  MMAN2600 and MMAN2700 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH3610.html
+MECH4100 | Mechanical Design 2 - MECH4100  |  Faculty of Engineering |  |  MECH3110 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4100.html
+MECH4305 | Fundamental and Advanced Vibration Analysis - MECH4305  |  Faculty of Engineering |  |  (MATH2019 OR MATH2018) AND (MMAN3300 or MMAN2300) |  MECH9305 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4305.html
+MECH4320 | Engineering Mechanics 3 - MECH4320  |  Faculty of Engineering |  |  (MATH2019 OR MATH2018) AND (MMAN3300 or MMAN2300) |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4320.html
+MECH4620 | Computational Fluid Dynamics - MECH4620  |  Faculty of Engineering |  |  MMAN2600 and MMAN2700 |  MECH9620 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4620.html
+MECH4880 | Refrigeration and Air Conditioning 1 - MECH4880  |  Faculty of Engineering |  |  MMAN2600 and MMAN2700 |  MECH9751 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4880.html
+MECH4900 | Mechanics of Fracture and Fatigue - MECH4900  |  Faculty of Engineering |  |  MECH3400 or MMAN3400 |  MECH9400 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4900.html
+MECH9223 | Machine Condition Monitoring - MECH9223  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9223.html
+MECH9325 | Fundamentals of Acoustics & Noise - MECH9325  |  Faculty of Engineering |  |  |  MECH8325 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9325.html
+MECH9420 | Composite Materials and Mechanics - MECH9420  |  Faculty of Engineering |  |  MMAN2400 or CVEN2301 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9420.html
+MECH9650 | Introduction to Micro Electromechanical Systems - MECH9650  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9650.html
+MECH9720 | Solar Thermal Energy Design - MECH9720  |  Faculty of Engineering |  |  MMAN2600 and MMAN2700 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9720.html
+MECH9761 | Automobile Engine Technology - MECH9761  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9761.html
+Course MECH9910 not found in handbook. Moving on.
+MECH4100 | Mechanical Design 2 - MECH4100  |  Faculty of Engineering |  |  MECH3110 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4100.html
+MECH4305 | Fundamental and Advanced Vibration Analysis - MECH4305  |  Faculty of Engineering |  |  (MATH2019 OR MATH2018) AND (MMAN3300 or MMAN2300) |  MECH9305 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4305.html
+MECH4320 | Engineering Mechanics 3 - MECH4320  |  Faculty of Engineering |  |  (MATH2019 OR MATH2018) AND (MMAN3300 or MMAN2300) |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4320.html
+MECH4620 | Computational Fluid Dynamics - MECH4620  |  Faculty of Engineering |  |  MMAN2600 and MMAN2700 |  MECH9620 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4620.html
+MECH4880 | Refrigeration and Air Conditioning 1 - MECH4880  |  Faculty of Engineering |  |  MMAN2600 and MMAN2700 |  MECH9751 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4880.html
+MECH4900 | Mechanics of Fracture and Fatigue - MECH4900  |  Faculty of Engineering |  |  MECH3400 or MMAN3400 |  MECH9400 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH4900.html
+MECH9011 | ME Project A - MECH9011  |  Faculty of Engineering |  |  MECHBS8621 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MECH9011.html
+MECH9012 | ME Project B - MECH9012  |  Faculty of Engineering |  |  MECHBS8621 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MECH9012.html
+MECH9223 | Machine Condition Monitoring - MECH9223  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9223.html
+MECH9325 | Fundamentals of Acoustics & Noise - MECH9325  |  Faculty of Engineering |  |  |  MECH8325 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9325.html
+MECH9420 | Composite Materials and Mechanics - MECH9420  |  Faculty of Engineering |  |  MMAN2400 or CVEN2301 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9420.html
+MECH9650 | Introduction to Micro Electromechanical Systems - MECH9650  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9650.html
+MECH9720 | Solar Thermal Energy Design - MECH9720  |  Faculty of Engineering |  |  MMAN2600 and MMAN2700 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9720.html
+MECH9761 | Automobile Engine Technology - MECH9761  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MECH9761.html
+Course MECH9000 not found in handbook. Moving on.
+Course MECH9001 not found in handbook. Moving on.
+MFAC1501 | Foundations - MFAC1501  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC1501.html
+Course MFAC1511 not found in handbook. Moving on.
+Course MFAC1512 not found in handbook. Moving on.
+Course MFAC1513 not found in handbook. Moving on.
+Course MFAC1515 not found in handbook. Moving on.
+MFAC1521 | Beginnings, Growth and Development A - MFAC1521  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC1521.html
+MFAC1522 | Beginnings, Growth and Development B - MFAC1522  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC1522.html
+MFAC1523 | Health Maintenance A - MFAC1523  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC1523.html
+MFAC1526 | Ageing and Endings B - MFAC1526  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC1526.html
+MFAC1527 | Society and Health - MFAC1527  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC1527.html
+MFAC1601 | Introductory Clinical and Communication Skills - MFAC1601  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC1601.html
+MFAC2505 | Integrated Clinical Studies A - MFAC2505  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC2505.html
+MFAC2506 | Integrated Clinical Studies B - MFAC2506  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC2506.html
+MFAC2507 | Clinical Transition - MFAC2507  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC2507.html
+MFAC2509 | Clinical Skills Refresher - MFAC2509  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC2509.html
+MFAC2510 | Graduate Entry Bridging - MFAC2510  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC2510.html
+Course MFAC2511 not found in handbook. Moving on.
+Course MFAC2512 not found in handbook. Moving on.
+Course MFAC2513 not found in handbook. Moving on.
+MFAC3501 | Medicine - MFAC3501  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3501.html
+MFAC3502 | Surgery - MFAC3502  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3502.html
+MFAC3503 | Psychiatry - MFAC3503  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3503.html
+MFAC3504 | Primary Care - MFAC3504  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3504.html
+MFAC3505 | Obstetrics & Gynaecology - MFAC3505  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3505.html
+MFAC3506 | Children's Health (Paediatrics) - MFAC3506  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3506.html
+MFAC3508 | Emergency/Selective - MFAC3508  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3508.html
+MFAC3509 | Selective - MFAC3509  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3509.html
+MFAC3512 | Clinical Module 12 - MFAC3512  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3512.html
+MFAC3514 | Elective - MFAC3514  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3514.html
+MFAC3515 | Preparation for Internship (PRINT) - MFAC3515  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC3515.html
+Course MFAC3522 not found in handbook. Moving on.
+Course MFAC3523 not found in handbook. Moving on.
+MFAC4508 | Independent Learning Project 1 - MFAC4508  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC4508.html
+MFAC4509 | Independent Learning Project 2 - MFAC4509  |  Faculty of Medicine |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MFAC4509.html
+Course MFAC4510 not found in handbook. Moving on.
+Course MFAC4511 not found in handbook. Moving on.
+MFIN6201 | Empirical Techniques and Applications in Finance - MFIN6201  |  UNSW Business School |  |  enrolment in program 8406 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MFIN6201.html
+MFIN6205 | Financial Risk Management for Financial Institutions - MFIN6205  |  UNSW Business School |  |  MFIN6201 or MFIN6214 and enrolment in program 8406 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MFIN6205.html
+MFIN6210 | Empirical Studies in Finance - MFIN6210  |  UNSW Business School |  |  MFIN6201 or MFIN6214 and enrolment in program 8406 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MFIN6210.html
+MFIN6214 | Financial Theory and Policy - MFIN6214  |  UNSW Business School |  |  enrolment in program 8406 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MFIN6214.html
+MGMT1001 | Managing Organisations & People - MGMT1001  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT1001.html
+MGMT1002 | Managing Organisational Behaviour - MGMT1002  |  UNSW Business School |  |  MGMT1001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT1002.html
+MGMT1101 | Global Business Environment - MGMT1101  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT1101.html
+MGMT2001 | Managing Innovation and Organisational Change - MGMT2001  |  UNSW Business School |  |  MGMT1001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2001.html
+MGMT2002 | Managing Business Communication - MGMT2002  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2002.html
+MGMT2010 | Innovation & Entrepreneurship - MGMT2010  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2010.html
+MGMT2101 | International Business and Multinational Operation - MGMT2101  |  UNSW Business School |  |  | MGMT1101 Excluded | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2101.html
+MGMT2102 | Managing Across Cultures - MGMT2102  |  UNSW Business School |  |  48 units of credit |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2102.html
+MGMT2705 | Industrial Relations - MGMT2705  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2705.html
+MGMT2718 | Human Resource Management - MGMT2718  |  UNSW Business School |  |  Any first year MGMT course (e.g., MGMT1001, MGMT1002, MGMT1101). |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2718.html
+MGMT2721 | Managing People - MGMT2721  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2721.html
+MGMT2724 | Health and Safety at Work - MGMT2724  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2724.html
+MGMT2725 | Career Management - MGMT2725  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2725.html
+MGMT2726 | Business Ethics and Sustainability - MGMT2726  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT2726.html
+MGMT3001 | Business and Corporate Strategy - MGMT3001  |  UNSW Business School |  |  MGMT1001 or 12 units of credit in Business courses |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT3001.html
+MGMT3101 | International Business Strategy - MGMT3101  |  UNSW Business School |  |  MGMT3001 or MGMT2101 or MGMT2001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT3101.html
+MGMT3102 | Asia-Pacific Business - MGMT3102  |  UNSW Business School |  |  MGMT1101 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT3102.html
+MGMT3110 | Integrative Seminar in Global Business - MGMT3110  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT3110.html
+MGMT3701 | Legal Aspects of Employment - MGMT3701  |  UNSW Business School |  |  MGMT1001 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT3701.html
+MGMT3702 | International Human Resource Management - MGMT3702  |  UNSW Business School |  |  MGMT2101 or MGMT2718 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT3702.html
+MGMT3721 | Negotiation Skills - MGMT3721  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT3721.html
+MGMT3724 | Strategic Human Resource Management - MGMT3724  |  UNSW Business School |  |  MGMT2718 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT3724.html
+MGMT3728 | Managing Pay and Performance - MGMT3728  |  UNSW Business School |  |  Any first year MGMT course (e.g., MGMT1001, MGMT1002, MGMT1101). |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT3728.html
+MGMT3729 | Managing Workplace Training - MGMT3729  |  UNSW Business School |  |  MGMT2718 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MGMT3729.html
+MGMT5050 | Professional Skills and Ethics - MGMT5050  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5050.html
+MGMT5601 | Global Business and Multinational Enterprise - MGMT5601  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5601.html
+MGMT5602 | Cross-Cultural Management - MGMT5602  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5602.html
+MGMT5603 | Global Business Strategy and Management - MGMT5603  |  UNSW Business School |  |  MGMT5601 or enrollment in Org & Management specialisation |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5603.html
+MGMT5604 | Asia-Pacific Business and Management - MGMT5604  |  UNSW Business School |  IBUS5601 or MGMT 5601 |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5604.html
+MGMT5610 | Integrative Cases in International Business - MGMT5610  |  UNSW Business School |  |  MGMT5601 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5610.html
+MGMT5611 | Entrepreneurship & New Venture Management - MGMT5611  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5611.html
+MGMT5701 | Global Employment Relations - MGMT5701  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5701.html
+MGMT5710 | Managing and Leading People - MGMT5710  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5710.html
+MGMT5711 | Employment and Industrial Law - MGMT5711  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5711.html
+MGMT5800 | Technology, Management and Innovation - MGMT5800  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5800.html
+MGMT5801 | Strategic Management of Technology and Innovation - MGMT5801  |  UNSW Business School |  |  MGMT5800 or enrolled in MGMTDS8404 or MGMTDS8417 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5801.html
+MGMT5904 | Managing Organisational Change - MGMT5904  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5904.html
+MGMT5906 | Organisations & People in Context - MGMT5906  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5906.html
+MGMT5907 | Human Resource Management - MGMT5907  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5907.html
+MGMT5908 | Strategic Human Resource Management - MGMT5908  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5908.html
+MGMT5912 | Negotiating in Global Context - MGMT5912  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5912.html
+MGMT5940 | Career Management & Skills - MGMT5940  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5940.html
+MGMT5947 | Remuneration and Performance Management - MGMT5947  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5947.html
+MGMT5949 | International Human Resource Management - MGMT5949  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT5949.html
+Course MGMT5982 not found in handbook. Moving on.
+MGMT6005 | Managing Organisational Risk in Global Context - MGMT6005  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MGMT6005.html
+Course MGMT5000 not found in handbook. Moving on.
+Course MGMT5001 not found in handbook. Moving on.
+Course MGMT5751 not found in handbook. Moving on.
+Course MGMT5752 not found in handbook. Moving on.
+Course MGMT5950 not found in handbook. Moving on.
+Course MGMT5951 not found in handbook. Moving on.
+Course MGMT5953 not found in handbook. Moving on.
+Course MGMT5954 not found in handbook. Moving on.
+Course MGMT5955 not found in handbook. Moving on.
+Course MGMT5956 not found in handbook. Moving on.
+MICR2011 | Microbiology 1 - MICR2011  |  Faculty of Science |  |  BABS1201 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MICR2011.html
+MICR3061 | Viruses and Disease - MICR3061  |  Faculty of Science |  |  BABS1201 & MICR2011 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MICR3061.html
+MICR3071 | Environmental Microbiology - MICR3071  |  Faculty of Science |  |  MICR2011 |  MICR9071 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MICR3071.html
+MICR3621 | Microbial Genetics (Advanced) - MICR3621  |  Faculty of Science |  |  |  BABS3021 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MICR3621.html
+MICR9071 | Marine Microbiology - MICR9071  |  Faculty of Science |  |  |  MICR3071 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MICR9071.html
+Course MICR8013 not found in handbook. Moving on.
+Course MICR8023 not found in handbook. Moving on.
+MINE1010 | Mineral Resources Engineering - MINE1010  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE1010.html
+MINE2010 | Mining Project Development - MINE2010  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE2010.html
+MINE2610 | Mining Services - MINE2610  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE2610.html
+MINE2810 | Minerals and Processing - MINE2810  |  Faculty of Engineering |  |  |  GEOS3141 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE2810.html
+MINE3220 | Resource Estimation - MINE3220  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE3220.html
+MINE3230 | Mine Planning - MINE3230  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE3230.html
+MINE3310 | Mining Geomechanics - MINE3310  |  Faculty of Engineering |  |  MINE2310 or CVEN2301 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE3310.html
+MINE3430 | Mining Systems - MINE3430  |  Faculty of Engineering |  |  MINE2010 or CVEN3031 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE3430.html
+MINE3450 | Underground Mining Systems - MINE3450  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE3450.html
+MINE3510 | Mine Ventilation - MINE3510  |  Faculty of Engineering |  |  MINE2500 or CVEN2501 or MATS2005 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE3510.html
+MINE3630 | Rock Breakage - MINE3630  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE3630.html
+MINE3800 | Mineral Processing - MINE3800  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE3800.html
+MINE3910 | Socio-Environmental Aspects of Mining - MINE3910  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE3910.html
+MINE4250 | Hardrock Mine Design and Feasibility Project - MINE4250  |  Faculty of Engineering |  |  MINE3230 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE4250.html
+MINE4260 | Coal Mine Design and Feasibility Project - MINE4260  |  Faculty of Engineering |  |  MINE4250 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE4260.html
+MINE4310 | Mine Geotechnical Engineering - MINE4310  |  Faculty of Engineering |  |  MINE3310 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE4310.html
+MINE4440 | Mine Research Project - Planning - MINE4440  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE4440.html
+MINE4450 | Mine Research Project - Thesis - MINE4450  |  Faculty of Engineering |  |  MINE4440 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE4450.html
+MINE4610 | Mining Asset Management and Services - MINE4610  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE4610.html
+MINE4710 | Mine Management - MINE4710  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE4710.html
+MINE4910 | Mining in a Global Environment - MINE4910  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MINE4910.html
+MINE5010 | Fundamentals of rock behaviour for underground mining - MINE5010  |  Faculty of Engineering |  |  Enrolment in MINENS5059 or MINEUS8059 or MINESS5040 |  MNNG5010 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE5010.html
+MINE5020 | Geotechnical assessment for underground mining - MINE5020  |  Faculty of Engineering |  |  Enrolment in MINENS5059 or MINEUS8059 or MINESS5040 |  MNNG5020 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE5020.html
+MINE5030 | Mining excavations in rock - MINE5030  |  Faculty of Engineering |  |  Enrolment in MINENS5059 or MINEUS8059 or MINESS5040 |  MNNG5030 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE5030.html
+Course MINE5040 not found in handbook. Moving on.
+MINE8101 | Fundamentals of Mining Engineering - MINE8101  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8101.html
+MINE8115 | Mine Processes, Systems and Analysis - MINE8115  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8115.html
+MINE8120 | Hazard Identification, Risk and Safety Management in Mining - MINE8120 |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8120.html
+MINE8130 | Technology Management in Mining - MINE8130  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8130.html
+MINE8140 | Mining Geomechanics - MINE8140  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8140.html
+MINE8210 | |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8210.html
+MINE8440 | Mining Industry Research Project 1 - MINE8440  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8440.html
+MINE8445 | Mining Industry Research Project ll - MINE8445  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8445.html
+MINE8680 | Geotechnical Data Collection and Analysis - MINE8680  |  Faculty of Engineering |  |  Enrolment in MINENS5059, or MINE8140 and enrolment in MINEMS5059 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8680.html
+MINE8690 | Mining Geotechnical Project - MINE8690  |  Faculty of Engineering |  |  Enrolment in MINENS5059, or MINE8140 and enrolment in MINEMS5059 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8690.html
+MINE8710 | Mine Slope Stability - MINE8710  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8710.html
+MINE8720 | Numerical Methods in Mine Geomechanics - MINE8720  |  Faculty of Engineering |  |  Enrolment in MINEUS8059, or MINE8140 and enrolment in MINEIS8058 |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8720.html
+MINE8760 | Mine Geology and Geophysics for Mining Operations - MINE8760  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8760.html
+MINE8780 | Environmental Management for the Mining Industry - MINE8780  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8780.html
+MINE8790 | Advanced Mineral Economics and Project Evaluation - MINE8790  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8790.html
+MINE8820 | Mineral Processing - MINE8820  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8820.html
+MINE8850 | Mine Design and Feasibility - MINE8850  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8850.html
+MINE8860 | Drilling, Blasting and Machine Excavation - MINE8860  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8860.html
+MINE8910 | Mine Water & Waste Management - MINE8910  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE8910.html
+MINE9910 | Mine Ventilation - MINE9910  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MINE9910.html
+Course MINE0008 not found in handbook. Moving on.
+Course MINE0009 not found in handbook. Moving on.
+MMAN1300 | Engineering Mechanics - MMAN1300  |  Faculty of Engineering |  |  (MATH1131 or MATH1141) and (PHYS1121 or PHYS1131 or PHYS1141) |  CVEN1300, MINE1300 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN1300.html
+MMAN2100 | Engineering Design 2 - MMAN2100  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN2100.html
+MMAN2130 | Design and Manufacturing - MMAN2130  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN2130.html
+MMAN2300 | Engineering Mechanics 2 - MMAN2300  |  Faculty of Engineering |  |  (CVEN1300 or MINE1300 or MMAN1300) AND MATH2019 or MATH2018 or |  MMAN3300 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN2300.html
+MMAN2400 | Mechanics of Solids 1 - MMAN2400  |  Faculty of Engineering |  | (MATH1231 or MATH1241) and (MMAN1300 or CVEN1300 or MINE1300) |  CVEN2301 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN2400.html
+MMAN2600 | Fluid Mechanics - MMAN2600  |  Faculty of Engineering |  |  (MATH1131 or MATH1141) and (PHYS1121 or PHYS1131 or PHYS1141) |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN2600.html
+MMAN2700 | Thermodynamics - MMAN2700  |  Faculty of Engineering |  |  (MATH1131 or MATH1141) and (PHYS1121 or PHYS1131 or PHYS1141) |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN2700.html
+MMAN3000 | Professional Engineering and Communication - MMAN3000  |  Faculty of Engineering |  |  |  MMAN4000 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN3000.html
+MMAN3200 | Linear Systems and Control - MMAN3200  |  Faculty of Engineering |  |  MATH2019 and (MMAN1300 or CVEN1300) Exclusion |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN3200.html
+MMAN3400 | Mechanics of Solids 2 - MMAN3400  |  Faculty of Engineering |  |  MATH2019 OR MATH2018 AND MMAN2400; Exclusion |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN3400.html
+MMAN4010 | Thesis A - MMAN4010  |  Faculty of Engineering |  |  132 Units of Credits |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN4010.html
+MMAN4020 | Thesis B - MMAN4020  |  Faculty of Engineering |  |  MMAN4010 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN4020.html
+MMAN4200 | Additive Manufacturing - MMAN4200  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN4200.html
+MMAN4400 | Engineering Management - MMAN4400  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN4400.html
+MMAN4410 | Finite Element Methods - MMAN4410  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN4410.html
+MMAN4200 | Additive Manufacturing - MMAN4200  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN4200.html
+MMAN4400 | Engineering Management - MMAN4400  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN4400.html
+MMAN4410 | Finite Element Methods - MMAN4410  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MMAN4410.html
+MMAN9001 | Master of Engineering Science Project A - MMAN9001  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MMAN9001.html
+MMAN9002 | MEngSc Project B - MMAN9002  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MMAN9002.html
+MNGT5095 | Foundations of Management - MNGT5095  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5095.html
+MNGT5180 | Operationalising Strategy - MNGT5180  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5180.html
+MNGT5201 | Economics in Management Practice - MNGT5201  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5201.html
+MNGT5202 | Entrepreneurship and Innovation - MNGT5202  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5202.html
+MNGT5203 | Entrepreneurship From the Inside - MNGT5203  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5203.html
+MNGT5211 | Accounting - MNGT5211  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5211.html
+MNGT5221 | Corporate Finance - MNGT5221  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5221.html
+MNGT5232 | Data Analysis and Statistical Modelling for Business - MNGT5232  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5232.html
+MNGT5251 | Marketing Management - MNGT5251  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5251.html
+MNGT5272 | Organisational Behaviour - MNGT5272  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5272.html
+MNGT5282 | Strategy - MNGT5282  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5282.html
+MNGT5311 | Accounting for Strategic Decision Making - MNGT5311  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5311.html
+MNGT5312 | Financial Statement Analysis - MNGT5312  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5312.html
+MNGT5321 | Advanced Managerial Finance - MNGT5321  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5321.html
+MNGT5322 | Venture Capital Finance - MNGT5322  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5322.html
+MNGT5325 | International Finance - MNGT5325  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5325.html
+MNGT5352 | Marketing Strategy - MNGT5352  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5352.html
+MNGT5356 | Digital Business and Marketing Strategy - MNGT5356  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5356.html
+MNGT5370 | Leadership Concepts and Skills - MNGT5370  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5370.html
+MNGT5374 | Managerial Decision Making - MNGT5374  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5374.html
+MNGT5379 | Strategic Change Leadership - MNGT5379  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5379.html
+MNGT5388 | Negotiations and Strategy - MNGT5388  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5388.html
+MNGT5395 | Strategies for Growth - MNGT5395  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5395.html
+MNGT5520 | Quantitative Business Modelling for Managers - MNGT5520  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5520.html
+MNGT5521 | Financial Strategy - MNGT5521  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5521.html
+MNGT5522 | Mergers and Acquisitions - MNGT5522  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5522.html
+MNGT5540 | MNGT5540 Business Modelling - MNGT5540  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5540.html
+MNGT5585 | |  UNSW Business School |  |  Restricted to Full Time MBA, MBA (Exec) MBA/LLM students, and GDM |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5585.html
+Course MNGT5587 not found in handbook. Moving on.
+Course MNGT5588 not found in handbook. Moving on.
+MNGT5589 | Strategic Consulting Projects - MNGT5589  |  UNSW Business School |  |  Restricted to Full Time MBA and MBA/LLM students |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT5589.html
+Course MNGT5590 not found in handbook. Moving on.
+Course MNGT5592 not found in handbook. Moving on.
+MNGT6210 | Accounting and Financial Management - MNGT6210  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT6210.html
+MNGT6211 | The Executive Blueprint - MNGT6211  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT6211.html
+MNGT6251 | Marketing Management - MNGT6251  |  UNSW Business School |  |  must be enrolled in Program 8355, 8625, 8616, 5950, 5457, 7315, |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT6251.html
+MNGT6275 | Managing People and Organisations - MNGT6275  |  UNSW Business School |  |  must be enrolled in Program 8355, 8625, 8616, 5950, 5457, 7315, |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT6275.html
+MNGT6321 | Corporate Finance - MNGT6321  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT6321.html
+MNGT6582 | International Business - MNGT6582  |  UNSW Business School |  |  must be enrolled in Program 8355, 8625, 8616, 5950, 5457, 7315, |  MNGT8582 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT6582.html
+MNGT6583 | International Business Experience - MNGT6583  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT6583.html
+Course MNGT6584 not found in handbook. Moving on.
+MNGT7493 | Strategic Management 3 - MNGT7493  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT7493.html
+MNGT7494 | Strategic Management 4 - MNGT7494  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT7494.html
+MNGT7495 | Strategic Leadership - MNGT7495  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT7495.html
+MNGT7496 | Innovation - MNGT7496  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT7496.html
+MNGT7497 | Growth - MNGT7497  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT7497.html
+MNGT7498 | Transformation - MNGT7498  |  UNSW Business School |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MNGT7498.html
+MODL5100 | Research and Theories of Translation and Interpreting - MODL5100  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5100.html
+MODL5101 | Interpreting in Legal Settings - MODL5101  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Interpreting, Translation, or |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5101.html
+MODL5102 | Interpreting in Community Settings - MODL5102  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Interpreting, Translation, or |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5102.html
+MODL5103 | Multimedia Translation - MODL5103  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5103.html
+MODL5104 | Specialised Translation - MODL5104  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Applied Linguistics, Interpreting, |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5104.html
+MODL5105 | Conference Interpreting - MODL5105  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Interpreting, Translation, or |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5105.html
+MODL5106 | Text Analysis for Translation - MODL5106  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Applied Linguisitics, Interpreting, |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5106.html
+MODL5107 | Translation Technology - MODL5107  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5107.html
+MODL5108 | Preparation for Accreditation in Translation - MODL5108  |  Faculty of Arts and Social Sciences |  |  12 uoc MODL courses, and enrolment in a postgraduate Translation, |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5108.html
+MODL5111 | Translation and Interpreting Practicum A - MODL5111  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Interpreting, Translation, or |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5111.html
+MODL5112 | Translation and Interpreting Practicum B - MODL5112  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Interpreting, Translation (Stream B), |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5112.html
+MODL5113 | Interpreting Accreditation Preparation - MODL5113  |  Faculty of Arts and Social Sciences |  |  12 uoc MODL courses, and enrolment in a postgraduate |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5113.html
+MODL5116 | Advanced Conference Interpreting - MODL5116  |  Faculty of Arts and Social Sciences |  |  MODL5105, and enrolment in a postgraduate Interpreting, |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5116.html
+MODL5117 | Interpreting in International Settings - MODL5117  |  Faculty of Arts and Social Sciences |  |  Enrolment in a postgraduate Interpreting, Translation, or |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MODL5117.html
+MSCI0501 | The Marine Environment - MSCI0501  |  Faculty of Science |  |  |  GENS4625, MSCI2001,GENB5001 Not available to students in Science
+ MSCI2001 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MSCI0501.html
+MSCI2001 | Introductory Marine Science - MSCI2001  |  Faculty of Science |  |  |  MSCI0501 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MSCI2001.html
+MSCI3001 | Physical Oceanography - MSCI3001  |  Faculty of Science |  |  |  MSCI5004 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MSCI3001.html
+MSCI5004 | Oceanographic Processes - MSCI5004  |  Faculty of Science |  |  |  MSCI3001 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MSCI5004.html
+MSCI5005 | Topics in Marine Biology and Ecology - MSCI5005  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MSCI5005.html
+MSCI6681 | Topics in Australian Marine Science - MSCI6681  |  Faculty of Science |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MSCI6681.html
+MSCI9001 | Conservation In Aquatic Ecosystems - MSCI9001  |  Faculty of Science |  |  |  BIOS3091 | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MSCI9001.html
+MTRN2500 | Computing for Mechatronic Engineers - MTRN2500  |  Faculty of Engineering |  |  COMP1917 or COMP1511 or COMP1911 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MTRN2500.html
+MTRN3020 | Modelling and Control of Mechatronic Systems - MTRN3020  |  Faculty of Engineering |  |  MMAN3200 or ELEC3114 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MTRN3020.html
+MTRN3500 | Computing Applications in Mechatronics Systems - MTRN3500  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MTRN3500.html
+MTRN4010 | Advanced Autonomous Systems - MTRN4010  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MTRN4010.html
+MTRN4030 | Optimisation Methods for Engineering Systems - MTRN4030  |  Faculty of Engineering |  |  MATH2089 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MTRN4030.html
+MTRN4110 | Robot Design - MTRN4110  |  Faculty of Engineering |  |  |  MTRN3100 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MTRN4110.html
+MTRN4230 | Robotics - MTRN4230  |  Faculty of Engineering |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MTRN4230.html
+Course MTRN9000 not found in handbook. Moving on.
+Course MTRN9001 not found in handbook. Moving on.
+MUPS0001 | Drivers of Urban Change - MUPS0001  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MUPS0001.html
+MUPS0002 | Strategic Urban Policy - MUPS0002  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MUPS0002.html
+MUPS0003 | Decision Making and Governance - MUPS0003  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MUPS0003.html
+MUPS0004 | Development Economics and Finance - MUPS0004  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MUPS0004.html
+MUPS0005 | Strategic Planning and Impact Assessment Tools - MUPS0005  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MUPS0005.html
+MUPS0007 | Research for Evidence-Based Policy - MUPS0007  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MUPS0007.html
+MUPS0008 | International Policy Studio or Major Project - MUPS0008  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MUPS0008.html
+MUPS0009 | Urban Leadership, Politics and Ethics - MUPS0009  |  Built Environment |  |  |  | http://legacy.handbook.unsw.edu.au/postgraduate/courses/2018/MUPS0009.html
+MUSC1101 | Music Reinvented - MUSC1101  |  Faculty of Arts and Social Sciences |  |  |  MUSC1001 and MUSC2111 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC1101.html
+MUSC1602 | Materials and Structures of Music 1 - MUSC1602  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC1602.html
+MUSC1603 | Materials and Structures of Music 2 - MUSC1603  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC1603.html
+MUSC1604 | Western Music: a Panorama - MUSC1604  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC1604.html
+MUSC1701 | Performance Laboratory 1 - MUSC1701  |  Faculty of Arts and Social Sciences |  |  Enrolment in a Music single or dual degree program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC1701.html
+MUSC1702 | Performance Laboratory 1 (Advanced) - MUSC1702  |  Faculty of Arts and Social Sciences |  |  Enrolment in a Music single or dual degree program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC1702.html
+MUSC1703 | BA Performance Laboratory 1 - MUSC1703  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC1703.html
+MUSC1704 | Performance Laboratory 2 - MUSC1704  |  Faculty of Arts and Social Sciences |  |  Enrolment in a Music single or dual degree program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC1704.html
+MUSC1705 | Performance Laboratory 2 (Advanced) - MUSC1705  |  Faculty of Arts and Social Sciences |  |  Enrolment in a Music single or dual degree program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC1705.html
+MUSC1706 | BA Performance Laboratory 2 - MUSC1706  |  Faculty of Arts and Social Sciences |  |  |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC1706.html
+MUSC2113 | Film Music - MUSC2113  |  Faculty of Arts and Social Sciences |  |  30 units of credit at Level 1 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2113.html
+MUSC2116 | Sound, Society & Self in World Music - MUSC2116  |  Faculty of Arts and Social Sciences |  |  30 units of credit at Level 1 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2116.html
+MUSC2118 | Music and Culture in Bali: An Overseas Fieldtrip - MUSC2118  |  Faculty of Arts and Social Sciences |  |  30 units of credit at Level 1 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2118.html
+MUSC2602 | Materials and Structures of Music 3 - MUSC2602  |  Faculty of Arts and Social Sciences |  |  MUSC1602 and MUSC1603 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2602.html
+MUSC2603 | Materials and Structures of Music 4 - MUSC2603  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1, including MUSC2602 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2603.html
+MUSC2701 | Performance Laboratory 3 - MUSC2701  |  Faculty of Arts and Social Sciences |  |  MUSC1704 or MUSC1705 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2701.html
+MUSC2702 | Performance Laboratory 4 - MUSC2702  |  Faculty of Arts and Social Sciences |  |  30 units of credit at level 1, including MUSC2701 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2702.html
+MUSC2801 | Music Performance Styles and Interpretation - MUSC2801  |  Faculty of Arts and Social Sciences |  |  Enrolment in the Music Creative Practice Stream in a Music |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2801.html
+MUSC2802 | Music Studio Teaching - MUSC2802  |  Faculty of Arts and Social Sciences |  |  36uoc at Level 1 and enrolment in the Music Pedagogy stream in a |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2802.html
+MUSC2803 | Creative Sound Technologies - MUSC2803  |  Faculty of Arts and Social Sciences |  |  |  MUSC2332 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2803.html
+MUSC2804 | Investigating Music - MUSC2804  |  Faculty of Arts and Social Sciences |  |  36uoc in Level 1 Music courses, and enrolment in a Music single |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC2804.html
+MUSC3104 | Contemplating Jazz: History, Style, Reception - MUSC3104  |  Faculty of Arts and Social Sciences |  |  24 units of credit at Level 1 |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3104.html
+MUSC3105 | Psychology of Music - MUSC3105  |  Faculty of Arts and Social Sciences |  |  24 units of credit in Music courses, including 12 at Level 1 and |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3105.html
+MUSC3162 | Twentieth Century Music - MUSC3162  |  Faculty of Arts and Social Sciences |  |  24 units of credit in Music courses |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3162.html
+MUSC3302 | Orchestration and Arrangement - MUSC3302  |  Faculty of Arts and Social Sciences |  |  24 UOC in Music courses and enrolment in a Music single or dual |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3302.html
+MUSC3701 | Performance Laboratory 5 - MUSC3701  |  Faculty of Arts and Social Sciences |  |  MUSC2702 and enrolment in a Music single or dual award program |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3701.html
+MUSC3702 | Performance Laboratory 6 - MUSC3702  |  Faculty of Arts and Social Sciences |  |  MUSC3701; or MUSC2702 and enrolment in a Music/Arts or Music/ |  MUSC3402, MUSC3502 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3702.html
+MUSC3704 | Performance Laboratory 6 (Creative Practice/Music Pedagogy) - MUSC3704 |  Faculty of Arts and Social Sciences |  |  MUSC3701 and enrolment in a Music Creative Practice or Music |  MUSC3402 | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3704.html
+MUSC3801 | Creative Projects in Performance and Composition - MUSC3801  |  Faculty of Arts and Social Sciences |  |  MUSC2801 and enrolment in the Music Creative Practice stream in a |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3801.html
+MUSC3802 | Music Analysis - MUSC3802  |  Faculty of Arts and Social Sciences |  |  24uoc in MUSC courses and enrolment in one of the following |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3802.html
+MUSC3804 | Educating the musical novice - MUSC3804  |  Faculty of Arts and Social Sciences |  |  24uoc in MUSC courses and enrolment in the Music Pedagogy stream |  | http://legacy.handbook.unsw.edu.au/undergraduate/courses/2018/MUSC3804.html
