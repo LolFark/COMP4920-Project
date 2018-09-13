@@ -1,0 +1,36 @@
+course {
+"code":COMP4920,
+"name":Ethics,
+"??description:ethics course,
+"prereqs":["ds","asjd"],
+"coreqs":[],
+"exclusion":[],
+"level of study":3
+"handbook_link":url
+"average_satisfaction":
+"average_difficulty":
+"root_comment_history": [comment]
+}
+
+
+user {
+	"name":
+	"comment history":[]
+	"liked comments":[]
+	"admin":flag
+	"description": 
+
+}
+
+comment {
+	"user":
+	"code":
+	"liked_user":[]
+	"creation_timestamp":
+	"edit":flag
+	"reply":[immediate children]
+	"root":flag to differentiate root and leaf
+	"satisfaction":
+	"difficulty":
+	"content":
+}
