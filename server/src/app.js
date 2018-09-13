@@ -4,7 +4,7 @@ const cors = require('cors')
 const morgan = require('morgan')
 
 const app = express()
-app.use(morgan('combined'))
+app.use(morgan('combined')) // level of logging
 app.use(bodyParser.json())
 app.use(cors())
 
@@ -21,7 +21,7 @@ db.once("open", function(callback) {
 // get models
 var Course = require("../models/course");
 
-// Add new course
+// Add new course 
 app.post('/course', (req, res) => {
   var db = req.db;
   var code = req.body.code;
@@ -45,6 +45,7 @@ app.post('/course', (req, res) => {
     if (error) {
       console.log(error);
     }
+    console.log(code + " added");
     res.send({
       success: true,
       message: "Course " + code + " added"
@@ -52,8 +53,9 @@ app.post('/course', (req, res) => {
   })
 });
 
+// Fetch all courses
 app.get('/courses', (req,res) => {
-  Course.find({}, 'code name', function(error, courses) {
+  Course.find({}, 'code name pre_reqs faculty', function(error, courses) {
     if (error) {
       console.error(error); 
     }
@@ -63,5 +65,6 @@ app.get('/courses', (req,res) => {
   }).sort({code:1});
 })
 
+// Hosting port for server
 app.listen(process.env.PORT || 8081)
 
