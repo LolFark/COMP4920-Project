@@ -2,15 +2,42 @@
   <div class="courses">
     <h1>{{ msg }}</h1>
     Course should be displayed here
+    <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Add Course</router-link>
+    <table>
+        <tr>
+          <td width="100">Course code</td>
+          <td width="550">Course name</td>
+          <td width="100" align="center">Prerequisites</td>
+          <td width="300" align="center">Faculty</td>
+        </tr>
+        <tr v-for="course in courses" v-bind:key="course">
+          <td>{{ course.code }}</td>
+          <td>{{ course.name }}</td>
+          <td>{{ course.pre_reqs }}</td>
+          <td>{{ course.faculty }}</td>
+          <td align="center">
+          </td>
+        </tr>
+      </table>
   </div>
 </template>
 
 <script>
+import CourseService from '@/services/CourseService'
 export default {
   name: 'Courses',
   data () {
     return {
-      msg: 'Courses'
+      courses: []
+    }
+  },
+  mounted () {
+    this.getCourses()
+  },
+  methods: {
+    async getCourses () {
+      const response = await CourseService.fetchCourses()
+      this.courses = response.data.courses
     }
   }
 }

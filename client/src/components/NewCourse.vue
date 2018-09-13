@@ -10,41 +10,57 @@
          <input type="text" name="pre_req" placeholder="e.g. COMP2511" v-model="pre_reqs">
          <input type="text" name="exclusions" placeholder="e.g. COMP9998" v-model="exclusions">
          <input type="text" name="handbook_url" placeholder="e.g. https://www.handbook.unsw.edu.au/graduate/2018/COMP/COMP9999" v-model="handbook_URL">
-         </div> 
+         <button type="submit">Add Course</button>
+         </div>
+      </div>
+  </div>
 </template>
 
 <script>
 import CourseService from '@/services/CourseService'
 export default {
- name: 'NewCourse',
- data() {
-   return {
-     code: '',
-     name: '',
-     faculty: '',
-     co_reqs: '',
-     pre_reqs: '',
-     exclusions: '',
-     handbook_URL: '',
-   }
- },
- methods: {
-   async addCourse() {
-     await CourseService.addCourse({
-       code = this.code,
-       name = this.name,
-       faculty: this.faculty,
-       co_reqs = this.co_reqs,
-       pre_reqs = this.pre_reqs,
-       exclusions = this.exclusions,
-       handbook_URL = this.handbook_URL
-     })
-     this.$router.push({ name: 'Courses'})
-   }
- }
+  name: 'NewCourse',
+  data () {
+    return {
+      code: '',
+      name: '',
+      faculty: '',
+      co_reqs: '',
+      pre_reqs: '',
+      exclusions: '',
+      handbook_URL: ''
+    }
+  },
+  methods: {
+    async addCourse () {
+      await CourseService.addCourse({
+        code: this.code,
+        name: this.name,
+        faculty: this.faculty,
+        co_reqs: this.co_reqs,
+        pre_reqs: this.pre_reqs,
+        exclusions: this.exclusions,
+        handbook_URL: this.handbook_URL
+      })
+      this.$router.push({ name: 'Courses' })
+    }
+  }
 }
 </script>
 
 <style>
-
+h1, h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}
 </style>
