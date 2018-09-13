@@ -33,7 +33,7 @@ do
             #echo "Course $course_code not found in handbook. Moving on."
             continue
         fi
-        wget -q -O- "$handbook_url" | html2text - > handbook_entry.txt.tmp
+        wget -q -O- "$handbook_url" | html2text -width 100 - > handbook_entry.txt.tmp
         # Formatting all variables to be JSON compatible for import into mongoDB
         # cut beginning label -> Change underscores to spaces -> wrap in quotes
         faculty=`egrep "Faculty:" handbook_entry.txt.tmp | cut -d':' -f2 | sed -e 's/_/ /g' | sed -E 's/^.(.*)/\"\1\"/g'`
@@ -44,13 +44,13 @@ do
             co_reqs="\"\""
         fi
         #? wrap in quotes
-        pre_reqs=`egrep "Prerequisite:" handbook_entry.txt.tmp | cut -d':' -f2 | sed -e 's/_/ /g' | sed -E 's/(.*)/\"\1\"/g'`
+        pre_reqs=`egrep "^Prerequisite:" handbook_entry.txt.tmp | head -1 | cut -d':' -f2 | sed -e 's/_/ /g' | sed -E 's/(.*)/\"\1\"/g'`
         if [ "$pre_reqs" == "" ]
         then
             pre_reqs="\"\""
         fi
         #? wrap in quotes
-        excluded=`egrep "Excluded:" handbook_entry.txt.tmp | cut -d':' -f2 | sed -e 's/_/ /g' | sed -E 's/(.*)/\"\1\"/g'`
+        excluded=`egrep "^Excluded:" handbook_entry.txt.tmp | head -1 | cut -d':' -f2 | sed -e 's/_/ /g' | sed -E 's/(.*)/\"\1\"/g'`
         if [ "$excluded" == "" ]
         then
             excluded="\"\""
