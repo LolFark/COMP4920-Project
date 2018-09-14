@@ -8,13 +8,17 @@
           <td width="100">Course code</td>
           <td width="550">Course name</td>
           <td width="100" align="center">Prerequisites</td>
+          <td width="100" align="center">Corequisites</td>
           <td width="300" align="center">Faculty</td>
+          <td width="300" align="center">link</td>
         </tr>
         <tr v-for="course in courses" v-bind:key="course">
           <td>{{ course.code }}</td>
           <td>{{ course.name }}</td>
           <td>{{ course.pre_reqs }}</td>
+          <td>{{ course.co_reqs }}</td>
           <td>{{ course.faculty }}</td>
+          <td><a v-bind:href="course.handbook_url">Link</a></td>
           <td align="center">
           </td>
         </tr>

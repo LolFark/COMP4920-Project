@@ -8,7 +8,7 @@ export default {
     return Api().post('courses', params)
   },
 
-  editCourse(params) {
+  editCourse (params) {
     return Api().post('courses', params)
   }
 }
