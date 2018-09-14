@@ -2,6 +2,7 @@
   <div class="courses">
     <h1>{{ msg }}</h1>
     Course should be displayed here
+    <input type="text" v-model="search" placeholder="Search Courses">
     <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Add Course</router-link>
     <table>
         <tr>
@@ -12,7 +13,7 @@
           <td width="300" align="center">Faculty</td>
           <td width="300" align="center">link</td>
         </tr>
-        <tr v-for="course in courses" v-bind:key="course">
+        <tr v-for="course in searchedCourses" v-bind:key="course">
           <td>{{ course.code }}</td>
           <td>{{ course.name }}</td>
           <td>{{ course.pre_reqs }}</td>
@@ -32,7 +33,8 @@ export default {
   name: 'Courses',
   data () {
     return {
-      courses: []
+      courses: [],
+      search: ''
     }
   },
   mounted () {
@@ -42,6 +44,13 @@ export default {
     async getCourses () {
       const response = await CourseService.fetchCourses()
       this.courses = response.data.courses
+    }
+  },
+  computed: {
+    searchedCourses: function () {
+      return this.courses.filter((course) => {
+        return course.code.match(this.search);
+      });
     }
   }
 }
