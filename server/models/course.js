@@ -8,7 +8,7 @@ var CourseSchema = new Schema({
   co_reqs: String,
   pre_reqs: String,
   exclusions: String,
-  handbook_URL: String
+  handbook_url: String
 });
 
 var Course = mongoose.model("Course", CourseSchema);

@@ -55,7 +55,7 @@ app.post('/course', (req, res) => {
 
 // Fetch all courses
 app.get('/courses', (req,res) => {
-  Course.find({}, 'code name pre_reqs faculty', function(error, courses) {
+  Course.find({}, 'code name pre_reqs co_reqs exclusions faculty handbook_url', function(error, courses) {
     if (error) {
       console.error(error); 
     }
