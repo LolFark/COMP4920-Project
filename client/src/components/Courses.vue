@@ -56,13 +56,18 @@ export default {
     searchedCourses: function () {
       if (this.selected === 'code') {
         return this.courses.filter((course) => {
-          return course.code.match(this.search)
+          return course.code.match(new RegExp(this.search, 'i'))
         })
-      } else if (this.selected === 'name') {
+      }
+      if (this.selected === 'name') {
         return this.courses.filter((course) => {
-          return course.name.match(this.search)
+          if (course.name === 'Accounting and Financial Management 1A') {
+            return course.code
+          }
+          // return course.name.match(new RegExp(this.search, 'i'))
         })
-      } else if (this.selected === 'faculty') {
+      }
+      if (this.selected === 'faculty') {
         return this.courses.filter((course) => {
           return course.faculty.match(this.search)
         })
