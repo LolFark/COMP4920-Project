@@ -20,7 +20,7 @@ export default new Router({
       component: NewCourse
     },
     {
-      path: ':id',
+      path: '/courses/:id',
       component: CoursePage
     }
   ]

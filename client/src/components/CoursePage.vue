@@ -1,5 +1,9 @@
 <template>
-  <div class="course_page">Course {{ $route.params.id }}</div>
+  <div class="course_page">
+    <h1>Course {{ $route.params.id }}</h1>
+    <p>Feedback</p>
+    <textarea placeholder="Add a comment"></textarea>
+  </div>
 </template>
 
 <script>
