@@ -65,6 +65,8 @@ app.get('/courses', (req,res) => {
   }).sort({code:1});
 })
 
+app.get('/', (req, res) => res.send('Hello World!'))
+
 // Hosting port for server
 app.listen(process.env.PORT || 8081)
 
