@@ -49,8 +49,8 @@ export default {
   computed: {
     searchedCourses: function () {
       return this.courses.filter((course) => {
-        return course.code.match(this.search);
-      });
+        return course.code.match(this.search)
+      })
     }
   }
 }
