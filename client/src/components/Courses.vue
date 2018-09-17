@@ -40,7 +40,7 @@ export default {
     return {
       courses: [],
       search: '',
-      selected: ''
+      selected: 'code'
     }
   },
   mounted () {
@@ -57,7 +57,9 @@ export default {
       var regex = new RegExp(this.search, 'i')
       if (this.selected === 'code') {
         return this.courses.filter((course) => {
-          return course.code.match(regex)
+          if (regex.test(course.code)) {
+            return course
+          }
         })
       }
       if (this.selected === 'name') {
