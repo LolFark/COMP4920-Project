@@ -18,7 +18,7 @@
           <th class="course_link" align="center">Handbook Link</th>
         </tr>
         <tr v-for="course in searchedCourses" v-bind:key="course">
-          <td>{{ course.code }}</td>
+          <td><a v-bind:href="/courses/ + course.code">{{ course.code }}</a></td>
           <td>{{ course.name }}</td>
           <td>{{ course.pre_reqs }}</td>
           <td>{{ course.co_reqs }}</td>
