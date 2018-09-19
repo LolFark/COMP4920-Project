@@ -2,6 +2,11 @@
   <div class="courses">
     <h1>{{ msg }}</h1>
     Course should be displayed here
+    <select v-model="selected">
+      <option value="code">Course Code</option>
+      <option value="name">Course Name</option>
+      <option value="faculty">Faculty</option>
+    </select>
     <input type="text" v-model="search" placeholder="Search Courses">
     <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Add Course</router-link>
     <table>
@@ -34,7 +39,8 @@ export default {
   data () {
     return {
       courses: [],
-      search: ''
+      search: '',
+      selected: 'code'
     }
   },
   mounted () {
@@ -48,9 +54,28 @@ export default {
   },
   computed: {
     searchedCourses: function () {
-      return this.courses.filter((course) => {
-        return course.code.match(this.search)
-      })
+      var regex = new RegExp(this.search, 'i')
+      if (this.selected === 'code') {
+        return this.courses.filter((course) => {
+          if (regex.test(course.code)) {
+            return course
+          }
+        })
+      }
+      if (this.selected === 'name') {
+        return this.courses.filter((course) => {
+          if (regex.test(course.name)) {
+            return course
+          }
+        })
+      }
+      if (this.selected === 'faculty') {
+        return this.courses.filter((course) => {
+          if (regex.test(course.faculty)) {
+            return course
+          }
+        })
+      }
     }
   }
 }
