@@ -59,7 +59,7 @@ export default {
           if (i % 2 === 0) {
             rows[i].className = 'even'
           } else {
-            rows[i].className = 'odd';
+            rows[i].className = 'odd'
           }
         }
       }
