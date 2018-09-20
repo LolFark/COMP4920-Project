@@ -1,5 +1,13 @@
-const User = require('../../models/user')
-const bcrypt = require('bcryptjs')
+const User = require('../../models/user');
+const bcrypt = require('bcryptjs');
+
+function validate_email(email) {
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    return true;
+  }
+  alert("You have entered an invalid email address!")
+  return false;
+}
 
 module.exports = {
   // Simple register function
@@ -7,6 +15,11 @@ module.exports = {
   async register(req, res) {
     var username = req.body.username;
     var email = req.body.email;
+    // console.log('Received email: ' + email);
+    // return;
+    if(!validate_email(email)) {
+      return res.status(400).send({data: "Invalid email address"});
+    }
     var password = bcrypt.hashSync(req.body.password, 10);
 
     var new_user = new User({
