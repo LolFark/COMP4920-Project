@@ -9,7 +9,7 @@
           <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
         </ul>
       </p>
-            <label for="username">Name</label>
+            <label for="username">Username</label>
             <div>
                 <input id="username" type="text" v-model="username" autofocus>
             </div>
