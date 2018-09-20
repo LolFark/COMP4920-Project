@@ -1,7 +1,10 @@
+"use strict"
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
 
 const app = express()
 app.use(morgan('combined')) // level of logging
@@ -23,7 +26,6 @@ var Course = require("../models/course");
 
 // Add new course 
 app.post('/course', (req, res) => {
-  var db = req.db;
   var code = req.body.code;
   var name = req.body.name;
   var faculty = req.body.faculty;
@@ -66,6 +68,30 @@ app.get('/courses', (req,res) => {
 })
 
 app.get('/', (req, res) => res.send('Hello World!'))
+
+// Register function
+app.post('/register', function(req, res) {
+  var username = req.body.username;
+  var email = req.body.email;
+  var password = bcrypt.hashSync(req.body.password, 10);
+
+  var new_user = new User({
+    username: username,
+    email: email,
+    hash: password
+  })
+
+  new_user.save(function (error) {
+    if (error) {
+      console.error(error);
+    }
+    console.log(username + " added");
+    res.send({
+      success: true,
+      message: "New user " + username + " added"
+    })
+  })
+})
 
 // Hosting port for server
 app.listen(process.env.PORT || 8081)
