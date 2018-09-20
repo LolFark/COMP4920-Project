@@ -9,9 +9,9 @@
           <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
         </ul>
       </p>
-            <label for="name">Name</label>
+            <label for="username">Name</label>
             <div>
-                <input id="name" type="text" v-model="name" autofocus>
+                <input id="username" type="text" v-model="username" autofocus>
             </div>
 
             <label for="email" >E-Mail Address</label>
