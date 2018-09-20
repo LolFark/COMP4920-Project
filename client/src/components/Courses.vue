@@ -17,8 +17,8 @@
           <th class="course_faculty" align="center">Faculty</th>
           <th class="course_link" align="center">Handbook Link</th>
         </tr>
-        <tr v-for="course in searchedCourses" v-bind:key="course">
-          <td><a v-bind:href="/courses/ + course.code">{{ course.code }}</a></td>
+        <tr v-for="course in searchedCourses" v-bind:key="course" @click="navigate(/courses/ + course.code)">
+          <td>{{ course.code }}</td>
           <td>{{ course.name }}</td>
           <td>{{ course.pre_reqs }}</td>
           <td>{{ course.co_reqs }}</td>
@@ -63,6 +63,9 @@ export default {
           }
         }
       }
+    },
+    navigate (to) {
+      this.$router.push(to)
     }
   },
   computed: {
