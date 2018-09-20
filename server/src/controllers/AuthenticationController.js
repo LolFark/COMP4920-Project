@@ -35,9 +35,9 @@ module.exports = {
     console.log('login attempt');
     User.findOne({username: username}, function(err, user) {
       if (err) {
-        console.log(error);
+        console.log(err);
         return res.status(500).send({
-          error: error
+          error: err
         });
       }
 
