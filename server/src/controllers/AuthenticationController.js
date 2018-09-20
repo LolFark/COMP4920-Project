@@ -1,13 +1,7 @@
-const User = require('../../models/user');
-const bcrypt = require('bcryptjs');
+const User = require('../../models/user')
+const bcrypt = require('bcryptjs')
 
-function validate_email(email) {
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-    return true;
-  }
-  alert("You have entered an invalid email address!")
-  return false;
-}
+const saltRounds = 10;
 
 module.exports = {
   // Simple register function
@@ -15,12 +9,7 @@ module.exports = {
   async register(req, res) {
     var username = req.body.username;
     var email = req.body.email;
-    // console.log('Received email: ' + email);
-    // return;
-    if(!validate_email(email)) {
-      return res.status(400).send({data: "Invalid email address"});
-    }
-    var password = bcrypt.hashSync(req.body.password, 10);
+    var password = bcrypt.hashSync(req.body.password, saltRounds);
 
     var new_user = new User({
       username: username,
@@ -40,5 +29,34 @@ module.exports = {
     })
   },
 
-  async login(req, res) {}
+  async login(req, res) {
+    var username = req.body.username;
+    var password = req.body.password;
+    console.log('login attempt');
+    User.findOne({username: username}, function(err, user) {
+      if (err) {
+        console.log(error);
+        return res.status(500).send({
+          error: error
+        });
+      }
+
+      // Authentication failed
+      if (!user) {
+        return res.status(403).send({
+          error: 'Username or password incorrect'
+        });
+      }
+      bcrypt.compare(password, user.password, function (err, result) {
+        if (result) {
+          console.log('Login successful');
+          return res.status(200).send();
+        } else {
+          return res.status(403).send({
+            error: 'Username or password incorrect'
+          })
+        }
+      })
+    })
+  }
 }
