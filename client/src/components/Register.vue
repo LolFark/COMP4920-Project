@@ -2,9 +2,7 @@
   <div>
     <h1>Sign up</h1>
     <form id="register"
-    @submit="checkform"
-    action="localhost:8081/register"
-    method="post">
+    autocomplete="off">
             <label for="name">Name</label>
             <div>
                 <input id="name" type="text" v-model="name" required autofocus>
@@ -25,7 +23,7 @@
                 <input id="password-confirm" type="password" v-model="password_confirmation" required>
             </div>
             <div>
-                <button type="submit" @click="handleSubmit">
+                <button type="submit" @click="register">
                     Register
                 </button>
             </div>
@@ -34,11 +32,11 @@
 </template>
 
 <script>
+import AuthenticationService from '@/services/AuthenticationService'
 export default {
-
   data () {
     return {
-      name: '',
+      username: '',
       email: '',
       password: '',
       password_confirmation: '',
@@ -50,29 +48,32 @@ export default {
   methods: {
     checkform: function (e) {
       e.preventDefault()
-      this.errors = [];
-      if (!this.name) {
-        this.errors.push("Name required.");
+      this.errors = []
+      if (!this.username) {
+        this.errors.push('Name required.')
       }
       if (!this.email) {
-        this.errors.push('Email required.');
+        this.errors.push('Email required.')
       } else if (!this.validEmail(this.email)) {
-        this.errors.push('University email required.');
+        this.errors.push('University email required.')
       }
 
       if (!this.errors.length) {
-        return true;
+        return true
       }
 
-      e.preventDefault();
+      e.preventDefault()
     },
     validEmail: function (email) {
       var re = /edu\.au/
-      return re.test(email);
+      return re.test(email)
     },
-    async register(username, email, password) {
-      const response = await RegisterService.register(username, email, password)
-      success = response.data.success
+    async register () {
+      await AuthenticationService.register({
+        username: this.username,
+        email: this.email,
+        password: this.password
+      })
     }
   }
 }

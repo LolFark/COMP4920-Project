@@ -21,9 +21,6 @@ db.once("open", function(callback) {
   console.log("DB connected");
 });
 
-// get models
-var Course = require("../models/course");
-
 // Add new course
 app.post('/course', (req, res) => {
   var code = req.body.code;
@@ -68,29 +65,6 @@ app.get('/comments', (req,res) => {
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
-// Register function
-app.post('/register', function(req, res) {
-  var username = req.body.username;
-  var email = req.body.email;
-  var password = bcrypt.hashSync(req.body.password, 10);
-
-  var new_user = new User({
-    username: username,
-    email: email,
-    hash: password
-  })
-
-  new_user.save(function (error) {
-    if (error) {
-      console.error(error);
-    }
-    console.log(username + " added");
-    res.send({
-      success: true,
-      message: "New user " + username + " added"
-    })
-  })
-})
 // Use router 
 require('./routes') (app)
 
