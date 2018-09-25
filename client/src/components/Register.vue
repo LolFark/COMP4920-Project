@@ -59,7 +59,7 @@ export default {
       }
       if (!this.email) {
         this.errors.push('Email required.')
-      } else if (!this.validEmail(this.email)) {
+      } else if (!this.isStudentEmail(this.email)) {
         this.errors.push('University email required.')
       }
       if (this.password !== this.password_confirmation) {
@@ -76,8 +76,8 @@ export default {
       }
       e.preventDefault()
     },
-    validEmail: function (email) {
-      var re = /edu\.au/
+    isStudentEmail: function (email) {
+      var re = /edu\.au$/
       return re.test(email)
     }
   }
