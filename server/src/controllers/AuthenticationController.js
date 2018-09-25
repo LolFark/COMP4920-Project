@@ -9,12 +9,14 @@ function validate_email(email) {
   return false;
 }
 
+
 module.exports = {
   // Simple register function
   // TODO Add functionality and validation
   async register(req, res) {
     var username = req.body.username;
     var email = req.body.email;
+    
     if(!validate_email(email)) {
       return res.status(400).send({data: "Invalid email address"});
     }
@@ -38,5 +40,34 @@ module.exports = {
     })
   },
 
-  async login(req, res) {}
+  async login(req, res) {
+    var username = req.body.username;
+    var password = req.body.password;
+    console.log('login attempt');
+    User.findOne({username: username}, function(err, user) {
+      if (err) {
+        console.log(error);
+        return res.status(500).send({
+          error: error
+        });
+      }
+
+      // Authentication failed
+      if (!user) {
+        return res.status(403).send({
+          error: 'Username or password incorrect'
+        });
+      }
+      bcrypt.compare(password, user.password, function (err, result) {
+        if (result) {
+          console.log('Login successful');
+          return res.status(200).send();
+        } else {
+          return res.status(403).send({
+            error: 'Username or password incorrect'
+          })
+        }
+      })
+    })
+  }
 }

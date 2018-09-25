@@ -3,24 +3,30 @@
     <h1>Sign up</h1>
     <form id="register"
     autocomplete="off">
-            <label for="name">Name</label>
+      <p v-if="errors.length">
+        <b>Please correct the following error(s):</b>
+        <ul>
+          <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+        </ul>
+      </p>
+            <label for="username">Username</label>
             <div>
-                <input id="name" type="text" v-model="name" required autofocus>
+                <input id="username" type="text" v-model="username" autofocus>
             </div>
 
             <label for="email" >E-Mail Address</label>
             <div>
-                <input id="email" type="email" v-model="email" required>
+                <input id="email" type="email" v-model="email" >
             </div>
 
             <label for="password">Password</label>
             <div>
-                <input id="password" type="password" v-model="password" required>
+                <input id="password" type="password" v-model="password" >
             </div>
 
-            <label for="password-confirm">Confirm Password</label>
+            <label for="password-confirmation">Confirm Password</label>
             <div>
-                <input id="password-confirm" type="password" v-model="password_confirmation" required>
+                <input id="password-confirmation" type="password" v-model="password_confirmation" >
             </div>
             <div>
                 <button type="submit" @click="register">
@@ -46,8 +52,7 @@ export default {
   },
 
   methods: {
-    checkform: function (e) {
-      e.preventDefault()
+    register: async function (e) {
       this.errors = []
       if (!this.username) {
         this.errors.push('Name required.')
@@ -57,23 +62,23 @@ export default {
       } else if (!this.isStudentEmail(this.email)) {
         this.errors.push('University email required.')
       }
-
-      if (!this.errors.length) {
-        return true
+      if (this.password !== this.password_confirmation) {
+        this.errors.push('Passwords do not match')
       }
 
+      if (!this.errors.length) {
+        const response = await AuthenticationService.register({
+          username: this.username,
+          email: this.email,
+          password: this.password
+        })
+        this.errors.push(response.data.error)
+      }
       e.preventDefault()
     },
     isStudentEmail: function (email) {
       var re = /edu\.au$/
       return re.test(email)
-    },
-    async register () {
-      await AuthenticationService.register({
-        username: this.username,
-        email: this.email,
-        password: this.password
-      })
     }
   }
 }
