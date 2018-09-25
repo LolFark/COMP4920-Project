@@ -1,9 +1,25 @@
 {
-    "extends": "airbnb",
     "env": {
-        "node": true,
         "es6": true,
-        "browser": true
+        "node": true
     },
-    "rules": {}
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+        "comma-dangle": ["warn", "always-multiline"],
+        "eqeqeq": "warn",
+        "func-names": "off",
+        "indent": ["off", 2],
+        "no-console": "off",
+        "no-empty": "off",
+        "no-inner-declarations": "off",
+        "no-redeclare": "warn",
+        "no-restricted-globals": ["error", "Promise"],
+        "no-undef": "warn",
+        "no-unused-vars": ["warn", {"argsIgnorePattern": "^_|^var_args$"}],
+        "quotes": ["warn", "single", "avoid-escape"],
+        "semi": ["error", "always"]
+    }
 }
