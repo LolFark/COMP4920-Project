@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import './Comment'
 export default {
   name: 'course_page'
 }

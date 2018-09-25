@@ -1,7 +1,10 @@
-const express = require('express')
+"use strict"
+const express = require('express');
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
 
 const app = express()
 app.use(morgan('combined')) // level of logging
@@ -18,12 +21,8 @@ db.once("open", function(callback) {
   console.log("DB connected");
 });
 
-// get models
-var Course = require("../models/course");
-
-// Add new course 
+// Add new course
 app.post('/course', (req, res) => {
-  var db = req.db;
   var code = req.body.code;
   var name = req.body.name;
   var faculty = req.body.faculty;
@@ -53,19 +52,21 @@ app.post('/course', (req, res) => {
   })
 });
 
-// Fetch all courses
-app.get('/courses', (req,res) => {
-  Course.find({}, 'code name pre_reqs co_reqs exclusions faculty handbook_url', function(error, courses) {
+app.get('/comments', (req,res) => {
+  Comment.find({}, 'user course content', function(error, courses) {
     if (error) {
-      console.error(error); 
+      console.error(error);
     }
     res.send({
-      courses: courses
+      comments: comments
     })
-  }).sort({code:1});
+  })
 })
 
 app.get('/', (req, res) => res.send('Hello World!'))
+
+// Use router 
+require('./routes') (app)
 
 // Hosting port for server
 app.listen(process.env.PORT || 8081)

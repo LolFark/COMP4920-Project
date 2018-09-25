@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <a href="/register">Register</a>
+    <a href="/login">Login</a>
     <router-view/>
   </div>
 </template>
