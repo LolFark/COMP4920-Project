@@ -15,8 +15,6 @@ module.exports = {
   async register(req, res) {
     var username = req.body.username;
     var email = req.body.email;
-    // console.log('Received email: ' + email);
-    // return;
     if(!validate_email(email)) {
       return res.status(400).send({data: "Invalid email address"});
     }
