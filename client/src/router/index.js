@@ -4,6 +4,7 @@ import Courses from '@/components/Courses'
 import NewCourse from '@/components/NewCourse'
 import CoursePage from '@/components/CoursePage'
 import Register from '@/components/Register'
+import Login from '@/components/Login'
 
 Vue.use(Router)
 
@@ -27,6 +28,10 @@ export default new Router({
     {
       path: '/register',
       component: Register
+    },
+    {
+      path: '/login',
+      component: Login
     }
   ]
 })

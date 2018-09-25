@@ -9,7 +9,7 @@
           <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
         </ul>
       </p>
-            <label for="username">Name</label>
+            <label for="username">Username</label>
             <div>
                 <input id="username" type="text" v-model="username" autofocus>
             </div>
@@ -67,11 +67,12 @@ export default {
       }
 
       if (!this.errors.length) {
-        await AuthenticationService.register({
+        const response = await AuthenticationService.register({
           username: this.username,
           email: this.email,
           password: this.password
         })
+        this.errors.push(response.data.error)
       }
       e.preventDefault()
     },
