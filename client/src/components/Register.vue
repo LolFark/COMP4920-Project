@@ -53,7 +53,7 @@ export default {
 
   methods: {
     register: async function (e) {
-      this.error = []
+      this.errors = []
       if (!this.username) {
         this.errors.push('Name required.')
       }
