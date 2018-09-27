@@ -1,6 +1,5 @@
 <template>
   <div class="courses">
-    <h1>Communicourse</h1>
     <select v-model="selected">
       <option value="code">Course Code</option>
       <option value="name">Course Name</option>
@@ -8,6 +7,26 @@
     </select>
     <input type="text" v-model="search" placeholder="Search Courses">
     <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Add Course</router-link>
+    <p>
+      <input type="radio" id="all" value="" v-model="faculty">
+      <label for="all">All</label>
+      <input type="radio" id="art" value="Faculty of Arts and Social Sciences" v-model="faculty">
+      <label for="art">Faculty of Arts and Social Sciences</label>
+      <input type="radio" id="env" value="Built Environment" v-model="faculty">
+      <label for="env">Built Environment</label>
+      <input type="radio" id="eng" value="Faculty of Engineering" v-model="faculty">
+      <label for="eng">Faculty of Engineering</label>
+      <input type="radio" id="law" value="Faculty of Law" v-model="faculty">
+      <label for="law">Faculty of Law</label>
+      <input type="radio" id="med" value="Faculty of Medicine" v-model="faculty">
+      <label for="med">Faculty of Medicine</label>
+      <input type="radio" id="sci" value="Faculty of Science" v-model="faculty">
+      <label for="sci">Faculty of Science</label>
+      <input type="radio" id="bus" value="UNSW Business School" v-model="faculty">
+      <label for="bus">UNSW Business School</label>
+      <input type="radio" id="bos" value="Board of Studies" v-model="faculty">
+      <label for="bos">DVC (Academic) Board of Studies</label>
+    </p>
     <table class="table-hover" id="thetable">
         <tr>
           <th class="course_code">Course code</th>
@@ -37,7 +56,8 @@ export default {
     return {
       courses: [],
       search: '',
-      selected: 'code'
+      selected: 'code',
+      faculty: 'faculty'
     }
   },
   mounted () {
@@ -70,24 +90,26 @@ export default {
   },
   computed: {
     searchedCourses: function () {
-      var regex = new RegExp(this.search, 'i')
+      var searchReg = new RegExp(this.search, 'i')
+      var facultyReg = new RegExp(this.faculty)
+
       if (this.selected === 'code') {
         return this.courses.filter((course) => {
-          if (regex.test(course.code)) {
+          if (searchReg.test(course.code) && (facultyReg.test(course.faculty))) {
             return course
           }
         })
       }
       if (this.selected === 'name') {
         return this.courses.filter((course) => {
-          if (regex.test(course.name)) {
+          if (searchReg.test(course.name) && (facultyReg.test(course.faculty))) {
             return course
           }
         })
       }
       if (this.selected === 'faculty') {
         return this.courses.filter((course) => {
-          if (regex.test(course.faculty)) {
+          if (searchReg.test(course.faculty) && (facultyReg.test(course.faculty))) {
             return course
           }
         })
