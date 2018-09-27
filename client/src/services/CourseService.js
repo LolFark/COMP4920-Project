@@ -4,6 +4,10 @@ export default {
     return Api().get('courses')
   },
 
+  getSpecificCourse (params) {
+    return Api().post('course', params)
+  },
+
   addCourse (params) {
     return Api().post('courses', params)
   },
