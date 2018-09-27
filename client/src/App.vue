@@ -2,13 +2,19 @@
   <div id="app">
     <a href="/register">Register</a>
     <a href="/login">Login</a>
+    <h1 @click="navigate('/')">Communicourse</h1>
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    navigate (to) {
+      this.$router.push(to)
+    }
+  }
 }
 </script>
 
