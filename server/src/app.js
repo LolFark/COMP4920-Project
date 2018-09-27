@@ -22,7 +22,7 @@ db.once("open", function(callback) {
 });
 
 // Add new course
-app.post('/course', (req, res) => {
+app.post('/addcourse', (req, res) => {
   var code = req.body.code;
   var name = req.body.name;
   var faculty = req.body.faculty;
@@ -70,4 +70,3 @@ require('./routes') (app)
 
 // Hosting port for server
 app.listen(process.env.PORT || 8081)
-
