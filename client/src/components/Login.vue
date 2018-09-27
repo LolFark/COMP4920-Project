@@ -35,12 +35,11 @@ export default {
     async login (e) {
       console.log('Logging in with ' + this.username + ' ' + this.password)
       try {
-        const response = await AuthenticationService.login({
+        await AuthenticationService.login({
           username: this.username,
           password: this.password
         })
-      }
-      catch (error) {
+      } catch (error) {
         this.error = error.response.data.error
         e.preventDefault()
       }
