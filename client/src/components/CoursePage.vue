@@ -40,6 +40,7 @@ export default {
         code: this.code
       })
       this.course = response.data.course
+      this.course.grad_level = this.course.grad_level.charAt(0).toUpperCase() + this.course.grad_level.substr(1)
     }
   }
 }
