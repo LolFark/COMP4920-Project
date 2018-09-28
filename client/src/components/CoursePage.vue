@@ -3,6 +3,9 @@
     <h1>Course {{ $route.params.id }}</h1>
     <p>Feedback</p>
     <p>{{ course }}</p>
+    <table v-if="course === null">
+      <h2><b>COURSE NO LONGER EXISTS</b></h2>
+    </table>
     <table v-if="course !== null">
       <tr class="course_code"><b>Code: </b>{{ course.code }}</tr>
       <tr class="course_name"><b>Name: </b>{{ course.name }}</tr>
@@ -40,8 +43,12 @@ export default {
         code: this.code
       })
       this.course = response.data.course
-      this.course.grad_level = this.course.grad_level.charAt(0).toUpperCase() + this.course.grad_level.substr(1)
-      this.makeLink()
+      try {
+        this.course.grad_level = this.course.grad_level.charAt(0).toUpperCase() + this.course.grad_level.substr(1)
+        this.makeLink()
+      } catch (error) {
+        // Course not found. Do nothing
+      }
     },
     makeLink () {
       this.course.pre_reqs = this.course.pre_reqs.replace(/([A-Z]{4}[0-9]{4})/g, '<a href="' + '$1' + '">' + '$1' + '</a>')
