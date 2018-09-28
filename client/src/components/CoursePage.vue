@@ -5,7 +5,7 @@
       <h2><b>COURSE NO LONGER EXISTS</b></h2>
     </table>
     <table class="course_info" v-if="course !== null">
-      <tr class="course_code"><b>Code: </b>{{ course.code }}</tr>
+      <tr class="course_code"><b>Code: </b><a v-bind:href="course.handbook_url">{{ course.code }}</a></tr>
       <tr class="course_name"><b>Name: </b>{{ course.name }}</tr>
       <tr class="course_faculty"><b>Faculty: </b>{{ course.faculty }}</tr>
       <tr class="course_gradlevel"><b>Graduate Level: </b>{{ course.grad_level }}</tr>
@@ -13,7 +13,7 @@
       <tr class="course_prereqs"><b>Prerequisite: </b><span v-html="course.pre_reqs">{{ course.pre_reqs }}</span></tr>
       <tr class="course_exlusions"><b>Exclusion: </b><span v-html="course.exclusions">{{ course.exclusions }}</span></tr>
       <tr class="course_des"><b>Course Description: </b><span v-html="course.course_des">{{ course.course_des }}</span></tr>
-      <tr class="course_handbookurl"><b>Handbook URL: </b><a v-bind:href="course.handbook_url">Link</a></tr>
+      <!-- <tr class="course_handbookurl"><b>Handbook URL: </b><a v-bind:href="course.handbook_url">Link</a></tr> -->
     </table>
     <br>
     <textarea placeholder="Add a comment"></textarea>
@@ -90,5 +90,16 @@ a {
 }
 .course_info {
   text-align: left
+}
+tr span >>> a:link, tr span >>> a:visited {
+  background-color: rgb(145, 242, 255);
+  color: black;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+tr span >>> a:hover, tr span >>> a:active {
+  background-color: rgb(155, 207, 228);
 }
 </style>
