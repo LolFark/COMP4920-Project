@@ -3,6 +3,18 @@
     <h1>Course {{ $route.params.id }}</h1>
     <p>Feedback</p>
     <p>{{ course }}</p>
+    <table>
+      <tr class="course_code"><b>Code: </b>{{ course.code }}</tr>
+      <tr class="course_name"><b>Name: </b>{{ course.name }}</tr>
+      <tr class="course_faculty"><b>Faculty: </b>{{ course.faculty }}</tr>
+      <tr class="course_gradlevel"><b>Graduate Level: </b>{{ course.grad_level }}</tr>
+      <tr class="course_coreqs"><b>Corequesite: </b>{{ course.co_reqs }}</tr>
+      <tr class="course_prereqs"><b>Prerequisite: </b>{{ course.pre_reqs }}</tr>
+      <tr class="course_exlusions"><b>Exclusion: </b>{{ course.exclusions }}</tr>
+      <tr class="course_des"><b>Course Description: </b>{{ course.course_des }}</tr>
+      <tr class="course_handbookurl"><b>Handbook URL: </b><a v-bind:href="course.handbook_url">Link</a></tr>
+    </table>
+    <br>
     <textarea placeholder="Add a comment"></textarea>
   </div>
 </template>
