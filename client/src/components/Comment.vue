@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import CommentService from '@/services/CommentService'
 export default {
   data () {
     return {
@@ -17,8 +16,6 @@ export default {
   },
   methods: {
     async getComments () {
-      const response = await CommentService.getComments($router.params.id)
-      this.comments = response.data.comments
     }
   }
 }
