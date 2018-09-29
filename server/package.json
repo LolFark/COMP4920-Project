@@ -19,5 +19,8 @@
     "mongoose": "^5.2.14",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1"
   }
 }
