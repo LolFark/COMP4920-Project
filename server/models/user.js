@@ -1,17 +1,18 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+// const bcrypt = require('bcryptjs');
 
-var bcrypt = require('bcryptjs');
-SALT_FACTOR = 10
+const { Schema } = mongoose;
 
-var UserSchema = new Schema({
-    username: { type: String},
-    email: { type: String},
-    password: { type: String},
-    comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
-    liked_comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
-    isAdmin: Boolean,
-})
+// const SALT_FACTOR = 10;
+
+const UserSchema = new Schema({
+  username: { type: String },
+  email: { type: String },
+  password: { type: String },
+  comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
+  liked_comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
+  isAdmin: Boolean,
+});
 
 // Function called before save to DB
 // UserSchema.pre('save', function (next) {
@@ -45,5 +46,5 @@ var UserSchema = new Schema({
     // });
 // };
 
-var User = mongoose.model("User", UserSchema);
+const User = mongoose.model('User', UserSchema);
 module.exports = User;

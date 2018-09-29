@@ -2,8 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 
 const app = express();
@@ -12,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // DB connection
-mongoose.connect('mongodb://user:testing1@ds151382.mlab.com:51382/communicourse', { useNewUrlParser: true } )
+mongoose.connect('mongodb://user:testing1@ds151382.mlab.com:51382/communicourse', { useNewUrlParser: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'DB connection error'));
 db.once('open', () => { console.log('DB connected'); });

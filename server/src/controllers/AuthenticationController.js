@@ -1,18 +1,14 @@
-<<<<<<< 18569f236f3be03fb88ba2f1f30dd941e5f28fb7
-const User = require('../../models/user')
-const bcrypt = require('bcryptjs')
-=======
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 const User = require('../../models/user');
+const config = require('../config/config');
 
-function validate_email(email) {
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-    return true;
-  }
-  console.log('You have entered an invalid email address!');
-  return false;
+function jwtSignUser(user) {
+  const ONE_DAY = 60 * 60 * 24;
+  return jwt.sign(user, config.authentication.jwtSecret, {
+    expiresIn: ONE_DAY,
+  });
 }
->>>>>>> updated eslint and changed some files to follow airbnb styleguide
 
 const saltRounds = 10;
 
@@ -20,18 +16,9 @@ module.exports = {
   // Simple register function
   // TODO Add functionality and validation
   async register(req, res) {
-<<<<<<< 18569f236f3be03fb88ba2f1f30dd941e5f28fb7
-    var username = req.body.username;
-    var email = req.body.email;
-    var password = bcrypt.hashSync(req.body.password, saltRounds);
-=======
     const { username, email } = req.body;
 
-    if (!validate_email(email)) {
-      return res.status(400).send({ data: 'Invalid email address' });
-    }
-    const password = bcrypt.hashSync(req.body.password, 10);
->>>>>>> updated eslint and changed some files to follow airbnb styleguide
+    const password = bcrypt.hashSync(req.body.password, saltRounds);
 
     const newUser = new User({
       username,
@@ -54,35 +41,36 @@ module.exports = {
   async login(req, res) {
     const { username, password } = req.body;
     console.log('login attempt');
-<<<<<<< 18569f236f3be03fb88ba2f1f30dd941e5f28fb7
-    User.findOne({username: username}, function(err, user) {
-      if (err) {
-        console.log(err);
-        return res.status(500).send({
-          error: err
-=======
     User.findOne({ username }, (error, user) => {
       if (error) {
         console.log(error);
         return res.status(500).send({
           error,
->>>>>>> updated eslint and changed some files to follow airbnb styleguide
         });
       }
 
       // Authentication failed
       if (!user) {
+        console.log(`${username} not found`);
         return res.status(403).send({
           error: 'Username or password incorrect',
         });
       }
+      console.log(`${user.username} exists`);
       bcrypt.compare(password, user.password, (error) => {
         if (error) {
-          console.log('Login successful');
-          return res.status(200).send();
+          return res.status(403).send({
+            error: 'Login error',
+          });
         }
-        return res.status(403).send({
-          error: 'Username or password incorrect',
+        // successful sign in
+        console.log(`${user.username} has logged in successfully`);
+        const foundUser = user.toJSON();
+        const token = jwtSignUser(foundUser);
+        console.log(`token is ${token}`);
+        return res.status(200).send({
+          user: foundUser,
+          token,
         });
       });
     });
