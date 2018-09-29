@@ -4,10 +4,12 @@
         "node": true
     },
     "extends": "airbnb-base",
-    "parser": "babel-eslint",
     "parserOptions": {
         "sourceType": "module"
     },
     "rules": {
+        "no-console": "off",
+        "consistent-return": "off",
+        "no-shadow": "off" 
     }
 }
