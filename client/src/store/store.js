@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+// Using Vuex to maintain state
 Vue.use(Vuex)
 
 export default new Vuex.Store({
