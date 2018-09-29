@@ -2,14 +2,34 @@
   <div class="course_page">
     <h1>Course {{ $route.params.id }}</h1>
     <p>Feedback</p>
+    <p>{{ course }}</p>
     <textarea placeholder="Add a comment"></textarea>
   </div>
 </template>
 
 <script>
+import CourseService from '@/services/CourseService'
 import './Comment'
 export default {
-  name: 'course_page'
+  data () {
+    return {
+      name: 'course_page',
+      code: this.$route.params.id,
+      course: [],
+      blah: ''
+    }
+  },
+  mounted () {
+    this.getCourse()
+  },
+  methods: {
+    async getCourse () {
+      const response = await CourseService.getSpecificCourse({
+        code: this.code
+      })
+      this.course = response.data.course
+    }
+  }
 }
 </script>
 

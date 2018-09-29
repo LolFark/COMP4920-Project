@@ -1,6 +1,5 @@
 <template>
   <div class="courses">
-    <h1>Communicourse</h1>
     <select v-model="selected">
       <option value="code">Course Code</option>
       <option value="name">Course Name</option>
@@ -8,6 +7,42 @@
     </select>
     <input type="text" v-model="search" placeholder="Search Courses">
     <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Add Course</router-link>
+    <p>
+      <input type="radio" id="allf" value="" v-model="faculty">
+      <label for="allf">All</label>
+      <input type="radio" id="art" value="Faculty of Arts and Social Sciences" v-model="faculty">
+      <label for="art">Faculty of Arts and Social Sciences</label>
+      <input type="radio" id="env" value="Built Environment" v-model="faculty">
+      <label for="env">Built Environment</label>
+      <input type="radio" id="eng" value="Faculty of Engineering" v-model="faculty">
+      <label for="eng">Faculty of Engineering</label>
+      <input type="radio" id="law" value="Faculty of Law" v-model="faculty">
+      <label for="law">Faculty of Law</label>
+      <input type="radio" id="med" value="Faculty of Medicine" v-model="faculty">
+      <label for="med">Faculty of Medicine</label>
+      <input type="radio" id="sci" value="Faculty of Science" v-model="faculty">
+      <label for="sci">Faculty of Science</label>
+      <input type="radio" id="bus" value="UNSW Business School" v-model="faculty">
+      <label for="bus">UNSW Business School</label>
+      <input type="radio" id="bos" value="Board of Studies" v-model="faculty">
+      <label for="bos">DVC (Academic) Board of Studies</label>
+    </p>
+    <p>
+      <input type="checkbox" id="alll"  v-on:change="checkAll" v-model="allChecked">
+      <label for="alll">All</label>
+      <input type="checkbox" id="zero" value="0" v-on:click="check" v-model="levels">
+      <label for="zero">0</label>
+      <input type="checkbox" id="one" value="1" @click="check" v-model="levels">
+      <label for="one">1</label>
+      <input type="checkbox" id="two" value="2" @click="check" v-model="levels">
+      <label for="two">2</label>
+      <input type="checkbox" id="three" value="3" @click="check" v-model="levels">
+      <label for="three">3</label>
+      <input type="checkbox" id="four" value="4" @click="check" v-model="levels">
+      <label for="four">4</label>
+      <input type="checkbox" id="five" value="[5-9]" @click="check" v-model="levels">
+      <label for="five">5+</label>
+    </p>
     <table class="table-hover" id="thetable">
         <tr>
           <th class="course_code">Course code</th>
@@ -17,13 +52,13 @@
           <th class="course_faculty" align="center">Faculty</th>
           <th class="course_link" align="center">Handbook Link</th>
         </tr>
-          <tr v-for="course in searchedCourses" v-bind:key="course">
-            <td><a v-bind:href="/courses/ + course.code">{{ course.code }}</a></td>
-            <td>{{ course.name }}</td>
-            <td>{{ course.pre_reqs }}</td>
-            <td>{{ course.co_reqs }}</td>
-            <td>{{ course.faculty }}</td>
-            <td><a v-bind:href="course.handbook_url">Link</a></td>
+        <tr v-for="course in searchedCourses" v-bind:key="course" v-on:click="navigate(/courses/ + course.code)">
+          <td>{{ course.code }}</td>
+          <td>{{ course.name }}</td>
+          <td>{{ course.pre_reqs }}</td>
+          <td>{{ course.co_reqs }}</td>
+          <td>{{ course.faculty }}</td>
+          <td><a v-bind:href="course.handbook_url">Link</a></td>
         </tr>
       </table>
   </div>
@@ -37,7 +72,12 @@ export default {
     return {
       courses: [],
       search: '',
-      selected: 'code'
+      selected: 'code',
+      faculty: 'faculty',
+
+      allChecked: true,
+      allLevels: ['0', '1', '2', '3', '4', '[5-9]'],
+      levels: ['0', '1', '2', '3', '4', '[5-9]']
     }
   },
   mounted () {
@@ -63,29 +103,58 @@ export default {
           }
         }
       }
+    },
+    navigate (to) {
+      this.$router.push(to)
+    },
+    checkAll () {
+      this.levels = []
+
+      if (this.allChecked) {
+        for (var level in this.allLevels) {
+          this.levels.push(this.allLevels[level])
+        }
+      }
+    },
+    check () {
+      this.allChecked = false
     }
   },
   computed: {
     searchedCourses: function () {
-      var regex = new RegExp(this.search, 'i')
+      var searchReg = new RegExp(this.search, 'i')
+      var facultyReg = new RegExp(this.faculty)
+
       if (this.selected === 'code') {
         return this.courses.filter((course) => {
-          if (regex.test(course.code)) {
-            return course
+          for (var level in this.levels) {
+            var levelregex = '^[A-Z]{4}' + this.levels[level]
+            var levelReg = new RegExp(levelregex)
+            if (searchReg.test(course.code) && (facultyReg.test(course.faculty)) && (levelReg.test(course.code))) {
+              return course
+            }
           }
         })
       }
       if (this.selected === 'name') {
         return this.courses.filter((course) => {
-          if (regex.test(course.name)) {
-            return course
+          for (var level in this.levels) {
+            var levelregex = '^[A-Z]{4}' + this.levels[level]
+            var levelReg = new RegExp(levelregex)
+            if (searchReg.test(course.name) && (facultyReg.test(course.faculty)) && (levelReg.test(course.code))) {
+              return course
+            }
           }
         })
       }
       if (this.selected === 'faculty') {
         return this.courses.filter((course) => {
-          if (regex.test(course.faculty)) {
-            return course
+          for (var level in this.levels) {
+            var levelregex = '^[A-Z]{4}' + this.levels[level]
+            var levelReg = new RegExp(levelregex)
+            if (searchReg.test(course.faculty) && (facultyReg.test(course.faculty)) && (levelReg.test(course.code))) {
+              return course
+            }
           }
         })
       }

@@ -13,9 +13,8 @@
         <input id="password" type="password" v-model="password">
       </div>
       <div>
-        <button type="submit" @click="login">
-          Login
-        </button>
+        <!-- have to change this button later cuz it prevents reloads-->
+        <input type="button" value="Login" @click=login>
       </div>
     </form>
   </div>
@@ -32,17 +31,21 @@ export default {
     }
   },
   methods: {
-    async login (e) {
+    async login () {
       console.log('Logging in with ' + this.username + ' ' + this.password)
       try {
         const response = await AuthenticationService.login({
           username: this.username,
           password: this.password
         })
-      }
-      catch (error) {
+        this.$store.dispatch('setToken', response.data.token)
+        console.log(response.data.token)
+        this.$store.dispatch('setUser', response.data.user)
+        this.$router.push({
+          name: 'Courses'
+        })
+      } catch (error) {
         this.error = error.response.data.error
-        e.preventDefault()
       }
     }
   }

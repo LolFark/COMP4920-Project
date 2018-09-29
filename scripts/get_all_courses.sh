@@ -45,6 +45,7 @@ do
         then
             co_reqs="\"\""
         fi
+        #| sed ':a;N;$!ba;s/\n/ /g' | sed -E 's/.*\*{5} Description \*{5} (.*)/\1/' | sed -E 's/^([^\[]*)\[.*/\1/'
         #? wrap in quotes
         pre_reqs=`egrep "^Prerequisite:" handbook_entry.txt.tmp | head -1 | cut -d':' -f2 | sed -e 's/_/ /g' | sed -E 's/(.*)/\"\1\"/g'`
         if [ "$pre_reqs" == "" ]
@@ -58,16 +59,22 @@ do
             excluded="\"\""
         fi
         # filter asterisks on either side -> remove dash + course code at end + wrap in quotes
-        course_name=`egrep "\*+.*$course_code.*\*+" handbook_entry.txt.tmp | sed -e 's/\*//g' |  sed -e 's/\"/\\\\"/g' | sed -E 's/^ (.*) - .*/\"\1\"/g'`
+        course_name=`egrep "\*+.*$course_code.*\*+" handbook_entry.txt.tmp | sed -e 's/\*//g' | sed -e 's/\"/\\\\"/g' | sed -E 's/^ (.*) - .*/\"\1\"/g'`
         if [ "$course_name" == "" ]
         then
             continue
+        fi
+        # Remove all new lines for each course -> remove everything before description -> remove everything after description -> remove all whitespace at end -> escape all quotes -> wrap in quotes
+        course_description=`sed ':a;N;$!ba;s/\n/ /g' handbook_entry.txt.tmp | sed -E 's/.*\*{5} Description \*{5} (.*)/\1/' | sed -E 's/^([^\[]*)\[.*/\1/' | sed -e 's/ *$//' | sed -e 's/\"/\\\\"/g' | sed -E 's/(.*)/\"\1\"/g'`
+        if [ "$course_description" == "" ]
+        then
+            course_description="\"\""
         fi
         # wrap in quotes
         course_code=`echo $course_code | sed -E 's/(.*)/\"\1\"/g'`
         # wrap in quotes
         handbook_url=`echo "$handbook_url" | sed -E 's/(.*)/\"\1\"/g'`
-        echo "{\"code\":$course_code, \"name\":$course_name, \"faculty\":$faculty, \"grad_level\":$grad_level, \"co_reqs\":$co_reqs, \"pre_reqs\":$pre_reqs, \"exclusions\":$excluded, \"handbook_url\":$handbook_url}"
+        echo "{\"code\":$course_code, \"name\":$course_name, \"faculty\":$faculty, \"grad_level\":$grad_level, \"co_reqs\":$co_reqs, \"pre_reqs\":$pre_reqs, \"exclusions\":$excluded, \"course_des\":$course_description, \"handbook_url\":$handbook_url}"
     done
 done
 rm handbook_entry.txt.tmp
