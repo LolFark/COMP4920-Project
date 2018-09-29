@@ -1,36 +1,32 @@
-"use strict"
+'use strict'
 const express = require('express');
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
+const mongoose = require('mongoose');
 
-const app = express()
+let app = express()
 app.use(morgan('combined')) // level of logging
 app.use(bodyParser.json())
 app.use(cors())
 
 // DB connection
-var mongoose = require('mongoose');
 mongoose.connect('mongodb://user:testing1@ds151382.mlab.com:51382/communicourse', { useNewUrlParser: true } )
-var db = mongoose.connection;
-db.on("error", console.error.bind(console, "DB connection error"
-));
-db.once("open", function(callback) {
-  console.log("DB connected");
-});
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'DB connection error'));
+db.once('open', () => {console.log('DB connected')}
 
-// Add new course
 app.post('/course', (req, res) => {
-  var code = req.body.code;
-  var name = req.body.name;
-  var faculty = req.body.faculty;
-  var co_reqs = req.body.co_reqs;
-  var pre_reqs = req.body.pre_reqs;
-  var exclusions = req.body.exclusions;
-  var handbook_URL = req.body.hURL;
-  var new_course = new Course({
+  let code = req.body.code;
+  let name = req.body.name;
+  let faculty = req.body.faculty;
+  let co_reqs = req.body.co_reqs;
+  let pre_reqs = req.body.pre_reqs;
+  let exclusions = req.body.exclusions;
+  let handbook_URL = req.body.hURL;
+  let new_course = new Course({
     code: code,
     name: name,
     faculty: faculty,
@@ -44,16 +40,16 @@ app.post('/course', (req, res) => {
     if (error) {
       console.log(error);
     }
-    console.log(code + " added");
+    console.log(code + ' added');
     res.send({
       success: true,
-      message: "Course " + code + " added"
+      message: `Course ${code} added`
     })
   })
 });
 
 app.get('/comments', (req,res) => {
-  Comment.find({}, 'user course content', function(error, courses) {
+  Comment.find({}, 'user course content', function(error, comment) {
     if (error) {
       console.error(error);
     }
