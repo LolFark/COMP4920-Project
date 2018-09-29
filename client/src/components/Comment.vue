@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     async getComments () {
-      const response = await CommentService.getComments($route.params.id)
+      const response = await CommentService.getComments($router.params.id)
       this.comments = response.data.comments
     }
   }
