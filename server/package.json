@@ -18,7 +18,8 @@
     "jsonwebtoken": "^8.3.0",
     "mongoose": "^5.2.14",
     "morgan": "^1.9.1",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "zxcvbn": "^4.4.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1"
