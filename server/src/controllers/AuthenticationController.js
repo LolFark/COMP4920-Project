@@ -1,14 +1,14 @@
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
 const User = require('../../models/user');
+const config = require('../config/config');
 
-function validate_email(email) {
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-    return true;
-  }
-  console.log('You have entered an invalid email address!');
-  return false;
+function jwtSignUser(user) {
+  const ONE_DAY = 60 * 60 * 24;
+  return jwt.sign(user, config.authentication.jwtSecret, {
+    expiresIn: ONE_DAY,
+  });
 }
-
 
 module.exports = {
   // Simple register function
@@ -16,9 +16,6 @@ module.exports = {
   async register(req, res) {
     const { username, email } = req.body;
 
-    if (!validate_email(email)) {
-      return res.status(400).send({ data: 'Invalid email address' });
-    }
     const password = bcrypt.hashSync(req.body.password, 10);
 
     const newUser = new User({
@@ -52,17 +49,26 @@ module.exports = {
 
       // Authentication failed
       if (!user) {
+        console.log(`${username} not found`);
         return res.status(403).send({
           error: 'Username or password incorrect',
         });
       }
+      console.log(`${user.username} exists`);
       bcrypt.compare(password, user.password, (error) => {
         if (error) {
-          console.log('Login successful');
-          return res.status(200).send();
+          return res.status(403).send({
+            error: 'Login error',
+          });
         }
-        return res.status(403).send({
-          error: 'Username or password incorrect',
+        // successful sign in
+        console.log(`${user.username} has logged in successfully`);
+        const foundUser = user.toJSON();
+        const token = jwtSignUser(foundUser);
+        console.log(`token is ${token}`);
+        return res.status(200).send({
+          user: foundUser,
+          token,
         });
       });
     });
