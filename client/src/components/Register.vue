@@ -18,12 +18,10 @@
             <div>
                 <input id="email" type="email" v-model="email" >
             </div>
-
             <label for="password">Password</label>
             <div>
-                <input id="password" type="password" v-model="password" >
+                <vue-password v-model="password" classes="input"> </vue-password>
             </div>
-
             <label for="password-confirmation">Confirm Password</label>
             <div>
                 <input id="password-confirmation" type="password" v-model="password_confirmation" >
@@ -39,7 +37,12 @@
 
 <script>
 import AuthenticationService from '@/services/AuthenticationService'
+import VuePassword from 'vue-password'
+
 export default {
+  components: {
+    VuePassword
+  },
   data () {
     return {
       username: '',
