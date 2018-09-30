@@ -2,6 +2,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../../models/user');
 const config = require('../config/config');
+const zxcvbn = require('zxcvbn');
 
 function jwtSignUser(user) {
   const ONE_DAY = 60 * 60 * 24;
@@ -15,8 +16,13 @@ module.exports = {
   // TODO Add functionality and validation
   async register(req, res) {
     const { username, email } = req.body;
+    var password_plaintext = req.body.password;
+    var pass_strength = zxcvbn(password_plaintext).score;
+    if (pass_strength < 1) {
+      return res.status(400).send({data: 'Password too weak'});
+    }
 
-    const password = bcrypt.hashSync(req.body.password, 10);
+    const password = bcrypt.hashSync(password_plaintext, 10);
 
     const newUser = new User({
       username,
