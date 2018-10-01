@@ -1,73 +1,76 @@
-const User = require('../../models/user');
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const User = require('../../models/user');
+const config = require('../config/config');
 
-function validate_email(email) {
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-    return true;
-  }
-  alert("You have entered an invalid email address!")
-  return false;
+function jwtSignUser(user) {
+  const ONE_DAY = 60 * 60 * 24;
+  return jwt.sign(user, config.authentication.jwtSecret, {
+    expiresIn: ONE_DAY,
+  });
 }
-
 
 module.exports = {
   // Simple register function
   // TODO Add functionality and validation
   async register(req, res) {
-    var username = req.body.username;
-    var email = req.body.email;
-    
-    if(!validate_email(email)) {
-      return res.status(400).send({data: "Invalid email address"});
-    }
-    var password = bcrypt.hashSync(req.body.password, 10);
+    const { username, email } = req.body;
 
-    var new_user = new User({
-      username: username,
-      email: email,
-      password: password
-    })
+    const password = bcrypt.hashSync(req.body.password, 10);
 
-    new_user.save(function (error) {
+    const newUser = new User({
+      username,
+      email,
+      password,
+    });
+
+    await newUser.save((error) => {
       if (error) {
         console.error(error);
       }
-      console.log(username + " added");
+      console.log(`User ${username} added`);
       res.send({
         success: true,
-        message: "New user " + username + " added"
-      })
-    })
+        message: `User ${username} added`,
+      });
+    });
   },
 
   async login(req, res) {
-    var username = req.body.username;
-    var password = req.body.password;
+    const { username, password } = req.body;
     console.log('login attempt');
-    User.findOne({username: username}, function(err, user) {
-      if (err) {
+    User.findOne({ username }, (error, user) => {
+      if (error) {
         console.log(error);
         return res.status(500).send({
-          error: error
+          error,
         });
       }
 
       // Authentication failed
       if (!user) {
+        console.log(`${username} not found`);
         return res.status(403).send({
-          error: 'Username or password incorrect'
+          error: 'Username or password incorrect',
         });
       }
-      bcrypt.compare(password, user.password, function (err, result) {
-        if (result) {
-          console.log('Login successful');
-          return res.status(200).send();
-        } else {
+      console.log(`${user.username} exists`);
+      bcrypt.compare(password, user.password, (error) => {
+        if (error) {
           return res.status(403).send({
-            error: 'Username or password incorrect'
-          })
+            error: 'Login error',
+          });
         }
-      })
-    })
-  }
-}
+        // successful sign in
+        console.log(`${user.username} has logged in successfully`);
+        const foundUser = user.toJSON();
+        const token = jwtSignUser(foundUser);
+        console.log(`token is ${token}`);
+        return res.status(200).send({
+          user: foundUser,
+          token,
+        });
+      });
+    });
+  },
+};

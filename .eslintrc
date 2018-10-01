@@ -3,23 +3,13 @@
         "es6": true,
         "node": true
     },
-    "extends": "eslint:recommended",
+    "extends": "airbnb-base",
     "parserOptions": {
         "sourceType": "module"
     },
     "rules": {
-        "comma-dangle": ["warn", "always-multiline"],
-        "eqeqeq": "warn",
-        "func-names": "off",
-        "indent": ["off", 2],
         "no-console": "off",
-        "no-empty": "off",
-        "no-inner-declarations": "off",
-        "no-redeclare": "warn",
-        "no-restricted-globals": ["error", "Promise"],
-        "no-undef": "warn",
-        "no-unused-vars": ["warn", {"argsIgnorePattern": "^_|^var_args$"}],
-        "quotes": ["warn", "single", "avoid-escape"],
-        "semi": ["error", "always"]
+        "consistent-return": "off",
+        "no-shadow": "off" 
     }
 }

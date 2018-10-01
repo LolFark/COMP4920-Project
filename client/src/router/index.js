@@ -18,7 +18,7 @@ export default new Router({
     },
     {
       path: '/courses/new',
-      name: 'AddCourse',
+      name: 'NewCourse',
       component: NewCourse
     },
     {
