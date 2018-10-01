@@ -1,6 +1,6 @@
 import Api from '@/services/Api'
 export default {
-  post_comment (params) {
+  getComments (params) {
     return Api().post('comment', params)
   }
 }
