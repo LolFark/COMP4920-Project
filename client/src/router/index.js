@@ -18,7 +18,7 @@ export default new Router({
     },
     {
       path: '/courses/new',
-      name: 'AddCourse',
+      name: 'NewCourse',
       component: NewCourse
     },
     {
@@ -27,10 +27,12 @@ export default new Router({
     },
     {
       path: '/register',
+      name: 'Register',
       component: Register
     },
     {
       path: '/login',
+      name: 'Login',
       component: Login
     }
   ]
