@@ -11,6 +11,8 @@ function jwtSignUser(user) {
   });
 }
 
+const saltRounds = 10;
+
 module.exports = {
   // Simple register function
   // TODO Add functionality and validation
@@ -22,7 +24,8 @@ module.exports = {
       return res.status(400).send({data: 'Password too weak'});
     }
 
-    const password = bcrypt.hashSync(password_plaintext, 10);
+    const password = bcrypt.hashSync(req.body.password, saltRounds);
+
 
     const newUser = new User({
       username,
