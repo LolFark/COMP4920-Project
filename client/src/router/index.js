@@ -5,6 +5,7 @@ import NewCourse from '@/components/NewCourse'
 import CoursePage from '@/components/CoursePage'
 import Register from '@/components/Register'
 import Login from '@/components/Login'
+import UserPage from '@/components/UserPage'
 
 Vue.use(Router)
 
@@ -34,6 +35,10 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    },
+    {
+      path: '/user/:username',
+      component: UserPage
     }
   ]
 })
