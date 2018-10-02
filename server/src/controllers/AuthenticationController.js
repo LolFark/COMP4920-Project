@@ -1,5 +1,6 @@
 const User = require('../../models/user');
 const bcrypt = require('bcryptjs');
+const check_zid = require('../../../scripts/account-check')
 
 function validate_email(email) {
  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
@@ -7,6 +8,10 @@ function validate_email(email) {
   }
   alert("You have entered an invalid email address!")
   return false;
+}
+
+function extract_username(email) {
+  return email.match(/^([^@]*)@/)[1];
 }
 
 
@@ -18,10 +23,13 @@ module.exports = {
     var email = req.body.email;
     
     if(!validate_email(email)) {
-      return res.status(400).send({data: "Invalid email address"});
+      return res.status(400).send({data: 'Invalid email address'});
+    }
+    var zid = extract_username(email);
+    if(!check_zid(zid)) {
+      return res.status(400).send({data: 'zID does not exist in the system'})
     }
     var password = bcrypt.hashSync(req.body.password, 10);
-
     var new_user = new User({
       username: username,
       email: email,
