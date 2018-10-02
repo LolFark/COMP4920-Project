@@ -29,8 +29,7 @@ export default {
     return {
       name: 'course_page',
       code: this.$route.params.id,
-      course: [],
-      blah: ''
+      course: []
     }
   },
   mounted () {
