@@ -27,10 +27,12 @@ export default new Router({
     },
     {
       path: '/register',
+      name: 'Register',
       component: Register
     },
     {
       path: '/login',
+      name: 'Login',
       component: Login
     }
   ]
