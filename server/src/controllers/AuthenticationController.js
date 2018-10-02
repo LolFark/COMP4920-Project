@@ -2,6 +2,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../../models/user');
 const config = require('../config/config');
+const zxcvbn = require('zxcvbn');
 
 function jwtSignUser(user) {
   const ONE_DAY = 60 * 60 * 24;
@@ -17,8 +18,14 @@ module.exports = {
   // TODO Add functionality and validation
   async register(req, res) {
     const { username, email } = req.body;
+    var password_plaintext = req.body.password;
+    var pass_strength = zxcvbn(password_plaintext).score;
+    if (pass_strength < 1) {
+      return res.status(400).send({data: 'Password too weak'});
+    }
 
     const password = bcrypt.hashSync(req.body.password, saltRounds);
+
 
     const newUser = new User({
       username,
@@ -57,21 +64,28 @@ module.exports = {
         });
       }
       console.log(`${user.username} exists`);
-      bcrypt.compare(password, user.password, (error) => {
-        if (error) {
+      bcrypt.compare(password, user.password, (err, res2) => {
+        if (err) {
           return res.status(403).send({
-            error: 'Login error',
+            error: err,
           });
         }
-        // successful sign in
-        console.log(`${user.username} has logged in successfully`);
-        const foundUser = user.toJSON();
-        const token = jwtSignUser(foundUser);
-        console.log(`token is ${token}`);
-        return res.status(200).send({
-          user: foundUser,
-          token,
-        });
+        if (res2 === false) {
+          // Unsuccessful sign in
+          return res.status(403).send({
+            error: `Login error`,
+          });
+        } else {
+          // Successful sign in
+          console.log(`${user.username} has logged in successfully`);
+          const foundUser = user.toJSON();
+          const token = jwtSignUser(foundUser);
+          console.log(`token is ${token}`);
+          return res.status(200).send({
+            user: foundUser,
+            token,
+          });
+        }
       });
     });
   },
