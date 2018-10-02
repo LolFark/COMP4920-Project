@@ -1,6 +1,7 @@
 const CourseController = require('./controllers/CourseController');
 const AuthenticationController = require('./controllers/AuthenticationController');
 const CommentController = require('./controllers/CommentController');
+const UserController = require('./controllers/UserController');
 
 module.exports = (app) => {
   app.get('/courses', CourseController.getCourses);
