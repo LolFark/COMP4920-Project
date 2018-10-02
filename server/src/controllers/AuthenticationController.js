@@ -61,21 +61,28 @@ module.exports = {
         });
       }
       console.log(`${user.username} exists`);
-      bcrypt.compare(password, user.password, (error) => {
-        if (error) {
+      bcrypt.compare(password, user.password, (err, res2) => {
+        if (err) {
           return res.status(403).send({
-            error: 'Login error',
+            error: err,
           });
         }
-        // successful sign in
-        console.log(`${user.username} has logged in successfully`);
-        const foundUser = user.toJSON();
-        const token = jwtSignUser(foundUser);
-        console.log(`token is ${token}`);
-        return res.status(200).send({
-          user: foundUser,
-          token,
-        });
+        if (res2 === false) {
+          // Unsuccessful sign in
+          return res.status(403).send({
+            error: `Login error`,
+          });
+        } else {
+          // Successful sign in
+          console.log(`${user.username} has logged in successfully`);
+          const foundUser = user.toJSON();
+          const token = jwtSignUser(foundUser);
+          console.log(`token is ${token}`);
+          return res.status(200).send({
+            user: foundUser,
+            token,
+          });
+        }
       });
     });
   },
