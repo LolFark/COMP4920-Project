@@ -1,6 +1,7 @@
 const bcrypt = require('bcryptjs');
-const check_zid = require('../../../scripts/account-check')
 const jwt = require('jsonwebtoken');
+const zxcvbn = require('zxcvbn');
+const checkZid = require('../../../scripts/account-check')
 const User = require('../../models/user');
 const config = require('../config/config');
 
@@ -11,32 +12,34 @@ function jwtSignUser(user) {
   });
 }
 
-function extract_username(email) {
+function extractUsername(email) {
   return email.match(/^([^@]*)@/)[1];
 }
+
+const saltRounds = 10;
 
 module.exports = {
   // Simple register function
   // TODO Add functionality and validation
   async register(req, res) {
-    var username = req.body.username;
-    var email = req.body.email;
-    
-    if(!validate_email(email)) {
-      return res.status(400).send({data: 'Invalid email address'});
+    const { username, email } = req.body;
+    const passwordPlaintext = req.body.password;
+    const passStrength = zxcvbn(passwordPlaintext).score;
+    if (passStrength < 1) {
+      return res.status(400).send({data: 'Password too weak'});
     }
-    var zid = extract_username(email);
-    if(!check_zid(zid)) {
+    const zid = extractUsername(email);
+    if (!checkZid(zid)) {
       return res.status(400).send({data: 'zID does not exist in the system'})
     }
-    var password = bcrypt.hashSync(req.body.password, 10);
-    var new_user = new User({
-      username: username,
-      email: email,
-      password: password
-    })
+    const password = bcrypt.hashSync(req.body.password, saltRounds);
+    const newUser = new User({
+      username,
+      email,
+      password,
+    });
 
-    await new_user.save((error) => {
+    await newUser.save((error) => {
       if (error) {
         console.error(error);
       }
@@ -67,21 +70,28 @@ module.exports = {
         });
       }
       console.log(`${user.username} exists`);
-      bcrypt.compare(password, user.password, (error) => {
-        if (error) {
+      bcrypt.compare(password, user.password, (err, res2) => {
+        if (err) {
           return res.status(403).send({
-            error: 'Login error',
+            error: err,
           });
         }
-        // successful sign in
-        console.log(`${user.username} has logged in successfully`);
-        const foundUser = user.toJSON();
-        const token = jwtSignUser(foundUser);
-        console.log(`token is ${token}`);
-        return res.status(200).send({
-          user: foundUser,
-          token,
-        });
+        if (res2 === false) {
+          // Unsuccessful sign in
+          return res.status(403).send({
+            error: `Login error`,
+          });
+        } else {
+          // Successful sign in
+          console.log(`${user.username} has logged in successfully`);
+          const foundUser = user.toJSON();
+          const token = jwtSignUser(foundUser);
+          console.log(`token is ${token}`);
+          return res.status(200).send({
+            user: foundUser,
+            token,
+          });
+        }
       });
     });
   },

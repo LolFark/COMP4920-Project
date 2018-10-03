@@ -1,18 +1,18 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
-var CommentSchema = new Schema({
-    user: {type: Schema.Types.ObjectId, ref: 'User'},
-    course: {type: Schema.Types.ObjectId, ref: 'Course'},
-    liked_users: [{type: Schema.Types.ObjectId, ref: 'User'}],
-    created: {type: Date},
-    edited: {type: Boolean},
-    replies: [{type: Schema.Types.ObjectId, ref: 'Comment'}],
-    root: {type: Boolean},
-    overall_rating: {type: Number},
-    difficulty: {type: Number},
-    content: String
-})
+const { Schema } = mongoose;
 
-var Comment = mongoose.model("Comment", CommentSchema);
+const CommentSchema = new Schema({
+  user: { type: Schema.Types.ObjectId, ref: 'User' },
+  course: { type: Schema.Types.ObjectId, ref: 'Course' },
+  liked_users: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  created: { type: Date },
+  edited: { type: Boolean },
+  replies: [{ type: Schema.Types.ObjectId, ref: 'Reply' }],
+  overall_rating: { type: Number },
+  difficulty: { type: Number },
+  content: String,
+});
+
+const Comment = mongoose.model('Comment', CommentSchema);
 module.exports = Comment;
