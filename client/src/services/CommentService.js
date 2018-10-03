@@ -3,7 +3,7 @@ export default {
   addComment (params) {
     return Api().post('addComment', params)
   },
-  getComments () {
-    return Api().get('comment')
+  getComments (param) {
+    return Api().post('comment', param)
   }
 }
