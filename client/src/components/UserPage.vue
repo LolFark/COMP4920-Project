@@ -21,23 +21,29 @@
     <p v-else-if="message.length"><b>{{ message }}</b></p>
     <div v-if="change_password === true">
       <label for="old_password">Old password: </label>
-      <input type="password" id="old_password" value="" v-model="old_password">
+      <input type="password" id="old_password" v-model="old_password">
       <br>
       <label for="new_password">New password: </label>
-      <input type="password" id="new_password" value="" v-model="new_password">
+      <input type="password" id="new_password" v-model="new_password">
       <br>
       <v-btn v-on:click="cancel()">Cancel</v-btn>
       <v-btn v-on:click="changePassword()">Save</v-btn>
     </div>
     <div v-else-if="edit === true">
-      GOODBYE<br>
+      <label for="display_name">Display name: </label>
+      <input type="text" id="display_name" v-model="display_name">
+      <br>
+      <label for="description">Description: </label>
+      <br>
+      <textarea id="description" v-model="description"></textarea>
+      <br>
       <v-btn v-on:click="cancel()">Cancel</v-btn>
-      <v-btn>Save</v-btn>
+      <v-btn v-on:click="changeProfile()">Save</v-btn>
     </div>
     <div v-else>
       <p v-if="$store.state.authenticated && $store.state.user.username === user.username">
         <v-btn v-on:click="startChangePassword()">Change Password</v-btn>
-        <v-btn v-on:click="startEdit()">Edit</v-btn>
+        <v-btn v-on:click="startChangeProfile()">Edit</v-btn>
       </p>
     </div>
   </div>
@@ -51,10 +57,15 @@ export default {
       name: 'user_page',
       username: this.$route.params.username,
       user: [],
-      change_password: false,
+
       edit: false,
+      display_name: '',
+      description: '',
+
+      change_password: false,
       old_password: '',
       new_password: '',
+
       message: '',
       errors: []
     }
@@ -68,31 +79,56 @@ export default {
         username: this.username
       })
       this.user = response.data.user
-    },
-    async changePassword () {
-      this.errors = []
-      const response = await UserService.updatePassword({
-        username: this.$store.state.user.username,
-        old_password: this.old_password,
-        new_password: this.new_password
-      })
-      this.user = response.data.user
-      if (response.data.error) {
-        this.errors.push(response.data.error)
-      } else {
-        this.message = response.data.message
-        this.cancel()
-      }
+      this.display_name = this.user.display_name
+      this.description = this.user.description
     },
     startChangePassword () {
       this.change_password = true
       this.edit = false
       this.message = ''
     },
-    startEdit () {
+    async changePassword () {
+      this.errors = []
+      if (this.old_password === this.new_password) {
+        this.errors.push('No changes in password')
+      } else {
+        const response = await UserService.updatePassword({
+          username: this.$store.state.user.username,
+          old_password: this.old_password,
+          new_password: this.new_password
+        })
+        this.user = response.data.user
+        if (response.data.error) {
+          this.errors.push(response.data.error)
+        } else {
+          this.message = response.data.message
+          this.cancel()
+        }
+      }
+    },
+    startChangeProfile () {
       this.edit = true
       this.change_password = false
       this.message = ''
+    },
+    async changeProfile () {
+      this.errors = []
+      if (this.display_name === this.user.display_name && this.description === this.user.description) {
+        this.errors.push('No changes in profile')
+      } else {
+        const response = await UserService.updateProfile({
+          username: this.$store.state.user.username,
+          display_name: this.display_name,
+          description: this.description
+        })
+        this.user = response.data.user
+        if (response.data.error) {
+          this.errors.push(response.data.error)
+        } else {
+          this.message = response.data.message
+          this.cancel()
+        }
+      }
     },
     cancel () {
       this.edit = false
@@ -100,6 +136,8 @@ export default {
       this.old_password = ''
       this.new_password = ''
       this.errors = []
+      this.display_name = this.user.display_name
+      this.description = this.user.description
     }
   }
 }
