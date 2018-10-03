@@ -1,14 +1,19 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const zxcvbn = require('zxcvbn');
+const checkZid = require('../../../scripts/account-check');
 const User = require('../../models/user');
 const config = require('../config/config');
-const zxcvbn = require('zxcvbn');
 
 function jwtSignUser(user) {
   const ONE_DAY = 60 * 60 * 24;
   return jwt.sign(user, config.authentication.jwtSecret, {
     expiresIn: ONE_DAY,
   });
+}
+
+function extractUsername(email) {
+  return email.match(/^([^@]*)@/)[1];
 }
 
 const saltRounds = 10;
@@ -18,15 +23,17 @@ module.exports = {
   // TODO Add functionality and validation
   async register(req, res) {
     const { username, email } = req.body;
-    var password_plaintext = req.body.password;
-    var pass_strength = zxcvbn(password_plaintext).score;
-    if (pass_strength < 1) {
-      return res.status(400).send({data: 'Password too weak'});
+    const passwordPlaintext = req.body.password;
+    const passStrength = zxcvbn(passwordPlaintext).score;
+    if (passStrength < 1) {
+      return res.status(400).send({ data: 'Password too weak' });
     }
-
+    const zid = extractUsername(email);
+    const isValidZid = await checkZid(zid);
+    if (!isValidZid) {
+      return res.status(400).send({ data: 'zID does not exist in the system' });
+    }
     const password = bcrypt.hashSync(req.body.password, saltRounds);
-
-
     const newUser = new User({
       username,
       email,
