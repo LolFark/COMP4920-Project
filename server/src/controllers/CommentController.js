@@ -2,7 +2,7 @@ const Comment = require('../../models/comment');
 
 module.exports = {
   async getComments(req, res) {
-    Comment.findAll({ code: req.body.code }, 'user content', (err, comments) => {
+    Comment.find({ course: req.body.course_id }, 'user content', (err, comments) => {
       if (err) {
         console.log(err);
         return res.status(404).send({

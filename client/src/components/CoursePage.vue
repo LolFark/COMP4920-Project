@@ -46,7 +46,6 @@ export default {
   },
   mounted () {
     this.getCourse()
-    this.getComments()
   },
   methods: {
     async getCourse () {
@@ -58,6 +57,7 @@ export default {
         this.course.grad_level = this.course.grad_level.charAt(0).toUpperCase() + this.course.grad_level.substr(1)
         this.makeLink()
         this.makeDotPoints()
+        this.getComments()
       } catch (error) {
         // Course not found. Do nothing
       }
@@ -89,7 +89,7 @@ export default {
       }
     },
     async getComments () {
-      const response = await CourseService.getComments({ code: this.code })
+      const response = await CommentService.getComments({ course_id: this.course._id })
       this.comments = response.data.comments
     },
     async addComment () {
