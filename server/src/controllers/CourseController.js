@@ -15,7 +15,7 @@ module.exports = {
 
   async getSpecificCourse(req, res) {
     const { code } = req.body;
-    Course.findOne({ code }, 'code name pre_reqs co_reqs exclusions faculty course_des handbook_url', (error, course) => {
+    Course.findOne({ code }, 'code name grad_level pre_reqs co_reqs exclusions faculty course_des handbook_url', (error, course) => {
 
       if (error) {
         console.error(error);
