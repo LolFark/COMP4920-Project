@@ -1,13 +1,10 @@
 const mongoose = require('mongoose');
-// const bcrypt = require('bcryptjs');
 
 const { Schema } = mongoose;
 
-// const SALT_FACTOR = 10;
-
 const UserSchema = new Schema({
-  username: { type: String },
-  email: { type: String },
+  username: { type: String, unique: true },
+  email: { type: String, unique: true },
   password: { type: String },
   comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
   liked_comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
