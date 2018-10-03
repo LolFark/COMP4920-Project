@@ -16,25 +16,37 @@
       <!-- <tr class="course_handbookurl"><b>Handbook URL: </b><a v-bind:href="course.handbook_url">Link</a></tr> -->
     </table>
     <br>
-    <textarea placeholder="Add a comment"></textarea>
+    <div v-if="$store.state.authenticated">
+      <form>
+        <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
+        <input type="button" value="submit" @click=addComment>
+      </form>
+    </div>
+    <div id="comment-section">
+      <ul v-for="comment in comments" v-bind:key="comment">
+      <li>{{comment.content}}</li>
+    </ul>
+    </div>
     <br>
   </div>
 </template>
 
 <script>
 import CourseService from '@/services/CourseService'
-import './Comment'
+import CommentService from '@/services/CommentService'
 export default {
   data () {
     return {
       name: 'course_page',
       code: this.$route.params.id,
-      course: [],
-      blah: ''
+      course: '',
+      feedback: '', // feedback by the current user
+      comments: [] // previously submitted comments for the course
     }
   },
   mounted () {
     this.getCourse()
+    this.getComments()
   },
   methods: {
     async getCourse () {
@@ -75,6 +87,18 @@ export default {
       if (!this.course.course_des.match(/\.$/)) {
         this.course.course_des = this.course.course_des.replace(/(.*)$/, '$1</li></ul>')
       }
+    },
+    async getComments () {
+      const response = await CourseService.getComments({ code: this.code })
+      this.comments = response.data.comments
+    },
+    async addComment () {
+      await CommentService.addComment({
+        user: this.$store.state.user,
+        course: this.course,
+        created: Date.now(),
+        content: this.feedback
+      })
     }
   }
 }
