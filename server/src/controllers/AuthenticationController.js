@@ -17,7 +17,7 @@ module.exports = {
   // Simple register function
   // TODO Add functionality and validation
   async register(req, res) {
-    const { username, email } = req.body;
+    const { username, email, description } = req.body;
     var password_plaintext = req.body.password;
     var pass_strength = zxcvbn(password_plaintext).score;
     if (pass_strength < 1) {
@@ -29,8 +29,10 @@ module.exports = {
 
     const newUser = new User({
       username,
+      display_name: username,
       email,
       password,
+      description
     });
 
     await newUser.save((error) => {
