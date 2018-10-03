@@ -16,4 +16,5 @@ module.exports = (app) => {
   app.get('/users', UserController.getUsers);
   app.post('/user', UserController.getUser);
   app.post('/updatePassword', UserController.updatePassword);
+  app.post('/updateProfile', UserController.updateProfile);
 };

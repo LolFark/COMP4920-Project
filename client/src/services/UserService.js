@@ -8,5 +8,8 @@ export default {
   },
   updatePassword (params) {
     return Api().post('updatePassword', params)
+  },
+  updateProfile (params) {
+    return Api().post('updateProfile', params)
   }
 }
