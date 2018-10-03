@@ -15,4 +15,5 @@ module.exports = (app) => {
   app.post('/deletecomment', CommentController.deleteComment);
   app.get('/users', UserController.getUsers);
   app.post('/user', UserController.getUser);
+  app.post('/updatePassword', UserController.updatePassword);
 };
