@@ -27,7 +27,6 @@ module.exports = {
   },
   async updatePassword(req, res) {
     const { username, old_password, new_password } = req.body;
-    console.log(`old: ${old_password}, new: ${new_password} and user: ${username}`);
     User.findOne({ username }, 'username display_name email password description comments liked_comments isAdmin', (error, user) => {
       if (error) {
         console.error(error);
@@ -35,7 +34,7 @@ module.exports = {
       bcrypt.compare(old_password, user.password, (err2, res2) => {
         if (err2) {
           return res.status(403).send({
-            error: err2,
+            error: err2
           });
         }
         if (res2 === false) {
@@ -50,16 +49,32 @@ module.exports = {
           console.log(`Updating database with new password`);
           const password = bcrypt.hashSync(new_password, saltRounds);
           // Change password in database
-          User.findOneAndUpdate({ username }, { password }, (err3, updated_user) => {
+          User.findOneAndUpdate({ username }, { password }, { new: true }, (err3, updated_user) => {
             if (err3) {
-              console.log(err3)
+              console.log(err3);
             }
             return res.send({
               user: updated_user,
               message: 'Password successfully changed.'
-            })
+            });
           });
         }
+      });
+    });
+  },
+  async updateProfile(req, res) {
+    const { username, display_name, description } = req.body;
+    console.log(`Updating database with new profile data`);
+    User.findOneAndUpdate({ username }, { display_name, description }, { new: true }, (error, updated_user) => {
+      if (error) {
+        console.log(error);
+        return res.send({
+          error
+        });
+      }
+      return res.send({
+        user: updated_user,
+        message: 'Profile successfully changed.'
       });
     });
   }
