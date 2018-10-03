@@ -26,7 +26,6 @@ module.exports = {
 
     const password = bcrypt.hashSync(req.body.password, saltRounds);
 
-
     const newUser = new User({
       username,
       email,
