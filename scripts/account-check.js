@@ -32,12 +32,9 @@ module.exports = async function checkZid(zid) {
   const cmd = spawn(commandToRun, args);
   cmd.stdout.setEncoding('utf8');
   cmd.stderr.setEncoding('utf8');
-  let result = false;
-  await cmd.stdout.on('data', function (_data) {
-    result = true;
+  return cmd.stdout.on('data', () => {
+    console.log('AAAAAAAAAAAAAAAAAAAAAAAAAA');
+    // result = true;
+    return Promise.resolve(true);
   });
-  cmd.stderr.on('data', function(_data) {
-    result = false;
-  });
-  return result;
 };

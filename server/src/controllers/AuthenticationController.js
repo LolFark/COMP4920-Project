@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const zxcvbn = require('zxcvbn');
-const checkZid = require('../../../scripts/account-check')
+const checkZid = require('../../../scripts/account-check');
 const User = require('../../models/user');
 const config = require('../config/config');
 
@@ -26,11 +26,12 @@ module.exports = {
     const passwordPlaintext = req.body.password;
     const passStrength = zxcvbn(passwordPlaintext).score;
     if (passStrength < 1) {
-      return res.status(400).send({data: 'Password too weak'});
+      return res.status(400).send({ data: 'Password too weak' });
     }
     const zid = extractUsername(email);
-    if (!checkZid(zid)) {
-      return res.status(400).send({data: 'zID does not exist in the system'})
+    const isValidZid = await checkZid(zid);
+    if (!isValidZid) {
+      return res.status(400).send({ data: 'zID does not exist in the system' });
     }
     const password = bcrypt.hashSync(req.body.password, saltRounds);
     const newUser = new User({
