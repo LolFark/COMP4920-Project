@@ -6,7 +6,12 @@
         <option value="name">Course Name</option>
         <option value="faculty">Faculty</option>
       </select>
-      <input type="text" v-model="search" placeholder="Search Courses">
+      <v-flex xs12 sm6 d-flex>
+          <v-select
+            :items="items"
+            label="Search Course"
+          ></v-select>
+      </v-flex>
       <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Add Course</router-link>
       <p>
 
