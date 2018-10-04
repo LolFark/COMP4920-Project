@@ -30,6 +30,8 @@
             <input type="button" value="Delete" @click=deleteComment(index)>
           </div>
         </ul>
+        <p v-if="cmtDeleteSuccess"> Comment Deleted  </p>
+        <p v-if="!cmtDeleteSuccess"> Comment could not be deleted  </p>
       </div>
     </div>
     <br>
@@ -46,7 +48,8 @@ export default {
       code: this.$route.params.id,
       course: '',
       feedback: '', // feedback by the current user
-      comments: [] // previously submitted comments for the course
+      comments: [], // previously submitted comments for the course
+      cmtDeleteSuccess: ''
     }
   },
   mounted () {
@@ -107,10 +110,16 @@ export default {
       })
     },
     async deleteComment (commentIndex) {
-      await CommentService.deleteComment({
+      return CommentService.deleteComment({
         user: this.$store.state.user,
         course: this.course,
         content: this.comments[commentIndex].content
+      }).then((resp) => {
+        this.cmtDeleteSuccess = true
+        // this.flash('SUCCESS!', 'success')
+      }).catch((err) => {
+        this.cmtDeleteSuccess = false
+        console.log('Could not delete this shit')
       })
     }
   }
