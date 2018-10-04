@@ -36,12 +36,23 @@ module.exports = {
     await newUser.save((error) => {
       if (error) {
         console.error(error);
+        console.log(error.errmsg);
+        if (error.errmsg.match('email')) {
+          res.send({
+            error: 'Email already exists',
+          });
+        } else if (error.errmsg.match('username')) {
+          res.send({
+            error: 'Username already exists',
+          });
+        }
+      } else {
+        console.log(`User ${username} added`);
+        res.send({
+          success: true,
+          message: `User ${username} added`,
+        });
       }
-      console.log(`User ${username} added`);
-      res.send({
-        success: true,
-        message: `User ${username} added`,
-      });
     });
   },
 

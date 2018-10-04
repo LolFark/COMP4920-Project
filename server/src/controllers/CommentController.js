@@ -2,7 +2,7 @@ const Comment = require('../../models/comment');
 
 module.exports = {
   async getComments(req, res) {
-    Comment.find({ course: req.body.course_id }, 'user content', (err, comments) => {
+    Comment.find({ course: req.body.course_id }, 'user content', { new: true }, (err, comments) => {
       if (err) {
         console.log(err);
         return res.status(404).send({
@@ -39,6 +39,7 @@ module.exports = {
       res.send({
         status: true,
         message: `Comment posted to ${course}`,
+        comment: content,
       });
     });
   },
