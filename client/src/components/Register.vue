@@ -29,9 +29,7 @@
             <input id="password-confirmation" type="password" v-model="password_confirmation" >
         </div>
         <div>
-            <button type="submit" @click="register">
-                Register
-            </button>
+            <v-btn v-on:click="register()">Register</v-btn>
         </div>
       </div>
     </form>
@@ -58,7 +56,7 @@ export default {
   },
 
   methods: {
-    register: async function () {
+    register: async function (e) {
       this.errors = []
       if (!this.username) {
         this.errors.push('Name required.')
@@ -80,6 +78,7 @@ export default {
         })
         this.errors.push(response.data.error)
       }
+      e.preventDefault()
     },
     isStudentEmail: function (email) {
       var re = /edu\.au$/
