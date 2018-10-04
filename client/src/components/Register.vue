@@ -76,8 +76,17 @@ export default {
           email: this.email,
           password: this.password
         })
-        this.errors.push(response.data.error)
+        if (response.data.error) {
+          this.errors.push(response.data.error)
+        } else {
+          this.$router.push({
+            name: 'Courses'
+          })
+        }
       }
+      // this.$router.push({
+      //   name: 'Courses'
+      // })
       e.preventDefault()
     },
     isStudentEmail: function (email) {

@@ -16,16 +16,18 @@
       <!-- <tr class="course_handbookurl"><b>Handbook URL: </b><a v-bind:href="course.handbook_url">Link</a></tr> -->
     </table>
     <br>
+    <div id="Comments-component">
     <div v-if="$store.state.authenticated">
-      <form>
-        <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
-        <input type="button" value="submit" @click=addComment>
-      </form>
-    </div>
-    <div id="comment-section">
-      <ul v-for="comment in comments" v-bind:key="comment">
-      <li>{{comment.content}}</li>
-    </ul>
+        <form>
+          <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
+          <input type="button" value="submit" @click=addComment>
+        </form>
+      </div>
+      <div id="comment-section">
+        <ul v-for="comment in comments" v-bind:key="comment">
+        <li>{{comment.content}}</li>
+      </ul>
+      </div>
     </div>
     <br>
   </div>
@@ -92,6 +94,7 @@ export default {
       const response = await CommentService.getComments({ course_id: this.course._id })
       this.comments = response.data.comments
     },
+    // TODO Display new comments after submitting
     async addComment () {
       await CommentService.addComment({
         user: this.$store.state.user,
