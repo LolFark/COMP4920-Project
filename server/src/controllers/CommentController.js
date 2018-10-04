@@ -46,7 +46,7 @@ module.exports = {
 
   async deleteComment(req, res) {
     const { user, course, content } = req.body;
-    await Comment.deleteOne({ user, course, content }, (err) => {
+    return Comment.deleteOne({ user, course, content }, (err) => {
       if (err) {
         console.log(`failed to delete comment by ${user} from ${course}`);
         return res.status(400).send({
