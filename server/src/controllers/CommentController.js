@@ -49,12 +49,12 @@ module.exports = {
     await Comment.deleteOne({ user, course, content }, (err) => {
       if (err) {
         console.log(`failed to delete comment by ${user} from ${course}`);
-        res.send({
+        return res.status(400).send({
           err,
         });
       }
       console.log(`comment by ${user} on ${course} deleted successfully`);
-      res.send({
+      return res.send({
         success: true,
       });
     });

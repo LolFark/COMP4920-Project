@@ -5,5 +5,8 @@ export default {
   },
   getComments (param) {
     return Api().post('comment', param)
+  },
+  deleteComment (param) {
+    return Api().post('deleteComment', param)
   }
 }

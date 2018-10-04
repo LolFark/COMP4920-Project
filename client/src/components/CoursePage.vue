@@ -24,9 +24,12 @@
         </form>
       </div>
       <div id="comment-section">
-        <ul v-for="comment in comments" v-bind:key="comment">
-        <li>{{comment.content}}</li>
-      </ul>
+        <ul v-for="(comment, index) in comments" v-bind:key="comment">
+          <div>
+            <li>{{comment.content}}</li>
+            <input type="button" value="Delete" @click=deleteComment(index)>
+          </div>
+        </ul>
       </div>
     </div>
     <br>
@@ -101,6 +104,13 @@ export default {
         course: this.course,
         created: Date.now(),
         content: this.feedback
+      })
+    },
+    async deleteComment (commentIndex) {
+      await CommentService.deleteComment({
+        user: this.$store.state.user,
+        course: this.course,
+        content: this.comments[commentIndex].content
       })
     }
   }
