@@ -72,7 +72,7 @@ module.exports = {
       course,
       created,
       content,
-    }, { content: newContent }, (err) => {
+    }, { content: newContent }, { new: true }, (err) => {
       if (err) {
         console.log(`failed to edit comment by ${user} on ${course}`);
       }
