@@ -26,6 +26,9 @@
       <label for="new_password">New password: </label>
       <input type="password" id="new_password" v-model="new_password">
       <br>
+      <label for="confirm_password">Confirm password: </label>
+      <input type="password" id="confirm_password" v-model="confirm_password">
+      <br>
       <v-btn v-on:click="cancel()">Cancel</v-btn>
       <v-btn v-on:click="changePassword()">Save</v-btn>
     </div>
@@ -65,6 +68,7 @@ export default {
       change_password: false,
       old_password: '',
       new_password: '',
+      confirm_password: '',
 
       message: '',
       errors: []
@@ -91,6 +95,8 @@ export default {
       this.errors = []
       if (this.old_password === this.new_password) {
         this.errors.push('No changes in password')
+      } else if (this.new_password !== this.confirm_password) {
+        this.errors.push('Please confirm new password')
       } else {
         const response = await UserService.updatePassword({
           username: this.$store.state.user.username,
