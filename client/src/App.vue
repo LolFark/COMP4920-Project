@@ -16,6 +16,7 @@
             <v-icon>account_circle</v-icon>
           </v-btn>
         </router-link>
+        <v-btn v-if="$store.state.authenticated" @click="$router.push(/user/ + $store.state.user.username)">{{ $store.state.user.username}}</v-btn>
         <v-btn v-if="$store.state.authenticated" @click="logout">Log out</v-btn>
       </v-toolbar>
       <main>
