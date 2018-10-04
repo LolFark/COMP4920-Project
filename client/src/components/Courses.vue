@@ -1,6 +1,5 @@
 <template>
   <div class="courses">
-    <p v-for="user in users" v-bind:key="user" v-on:click="navigate(/user/ + user.username)">{{ user.username }}</p>
     <select v-model="selected">
       <option value="code">Course Code</option>
       <option value="name">Course Name</option>
@@ -67,9 +66,6 @@
 
 <script>
 import CourseService from '@/services/CourseService'
-// /// TEMPORARY START /////
-import UserService from '@/services/UserService'
-// /// TEMPORARY  END  /////
 export default {
   name: 'Courses',
   data () {
@@ -82,17 +78,10 @@ export default {
       allChecked: true,
       allLevels: ['0', '1', '2', '3', '4', '[5-9]'],
       levels: ['0', '1', '2', '3', '4', '[5-9]'],
-
-      // /// TEMPORARY START /////
-      users: []
-      // /// TEMPORARY  END  /////
     }
   },
   mounted () {
     this.getCourses()
-    // /// TEMPORARY START /////
-    this.getUsers()
-    // /// TEMPORARY  END  /////
   },
   updated () {
     this.alternate('thetable')
@@ -130,12 +119,6 @@ export default {
     check () {
       this.allChecked = false
     },
-    // /// TEMPORARY START /////
-    async getUsers () {
-      const response = await UserService.fetchUsers()
-      this.users = response.data.users
-    }
-    // /// TEMPORARY  END  /////
   },
   computed: {
     searchedCourses: function () {
