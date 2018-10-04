@@ -3,10 +3,10 @@
     <v-app>
       <v-toolbar fixed dark color="primary">
         <v-toolbar-title>
-          <router-link class="home" tag="span" :to="{ name: 'Courses'}">Communicourse</router-link>
+          <router-link class="home" tag="span" :to="{ name: 'Courses' }">Communicourse</router-link>
         </v-toolbar-title>
         <v-spacer></v-spacer>
-        <router-link :to="{ name: 'Register'}">
+        <router-link :to="{ name: 'Register' }">
           <v-btn icon v-if="!$store.state.authenticated">
             <v-icon>person_add</v-icon>
           </v-btn>
@@ -16,6 +16,7 @@
             <v-icon>account_circle</v-icon>
           </v-btn>
         </router-link>
+        <v-btn v-if="$store.state.authenticated" @click="$router.push(/user/ + $store.state.user.username)">{{ $store.state.user.username}}</v-btn>
         <v-btn v-if="$store.state.authenticated" @click="logout">Log out</v-btn>
       </v-toolbar>
       <main>

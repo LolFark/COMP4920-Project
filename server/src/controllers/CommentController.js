@@ -2,7 +2,7 @@ const Comment = require('../../models/comment');
 
 module.exports = {
   async getComments(req, res) {
-    Comment.findAll({ code: req.body.code }, (err, comments) => {
+    Comment.find({ course: req.body.course_id }, 'user content', (err, comments) => {
       if (err) {
         console.log(err);
         return res.status(404).send({
@@ -72,7 +72,7 @@ module.exports = {
       course,
       created,
       content,
-    }, { content: newContent }, (err) => {
+    }, { content: newContent }, { new: true }, (err) => {
       if (err) {
         console.log(`failed to edit comment by ${user} on ${course}`);
       }

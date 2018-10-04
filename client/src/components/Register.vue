@@ -1,37 +1,38 @@
 <template>
   <div>
     <h1>Sign up</h1>
-    <form id="register"
-    autocomplete="off">
+    <form id="register" autocomplete="off">
       <p v-if="errors.length">
         <b>Please correct the following error(s):</b>
         <ul>
           <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
         </ul>
       </p>
-            <label for="username">Username</label>
-            <div>
-                <input id="username" type="text" v-model="username" autofocus>
-            </div>
-
-            <label for="email" >E-Mail Address</label>
-            <div>
-                <input id="email" type="email" v-model="email" >
-            </div>
-            <label for="password">Password</label>
-            <div>
-                <vue-password v-model="password" classes="input"> </vue-password>
-            </div>
-            <label for="password-confirmation">Confirm Password</label>
-            <div>
-                <input id="password-confirmation" type="password" v-model="password_confirmation" >
-            </div>
-            <div>
-                <button type="submit" @click="register">
-                    Register
-                </button>
-            </div>
-        </form>
+      <div v-if="success === true">
+        <p>Successfully created {{ username }}</p>
+      </div>
+      <div v-else>
+        <label for="username">Username</label>
+        <div>
+            <input id="username" type="text" v-model="username" autofocus>
+        </div>
+        <label for="email" >E-Mail Address</label>
+        <div>
+            <input id="email" type="email" v-model="email" >
+        </div>
+        <label for="password">Password</label>
+        <div>
+            <vue-password v-model="password" classes="input"> </vue-password>
+        </div>
+        <label for="password-confirmation">Confirm Password</label>
+        <div>
+            <input id="password-confirmation" type="password" v-model="password_confirmation" >
+        </div>
+        <div>
+            <v-btn v-on:click="register()">Register</v-btn>
+        </div>
+      </div>
+    </form>
   </div>
 </template>
 

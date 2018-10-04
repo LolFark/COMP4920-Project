@@ -14,5 +14,8 @@ export default {
 
   editCourse (params) {
     return Api().post('courses', params)
+  },
+  getComments (params) {
+    return Api().post('comments', params)
   }
 }

@@ -14,7 +14,7 @@
       </div>
       <div>
         <!-- have to change this button later cuz it prevents reloads-->
-        <input type="button" value="Login" @click=login>
+        <v-btn v-on:click="login()">Login</v-btn>
       </div>
     </form>
   </div>
