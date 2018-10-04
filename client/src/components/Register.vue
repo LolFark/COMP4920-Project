@@ -28,10 +28,6 @@
         <div>
             <input id="password-confirmation" type="password" v-model="password_confirmation" >
         </div>
-        <label for="description">Description</label>
-        <div>
-            <textarea id="description" placeholder="Describe yourself" v-model="description"></textarea>
-        </div>
         <div>
             <button type="submit" @click="register">
                 Register
@@ -56,14 +52,13 @@ export default {
       email: '',
       password: '',
       password_confirmation: '',
-      description: '',
       errors: [],
       success: ''
     }
   },
 
   methods: {
-    register: async function (e) {
+    register: async function () {
       this.errors = []
       if (!this.username) {
         this.errors.push('Name required.')
@@ -81,12 +76,10 @@ export default {
         const response = await AuthenticationService.register({
           username: this.username,
           email: this.email,
-          password: this.password,
-          description: this.description
+          password: this.password
         })
         this.errors.push(response.data.error)
       }
-      e.preventDefault()
     },
     isStudentEmail: function (email) {
       var re = /edu\.au$/

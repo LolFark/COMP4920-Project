@@ -31,7 +31,6 @@ module.exports = {
       display_name: username,
       email,
       password,
-      description
     });
 
     await newUser.save((error) => {
