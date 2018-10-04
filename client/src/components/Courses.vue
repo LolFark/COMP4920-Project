@@ -77,7 +77,7 @@ export default {
 
       allChecked: true,
       allLevels: ['0', '1', '2', '3', '4', '[5-9]'],
-      levels: ['0', '1', '2', '3', '4', '[5-9]'],
+      levels: ['0', '1', '2', '3', '4', '[5-9]']
     }
   },
   mounted () {
@@ -118,7 +118,7 @@ export default {
     },
     check () {
       this.allChecked = false
-    },
+    }
   },
   computed: {
     searchedCourses: function () {
