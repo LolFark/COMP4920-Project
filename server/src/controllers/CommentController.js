@@ -65,14 +65,14 @@ module.exports = {
       user,
       course,
       created,
-      content,
+      prevContent,
       newContent,
     } = req.body;
     await Comment.findAndUpdateOne({
       user,
       course,
       created,
-      content,
+      prevContent,
     }, { content: newContent }, { new: true }, (err) => {
       if (err) {
         console.log(`failed to edit comment by ${user} on ${course}`);
