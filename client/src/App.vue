@@ -6,6 +6,9 @@
           <router-link class="home" tag="span" :to="{ name: 'Courses' }">Communicourse</router-link>
         </v-toolbar-title>
         <v-spacer></v-spacer>
+        <v-btn icon>
+        <v-icon>search</v-icon>
+        </v-btn>
         <router-link :to="{ name: 'Register' }">
           <v-btn icon v-if="!$store.state.authenticated">
             <v-icon>person_add</v-icon>

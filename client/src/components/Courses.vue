@@ -6,12 +6,45 @@
         <option value="name">Course Name</option>
         <option value="faculty">Faculty</option>
       </select>
-      <v-flex xs12 sm6 d-flex>
-          <v-select
+      <v-select
+        :items="items"
+        label="Search By"
+        outline
+        color='blue'
+      ></v-select>
+      <input type="text" v-model="search" placeholder="Search Courses">
+      <v-card dark color='primary'>
+        <v-card-text>
+          <v-autocomplete
+            v-model="model"
             :items="items"
-            label="Search Course"
-          ></v-select>
-      </v-flex>
+            :loading="isLoading"
+            :search-input.sync="search"
+            color="white"
+            hide-no-data
+            hide-selected
+            item-text="Description"
+            item-value="API"
+            label="Search Courses"
+            placeholder="Start typing to Search"
+            prepend-icon="mdi-database-search"
+            return-object
+          ></v-autocomplete>
+        </v-card-text>
+        <v-expand-transition>
+          <v-list v-if="model" class="red lighten-3">
+            <v-list-tile
+              v-for="(field, i) in fields"
+              :key="i"
+            >
+              <v-list-tile-content>
+                <v-list-tile-title v-text="field.value"></v-list-tile-title>
+                <v-list-tile-sub-title v-text="field.key"></v-list-tile-sub-title>
+              </v-list-tile-content>
+            </v-list-tile>
+          </v-list>
+        </v-expand-transition>
+      </v-card>
       <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Add Course</router-link>
       <p>
 
@@ -68,6 +101,14 @@
           </v-layout>
         </v-container>
       </p>
+      <v-select
+            v-model="value"
+            :items="items"
+            chips
+            label="Course Level"
+            multiple
+            outline
+          ></v-select>
       <table class="table-hover" id="thetable">
           <tr>
             <th class="course_code">Course code</th>
