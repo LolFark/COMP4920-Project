@@ -8,5 +8,8 @@ export default {
   },
   deleteComment (param) {
     return Api().post('deleteComment', param)
+  },
+  editComment (param) {
+    return Api().post('editComment', param)
   }
 }

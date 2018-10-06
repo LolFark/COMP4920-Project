@@ -40,6 +40,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import CourseService from '@/services/CourseService'
 import CommentService from '@/services/CommentService'
 export default {
@@ -121,6 +122,23 @@ export default {
       }).catch((err) => {
         this.cmtDeleteSuccess = false
         console.log('Could not delete this shit')
+        console.log(err)
+      })
+    },
+    async editComment (commentIndex) {
+      const cmnt = this.comments[commentIndex];
+      const newContent = cmnt.content
+      console.log(cmnt)
+      return CommentService.editComment({
+        user: this.$store.state.user,
+        course: this.course,
+        created: cmnt.created,
+        newContent: cmnt.content
+      }).then((resp) => {
+        console.log('successful in editing comment')
+      }).catch((err) => {
+        console.log('Could not edit this')
+        console.log(err)
       })
     }
   }

@@ -2,7 +2,7 @@ const Comment = require('../../models/comment');
 
 module.exports = {
   async getComments(req, res) {
-    Comment.find({ course: req.body.course_id }, 'user content', { new: true }, (err, comments) => {
+    Comment.find({ course: req.body.course_id }, (err, comments) => {
       if (err) {
         console.log(err);
         return res.status(404).send({
@@ -65,22 +65,19 @@ module.exports = {
       user,
       course,
       created,
-      prevContent,
       newContent,
     } = req.body;
-    await Comment.findAndUpdateOne({
+    await Comment.findOneAndUpdate({
       user,
       course,
       created,
-      prevContent,
     }, { content: newContent }, { new: true }, (err) => {
       if (err) {
         console.log(`failed to edit comment by ${user} on ${course}`);
+        return res.status(400).send({ success: false });
       }
       console.log(`comment by ${user} on ${course} editted successfully`);
-      res.send({
-        success: true,
-      });
+      return res.send({ success: true });
     });
   },
 };
