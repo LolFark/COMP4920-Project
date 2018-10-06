@@ -25,9 +25,10 @@
       </div>
       <div id="comment-section">
         <ul v-for="(comment, index) in comments" v-bind:key="comment">
-          <div>
-            <li>{{comment.content}}</li>
+          <div class="editable-text">
+            <textarea v-model="comment.content"/>
             <input type="button" value="Delete" @click=deleteComment(index)>
+            <input type="button" value="Save" @click=editComment(index)>
           </div>
         </ul>
         <p v-if="cmtDeleteSuccess"> Comment Deleted  </p>
