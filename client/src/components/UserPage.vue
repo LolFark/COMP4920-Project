@@ -37,6 +37,9 @@
     </div>
     <!-- If edit user information is selected -->
     <div v-else-if="edit === true">
+      <label for="email">Email: </label>
+      <input type="text" id="email" v-model="email">
+      <br>
       <label for="description">Description: </label>
       <br>
       <textarea id="description" v-model="description"></textarea>
@@ -65,6 +68,7 @@ export default {
 
       // Edit user information
       edit: false,
+      email: '',
       description: '',
 
       // Change password information
@@ -88,6 +92,7 @@ export default {
         username: this.username
       })
       this.user = response.data.user
+      this.email = this.user.email
       this.description = this.user.description
     },
     // Set data to start password change option
@@ -137,11 +142,14 @@ export default {
     */
     async changeProfile () {
       this.errors = []
-      if (this.description === this.user.description) {
+      if (this.description === this.user.description && this.email === this.user.email) {
         this.errors.push('No changes in profile')
+      } else if (!this.email.match(/z[0-9]{7}@student.unsw.edu.au/)) {
+        this.errors.push('Not a valid student email')
       } else {
         const response = await UserService.updateProfile({
           username: this.$store.state.user.username,
+          email: this.email,
           description: this.description
         })
         this.user = response.data.user
@@ -160,6 +168,7 @@ export default {
       this.old_password = ''
       this.new_password = ''
       this.errors = []
+      this.email = this.user.email
       this.description = this.user.description
     }
   }
