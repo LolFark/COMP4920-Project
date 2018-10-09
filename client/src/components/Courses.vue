@@ -52,7 +52,7 @@
           <th class="course_faculty" align="center">Faculty</th>
           <th class="course_link" align="center">Handbook Link</th>
         </tr>
-        <tr v-for="course in searchedCourses" v-bind:key="course" v-on:click="navigate(/courses/ + course.code)">
+        <tr v-for="course in searchedCourses" v-bind:key="course._id" v-on:click="navigate(/courses/ + course.code)">
           <td>{{ course.code }}</td>
           <td>{{ course.name }}</td>
           <td>{{ course.pre_reqs }}</td>

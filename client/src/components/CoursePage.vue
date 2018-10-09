@@ -30,7 +30,7 @@
         </form>
       </div>
       <div id="comment-section">
-        <ul v-for="(comment, index) in comments" v-bind:key="comment">
+        <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
           <div class="editable-text">
             <textarea v-model="comment.content"/>
             <input type="button" value="Delete" @click=deleteComment(index)>
