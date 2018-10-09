@@ -28,7 +28,7 @@ module.exports = {
       created, // change this?
       content,
     });
-    await newComment.save((error) => {
+    await newComment.save((error, comment) => {
       if (error) {
         console.log(error);
         res.send({
@@ -37,9 +37,7 @@ module.exports = {
       }
       console.log(`new comment added to ${course}`);
       res.send({
-        status: true,
-        message: `Comment posted to ${course}`,
-        comment: content,
+        comment,
       });
     });
   },

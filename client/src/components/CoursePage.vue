@@ -17,10 +17,16 @@
     </table>
     <br>
     <div id="Comments-component">
-    <div v-if="$store.state.authenticated">
+      <p v-if="errors.length">
+        <b>Please correct the following error(s):</b>
+        <ul>
+          <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+        </ul>
+      </p>
+      <div v-if="$store.state.authenticated">
         <form>
           <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
-          <input type="button" value="submit" @click=addComment>
+          <v-btn v-on:click="addComment">Post</v-btn>
         </form>
       </div>
       <div id="comment-section">
@@ -51,7 +57,9 @@ export default {
       course: '',
       feedback: '', // feedback by the current user
       comments: [], // previously submitted comments for the course
-      cmtDeleteSuccess: ''
+      cmtDeleteSuccess: '',
+
+      errors: []
     }
   },
   mounted () {
@@ -102,14 +110,24 @@ export default {
       const response = await CommentService.getComments({ course_id: this.course._id })
       this.comments = response.data.comments
     },
-    // TODO Display new comments after submitting
     async addComment () {
-      await CommentService.addComment({
-        user: this.$store.state.user,
-        course: this.course,
-        created: Date.now(),
-        content: this.feedback
-      })
+      this.errors = []
+      // If there is no feedback, prevent user from posting comment
+      if (this.feedback === '') {
+        this.errors.push('No feedback written')
+      } else {
+        const response = await CommentService.addComment({
+          user: this.$store.state.user,
+          course: this.course,
+          created: Date.now(),
+          content: this.feedback
+        })
+        if (response.data.error) {
+          this.errors.push(response.data.error)
+        } else {
+          this.comments.push(response.data.comment)
+        }
+      }
     },
     async deleteComment (commentIndex) {
       return CommentService.deleteComment({
