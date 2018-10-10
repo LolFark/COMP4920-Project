@@ -33,18 +33,20 @@
       </div>
       <!-- Display all comments -->
       <div id="comment-section">
-        <ul v-for="(comment) in comments" v-bind:key="comment._id">
-          <div class="editable-text">
-            <span>comment.content</span>
-            <v-btn>Edit</v-btn>
-            <v-btn>Delete</v-btn>
-            <!-- <textarea v-model="comment.content"/>
-            <input type="button" value="Delete" @click=deleteComment(index)>
-            <input type="button" value="Save" @click=editComment(index)> -->
+        <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
+          <div v-if="cur_index === index && edit === true" class="editable-text">
+            <textarea v-model="edit_comment"></textarea>
+            <v-btn v-on:click="cancel(index)">Cancel</v-btn>
+            <v-btn v-on:click="editComment(index)">Save</v-btn>
+          </div>
+          <div v-else class="editable-text">
+            <span>{{ comment.content }}</span>
+            <span v-if="$store.state.authenticated && $store.state.user._id === comment.user">
+              <v-btn v-on:click="startEditComment(index)">Edit</v-btn>
+              <v-btn v-on:click="deleteComment(index)">Delete</v-btn>
+            </span>
           </div>
         </ul>
-        <p v-if="cmtDeleteSuccess"> Comment Deleted  </p>
-        <p v-if="!cmtDeleteSuccess"> Comment could not be deleted  </p>
       </div>
     </div>
     <br>
@@ -63,9 +65,12 @@ export default {
       course: '',
       feedback: '', // feedback by the current user
       comments: [], // previously submitted comments for the course
-      cmtDeleteSuccess: '',
 
-      errors: []
+      errors: [],
+
+      edit: false,
+      cur_index: '',
+      edit_comment: ''
     }
   },
   mounted () {
@@ -132,38 +137,54 @@ export default {
           this.errors.push(response.data.error)
         } else {
           this.comments.push(response.data.comment)
+          this.feedback = ''
         }
       }
     },
     async deleteComment (commentIndex) {
-      return CommentService.deleteComment({
+      const response = await CommentService.deleteComment({
         user: this.$store.state.user,
         course: this.course,
         content: this.comments[commentIndex].content
-      }).then((resp) => {
-        this.cmtDeleteSuccess = true
-        // this.flash('SUCCESS!', 'success')
-      }).catch((err) => {
-        this.cmtDeleteSuccess = false
-        console.log('Could not delete this shit')
-        console.log(err)
       })
+      if (response.data.error) {
+        this.errors.push(response.data.error)
+      } else {
+        this.comments.splice(commentIndex, 1)
+        if (this.cur_index && this.cur_index > commentIndex) {
+          this.cur_index = this.cur_index - 1
+        }
+      }
+    },
+    startEditComment (commentIndex) {
+      this.edit = true
+      this.cur_index = commentIndex
+      this.edit_comment = this.comments[commentIndex].content
     },
     async editComment (commentIndex) {
-      const cmnt = this.comments[commentIndex];
-      const newContent = cmnt.content
-      console.log(cmnt)
-      return CommentService.editComment({
-        user: this.$store.state.user,
-        course: this.course,
-        created: cmnt.created,
-        newContent: cmnt.content
-      }).then((resp) => {
-        console.log('successful in editing comment')
-      }).catch((err) => {
-        console.log('Could not edit this')
-        console.log(err)
-      })
+      if (this.edit_comment === this.comments[commentIndex].content) {
+        this.errors.push('No edit made')
+      } else {
+        const cmnt = this.comments[commentIndex]
+        const response = await CommentService.editComment({
+          user: this.$store.state.user,
+          course: this.course,
+          created: cmnt.created,
+          newContent: this.edit_comment
+        })
+        if (response.data.error) {
+          this.errors.pus(response.data.error)
+        } else {
+          this.comments[commentIndex].content = this.edit_comment
+          this.cancel(commentIndex)
+        }
+      }
+    },
+    cancel (commentIndex) {
+      this.edit = false
+      this.cur_index = ''
+      this.edit_comment = this.comments[commentIndex].content
+      this.errors = []
     }
   }
 }
@@ -181,9 +202,11 @@ a {
   text-align: left
 }
 .editable-text {
+  text-align: left;
   border: 1px solid black;
   margin: 5px;
   padding: 5px;
+  word-wrap: break-word;
 }
 tr span >>> a:link, tr span >>> a:visited {
   background-color: rgb(145, 242, 255);
