@@ -34,11 +34,13 @@
       <!-- Display all comments -->
       <div id="comment-section">
         <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
+          <!-- If edit option has been selected -->
           <div v-if="cur_index === index && edit === true" class="editable-text">
             <textarea v-model="edit_comment"></textarea>
             <v-btn v-on:click="cancel(index)">Cancel</v-btn>
             <v-btn v-on:click="editComment(index)">Save</v-btn>
           </div>
+          <!-- If edit option is not selected -->
           <div v-else class="editable-text">
             <span>{{ comment.content }}</span>
             <span v-if="$store.state.authenticated && $store.state.user._id === comment.user">
@@ -68,6 +70,7 @@ export default {
 
       errors: [],
 
+      // Variables for user editing comments
       edit: false,
       cur_index: '',
       edit_comment: ''
@@ -150,18 +153,22 @@ export default {
       if (response.data.error) {
         this.errors.push(response.data.error)
       } else {
+        // Remove deleted comment from comments array
         this.comments.splice(commentIndex, 1)
+        // Move the index down by one if the deleted comment is below what is currently being edited
         if (this.cur_index && this.cur_index > commentIndex) {
           this.cur_index = this.cur_index - 1
         }
       }
     },
+    // Set values needed to edit comments
     startEditComment (commentIndex) {
       this.edit = true
       this.cur_index = commentIndex
       this.edit_comment = this.comments[commentIndex].content
     },
     async editComment (commentIndex) {
+      // If there are no edits made
       if (this.edit_comment === this.comments[commentIndex].content) {
         this.errors.push('No edit made')
       } else {
@@ -175,11 +182,14 @@ export default {
         if (response.data.error) {
           this.errors.pus(response.data.error)
         } else {
+          // Update the comments array with new comment
           this.comments[commentIndex].content = this.edit_comment
+          // Reset
           this.cancel(commentIndex)
         }
       }
     },
+    // Set values back to default
     cancel (commentIndex) {
       this.edit = false
       this.cur_index = ''
