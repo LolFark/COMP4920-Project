@@ -17,24 +17,30 @@
     </table>
     <br>
     <div id="Comments-component">
+      <!-- If there are any errors, display them -->
       <p v-if="errors.length">
         <b>Please correct the following error(s):</b>
         <ul>
           <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
         </ul>
       </p>
+      <!-- If user is authenticated, allow them to post a comment -->
       <div v-if="$store.state.authenticated">
         <form>
           <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
           <v-btn v-on:click="addComment">Post</v-btn>
         </form>
       </div>
+      <!-- Display all comments -->
       <div id="comment-section">
-        <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
+        <ul v-for="(comment) in comments" v-bind:key="comment._id">
           <div class="editable-text">
-            <textarea v-model="comment.content"/>
+            <span>comment.content</span>
+            <v-btn>Edit</v-btn>
+            <v-btn>Delete</v-btn>
+            <!-- <textarea v-model="comment.content"/>
             <input type="button" value="Delete" @click=deleteComment(index)>
-            <input type="button" value="Save" @click=editComment(index)>
+            <input type="button" value="Save" @click=editComment(index)> -->
           </div>
         </ul>
         <p v-if="cmtDeleteSuccess"> Comment Deleted  </p>
@@ -173,6 +179,11 @@ a {
 }
 .course_info {
   text-align: left
+}
+.editable-text {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
 }
 tr span >>> a:link, tr span >>> a:visited {
   background-color: rgb(145, 242, 255);
