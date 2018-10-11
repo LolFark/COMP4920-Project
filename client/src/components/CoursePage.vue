@@ -36,17 +36,23 @@
         <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
           <!-- If edit option has been selected -->
           <div v-if="cur_index === index && edit === true" class="editable-text">
+            {{ comment.user }}
+            <v-btn class="button" v-on:click="cancel(index)">Cancel</v-btn>
+            <v-btn class="button" v-on:click="editComment(index)">Save</v-btn>
+            <br>
             <textarea v-model="edit_comment"></textarea>
-            <v-btn v-on:click="cancel(index)">Cancel</v-btn>
-            <v-btn v-on:click="editComment(index)">Save</v-btn>
           </div>
           <!-- If edit option is not selected -->
           <div v-else class="editable-text">
+            {{ comment.user }}
+            <v-btn class="button" v-if="$store.state.authenticated && $store.state.user._id === comment.user" v-on:click="deleteComment(index)">Delete</v-btn>
+            <v-btn class="button" v-if="$store.state.authenticated && $store.state.user._id === comment.user" v-on:click="startEditComment(index)">Edit</v-btn>
+            <br>
             <span>{{ comment.content }}</span>
-            <span v-if="$store.state.authenticated && $store.state.user._id === comment.user">
+            <!-- <span v-if="$store.state.authenticated && $store.state.user._id === comment.user">
               <v-btn v-on:click="startEditComment(index)">Edit</v-btn>
               <v-btn v-on:click="deleteComment(index)">Delete</v-btn>
-            </span>
+            </span> -->
           </div>
         </ul>
       </div>
@@ -217,6 +223,10 @@ a {
   margin: 5px;
   padding: 5px;
   word-wrap: break-word;
+}
+.button {
+  float: right;
+  padding: 5px;
 }
 tr span >>> a:link, tr span >>> a:visited {
   background-color: rgb(145, 242, 255);
