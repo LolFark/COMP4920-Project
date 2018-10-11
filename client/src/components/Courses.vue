@@ -1,5 +1,6 @@
 <template>
   <div class="courses">
+<<<<<<< HEAD
     <select v-model="selected">
       <option value="code">Course Code</option>
       <option value="name">Course Name</option>
@@ -62,6 +63,137 @@
         </tr>
       </table>
   </div>
+=======
+    <v-course>
+      <select v-model="selected">
+        <option value="code">Course Code</option>
+        <option value="name">Course Name</option>
+        <option value="faculty">Faculty</option>
+      </select>
+      <v-select
+        :items="items"
+        label="Search By"
+        outline
+        color='blue'
+      ></v-select>
+      <input type="text" v-model="search" placeholder="Search Courses">
+      <v-card dark color='primary'>
+        <v-card-text>
+          <v-autocomplete
+            v-model="model"
+            :items="items"
+            :loading="isLoading"
+            :search-input.sync="search"
+            color="white"
+            hide-no-data
+            hide-selected
+            item-text="Description"
+            item-value="API"
+            label="Search Courses"
+            placeholder="Start typing to Search"
+            prepend-icon="mdi-database-search"
+            return-object
+          ></v-autocomplete>
+        </v-card-text>
+        <v-expand-transition>
+          <v-list v-if="model" class="red lighten-3">
+            <v-list-tile
+              v-for="(field, i) in fields"
+              :key="i"
+            >
+              <v-list-tile-content>
+                <v-list-tile-title v-text="field.value"></v-list-tile-title>
+                <v-list-tile-sub-title v-text="field.key"></v-list-tile-sub-title>
+              </v-list-tile-content>
+            </v-list-tile>
+          </v-list>
+        </v-expand-transition>
+      </v-card>
+      <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Add Course</router-link>
+      <p>
+
+        <input type="radio" id="allf" value="" v-model="faculty">
+        <label for="allf">All</label>
+        <input type="radio" id="art" value="Faculty of Arts and Social Sciences" v-model="faculty">
+        <label for="art">Faculty of Arts and Social Sciences</label>
+        <input type="radio" id="env" value="Built Environment" v-model="faculty">
+        <label for="env">Built Environment</label>
+        <input type="radio" id="eng" value="Faculty of Engineering" v-model="faculty">
+        <label for="eng">Faculty of Engineering</label>
+        <input type="radio" id="law" value="Faculty of Law" v-model="faculty">
+        <label for="law">Faculty of Law</label>
+        <input type="radio" id="med" value="Faculty of Medicine" v-model="faculty">
+        <label for="med">Faculty of Medicine</label>
+        <input type="radio" id="sci" value="Faculty of Science" v-model="faculty">
+        <label for="sci">Faculty of Science</label>
+        <input type="radio" id="bus" value="UNSW Business School" v-model="faculty">
+        <label for="bus">UNSW Business School</label>
+        <input type="radio" id="bos" value="Board of Studies" v-model="faculty">
+        <label for="bos">DVC (Academic) Board of Studies</label>
+      </p>
+      <p>
+        <v-container grid-list-md text-xs-center>
+          <v-layout center wrap>
+            <v-flex>
+              <v-checkbox id="alll" label="All"  v-on:change="checkAll" v-model="allChecked">
+              </v-checkbox>
+            </v-flex>
+            <v-flex>
+              <v-checkbox label="0" id="zero" value="0" v-model="levels">
+              </v-checkbox>
+            </v-flex>
+            <v-flex>
+              <v-checkbox label="1" id="one" value="1"  v-model="levels">
+              </v-checkbox>
+            </v-flex>
+            <v-flex>
+              <v-checkbox label="2" id="two" value="2"  v-model="levels">
+              </v-checkbox>
+            </v-flex>
+            <v-flex>
+              <v-checkbox label="3" id="three" value="3"  v-model="levels">
+              </v-checkbox>
+            </v-flex>
+            <v-flex>
+              <v-checkbox label="4" id="four" value="4"  v-model="levels">
+              </v-checkbox>
+            </v-flex>
+            <v-flex>
+              <v-checkbox label="5" id="five" value="[5-9]"  v-model="levels">
+              </v-checkbox>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </p>
+      <v-select
+            v-model="value"
+            :items="items"
+            chips
+            label="Course Level"
+            multiple
+            outline
+          ></v-select>
+      <table class="table-hover" id="thetable">
+          <tr>
+            <th class="course_code">Course code</th>
+            <th class="course_name">Course name</th>
+            <th class="course_prereqs" align="center">Prerequisites</th>
+            <th class="course_coreqs" align="center">Corequisites</th>
+            <th class="course_faculty" align="center">Faculty</th>
+            <th class="course_link" align="center">Handbook Link</th>
+          </tr>
+          <tr v-for="course in searchedCourses" v-bind:key="course" v-on:click="navigate(/courses/ + course.code)">
+            <td>{{ course.code }}</td>
+            <td>{{ course.name }}</td>
+            <td>{{ course.pre_reqs }}</td>
+            <td>{{ course.co_reqs }}</td>
+            <td>{{ course.faculty }}</td>
+            <td><a v-bind:href="course.handbook_url">Link</a></td>
+          </tr>
+        </table>
+      </v-course>
+    </div>
+>>>>>>> 1cec10499f6dd8566252ff1e53d7985021949a47
 </template>
 
 <script>

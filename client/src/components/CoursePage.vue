@@ -1,5 +1,13 @@
 <template>
   <div class="course_page">
+    <v-layout column align-center>
+      <v-rating
+      v-model="rating"
+      background-color="purple lighten-3"
+      color="purple"
+      small
+    ></v-rating>
+    </v-layout>
     <h1>Course {{ $route.params.id }}</h1>
     <table v-if="course === null">
       <h2><b>COURSE NO LONGER EXISTS</b></h2>
