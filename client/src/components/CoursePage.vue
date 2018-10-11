@@ -16,22 +16,47 @@
       <!-- <tr class="course_handbookurl"><b>Handbook URL: </b><a v-bind:href="course.handbook_url">Link</a></tr> -->
     </table>
     <br>
-    <div v-if="$store.state.authenticated">
-      <form>
-        <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
-        <input type="button" value="submit" @click=addComment>
-      </form>
-    </div>
-    <div id="comment-section">
-      <ul v-for="comment in comments" v-bind:key="comment">
-      <li>{{comment.content}}</li>
-    </ul>
+    <div id="Comments-component">
+      <!-- If there are any errors, display them -->
+      <p v-if="errors.length">
+        <b>Please correct the following error(s):</b>
+        <ul>
+          <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
+        </ul>
+      </p>
+      <!-- If user is authenticated, allow them to post a comment -->
+      <div v-if="$store.state.authenticated">
+        <form>
+          <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
+          <v-btn v-on:click="addComment">Post</v-btn>
+        </form>
+      </div>
+      <!-- Display all comments -->
+      <div id="comment-section">
+        <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
+          <!-- If edit option has been selected -->
+          <div v-if="cur_index === index && edit === true" class="editable-text">
+            <textarea v-model="edit_comment"></textarea>
+            <v-btn v-on:click="cancel(index)">Cancel</v-btn>
+            <v-btn v-on:click="editComment(index)">Save</v-btn>
+          </div>
+          <!-- If edit option is not selected -->
+          <div v-else class="editable-text">
+            <span>{{ comment.content }}</span>
+            <span v-if="$store.state.authenticated && $store.state.user._id === comment.user">
+              <v-btn v-on:click="startEditComment(index)">Edit</v-btn>
+              <v-btn v-on:click="deleteComment(index)">Delete</v-btn>
+            </span>
+          </div>
+        </ul>
+      </div>
     </div>
     <br>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
 import CourseService from '@/services/CourseService'
 import CommentService from '@/services/CommentService'
 export default {
@@ -41,7 +66,14 @@ export default {
       code: this.$route.params.id,
       course: '',
       feedback: '', // feedback by the current user
-      comments: [] // previously submitted comments for the course
+      comments: [], // previously submitted comments for the course
+
+      errors: [],
+
+      // Variables for user editing comments
+      edit: false,
+      cur_index: '',
+      edit_comment: ''
     }
   },
   mounted () {
@@ -93,12 +125,76 @@ export default {
       this.comments = response.data.comments
     },
     async addComment () {
-      await CommentService.addComment({
+      this.errors = []
+      // If there is no feedback, prevent user from posting comment
+      if (this.feedback === '') {
+        this.errors.push('No feedback written')
+      } else {
+        const response = await CommentService.addComment({
+          user: this.$store.state.user,
+          course: this.course,
+          created: Date.now(),
+          content: this.feedback
+        })
+        if (response.data.error) {
+          this.errors.push(response.data.error)
+        } else {
+          this.comments.push(response.data.comment)
+          this.feedback = ''
+        }
+      }
+    },
+    async deleteComment (commentIndex) {
+      const response = await CommentService.deleteComment({
         user: this.$store.state.user,
         course: this.course,
-        created: Date.now(),
-        content: this.feedback
+        content: this.comments[commentIndex].content
       })
+      if (response.data.error) {
+        this.errors.push(response.data.error)
+      } else {
+        // Remove deleted comment from comments array
+        this.comments.splice(commentIndex, 1)
+        // Move the index down by one if the deleted comment is below what is currently being edited
+        if (this.cur_index && this.cur_index > commentIndex) {
+          this.cur_index = this.cur_index - 1
+        }
+      }
+    },
+    // Set values needed to edit comments
+    startEditComment (commentIndex) {
+      this.edit = true
+      this.cur_index = commentIndex
+      this.edit_comment = this.comments[commentIndex].content
+    },
+    async editComment (commentIndex) {
+      // If there are no edits made
+      if (this.edit_comment === this.comments[commentIndex].content) {
+        this.errors.push('No edit made')
+      } else {
+        const cmnt = this.comments[commentIndex]
+        const response = await CommentService.editComment({
+          user: this.$store.state.user,
+          course: this.course,
+          created: cmnt.created,
+          newContent: this.edit_comment
+        })
+        if (response.data.error) {
+          this.errors.pus(response.data.error)
+        } else {
+          // Update the comments array with new comment
+          this.comments[commentIndex].content = this.edit_comment
+          // Reset
+          this.cancel(commentIndex)
+        }
+      }
+    },
+    // Set values back to default
+    cancel (commentIndex) {
+      this.edit = false
+      this.cur_index = ''
+      this.edit_comment = this.comments[commentIndex].content
+      this.errors = []
     }
   }
 }
@@ -114,6 +210,13 @@ a {
 }
 .course_info {
   text-align: left
+}
+.editable-text {
+  text-align: left;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  word-wrap: break-word;
 }
 tr span >>> a:link, tr span >>> a:visited {
   background-color: rgb(145, 242, 255);

@@ -17,6 +17,7 @@
     "axios": "^0.18.0",
     "material-design-icons-iconfont": "^3.0.3",
     "vue": "^2.5.2",
+    "vue-flash-message": "^0.6.2",
     "vue-password": "^1.2.0",
     "vue-router": "^3.0.1",
     "vuetify": "^1.2.5",

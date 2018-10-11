@@ -2,7 +2,7 @@ const Comment = require('../../models/comment');
 
 module.exports = {
   async getComments(req, res) {
-    Comment.find({ course: req.body.course_id }, 'user content', (err, comments) => {
+    Comment.find({ course: req.body.course_id }, (err, comments) => {
       if (err) {
         console.log(err);
         return res.status(404).send({
@@ -28,7 +28,7 @@ module.exports = {
       created, // change this?
       content,
     });
-    await newComment.save((error) => {
+    await newComment.save((error, comment) => {
       if (error) {
         console.log(error);
         res.send({
@@ -37,23 +37,22 @@ module.exports = {
       }
       console.log(`new comment added to ${course}`);
       res.send({
-        status: true,
-        message: `Comment posted to ${course}`,
+        comment,
       });
     });
   },
 
   async deleteComment(req, res) {
     const { user, course, content } = req.body;
-    await Comment.deleteOne({ user, course, content }, (err) => {
+    return Comment.deleteOne({ user, course, content }, (err) => {
       if (err) {
         console.log(`failed to delete comment by ${user} from ${course}`);
-        res.send({
+        return res.status(400).send({
           err,
         });
       }
       console.log(`comment by ${user} on ${course} deleted successfully`);
-      res.send({
+      return res.send({
         success: true,
       });
     });
@@ -64,22 +63,19 @@ module.exports = {
       user,
       course,
       created,
-      content,
       newContent,
     } = req.body;
-    await Comment.findAndUpdateOne({
+    await Comment.findOneAndUpdate({
       user,
       course,
       created,
-      content,
     }, { content: newContent }, { new: true }, (err) => {
       if (err) {
         console.log(`failed to edit comment by ${user} on ${course}`);
+        return res.status(400).send({ success: false });
       }
       console.log(`comment by ${user} on ${course} editted successfully`);
-      res.send({
-        success: true,
-      });
+      return res.send({ success: true });
     });
   },
 };
