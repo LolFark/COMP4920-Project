@@ -36,7 +36,7 @@
         <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
           <!-- If edit option has been selected -->
           <div v-if="cur_index === index && edit === true" class="editable-text">
-            <a v-on:click="$router.push(/user/ + comment.username)" >{{ comment.username }}</a>
+            <a v-on:click="$router.push(/user/ + comment.username)">{{ comment.username }}</a> {{ comment.created }}
             <v-btn class="button" v-on:click="cancel(index)">Cancel</v-btn>
             <v-btn class="button" v-on:click="editComment(index)">Save</v-btn>
             <br>
@@ -44,7 +44,7 @@
           </div>
           <!-- If edit option is not selected -->
           <div v-else class="editable-text">
-            <a v-on:click="$router.push(/user/ + comment.username)" >{{ comment.username }}</a>
+            <a v-on:click="$router.push(/user/ + comment.username)">{{ comment.username }}</a> {{ comment.created }}
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="deleteComment(index)">Delete</v-btn>
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="startEditComment(index)">Edit</v-btn>
             <br>
@@ -125,6 +125,18 @@ export default {
     async getComments () {
       const response = await CommentService.getComments({ course_id: this.course._id })
       this.comments = response.data.comments
+      for (let i = 0; i < this.comments.length; i++) {
+        this.comments[i].created = this.comments[i].created.replace(/^(.{10})T(.{8}).*$/, '$1 $2')
+      }
+      this.comments.sort((a,b) => {
+        if (a.created < b.created) {
+          return -1
+        }
+        if (a.created > b.created) {
+          return 1
+        }
+        return 0
+      })
     },
     async addComment () {
       this.errors = []
@@ -135,7 +147,7 @@ export default {
         const response = await CommentService.addComment({
           username: this.$store.state.user.username,
           course: this.course,
-          created: Date.now(),
+          created: Date(Date.now()),
           content: this.feedback
         })
         if (response.data.error) {
