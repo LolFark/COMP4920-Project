@@ -5,7 +5,7 @@ const saltRounds = 10;
 
 module.exports = {
   async getUsers(req, res) {
-    User.find({}, 'username display_name email password description comments liked_comments isAdmin', (error, users) => {
+    User.find({}, 'username email password description comments liked_comments isAdmin', (error, users) => {
       if (error) {
         console.error(error);
       }
@@ -16,7 +16,7 @@ module.exports = {
   },
   async getUser(req, res) {
     const { username } = req.body;
-    User.findOne({ username }, 'username display_name email password description comments liked_comments isAdmin', (error, user) => {
+    User.findOne({ username }, 'username email password description comments liked_comments isAdmin', (error, user) => {
       if (error) {
         console.error(error);
       }
@@ -27,7 +27,7 @@ module.exports = {
   },
   async updatePassword(req, res) {
     const { username, oldPassword, newPassword } = req.body;
-    User.findOne({ username }, 'username display_name email password description comments liked_comments isAdmin', (error, user) => {
+    User.findOne({ username }, 'username email password description comments liked_comments isAdmin', (error, user) => {
       if (error) {
         console.error(error);
       }
@@ -62,9 +62,9 @@ module.exports = {
     });
   },
   async updateProfile(req, res) {
-    const { username, displayName, description } = req.body;
+    const { username, description } = req.body;
     console.log('Updating database with new profile data');
-    User.findOneAndUpdate({ username }, { displayName, description }, { new: true }, (error, updatedUser) => {
+    User.findOneAndUpdate({ username }, { description }, { new: true }, (error, updatedUser) => {
       if (error) {
         console.log(error);
         return res.send({

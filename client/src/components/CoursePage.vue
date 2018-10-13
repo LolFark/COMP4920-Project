@@ -36,7 +36,7 @@
         <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
           <!-- If edit option has been selected -->
           <div v-if="cur_index === index && edit === true" class="editable-text">
-            {{ comment.username }}
+            <a v-on:click="$router.push(/user/ + comment.username)" >{{ comment.username }}</a>
             <v-btn class="button" v-on:click="cancel(index)">Cancel</v-btn>
             <v-btn class="button" v-on:click="editComment(index)">Save</v-btn>
             <br>
@@ -44,7 +44,7 @@
           </div>
           <!-- If edit option is not selected -->
           <div v-else class="editable-text">
-            {{ comment.username }}
+            <a v-on:click="$router.push(/user/ + comment.username)" >{{ comment.username }}</a>
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="deleteComment(index)">Delete</v-btn>
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="startEditComment(index)">Edit</v-btn>
             <br>

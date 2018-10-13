@@ -28,7 +28,6 @@ module.exports = {
 
     const newUser = new User({
       username,
-      display_name: username,
       email,
       password,
     });
