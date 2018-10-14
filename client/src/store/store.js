@@ -1,15 +1,19 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import createPersistedState from 'vuex-persistedstate'
 
 // Using Vuex to maintain state
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
+  plugins: [createPersistedState()],
+
   strict: true,
   state: {
     token: null,
     user: null,
-    authenticated: false
+    authenticated: false,
+    courses: []
   },
   mutations: {
     setToken (state, token) {
@@ -18,6 +22,9 @@ export default new Vuex.Store({
     },
     setUser (state, user) {
       state.user = user
+    },
+    setCourses (state, courses) {
+      state.courses = courses
     }
   },
   actions: {
@@ -26,6 +33,11 @@ export default new Vuex.Store({
     },
     setUser ({commit}, user) {
       commit('setUser', user)
+    },
+    setCourses ({commit}, courses) {
+      commit('setCourses', courses)
     }
   }
 })
+
+export default store
