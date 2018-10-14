@@ -70,7 +70,6 @@ export default {
   name: 'Courses',
   data () {
     return {
-      courses: [],
       search: '',
       selected: 'code',
       faculty: 'faculty',
@@ -89,7 +88,8 @@ export default {
   methods: {
     async getCourses () {
       const response = await CourseService.fetchCourses()
-      this.courses = response.data.courses
+      // this.courses = response.data.courses
+      this.$store.dispatch('setCourses', response.data.courses)
     },
     alternate (id) {
       if (document.getElementsByTagName) {
@@ -121,6 +121,10 @@ export default {
     }
   },
   computed: {
+    // Using Vuex
+    courses () {
+      return this.$store.state.courses
+    },
     searchedCourses: function () {
       var searchReg = new RegExp(this.search, 'i')
       var facultyReg = new RegExp(this.faculty)
