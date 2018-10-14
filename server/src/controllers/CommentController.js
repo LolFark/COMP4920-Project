@@ -17,13 +17,13 @@ module.exports = {
 
   async addComment(req, res) {
     const {
-      user,
+      username,
       course,
       created,
       content,
     } = req.body;
     const newComment = new Comment({
-      user,
+      username,
       course,
       created, // change this?
       content,
@@ -43,15 +43,15 @@ module.exports = {
   },
 
   async deleteComment(req, res) {
-    const { user, course, content } = req.body;
-    return Comment.deleteOne({ user, course, content }, (err) => {
+    const { username, course, content } = req.body;
+    return Comment.deleteOne({ username, course, content }, (err) => {
       if (err) {
-        console.log(`failed to delete comment by ${user} from ${course}`);
+        console.log(`failed to delete comment by ${username} from ${course}`);
         return res.status(400).send({
           err,
         });
       }
-      console.log(`comment by ${user} on ${course} deleted successfully`);
+      console.log(`comment by ${username} on ${course} deleted successfully`);
       return res.send({
         success: true,
       });
@@ -60,21 +60,21 @@ module.exports = {
 
   async editComment(req, res) {
     const {
-      user,
+      username,
       course,
       created,
       newContent,
     } = req.body;
     await Comment.findOneAndUpdate({
-      user,
+      username,
       course,
       created,
     }, { content: newContent }, { new: true }, (err) => {
       if (err) {
-        console.log(`failed to edit comment by ${user} on ${course}`);
+        console.log(`failed to edit comment by ${username} on ${course}`);
         return res.status(400).send({ success: false });
       }
-      console.log(`comment by ${user} on ${course} editted successfully`);
+      console.log(`comment by ${username} on ${course} editted successfully`);
       return res.send({ success: true });
     });
   },

@@ -1,13 +1,11 @@
 <template>
   <div class="user_page">
-    <h1>User {{ user.display_name }}</h1>
+    <h1>User {{ user.username }}</h1>
     <table v-if="user === null">
       <h2><b>USER DOES NOT EXIST</b></h2>
     </table>
     <table class="user_info" v-if="user !== null">
-      <tr v-if="$store.state.authenticated && $store.state.user.username === user.username"
-        class="username"><b>Username: </b>{{ user.username }}</tr>
-      <tr class="display_name"><b>Display Name: </b>{{ user.display_name }}</tr>
+      <tr class="name"><b>Name: </b>{{ user.username }}</tr>
       <tr v-if="$store.state.authenticated && $store.state.user.username === user.username"
         class="email"><b>Email: </b>{{ user.email }}</tr>
       <tr class="description"><b>Description: </b>{{ user.description }}</tr>
@@ -33,9 +31,6 @@
       <v-btn v-on:click="changePassword()">Save</v-btn>
     </div>
     <div v-else-if="edit === true">
-      <label for="display_name">Display name: </label>
-      <input type="text" id="display_name" v-model="display_name">
-      <br>
       <label for="description">Description: </label>
       <br>
       <textarea id="description" v-model="description"></textarea>
@@ -62,7 +57,6 @@ export default {
       user: [],
 
       edit: false,
-      display_name: '',
       description: '',
 
       change_password: false,
@@ -83,7 +77,6 @@ export default {
         username: this.username
       })
       this.user = response.data.user
-      this.display_name = this.user.display_name
       this.description = this.user.description
     },
     startChangePassword () {
@@ -119,12 +112,11 @@ export default {
     },
     async changeProfile () {
       this.errors = []
-      if (this.display_name === this.user.display_name && this.description === this.user.description) {
+      if (this.description === this.user.description) {
         this.errors.push('No changes in profile')
       } else {
         const response = await UserService.updateProfile({
           username: this.$store.state.user.username,
-          display_name: this.display_name,
           description: this.description
         })
         this.user = response.data.user
@@ -142,7 +134,6 @@ export default {
       this.old_password = ''
       this.new_password = ''
       this.errors = []
-      this.display_name = this.user.display_name
       this.description = this.user.description
     }
   }

@@ -36,17 +36,19 @@
         <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
           <!-- If edit option has been selected -->
           <div v-if="cur_index === index && edit === true" class="editable-text">
+            <a v-on:click="$router.push(/user/ + comment.username)">{{ comment.username }}</a> {{ comment.created }}
+            <v-btn class="button" v-on:click="cancel(index)">Cancel</v-btn>
+            <v-btn class="button" v-on:click="editComment(index)">Save</v-btn>
+            <br>
             <textarea v-model="edit_comment"></textarea>
-            <v-btn v-on:click="cancel(index)">Cancel</v-btn>
-            <v-btn v-on:click="editComment(index)">Save</v-btn>
           </div>
           <!-- If edit option is not selected -->
           <div v-else class="editable-text">
+            <a v-on:click="$router.push(/user/ + comment.username)">{{ comment.username }}</a> {{ comment.created }}
+            <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="deleteComment(index)">Delete</v-btn>
+            <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="startEditComment(index)">Edit</v-btn>
+            <br>
             <span>{{ comment.content }}</span>
-            <span v-if="$store.state.authenticated && $store.state.user._id === comment.user">
-              <v-btn v-on:click="startEditComment(index)">Edit</v-btn>
-              <v-btn v-on:click="deleteComment(index)">Delete</v-btn>
-            </span>
           </div>
         </ul>
       </div>
@@ -123,6 +125,18 @@ export default {
     async getComments () {
       const response = await CommentService.getComments({ course_id: this.course._id })
       this.comments = response.data.comments
+      for (let i = 0; i < this.comments.length; i++) {
+        this.comments[i].created = this.comments[i].created.replace(/^(.{10})T(.{8}).*$/, '$1 $2')
+      }
+      this.comments.sort((a,b) => {
+        if (a.created < b.created) {
+          return -1
+        }
+        if (a.created > b.created) {
+          return 1
+        }
+        return 0
+      })
     },
     async addComment () {
       this.errors = []
@@ -131,9 +145,9 @@ export default {
         this.errors.push('No feedback written')
       } else {
         const response = await CommentService.addComment({
-          user: this.$store.state.user,
+          username: this.$store.state.user.username,
           course: this.course,
-          created: Date.now(),
+          created: Date(Date.now()),
           content: this.feedback
         })
         if (response.data.error) {
@@ -146,7 +160,7 @@ export default {
     },
     async deleteComment (commentIndex) {
       const response = await CommentService.deleteComment({
-        user: this.$store.state.user,
+        username: this.$store.state.user.username,
         course: this.course,
         content: this.comments[commentIndex].content
       })
@@ -174,7 +188,7 @@ export default {
       } else {
         const cmnt = this.comments[commentIndex]
         const response = await CommentService.editComment({
-          user: this.$store.state.user,
+          username: this.$store.state.user.username,
           course: this.course,
           created: cmnt.created,
           newContent: this.edit_comment
@@ -217,6 +231,10 @@ a {
   margin: 5px;
   padding: 5px;
   word-wrap: break-word;
+}
+.button {
+  float: right;
+  padding: 5px;
 }
 tr span >>> a:link, tr span >>> a:visited {
   background-color: rgb(145, 242, 255);
