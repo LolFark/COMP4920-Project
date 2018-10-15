@@ -11,6 +11,8 @@ app.use(cors());
 
 // DB connection
 mongoose.connect('mongodb://user:testing1@ds151382.mlab.com:51382/communicourse', { useNewUrlParser: true });
+mongoose.set('useCreateIndex', true);
+mongoose.set('useFindAndModify', false);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'DB connection error'));
 db.once('open', () => { console.log('DB connected'); });

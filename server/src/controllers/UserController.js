@@ -25,20 +25,23 @@ module.exports = {
       });
     });
   },
+  // Checks that the old password is valid and updates database if it is with new password
   async updatePassword(req, res) {
-    const { username, oldPassword, newPassword } = req.body;
+    const { username, old_password, new_password } = req.body;
+    // Find user that wants to change password
     User.findOne({ username }, 'username email password description comments liked_comments isAdmin', (error, user) => {
       if (error) {
         console.error(error);
       }
-      bcrypt.compare(oldPassword, user.password, (err2, res2) => {
+      // Compare the password typed in by user and their actual password in database
+      bcrypt.compare(old_password, user.password, (err2, res2) => {
         if (err2) {
           return res.status(403).send({
             error: err2,
           });
         }
+        // Old password does not match
         if (res2 === false) {
-          // Old password does not match
           console.log('Old password does not match user password')
           return res.send({
             user,
@@ -61,18 +64,27 @@ module.exports = {
       });
     });
   },
+  // Checks if the email is in use and updates database if it is with new email
   async updateProfile(req, res) {
-    const { username, description } = req.body;
-    console.log('Updating database with new profile data');
-    User.findOneAndUpdate({ username }, { description }, { new: true }, (error, updatedUser) => {
+    const { username, email, description } = req.body;
+    // Check if email is already in use
+    User.findOne({ email }, '', (error, user) => {
+      if (error) {
+        res.send({
+          error: 'Email already in use.',
+        });
+      }
+    });
+    console.log(`Updating database with new profile data`);
+    User.findOneAndUpdate({ username }, { email, description }, { new: true }, (error, updatedUser) => {
       if (error) {
         console.log(error);
-        return res.send({
+        res.send({
           error,
         });
       }
-      return res.send({
-        user: updatedUser,
+      res.send({
+        user: updateUser,
         message: 'Profile successfully changed.',
       });
     });
