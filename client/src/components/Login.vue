@@ -12,8 +12,8 @@
               <h4>Login</h4>
             </v-card-title>
             <v-form>
-            <v-text-field prepend-icon="person" name="Username" label="Username"></v-text-field>
-            <v-text-field prepend-icon="lock" name="Password" label="Password" type="password"></v-text-field>
+            <v-text-field prepend-icon="person" name="username" label="Username" v-model="username"></v-text-field>
+            <v-text-field prepend-icon="lock" name="password" label="Password" type="password" v-model="password"></v-text-field>
             <v-card-actions>
               <v-btn primary large block>Login</v-btn>
             </v-card-actions>
