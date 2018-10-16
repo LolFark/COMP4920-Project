@@ -13,6 +13,7 @@ module.exports = (app) => {
   app.post('/addComment', CommentController.addComment);
   app.post('/editComment', CommentController.editComment);
   app.post('/deleteComment', CommentController.deleteComment);
+  app.post('/getUserComments', CommentController.getUserComments);
   app.get('/users', UserController.getUsers);
   app.post('/user', UserController.getUser);
   app.post('/updatePassword', UserController.updatePassword);
