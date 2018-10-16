@@ -3,8 +3,9 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const ReplySchema = new Schema({
-  user: { type: Schema.Types.ObjectId, ref: 'User' },
-  liked_users: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  username: { type: String },
+  num_likes: { type: Number },
+  liked_users: [{ type: Schema.Types.ObjectId, ref: 'User' }], // get rid of this
   created: { type: Date },
   edited: { type: Boolean },
   content: String,
