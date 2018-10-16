@@ -1,4 +1,5 @@
 const Reply = require('../../models/replies');
+const Comment = require('../../models/comment');
 
 module.exports = {
   async getReplies(req, res) {
@@ -18,28 +19,31 @@ module.exports = {
   async addReply(req, res) {
     const {
       username,
-      course,
+      commentId,
       created,
       content,
     } = req.body;
     const newReply = new Reply({
       username,
-      course,
-      created, // change this?
+      created,
       content,
     });
-    await newReply.save((error, comment) => {
-      if (error) {
-        console.log(error);
+    Comment.findOneAndUpdate(
+      { _id: commentId },
+      { $push: { replies: newReply } },
+      (err) => {
+        if (err) {
+          console.log(err);
+          res.status(500).send({
+            error: 'Failed to post comment',
+          });
+        }
+        console.log(`new reply added to ${commentId}`);
         res.send({
-          error: 'Failed to post comment',
+          success: true,
         });
-      }
-      console.log(`new comment added to ${course}`);
-      res.send({
-        comment,
-      });
-    });
+      },
+    );
   },
 
   async deleteReply(req, res) {
