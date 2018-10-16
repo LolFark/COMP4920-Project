@@ -28,6 +28,7 @@ module.exports = {
       created,
       content,
     });
+    newReply.save();
     Comment.findOneAndUpdate(
       { _id: commentId },
       { $push: { replies: newReply } },
