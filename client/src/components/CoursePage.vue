@@ -1,6 +1,15 @@
 <template>
   <div class="course_page">
     <h1>Course {{ $route.params.id }}</h1>
+    <v-rating
+      v-model="rating"
+      background-color="purple lighten-3"
+      color="purple"
+      small
+    ></v-rating>
+    <div>
+      <v-btn flat small color="primary" v-on:click="addRate">Post Rate</v-btn>
+    </div>
     <table v-if="course === null">
       <h2><b>COURSE NO LONGER EXISTS</b></h2>
     </table>
@@ -69,6 +78,7 @@ export default {
       course: '',
       feedback: '', // feedback by the current user
       comments: [], // previously submitted comments for the course
+      rating: 4,
 
       errors: [],
 
@@ -209,6 +219,14 @@ export default {
       this.cur_index = ''
       this.edit_comment = this.comments[commentIndex].content
       this.errors = []
+    },
+    async addRate () {
+      const response = await CommentService.addRate({
+          username: this.$store.state.user.username,
+          course: this.course,
+          created: Date(Date.now()),
+          content: this.rating
+        })
     }
   }
 }
