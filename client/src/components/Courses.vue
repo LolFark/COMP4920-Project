@@ -1,5 +1,10 @@
 <template>
   <div class="courses">
+  <v-jumbotron
+    :gradient="gradient"
+    dark
+    src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+  >
     <select v-model="selected">
       <option value="code">Course Code</option>
       <option value="name">Course Name</option>
@@ -61,6 +66,7 @@
           <td><a v-bind:href="course.handbook_url">Link</a></td>
         </tr>
       </table>
+  </v-jumbotron>
   </div>
 </template>
 
@@ -76,7 +82,9 @@ export default {
 
       allChecked: true,
       allLevels: ['0', '1', '2', '3', '4', '[5-9]'],
-      levels: ['0', '1', '2', '3', '4', '[5-9]']
+      levels: ['0', '1', '2', '3', '4', '[5-9]'],
+
+      gradient: 'to top right, rgba(63,81,181, .7), rgba(25,32,72, .7)'
     }
   },
   mounted () {
@@ -184,14 +192,14 @@ a {
   color: #42b983;
 }
 .table-hover tr:hover td {
-  background-color: rgb(155, 207, 228);
+  background-color: rgb(23, 144, 192);
 }
 .table-hover tr th {
   color: white;
   background-color: black;
 }
-.odd{background-color: white;}
-.even{background-color: rgb(233, 233, 233);}
+.odd{background-color: rgb(69, 53, 90);}
+.even{background-color: rgb(59, 4, 36);}
 .table-hover{width: 100%;}
 .course_code{width: 5%;}
 .course_name{width: 30%;}

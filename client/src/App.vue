@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container-full-bg">
     <v-app>
       <v-toolbar fixed dark color="primary">
         <v-toolbar-title>
@@ -19,11 +19,21 @@
         <v-btn v-if="$store.state.authenticated" @click="$router.push(/user/ + $store.state.user.username)">{{ $store.state.user.username }}</v-btn>
         <v-btn v-if="$store.state.authenticated" @click="logout">Log out</v-btn>
       </v-toolbar>
+      <v-jumbotron
+        :gradient="gradient"
+        dark
+        src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+      >
+      <v-container fill-height>
+        <v-layout align-center>
+          <v-flex text-xs-center>
       <main>
-        <v-container fluid>
           <router-view></router-view>
-        </v-container>
       </main>
+          </v-flex>
+        </v-layout>
+      </v-container>
+      </v-jumbotron>
     </v-app>
   </div>
 </template>
@@ -39,7 +49,10 @@ export default {
         name: 'Courses'
       })
     }
-  }
+  },
+  data: () => ({
+    gradient: 'to top right, rgba(63,81,181, .7), rgba(25,32,72, .7)'
+  })
 }
 </script>
 
@@ -51,5 +64,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.jumbotron{
+    height: 100vh;
 }
 </style>
