@@ -23,16 +23,18 @@
         :gradient="gradient"
         dark
         src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
+        class="container-full-bg"
+        fill-height
       >
-      <v-container fill-height>
-        <v-layout align-center>
-          <v-flex text-xs-center>
-      <main>
-          <router-view></router-view>
-      </main>
-          </v-flex>
-        </v-layout>
-      </v-container>
+        <v-container fill-height fluid>
+          <v-layout>
+            <v-flex>
+              <main>
+                <router-view></router-view>
+              </main>
+            </v-flex>
+          </v-layout>
+        </v-container>
       </v-jumbotron>
     </v-app>
   </div>
@@ -66,6 +68,19 @@ export default {
   margin-top: 60px;
 }
 .jumbotron{
-    height: 100vh;
+    position:fixed;
+    top:0;
+    z-index:-1;
+    width:100%;
+    text-align: center;
 }
+.jumbotron img{
+    height:auto;
+    width:100%;
+    max-width:100%;
+}
+body {
+    height: 100%;
+}
+
 </style>

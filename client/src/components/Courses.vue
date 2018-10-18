@@ -5,13 +5,21 @@
     dark
     src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
   >
+  <v-container fill-height>
+  <v-layout>
+  <v-flex>
+    <v-layout justify-center row wrap>
+    <v-text-field
+      v-model="search"
+      placeholder="Search Course"
+    ></v-text-field>
     <select v-model="selected">
       <option value="code">Course Code</option>
       <option value="name">Course Name</option>
       <option value="faculty">Faculty</option>
     </select>
-    <input type="text" v-model="search" placeholder="Search Courses">
-    <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Add Course</router-link>
+    </v-layout>
+    <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Can't find? Add new Course</router-link>
     <p>
       <input type="radio" id="allf" value="" v-model="faculty">
       <label for="allf">All</label>
@@ -66,6 +74,9 @@
           <td><a v-bind:href="course.handbook_url">Link</a></td>
         </tr>
       </table>
+  </v-flex>
+  </v-layout>
+  </v-container>
   </v-jumbotron>
   </div>
 </template>
@@ -207,4 +218,16 @@ a {
 .course_coreqs{width: 15%;}
 .course_faculty{width: 10%;}
 .course_link{width: 5%;}
+.jumbotron{
+    margin-left:-10px;
+    margin-top:-10px;
+    height:100%;
+    min-width:100%;
+    position:absolute;
+}
+.jumbotron img{
+    height:100%;
+    width:100%;
+    max-width:100%;
+}
 </style>
