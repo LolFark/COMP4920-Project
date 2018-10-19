@@ -21,12 +21,14 @@ module.exports = {
       course,
       created,
       content,
+      overallRating,
     } = req.body;
     const newComment = new Comment({
       username,
       course,
       created, // change this?
       content,
+      overallRating,
     });
     await newComment.save((error, comment) => {
       if (error) {

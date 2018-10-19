@@ -48,7 +48,11 @@
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="deleteComment(index)">Delete</v-btn>
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="startEditComment(index)">Edit</v-btn>
             <br>
-            <span>{{ comment.content }}</span>
+              <span>{{ comment.content }}</span>
+              <v-btn flat icon color="pink" @click="upvote(index)">
+                <v-icon>keyboard_arrow_up</v-icon>
+              </v-btn>
+              <span>{{ votes(index) }}</span>
           </div>
         </ul>
       </div>
@@ -68,7 +72,6 @@ export default {
       code: this.$route.params.id,
       course: '',
       feedback: '', // feedback by the current user
-      comments: [], // previously submitted comments for the course
 
       errors: [],
 
@@ -78,8 +81,14 @@ export default {
       edit_comment: ''
     }
   },
+  computed: {
+    comments () {
+      return this.$store.state.comments
+    }
+  },
   mounted () {
     this.getCourse()
+    this.getComments()
   },
   methods: {
     async getCourse () {
@@ -124,7 +133,7 @@ export default {
     },
     async getComments () {
       const response = await CommentService.getComments({ course_id: this.course._id })
-      this.comments = response.data.comments
+      this.$store.dispatch('setComments', response.data.comments)
       for (let i = 0; i < this.comments.length; i++) {
         this.comments[i].created = this.comments[i].created.replace(/^(.{10})T(.{8}).*$/, '$1 $2')
       }
@@ -148,7 +157,8 @@ export default {
           username: this.$store.state.user.username,
           course: this.course,
           created: Date(Date.now()),
-          content: this.feedback
+          content: this.feedback,
+          overallRating: 1
         })
         if (response.data.error) {
           this.errors.push(response.data.error)
@@ -209,6 +219,13 @@ export default {
       this.cur_index = ''
       this.edit_comment = this.comments[commentIndex].content
       this.errors = []
+    },
+    upvote (commentIndex) {
+      this.$store.state.comments[commentIndex].overallRating + 1
+      votes(commentIndex)
+    },
+    votes (commentIndex) {
+      return this.$store.state.comments[commentIndex].overallRating
     }
   }
 }
