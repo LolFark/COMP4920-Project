@@ -5,11 +5,11 @@ const { Schema } = mongoose;
 const CommentSchema = new Schema({
   username: { type: String },
   course: { type: Schema.Types.ObjectId, ref: 'Course' },
-  liked_users: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  likedUsers: [{ type: Schema.Types.ObjectId, ref: 'User' }],
   created: { type: Date },
   edited: { type: Boolean },
   replies: [{ type: Schema.Types.ObjectId, ref: 'Reply' }],
-  overall_rating: { type: Number },
+  overallRating: { type: Number },
   difficulty: { type: Number },
   content: String,
 });
