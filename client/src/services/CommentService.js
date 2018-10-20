@@ -14,5 +14,14 @@ export default {
   },
   getUserComments (param) {
     return Api().post('getUserComments', param)
+  },
+  addReply (params) {
+    return Api().post('addReply', params)
+  },
+  deleteReply (param) {
+    return Api().post('deleteReply', param)
+  },
+  editReply (param) {
+    return Api().post('editReply', param)
   }
 }
