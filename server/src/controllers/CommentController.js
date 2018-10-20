@@ -20,7 +20,6 @@ module.exports = {
       username,
       course,
       content,
-      overallRating,
     } = req.body;
     const created = new Date();
     const newComment = new Comment({
@@ -28,7 +27,7 @@ module.exports = {
       course,
       created,
       content,
-      overallRating,
+      overallRating: 1,
     });
     await newComment.save((error, comment) => {
       if (error) {
@@ -78,6 +77,21 @@ module.exports = {
       }
       console.log(`comment by ${username} on ${course} editted successfully`);
       return res.send({ success: true });
+    });
+  },
+  async getUserComments(req, res) {
+    Comment.find({ username: req.body.username }, (err, comments) => {
+      console.log(req.body.username);
+      if (err) {
+        console.log(err);
+        return res.status(404).send({
+          error: err,
+        });
+      }
+      console.log(comments);
+      return res.send({
+        comments,
+      });
     });
   },
 };
