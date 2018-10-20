@@ -209,10 +209,9 @@ export default {
     },
     async addComment () {
       this.errors = []
-      // If there is no feedback, prevent user from posting comment
       const response = await CommentService.addComment({
         username: this.$store.state.user.username,
-        course: this.course,
+        code: this.course.code,
         content: this.feedback,
         rating: this.rating,
       })
