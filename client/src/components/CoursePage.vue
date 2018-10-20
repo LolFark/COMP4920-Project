@@ -250,7 +250,6 @@ export default {
       if (this.edit_comment === this.comments[commentIndex].content) {
         this.errors.push('No edit made')
       } else {
-        const cmnt = this.comments[commentIndex]
         const response = await CommentService.editComment({
           username: this.$store.state.user.username,
           code: this.course.code,
