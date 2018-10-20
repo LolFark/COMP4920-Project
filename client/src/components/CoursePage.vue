@@ -96,11 +96,6 @@ export default {
       reply_index: ''
     }
   },
-  computed: {
-    comments () {
-      return this.$store.state.comments
-    }
-  },
   mounted () {
     this.getCourse()
     this.getComments()

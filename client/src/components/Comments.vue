@@ -1,13 +1,10 @@
-<template>
-  <div>
-    <h4>Comments</h4>
-    <div v-if="$store.state.authenticated">
-      <textarea id="feedback" placeholder="Leave a comment" v-model="feedback"></textarea>
-    </div>
-    <ul v-for="comment in comments" v-bind:key="comment">
-      <li>{{comment.content}}</li>
-    </ul>
-  </div>
+<template id="post-template">
+  <li class="list-group-item">
+    <i class="glyphicon glyphicon-chevron-up" @click="upvote" :class="{disabled: upvoted}"></i>
+    <span class="label label-primary">{{ votes }}</span>
+    <i class="glyphicon glyphicon-chevron-down" @click="downvote" :class="{disabled: downvoted}"></i>
+    <a>{{ post.title }}</a>
+  </li>
 </template>
 
 <script>
