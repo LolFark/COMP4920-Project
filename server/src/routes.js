@@ -14,6 +14,7 @@ module.exports = (app) => {
   app.post('/addComment', CommentController.addComment);
   app.post('/editComment', CommentController.editComment);
   app.post('/deleteComment', CommentController.deleteComment);
+  app.post('/getUserComments', CommentController.getUserComments);
   app.post('/addReply', ReplyController.addReply);
   app.post('/editReply', ReplyController.editReply);
   app.post('/deleteReply', ReplyController.deleteReply);

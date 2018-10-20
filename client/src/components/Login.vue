@@ -4,14 +4,19 @@
     <form id="login"
     autocomplete="off">
       <p v-if="error">{{ error }}</p>
-      <label for="username">Username</label>
-      <div>
-        <input id="username" type="text" v-model="username" autofocus>
-      </div>
-      <label for="password">Password</label>
-      <div>
-        <input id="password" type="password" v-model="password">
-      </div>
+      <v-layout justify-center>
+      <v-flex xs12 sm6 md3 justify-center>
+        <v-text-field
+          label="Username"
+          v-model="username"
+        ></v-text-field>
+        <v-text-field
+          label="Password"
+          :type="'password'"
+          v-model="password"
+        ></v-text-field>
+      </v-flex>
+      </v-layout>
       <div>
         <!-- have to change this button later cuz it prevents reloads-->
         <v-btn v-on:click="login()">Login</v-btn>
