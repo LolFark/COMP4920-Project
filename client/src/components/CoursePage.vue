@@ -50,11 +50,7 @@
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="startEditComment(index)">Edit</v-btn>
             <v-btn class="button" v-on:click="startEditReply(index)">Reply</v-btn>
             <br>
-              <span>{{ comment.content }}</span>
-              <v-btn flat icon color="pink" @click="upvote(index)">
-                <v-icon>keyboard_arrow_up</v-icon>
-              </v-btn>
-              <span>{{ votes(index) }}</span>
+            <comments-template :post="comment"></comments-template>
           </div>
           <div v-if="reply_index === index && is_editing_reply" class="editable-text">
             <textarea v-model="reply"></textarea>
@@ -74,9 +70,9 @@ import CourseService from '@/services/CourseService'
 import CommentService from '@/services/CommentService'
 import Comments from './Comments'
 export default {
-  props: [
-    'Comments'
-  ],
+  components: {
+    'comments-template': Comments
+  },
   data () {
     return {
       name: 'course_page',
@@ -94,11 +90,6 @@ export default {
       edit_comment: '',
       is_editing_reply: false, // this is for replies
       reply_index: ''
-    }
-  },
-  computed: {
-    comments () {
-      return this.$store.state.comments
     }
   },
   mounted () {
@@ -148,7 +139,7 @@ export default {
     },
     async getComments () {
       const response = await CommentService.getComments({ course_id: this.course._id })
-      this.$store.dispatch('setComments', response.data.comments)
+      this.comments = response.data.comments
       for (let i = 0; i < this.comments.length; i++) {
         var createdStr = this.comments[i].created
         this.comments[i].created = new Date(createdStr).toLocaleString()
@@ -203,7 +194,7 @@ export default {
         const response = await CommentService.addComment({
           username: this.$store.state.user.username,
           course: this.course,
-          content: this.feedback
+          content: this.feedback,
         })
         if (response.data.error) {
           this.errors.push(response.data.error)

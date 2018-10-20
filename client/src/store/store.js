@@ -14,7 +14,6 @@ const store = new Vuex.Store({
     user: null,
     authenticated: false,
     courses: [],
-    comments: [],
     currentCourse: null
   },
   mutations: {
@@ -27,12 +26,6 @@ const store = new Vuex.Store({
     },
     setCourses (state, courses) {
       state.courses = courses
-    },
-    setComments (state, comments) {
-      state.comments = comments
-    },
-    setCourse (state, course) {
-      state.course = course
     }
   },
   actions: {
@@ -44,15 +37,12 @@ const store = new Vuex.Store({
     },
     setCourses ({commit}, courses) {
       commit('setCourses', courses)
-    },
-    setComments ({commit}, comments) {
-      commit('setComments', comments)
-    },
-    setCourse ({commit}, course) {
-      commit('setCourse', course)
     }
   },
   getters: {
+    getCourse: state => index => {
+      return state.courses[index]
+    }
   }
 })
 
