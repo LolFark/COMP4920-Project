@@ -1,4 +1,5 @@
 const Course = require('../../models/course');
+const Comment = require('../../models/comment');
 
 module.exports = {
   // Fetch all courses
@@ -48,5 +49,23 @@ module.exports = {
         message: `Course ${code} added`,
       });
     });
-  }
+  },
+
+  async updateRating(req, res) {
+    const { code, satisfaction, difficulty } = req.body;
+    return Course.findOneAndUpdate(
+      { code },
+      {
+        popularity: satisfaction,
+        difficulty,
+      },
+      (err, _results) => {
+        if (err) {
+          console.log(err);
+          return res.status(500).send('Could not update');
+        }
+        return res.send('Successfully updated ratings');
+      },
+    );
+  },
 };
