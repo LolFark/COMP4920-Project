@@ -54,11 +54,29 @@
         <v-btn v-on:click="startChangeProfile()">Edit</v-btn>
       </p>
     </div>
-    <div id="comment-section">
-      <p>Test</p>
-      <ul v-for="comment in comments" v-bind:key="comment._id">
-        <li>{{ comment.content }}</li>
-      </ul>
+    <div id="Comments-component">
+      <!-- Display all comments -->
+      <div id="comment-section">
+        <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
+          <!-- If edit option has been selected -->
+          <!-- {{ comment }} -->
+          <div v-if="cur_index === index && edit_comment_start === true" class="editable-text">
+            <a v-on:click="$router.push(/courses/ + comment.code)">From: {{ comment.code }}</a> {{ comment.created }}
+            <v-btn class="button" v-on:click="cancelEdit(index)">Cancel</v-btn>
+            <v-btn class="button" v-on:click="editComment(index)">Save</v-btn>
+            <br>
+            <textarea v-model="edit_comment"></textarea>
+          </div>
+          <!-- If edit option is not selected -->
+          <div v-else class="editable-text">
+            <a v-on:click="$router.push(/courses/ + comment.code)">From: {{ comment.code }}</a> {{ comment.created }}
+            <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="deleteComment(index)">Delete</v-btn>
+            <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="startEditComment(index)">Edit</v-btn>
+            <br>
+            <comments-template :post="comment"></comments-template>
+          </div>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -66,7 +84,11 @@
 <script>
 import UserService from '@/services/UserService'
 import CommentService from '@/services/CommentService'
+import Comments from './Comments'
 export default {
+  components: {
+    'comments-template': Comments
+  },
   data () {
     return {
       name: 'user_page',
@@ -77,6 +99,11 @@ export default {
       edit: false,
       email: '',
       description: '',
+
+      // Edit user comment
+      edit_comment_start: false,
+      cur_index: '',
+      edit_comment: '',
 
       // Change password information
       change_password: false,
@@ -170,6 +197,51 @@ export default {
         }
       }
     },
+    async deleteComment (commentIndex) {
+      const response = await CommentService.deleteComment({
+        username: this.$store.state.user.username,
+        code: this.comments[commentIndex].code,
+        content: this.comments[commentIndex].content
+      })
+      if (response.data.error) {
+        this.errors.push(response.data.error)
+      } else {
+        // Remove deleted comment from comments array
+        this.comments.splice(commentIndex, 1)
+        // Move the index down by one if the deleted comment is below what is currently being edited
+        if (this.cur_index && this.cur_index > commentIndex) {
+          this.cur_index = this.cur_index - 1
+        }
+      }
+    },
+    // Set values needed to edit comments
+    startEditComment (commentIndex) {
+      this.edit_comment_start = true
+      this.cur_index = commentIndex
+      this.edit_comment = this.comments[commentIndex].content
+    },
+    async editComment (commentIndex) {
+      // If there are no edits made
+      if (this.edit_comment === this.comments[commentIndex].content) {
+        this.errors.push('No edit made')
+      } else {
+        const cmnt = this.comments[commentIndex]
+        const response = await CommentService.editComment({
+          username: this.$store.state.user.username,
+          code: this.comments[commentIndex].code,
+          created: cmnt.created,
+          newContent: this.edit_comment
+        })
+        if (response.data.error) {
+          this.errors.pus(response.data.error)
+        } else {
+          // Update the comments array with new comment
+          this.comments[commentIndex].content = this.edit_comment
+          // Reset
+          this.cancelEdit(commentIndex)
+        }
+      }
+    },
     // Restore everything back to default
     cancel () {
       this.edit = false
@@ -180,11 +252,20 @@ export default {
       this.email = this.user.email
       this.description = this.user.description
     },
+    cancelEdit (commentIndex) {
+      this.edit_comment_start = false
+      this.cur_index = ''
+      this.edit_comment = this.comments[commentIndex].content
+    },
     async getComments () {
       const response = await CommentService.getUserComments({
         username: this.username
       })
       this.comments = response.data.comments
+      for (let i = 0; i < this.comments.length; i++) {
+        var createdStr = this.comments[i].created
+        this.comments[i].created = new Date(createdStr).toLocaleString()
+      }
     }
   }
 }
@@ -200,5 +281,16 @@ a {
 }
 .user_info {
   text-align: left
+}
+.editable-text {
+  text-align: left;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  word-wrap: break-word;
+}
+.button {
+  float: right;
+  padding: 5px;
 }
 </style>

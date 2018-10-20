@@ -142,7 +142,7 @@ export default {
       }
     },
     async getComments () {
-      const response = await CommentService.getComments({ course_id: this.course._id })
+      const response = await CommentService.getComments({ code: this.course.code })
       const allComments = response.data.comments
       var ratingSum = 0;
       var numComments = 0;
@@ -229,7 +229,7 @@ export default {
     async deleteComment (commentIndex) {
       const response = await CommentService.deleteComment({
         username: this.$store.state.user.username,
-        course: this.course,
+        code: this.course.code,
         content: this.comments[commentIndex].content
       })
       if (response.data.error) {
@@ -257,8 +257,8 @@ export default {
         const cmnt = this.comments[commentIndex]
         const response = await CommentService.editComment({
           username: this.$store.state.user.username,
-          course: this.course,
-          created: cmnt.created,
+          code: this.course.code,
+          oldContent: this.comments[commentIndex].content,
           newContent: this.edit_comment
         })
         if (response.data.error) {
