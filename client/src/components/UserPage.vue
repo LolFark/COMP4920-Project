@@ -54,6 +54,11 @@
         <v-btn v-on:click="startChangeProfile()">Edit</v-btn>
       </p>
     </div>
+    <div id="liked-comments">
+      <ul v-for="liked in likedComments" :key="liked._id">
+        <li>{{ liked.content }}</li>
+      </ul>
+    </div>
     <div id="Comments-component">
       <!-- Display all comments -->
       <div id="comment-section">
@@ -114,7 +119,7 @@ export default {
       // Returned from backend to display
       message: '',
       errors: [],
-      comments: []
+      comments: [],
     }
   },
   mounted () {
@@ -130,6 +135,7 @@ export default {
       this.user = response.data.user
       this.email = this.user.email
       this.description = this.user.description
+      this.likedComments = this.user.likedComments
     },
     // Set data to start password change option
     startChangePassword () {
@@ -266,7 +272,7 @@ export default {
         var createdStr = this.comments[i].created
         this.comments[i].created = new Date(createdStr).toLocaleString()
       }
-    }
+    },
   }
 }
 </script>
