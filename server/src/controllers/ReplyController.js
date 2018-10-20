@@ -20,15 +20,15 @@ module.exports = {
     const {
       username,
       commentId,
-      created,
       content,
     } = req.body;
-    const newReply = new Reply({
+    const created = new Date();
+    const newReply = {
       username,
       created,
       content,
-    });
-    newReply.save();
+      num_likes: 0,
+    };
     Comment.findOneAndUpdate(
       { _id: commentId },
       { $push: { replies: newReply } },

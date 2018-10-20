@@ -160,7 +160,6 @@ export default {
         const response = await CommentService.addReply({
           username: this.$store.state.user.username,
           commentId: commentId,
-          created: Date(Date.now()),
           content: this.reply
         })
         if (response.data.error) {
