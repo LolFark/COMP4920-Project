@@ -24,4 +24,7 @@ module.exports = (app) => {
   app.post('/user', UserController.getUser);
   app.post('/updatePassword', UserController.updatePassword);
   app.post('/updateProfile', UserController.updateProfile);
+  app.post('/likeComment', UserController.likeComment);
+  app.post('/unlikeComment', UserController.unlikeComment);
+  app.get('/updateDiff', CourseController.updateDiff);
 };

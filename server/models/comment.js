@@ -16,6 +16,7 @@ const CommentSchema = new Schema({
   }],
   rating: { type: Number },
   difficulty: { type: Number },
+  commentRating: { type: Number, default: 1},
   content: String,
 });
 
