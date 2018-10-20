@@ -19,13 +19,13 @@ module.exports = {
     const {
       username,
       course,
-      created,
       content,
     } = req.body;
+    const created = new Date();
     const newComment = new Comment({
       username,
       course,
-      created, // change this?
+      created,
       content,
     });
     await newComment.save((error, comment) => {
