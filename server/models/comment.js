@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 
 const CommentSchema = new Schema({
   username: { type: String },
-  course: { type: Schema.Types.ObjectId, ref: 'Course' },
+  code: { type: String },
   likedUsers: [{ type: Schema.Types.ObjectId, ref: 'User' }],
   created: { type: Date },
   edited: { type: Boolean },
@@ -14,7 +14,7 @@ const CommentSchema = new Schema({
     content: String,
     num_likes: Number,
   }],
-  overallRating: { type: Number },
+  rating: { type: Number },
   difficulty: { type: Number },
   content: String,
 });
