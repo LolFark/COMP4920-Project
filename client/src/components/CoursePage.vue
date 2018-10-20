@@ -188,7 +188,6 @@ export default {
         const response = await CommentService.addComment({
           username: this.$store.state.user.username,
           course: this.course,
-          created: Date(Date.now()),
           content: this.feedback
         })
         if (response.data.error) {
