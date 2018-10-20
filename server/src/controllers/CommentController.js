@@ -79,4 +79,19 @@ module.exports = {
       return res.send({ success: true });
     });
   },
+  async getUserComments(req, res) {
+    Comment.find({ username: req.body.username }, (err, comments) => {
+      console.log(req.body.username);
+      if (err) {
+        console.log(err);
+        return res.status(404).send({
+          error: err,
+        });
+      }
+      console.log(comments);
+      return res.send({
+        comments,
+      });
+    });
+  },
 };
