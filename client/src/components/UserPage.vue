@@ -232,7 +232,7 @@ export default {
           newContent: this.edit_comment
         })
         if (response.data.error) {
-          this.errors.pus(response.data.error)
+          this.errors.push(response.data.error)
         } else {
           // Update the comments array with new comment
           this.comments[commentIndex].content = this.edit_comment
