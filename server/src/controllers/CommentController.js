@@ -2,7 +2,7 @@ const Comment = require('../../models/comment');
 
 module.exports = {
   async getComments(req, res) {
-    Comment.find({ course: req.body.course_id }, (err, comments) => {
+    Comment.find({ code: req.body.code }, (err, comments) => {
       if (err) {
         console.log(err);
         return res.status(404).send({
@@ -18,13 +18,13 @@ module.exports = {
   async addComment(req, res) {
     const {
       username,
-      course,
+      code,
       content,
     } = req.body;
     const created = new Date();
     const newComment = new Comment({
       username,
-      course,
+      code,
       created,
       content,
       overallRating: 1,
@@ -36,7 +36,7 @@ module.exports = {
           error: 'Failed to post comment',
         });
       }
-      console.log(`new comment added to ${course}`);
+      console.log(`new comment added to ${code}`);
       res.send({
         comment,
       });
@@ -44,15 +44,15 @@ module.exports = {
   },
 
   async deleteComment(req, res) {
-    const { username, course, content } = req.body;
-    return Comment.deleteOne({ username, course, content }, (err) => {
+    const { username, code, content } = req.body;
+    return Comment.deleteOne({ username, code, content }, (err) => {
       if (err) {
-        console.log(`failed to delete comment by ${username} from ${course}`);
+        console.log(`failed to delete comment by ${username} from ${code}`);
         return res.status(400).send({
           err,
         });
       }
-      console.log(`comment by ${username} on ${course} deleted successfully`);
+      console.log(`comment by ${username} on ${code} deleted successfully`);
       return res.send({
         success: true,
       });
@@ -62,20 +62,20 @@ module.exports = {
   async editComment(req, res) {
     const {
       username,
-      course,
-      created,
+      code,
+      oldContent,
       newContent,
     } = req.body;
     await Comment.findOneAndUpdate({
       username,
-      course,
-      created,
+      code,
+      content: oldContent,
     }, { content: newContent }, { new: true }, (err) => {
       if (err) {
-        console.log(`failed to edit comment by ${username} on ${course}`);
+        console.log(`failed to edit comment by ${username} on ${code}`);
         return res.status(400).send({ success: false });
       }
-      console.log(`comment by ${username} on ${course} editted successfully`);
+      console.log(`comment by ${username} on ${code} editted successfully`);
       return res.send({ success: true });
     });
   },
