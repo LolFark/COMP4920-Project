@@ -4,6 +4,7 @@
     <table v-if="course === null">
       <h2><b>COURSE NO LONGER EXISTS</b></h2>
     </table>
+    <p> Average rating: {{ overallRating.toFixed(2) }} / 5, based on {{ numComments }} ratings.</p>
     <table class="course_info" v-if="course !== null">
       <tr class="course_code"><b>Code: </b><a v-bind:href="course.handbook_url">{{ course.code }}</a></tr>
       <tr class="course_name"><b>Name: </b>{{ course.name }}</tr>
@@ -27,6 +28,7 @@
       <!-- If user is authenticated, allow them to post a comment -->
       <div v-if="$store.state.authenticated">
         <form>
+          <v-rating half-increments hover v-model="rating"></v-rating>
           <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
           <v-btn v-on:click="addComment">Post</v-btn>
         </form>
@@ -81,6 +83,9 @@ export default {
       feedback: '', // feedback by the current user
       reply: '',
       comments: [], // previously submitted comments for the course
+      rating: 2,
+      overallRating: 0,
+      numComments: 0,
 
       errors: [],
 
@@ -94,7 +99,7 @@ export default {
   },
   mounted () {
     this.getCourse()
-    this.getComments()
+    // this.getComments()
   },
   methods: {
     async getCourse () {
@@ -139,10 +144,27 @@ export default {
     },
     async getComments () {
       const response = await CommentService.getComments({ code: this.course.code })
-      this.comments = response.data.comments
-      for (let i = 0; i < this.comments.length; i++) {
-        var createdStr = this.comments[i].created
-        this.comments[i].created = new Date(createdStr).toLocaleString()
+      const allComments = response.data.comments
+      var ratingSum = 0;
+      var numComments = 0;
+      var totalComments = allComments.length;
+      for (let i = 0; i < allComments.length; i += 1) {
+        var cmnt = allComments[i];
+        if(cmnt.rating && !Number.isNaN(cmnt.rating)) {
+          ratingSum += cmnt.rating;
+          numComments += 1;
+        }
+        // ignoring empty comments
+        if(numComments != 0) {
+          this.overallRating = ratingSum / numComments;
+          this.numComments = numComments;
+        }
+        // remove empty comments from display
+        if (!cmnt.content) { continue }
+        var createdStr = cmnt.created;
+        var date = new Date(createdStr).toLocaleString();
+        cmnt.created = date;
+        this.comments.push(cmnt);
       }
       this.comments.sort((a,b) => {
         if (a.created < b.created) {
@@ -187,21 +209,17 @@ export default {
     },
     async addComment () {
       this.errors = []
-      // If there is no feedback, prevent user from posting comment
-      if (this.feedback === '') {
-        this.errors.push('No feedback written')
+      const response = await CommentService.addComment({
+        username: this.$store.state.user.username,
+        code: this.course.code,
+        content: this.feedback,
+        rating: this.rating,
+      })
+      if (response.data.error) {
+        this.errors.push(response.data.error)
       } else {
-        const response = await CommentService.addComment({
-          username: this.$store.state.user.username,
-          code: this.course.code,
-          content: this.feedback,
-        })
-        if (response.data.error) {
-          this.errors.push(response.data.error)
-        } else {
-          this.comments.push(response.data.comment)
-          this.feedback = ''
-        }
+        this.comments.push(response.data.comment)
+        this.feedback = ''
       }
     },
     async deleteComment (commentIndex) {
