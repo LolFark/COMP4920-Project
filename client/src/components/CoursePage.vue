@@ -35,6 +35,7 @@
       <div id="comment-section">
         <ul v-for="(comment, index) in comments" v-bind:key="comment._id">
           <!-- If edit option has been selected -->
+          <!-- {{ comment }} -->
           <div v-if="cur_index === index && edit === true" class="editable-text">
             <a v-on:click="$router.push(/user/ + comment.username)">{{ comment.username }}</a> {{ comment.created }}
             <v-btn class="button" v-on:click="cancel(index)">Cancel</v-btn>
@@ -47,12 +48,18 @@
             <a v-on:click="$router.push(/user/ + comment.username)">{{ comment.username }}</a> {{ comment.created }}
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="deleteComment(index)">Delete</v-btn>
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="startEditComment(index)">Edit</v-btn>
+            <v-btn class="button" v-on:click="startEditReply(index)">Reply</v-btn>
             <br>
               <span>{{ comment.content }}</span>
               <v-btn flat icon color="pink" @click="upvote(index)">
                 <v-icon>keyboard_arrow_up</v-icon>
               </v-btn>
               <span>{{ votes(index) }}</span>
+          </div>
+          <div v-if="reply_index === index && is_editing_reply" class="editable-text">
+            <textarea v-model="reply"></textarea>
+            <v-btn class="button" v-on:click="cancelReply(index)">Cancel</v-btn>
+            <v-btn class="button" v-on:click="addReply(index)">Save</v-btn>
           </div>
         </ul>
       </div>
@@ -76,13 +83,17 @@ export default {
       code: this.$route.params.id,
       course: '',
       feedback: '', // feedback by the current user
+      reply: '',
+      comments: [], // previously submitted comments for the course
 
       errors: [],
 
-      // Variables for user editing comments
-      edit: false,
+      // Variables for user editing comments and replies
+      edit: false, // this is for comments
       cur_index: '',
-      edit_comment: ''
+      edit_comment: '',
+      is_editing_reply: false, // this is for replies
+      reply_index: ''
     }
   },
   computed: {
@@ -139,7 +150,8 @@ export default {
       const response = await CommentService.getComments({ course_id: this.course._id })
       this.$store.dispatch('setComments', response.data.comments)
       for (let i = 0; i < this.comments.length; i++) {
-        this.comments[i].created = this.comments[i].created.replace(/^(.{10})T(.{8}).*$/, '$1 $2')
+        var createdStr = this.comments[i].created
+        this.comments[i].created = new Date(createdStr).toLocaleString()
       }
       this.comments.sort((a,b) => {
         if (a.created < b.created) {
@@ -151,6 +163,37 @@ export default {
         return 0
       })
     },
+    async addReply (commentIndex) {
+      this.errors = []
+      const myCmnt = this.comments[commentIndex]
+      console.log(myCmnt)
+      const commentId = this.comments[commentIndex]._id
+      // If there is no feedback, prevent user from posting comment
+      if (this.reply === '') {
+        this.errors.push('Empty reply')
+      } else {
+        const response = await CommentService.addReply({
+          username: this.$store.state.user.username,
+          commentId: commentId,
+          content: this.reply
+        })
+        if (response.data.error) {
+          this.errors.push(response.data.error)
+        } else {
+          this.comments.push(response.data.comment)
+          this.feedback = ''
+        }
+      }
+    },
+    startEditReply (commentIndex) {
+      this.is_editing_reply = true
+      this.reply_index = commentIndex
+    },
+    cancelReply (commentIndex) {
+      this.is_editing_reply = false
+      this.reply_index = ''
+      this.errors = []
+    },
     async addComment () {
       this.errors = []
       // If there is no feedback, prevent user from posting comment
@@ -160,9 +203,7 @@ export default {
         const response = await CommentService.addComment({
           username: this.$store.state.user.username,
           course: this.course,
-          created: Date(Date.now()),
-          content: this.feedback,
-          overallRating: 1
+          content: this.feedback
         })
         if (response.data.error) {
           this.errors.push(response.data.error)

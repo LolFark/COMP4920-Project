@@ -1,8 +1,9 @@
+const Reply = require('../../models/replies');
 const Comment = require('../../models/comment');
 
 module.exports = {
-  async getComments(req, res) {
-    Comment.find({ course: req.body.course_id }, (err, comments) => {
+  async getReplies(req, res) {
+    Reply.find({ course: req.body.course_id }, (err, comments) => {
       if (err) {
         console.log(err);
         return res.status(404).send({
@@ -15,38 +16,40 @@ module.exports = {
     });
   },
 
-  async addComment(req, res) {
+  async addReply(req, res) {
     const {
       username,
-      course,
+      commentId,
       content,
-      overallRating,
     } = req.body;
     const created = new Date();
-    const newComment = new Comment({
+    const newReply = {
       username,
-      course,
       created,
       content,
-      overallRating,
-    });
-    await newComment.save((error, comment) => {
-      if (error) {
-        console.log(error);
+      num_likes: 0,
+    };
+    Comment.findOneAndUpdate(
+      { _id: commentId },
+      { $push: { replies: newReply } },
+      (err) => {
+        if (err) {
+          console.log(err);
+          res.status(500).send({
+            error: 'Failed to post comment',
+          });
+        }
+        console.log(`new reply added to ${commentId}`);
         res.send({
-          error: 'Failed to post comment',
+          success: true,
         });
-      }
-      console.log(`new comment added to ${course}`);
-      res.send({
-        comment,
-      });
-    });
+      },
+    );
   },
 
-  async deleteComment(req, res) {
+  async deleteReply(req, res) {
     const { username, course, content } = req.body;
-    return Comment.deleteOne({ username, course, content }, (err) => {
+    return Reply.deleteOne({ username, course, content }, (err) => {
       if (err) {
         console.log(`failed to delete comment by ${username} from ${course}`);
         return res.status(400).send({
@@ -60,14 +63,14 @@ module.exports = {
     });
   },
 
-  async editComment(req, res) {
+  async editReply(req, res) {
     const {
       username,
       course,
       created,
       newContent,
     } = req.body;
-    await Comment.findOneAndUpdate({
+    await Reply.findOneAndUpdate({
       username,
       course,
       created,

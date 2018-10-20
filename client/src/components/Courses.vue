@@ -105,6 +105,7 @@ export default {
     },
     navigate (to) {
       this.$router.push(to)
+      this.$store.dispatch('setCourse', course)
     },
     checkAll () {
       this.levels = []

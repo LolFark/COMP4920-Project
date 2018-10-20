@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const { Schema } = mongoose.Schema;
+const { Schema } = mongoose;
 
 const ReplySchema = new Schema({
-  user: { type: Schema.Types.ObjectId, ref: 'User' },
-  liked_users: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  username: { type: String },
+  num_likes: { type: Number },
   created: { type: Date },
   edited: { type: Boolean },
   content: String,

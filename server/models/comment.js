@@ -8,7 +8,12 @@ const CommentSchema = new Schema({
   likedUsers: [{ type: Schema.Types.ObjectId, ref: 'User' }],
   created: { type: Date },
   edited: { type: Boolean },
-  replies: [{ type: Schema.Types.ObjectId, ref: 'Reply' }],
+  replies: [{
+    username: String,
+    created: Date,
+    content: String,
+    num_likes: Number,
+  }],
   overallRating: { type: Number },
   difficulty: { type: Number },
   content: String,

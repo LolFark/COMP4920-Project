@@ -28,7 +28,6 @@ export default {
       await CommentService.addComment({
         user: this.$store.state.user,
         course: this.$route.params.id,
-        created: Date.now(),
         content: this.feedback
       })
     }
