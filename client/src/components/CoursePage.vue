@@ -136,7 +136,8 @@ export default {
       const response = await CommentService.getComments({ course_id: this.course._id })
       this.comments = response.data.comments
       for (let i = 0; i < this.comments.length; i++) {
-        this.comments[i].created = this.comments[i].created.replace(/^(.{10})T(.{8}).*$/, '$1 $2')
+        var createdStr = this.comments[i].created
+        this.comments[i].created = new Date(createdStr).toLocaleString()
       }
       this.comments.sort((a,b) => {
         if (a.created < b.created) {
@@ -188,7 +189,6 @@ export default {
         const response = await CommentService.addComment({
           username: this.$store.state.user.username,
           course: this.course,
-          created: Date(Date.now()),
           content: this.feedback
         })
         if (response.data.error) {
