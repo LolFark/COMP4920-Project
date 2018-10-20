@@ -28,7 +28,7 @@
       <!-- If user is authenticated, allow them to post a comment -->
       <div v-if="$store.state.authenticated">
         <form>
-          <v-rating v-model="rating"></v-rating>
+          <v-rating half-increments hover v-model="rating"></v-rating>
           <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
           <v-btn v-on:click="addComment">Post</v-btn>
         </form>
