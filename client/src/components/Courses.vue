@@ -16,7 +16,6 @@
     <select v-model="selected">
       <option value="code">Course Code</option>
       <option value="name">Course Name</option>
-      <option value="faculty">Faculty</option>
     </select>
     </v-layout>
     <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Can't find? Add new Course</router-link>
@@ -147,40 +146,15 @@ export default {
     searchedCourses: function () {
       var searchReg = new RegExp(this.search, 'i')
       var facultyReg = new RegExp(this.faculty)
-
-      if (this.selected === 'code') {
-        return this.courses.filter((course) => {
-          for (var level in this.levels) {
-            var levelregex = '^[A-Z]{4}' + this.levels[level]
-            var levelReg = new RegExp(levelregex)
-            if (searchReg.test(course.code) && (facultyReg.test(course.faculty)) && (levelReg.test(course.code))) {
-              return course
-            }
+      return this.courses.filter((course) => {
+        for (var level in this.levels) {
+          var levelregex = '^[A-Z]{4}' + this.levels[level]
+          var levelReg = new RegExp(levelregex)
+          if (searchReg.test((this.selected === 'code') ? course.code : course.name) && (facultyReg.test(course.faculty)) && (levelReg.test(course.code))) {
+            return course
           }
-        })
-      }
-      if (this.selected === 'name') {
-        return this.courses.filter((course) => {
-          for (var level in this.levels) {
-            var levelregex = '^[A-Z]{4}' + this.levels[level]
-            var levelReg = new RegExp(levelregex)
-            if (searchReg.test(course.name) && (facultyReg.test(course.faculty)) && (levelReg.test(course.code))) {
-              return course
-            }
-          }
-        })
-      }
-      if (this.selected === 'faculty') {
-        return this.courses.filter((course) => {
-          for (var level in this.levels) {
-            var levelregex = '^[A-Z]{4}' + this.levels[level]
-            var levelReg = new RegExp(levelregex)
-            if (searchReg.test(course.faculty) && (facultyReg.test(course.faculty)) && (levelReg.test(course.code))) {
-              return course
-            }
-          }
-        })
-      }
+        }
+      })
     }
   }
 }

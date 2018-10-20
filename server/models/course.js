@@ -1,17 +1,20 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
-var CourseSchema = new Schema({
-  code: String,
-  name: String,
-  faculty: String,
-  grad_level: String,
-  co_reqs: String,
-  pre_reqs: String,
-  exclusions: String,
-  course_des: String,
-  handbook_url: String
+const { Schema } = mongoose;
+
+const CourseSchema = new Schema({
+  code: { type: String },
+  name: { type: String },
+  faculty: { type: String },
+  grad_level: { type: String },
+  co_reqs: { type: String },
+  pre_reqs: { type: String },
+  exclusions: { type: String },
+  course_des: { type: String },
+  handbook_url: { type: String },
+  popularity: { type: Number },
+  diffculty: { type: Number },
 });
 
-var Course = mongoose.model("Course", CourseSchema);
+const Course = mongoose.model('Course', CourseSchema);
 module.exports = Course;

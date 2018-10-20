@@ -13,7 +13,8 @@ const store = new Vuex.Store({
     token: null,
     user: null,
     authenticated: false,
-    courses: []
+    courses: [],
+    currentCourse: null
   },
   mutations: {
     setToken (state, token) {
@@ -36,6 +37,11 @@ const store = new Vuex.Store({
     },
     setCourses ({commit}, courses) {
       commit('setCourses', courses)
+    }
+  },
+  getters: {
+    getCourse: state => index => {
+      return state.courses[index]
     }
   }
 })

@@ -54,11 +54,18 @@
         <v-btn v-on:click="startChangeProfile()">Edit</v-btn>
       </p>
     </div>
+    <div id="comment-section">
+      <p>Test</p>
+      <ul v-for="comment in comments" v-bind:key="comment._id">
+        <li>{{ comment.content }}</li>
+      </ul>
+    </div>
   </div>
 </template>
 
 <script>
 import UserService from '@/services/UserService'
+import CommentService from '@/services/CommentService'
 export default {
   data () {
     return {
@@ -79,11 +86,13 @@ export default {
 
       // Returned from backend to display
       message: '',
-      errors: []
+      errors: [],
+      comments: []
     }
   },
   mounted () {
     this.getUser()
+    this.getComments()
   },
   methods: {
     // Gets specific user from database
@@ -170,6 +179,12 @@ export default {
       this.errors = []
       this.email = this.user.email
       this.description = this.user.description
+    },
+    async getComments () {
+      const response = await CommentService.getUserComments({
+        username: this.username
+      })
+      this.comments = response.data.comments
     }
   }
 }
