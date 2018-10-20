@@ -1,18 +1,10 @@
 <template>
   <div class="course_page">
     <h1>Course {{ $route.params.id }}</h1>
-    <v-rating
-      v-model="rating"
-      background-color="purple lighten-3"
-      color="purple"
-      small
-    ></v-rating>
-    <div>
-      <v-btn flat small color="primary" v-on:click="addRate">Post Rate</v-btn>
-    </div>
     <table v-if="course === null">
       <h2><b>COURSE NO LONGER EXISTS</b></h2>
     </table>
+    <v-rating v-model="overallRating"></v-rating>
     <table class="course_info" v-if="course !== null">
       <tr class="course_code"><b>Code: </b><a v-bind:href="course.handbook_url">{{ course.code }}</a></tr>
       <tr class="course_name"><b>Name: </b>{{ course.name }}</tr>
@@ -36,6 +28,7 @@
       <!-- If user is authenticated, allow them to post a comment -->
       <div v-if="$store.state.authenticated">
         <form>
+          <v-rating v-model="rating"></v-rating>
           <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
           <v-btn v-on:click="addComment">Post</v-btn>
         </form>
@@ -90,7 +83,8 @@ export default {
       feedback: '', // feedback by the current user
       reply: '',
       comments: [], // previously submitted comments for the course
-      rating: 4,
+      rating: 2,
+      overallRating: 3,
 
       errors: [],
 
@@ -149,11 +143,30 @@ export default {
     },
     async getComments () {
       const response = await CommentService.getComments({ course_id: this.course._id })
-      this.comments = response.data.comments
-      for (let i = 0; i < this.comments.length; i++) {
-        var createdStr = this.comments[i].created
-        this.comments[i].created = new Date(createdStr).toLocaleString()
+      const allComments = response.data.comments
+      var ratingSum = 0;
+      var numComments = 0;
+      for (let i = 0; i < allComments.length; i += 1) {
+        var cmnt = allComments[i];
+        if(cmnt.overallRating && !Number.isNaN(cmnt.overallRating)) {
+          ratingSum += cmnt.overallRating;
+          numComments += 1;
+          console.log('YESSSSSSSSSSSSSSSSSSSSSSS')
+        }
+        // ignoring empty comments
+        if (!cmnt.content) { continue }
+        var createdStr = cmnt.created;
+        var date = new Date(createdStr).toLocaleString();
+        cmnt.created = date;
+        this.comments.push(cmnt);
       }
+      if(numComments == 0) {
+        this.overallRating = 0;
+      } else {
+        this.overallRating = ratingSum / numComments;
+      }
+      console.log('Total rating: ' + ratingSum + ', numComments: ' + numComments);
+      console.log('Overall Rating: ' + this.overallRating);
       this.comments.sort((a,b) => {
         if (a.created < b.created) {
           return -1
@@ -198,20 +211,17 @@ export default {
     async addComment () {
       this.errors = []
       // If there is no feedback, prevent user from posting comment
-      if (this.feedback === '') {
-        this.errors.push('No feedback written')
+      const response = await CommentService.addComment({
+        username: this.$store.state.user.username,
+        course: this.course,
+        content: this.feedback,
+        rating: this.rating,
+      })
+      if (response.data.error) {
+        this.errors.push(response.data.error)
       } else {
-        const response = await CommentService.addComment({
-          username: this.$store.state.user.username,
-          course: this.course,
-          content: this.feedback,
-        })
-        if (response.data.error) {
-          this.errors.push(response.data.error)
-        } else {
-          this.comments.push(response.data.comment)
-          this.feedback = ''
-        }
+        this.comments.push(response.data.comment)
+        this.feedback = ''
       }
     },
     async deleteComment (commentIndex) {
@@ -265,14 +275,6 @@ export default {
       this.cur_index = ''
       this.edit_comment = this.comments[commentIndex].content
       this.errors = []
-    },
-    async addRate () {
-      const response = await CommentService.addRate({
-          username: this.$store.state.user.username,
-          course: this.course,
-          created: Date(Date.now()),
-          content: this.rating
-        })
     },
     upvote (commentIndex) {
       this.$store.state.comments[commentIndex].overallRating + 1

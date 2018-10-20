@@ -20,6 +20,7 @@ module.exports = {
       username,
       course,
       content,
+      rating,
     } = req.body;
     const created = new Date();
     const newComment = new Comment({
@@ -27,7 +28,7 @@ module.exports = {
       course,
       created,
       content,
-      overallRating: 1,
+      rating,
     });
     await newComment.save((error, comment) => {
       if (error) {
