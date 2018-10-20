@@ -178,8 +178,8 @@ export default {
         this.numComments = numComments;
         CourseService.updateRating({
           code: this.code,
-          satisfaction: satisfactionRatingAvg,
-          difficulty: difficultyRatingAvg,
+          satisfaction: this.satisfactionRatingAvg,
+          difficulty: this.difficultyRatingAvg,
         });
       }
       this.comments.sort((a,b) => {
