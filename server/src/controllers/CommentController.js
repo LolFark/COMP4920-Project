@@ -1,4 +1,5 @@
 const Comment = require('../../models/comment');
+const User = require('../../models/user');
 
 module.exports = {
   async getComments(req, res) {
@@ -76,6 +77,30 @@ module.exports = {
         return res.status(400).send({ success: false });
       }
       console.log(`comment by ${username} on ${course} editted successfully`);
+      return res.send({ success: true });
+    });
+  },
+  async upVoteComment(req, res) {
+    const { comment, user } = req.body;
+    await Comment.findOneAndUpdate({ _id: comment._id }, {$addToSet: {likedUsers: user.username}, $inc: {overallRating: 1}}, {new: true}, (err) => {
+      if (err) {
+        console.log(`failed to add ${user.username} to ${comment.course}'s comment's liked users`)
+        return res.status(400).send({ success: false });
+      }
+      console.log(`${user.username} successfully added to comment's liked users`)
+      console.log(`comment now has ${comment.overallRating}`);
+      return res.send({ success: true });
+    });
+  },
+  async downVoteComment(req, res) {
+    const { comment, user } = req.body;
+    await Comment.findOneAndUpdate({ _id: comment._id }, {$pull: {likedUsers: user.username}, $inc: {overallRating: -1}}, {new: true}, (err) => {
+      if (err) {
+        console.log(`failed to add ${user.username} to ${comment.course}'s comment's liked users`)
+        return res.status(400).send({ success: false });
+      }
+      console.log(`${user.username} successfully added to comment's liked users`)
+      console.log(`comment now has ${comment.overallRating}`);
       return res.send({ success: true });
     });
   },
