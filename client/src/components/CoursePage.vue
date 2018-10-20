@@ -88,8 +88,8 @@ export default {
       feedback: '', // feedback by the current user
       reply: '',
       comments: [], // previously submitted comments for the course
-      satRating: 2,
-      diffRating: 2,
+      satRating: 2.5,
+      diffRating: 2.5,
       satisfactionRatingAvg: 0,
       difficultyRatingAvg: 0,
       numComments: 0,
