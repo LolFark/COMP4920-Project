@@ -50,7 +50,7 @@ module.exports = {
         }
         // Old password does match
         console.log(`Updating database with new password`);
-        const password = bcrypt.hashSync(newPassword, saltRounds);
+        const password = bcrypt.hashSync(new_password, saltRounds);
         // Change password in database
         User.findOneAndUpdate({ username }, { password }, { new: true }, (err3, updatedUser) => {
           if (err3) {
