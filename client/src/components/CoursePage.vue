@@ -65,7 +65,11 @@
 /* eslint-disable */
 import CourseService from '@/services/CourseService'
 import CommentService from '@/services/CommentService'
+import Comments from './Comments'
 export default {
+  props: [
+    'Comments'
+  ],
   data () {
     return {
       name: 'course_page',

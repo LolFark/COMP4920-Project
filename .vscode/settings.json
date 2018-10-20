@@ -1,4 +1,5 @@
 {
     "eslint.autoFixOnSave": false,
-    "javascript.validate.enable": false
+    "javascript.validate.enable": false,
+    "editor.lineNumbers": "relative"
 }
