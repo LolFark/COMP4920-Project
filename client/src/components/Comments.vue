@@ -20,6 +20,9 @@ export default {
   },
   computed: {
     votes () {
+      if (isNaN(this.post.overallRating)) {
+        return 1
+      }
       if (this.upvoted) {
         return this.post.overallRating + 1
       }
