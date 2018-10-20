@@ -17,11 +17,7 @@ module.exports = {
   },
 
   async addReply(req, res) {
-    const {
-      username,
-      commentId,
-      content,
-    } = req.body;
+    const { comment, username, content } = req.body;
     const created = new Date();
     const newReply = {
       username,
@@ -29,34 +25,33 @@ module.exports = {
       content,
       num_likes: 0,
     };
-    Comment.findOneAndUpdate(
-      { _id: commentId },
-      { $push: { replies: newReply } },
-      (err) => {
+    Comment.findOneAndUpdate({ _id: comment }, { $push: { replies: newReply } }, (err) => {
         if (err) {
           console.log(err);
           res.status(500).send({
             error: 'Failed to post comment',
           });
         }
-        console.log(`new reply added to ${commentId}`);
+        console.log(`new reply added to ${comment}`);
         res.send({
           success: true,
+          reply: newReply,
         });
       },
     );
   },
 
   async deleteReply(req, res) {
-    const { username, course, content } = req.body;
-    return Reply.deleteOne({ username, course, content }, (err) => {
+    const { _id, reply } = req.body;
+    Comment.findOneAndUpdate({ _id }, { $pull: { replies: reply }}, (err) => {
       if (err) {
-        console.log(`failed to delete comment by ${username} from ${course}`);
+        console.log(`failed to remove comment`);
         return res.status(400).send({
           err,
         });
+
       }
-      console.log(`comment by ${username} on ${course} deleted successfully`);
+      console.log(`comment deleted successfully`);
       return res.send({
         success: true,
       });
@@ -64,22 +59,13 @@ module.exports = {
   },
 
   async editReply(req, res) {
-    const {
-      username,
-      course,
-      created,
-      newContent,
-    } = req.body;
-    await Reply.findOneAndUpdate({
-      username,
-      course,
-      created,
-    }, { content: newContent }, { new: true }, (err) => {
+    const { comment, reply, newContent } = req.body;
+    await Comment.findOneAndUpdate({ _id: comment, replies: reply }, { $set: { 'replies.$.content': newContent } }, (err) => {
       if (err) {
-        console.log(`failed to edit comment by ${username} on ${course}`);
+        console.log(`failed to edit comment by ${reply.username} on ${comment.code}`);
         return res.status(400).send({ success: false });
       }
-      console.log(`comment by ${username} on ${course} editted successfully`);
+      console.log(`comment by ${reply.username} on ${comment.code} editted successfully`);
       return res.send({ success: true });
     });
   },
