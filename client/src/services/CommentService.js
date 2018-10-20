@@ -13,6 +13,9 @@ export default {
   editComment(param) {
     return Api().post('editComment', param);
   },
+  getUserComments(param) {
+    return Api().post('getUserComments', param);
+  },
   addReply(params) {
     return Api().post('addReply', params);
   },

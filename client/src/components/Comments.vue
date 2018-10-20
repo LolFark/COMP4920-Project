@@ -1,7 +1,7 @@
 <template id="Comments">
 <div>
   <li class="list-group-item">
-    <v-btn flat icon color="pink" @click="upvote">
+    <v-btn v-if="$store.state.authenticated" flat icon color="pink" @click="upvote">
       <v-icon>keyboard_arrow_up</v-icon>
     </v-btn>
     <span class="label label-primary">{{ votes }}</span>
