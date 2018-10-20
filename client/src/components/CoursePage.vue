@@ -1,10 +1,5 @@
 <template>
   <div class="course_page">
-    <v-jumbotron
-      :gradient="gradient"
-      dark
-      src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
-    >
     <h1>Course {{ $route.params.id }}</h1>
     <v-rating
       v-model="rating"
@@ -75,7 +70,6 @@
       </div>
     </div>
     <br>
-    </v-jumbotron>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="registerContainer">
     <h1>Sign up</h1>
     <form id="register" autocomplete="off">
       <p v-if="errors.length">
@@ -12,25 +12,47 @@
         <p>Successfully created {{ username }}</p>
       </div>
       <div v-else>
-        <label for="username">Username</label>
-        <div>
-            <input id="username" type="text" v-model="username" autofocus>
-        </div>
-        <label for="email" >E-Mail Address</label>
-        <div>
-            <input id="email" type="email" v-model="email" >
-        </div>
-        <label for="password">Password</label>
-        <div>
-            <vue-password v-model="password" classes="input"> </vue-password>
-        </div>
-        <label for="password-confirmation">Confirm Password</label>
-        <div>
-            <input id="password-confirmation" type="password" v-model="password_confirmation" >
-        </div>
-        <div>
-            <v-btn v-on:click="register()">Register</v-btn>
-        </div>
+        <v-layout justify-center>
+          <v-flex xs12 sm6 md3 justify-center>
+            <div class="username_box">
+              <div>
+                <v-text-field
+                label="Username"
+                v-model="username"
+                ></v-text-field>
+              </div>
+            </div>
+            <div class="email_box">
+              <div>
+                <v-text-field
+                  label="E-mail Address"
+                  v-model="email"
+                ></v-text-field>
+              </div>
+            </div>
+            <div class="password_box">
+              <label for="password">Password</label>
+              <div>
+                  <vue-password v-model="password" classes="input"> </vue-password>
+              </div>
+            </div>
+            <div class="confirm_box">
+              <div>
+                <v-text-field
+                label="Confirm Password"
+                v-model="password_confirmation"
+                :type="'password'"
+                id="password-confirmation"
+              ></v-text-field>
+              </div>
+            </div>
+            <div class="button_box">
+              <div>
+                  <v-btn v-on:click="register()">Register</v-btn>
+              </div>
+            </div>
+          </v-flex>
+        </v-layout>
       </div>
     </form>
   </div>
@@ -98,5 +120,38 @@ export default {
 </script>
 
 <style>
-
+.registerContainer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: rgb(144, 146, 137);
+}
+.username_box{
+  flex: 1;
+  position: relative;
+  top: 40px
+}
+.email_box{
+  flex: 1;
+  position: relative;
+  top: 60px
+}
+.password_box{
+  flex: 1;
+  position: relative;
+  top: 80px
+}
+.confirm_box{
+  flex: 1;
+  position: relative;
+  top: 100px
+}
+.button_box{
+  flex: 1;
+  position: relative;
+  top: 120px
+}
 </style>

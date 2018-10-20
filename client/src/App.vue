@@ -19,23 +19,9 @@
         <v-btn v-if="$store.state.authenticated" @click="$router.push(/user/ + $store.state.user.username)">{{ $store.state.user.username }}</v-btn>
         <v-btn v-if="$store.state.authenticated" @click="logout">Log out</v-btn>
       </v-toolbar>
-      <v-jumbotron
-        :gradient="gradient"
-        dark
-        src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
-        class="container-full-bg"
-        fill-height
-      >
-        <v-container fill-height fluid>
-          <v-layout>
-            <v-flex>
-              <main>
-                <router-view></router-view>
-              </main>
-            </v-flex>
-          </v-layout>
-        </v-container>
-      </v-jumbotron>
+        <main>
+          <router-view></router-view>
+        </main>
     </v-app>
   </div>
 </template>
@@ -64,20 +50,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #01060a;
   margin-top: 60px;
-}
-.jumbotron{
-    position:fixed;
-    top:0;
-    z-index:-1;
-    width:100%;
-    text-align: center;
-}
-.jumbotron img{
-    height:auto;
-    width:100%;
-    max-width:100%;
 }
 body {
     height: 100%;

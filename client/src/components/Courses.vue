@@ -1,61 +1,60 @@
 <template>
-  <div class="courses">
-  <v-jumbotron
-    :gradient="gradient"
-    dark
-    src="https://cdn.vuetifyjs.com/images/parallax/material2.jpg"
-  >
-  <v-container fill-height>
-  <v-layout>
-  <v-flex>
-    <v-layout justify-center row wrap>
-    <v-text-field
-      v-model="search"
-      placeholder="Search Course"
-    ></v-text-field>
-    <select v-model="selected">
-      <option value="code">Course Code</option>
-      <option value="name">Course Name</option>
-    </select>
-    </v-layout>
-    <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Can't find? Add new Course</router-link>
-    <p>
-      <input type="radio" id="allf" value="" v-model="faculty">
-      <label for="allf">All</label>
-      <input type="radio" id="art" value="Faculty of Arts and Social Sciences" v-model="faculty">
-      <label for="art">Faculty of Arts and Social Sciences</label>
-      <input type="radio" id="env" value="Built Environment" v-model="faculty">
-      <label for="env">Built Environment</label>
-      <input type="radio" id="eng" value="Faculty of Engineering" v-model="faculty">
-      <label for="eng">Faculty of Engineering</label>
-      <input type="radio" id="law" value="Faculty of Law" v-model="faculty">
-      <label for="law">Faculty of Law</label>
-      <input type="radio" id="med" value="Faculty of Medicine" v-model="faculty">
-      <label for="med">Faculty of Medicine</label>
-      <input type="radio" id="sci" value="Faculty of Science" v-model="faculty">
-      <label for="sci">Faculty of Science</label>
-      <input type="radio" id="bus" value="UNSW Business School" v-model="faculty">
-      <label for="bus">UNSW Business School</label>
-      <input type="radio" id="bos" value="Board of Studies" v-model="faculty">
-      <label for="bos">DVC (Academic) Board of Studies</label>
-    </p>
-    <p>
-      <input type="checkbox" id="alll"  v-on:change="checkAll" v-model="allChecked">
-      <label for="alll">All</label>
-      <input type="checkbox" id="zero" value="0" v-on:click="check" v-model="levels">
-      <label for="zero">0</label>
-      <input type="checkbox" id="one" value="1" @click="check" v-model="levels">
-      <label for="one">1</label>
-      <input type="checkbox" id="two" value="2" @click="check" v-model="levels">
-      <label for="two">2</label>
-      <input type="checkbox" id="three" value="3" @click="check" v-model="levels">
-      <label for="three">3</label>
-      <input type="checkbox" id="four" value="4" @click="check" v-model="levels">
-      <label for="four">4</label>
-      <input type="checkbox" id="five" value="[5-9]" @click="check" v-model="levels">
-      <label for="five">5+</label>
-    </p>
-    <table class="table-hover" id="thetable">
+  <div class="container">
+    <div class="box1">
+      <v-layout justify-center row wrap>
+      <v-text-field
+        v-model="search"
+        placeholder="Search Course"
+      ></v-text-field>
+      <select v-model="selected">
+        <option value="code">Course Code</option>
+        <option value="name">Course Name</option>
+      </select>
+      </v-layout>
+    </div>
+    <div class="box2">
+      <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Can't find? Add new Course</router-link>
+      <p>
+        <input type="radio" id="allf" value="" v-model="faculty"/>
+        <label for="allf">All</label>
+        <input type="radio" id="art" value="Faculty of Arts and Social Sciences" v-model="faculty">
+        <label for="art">Faculty of Arts and Social Sciences</label>
+        <input type="radio" id="env" value="Built Environment" v-model="faculty">
+        <label for="env">Built Environment</label>
+        <input type="radio" id="eng" value="Faculty of Engineering" v-model="faculty">
+        <label for="eng">Faculty of Engineering</label>
+        <input type="radio" id="law" value="Faculty of Law" v-model="faculty">
+        <label for="law">Faculty of Law</label>
+        <input type="radio" id="med" value="Faculty of Medicine" v-model="faculty">
+        <label for="med">Faculty of Medicine</label>
+        <input type="radio" id="sci" value="Faculty of Science" v-model="faculty">
+        <label for="sci">Faculty of Science</label>
+        <input type="radio" id="bus" value="UNSW Business School" v-model="faculty">
+        <label for="bus">UNSW Business School</label>
+        <input type="radio" id="bos" value="Board of Studies" v-model="faculty">
+        <label for="bos">DVC (Academic) Board of Studies</label>
+      </p>
+    </div>
+    <div class="box3">
+      <p>
+        <input type="checkbox" id="alll"  v-on:change="checkAll" v-model="allChecked">
+        <label for="alll">All</label>
+        <input type="checkbox" id="zero" value="0" v-on:click="check" v-model="levels">
+        <label for="zero">0</label>
+        <input type="checkbox" id="one" value="1" @click="check" v-model="levels">
+        <label for="one">1</label>
+        <input type="checkbox" id="two" value="2" @click="check" v-model="levels">
+        <label for="two">2</label>
+        <input type="checkbox" id="three" value="3" @click="check" v-model="levels">
+        <label for="three">3</label>
+        <input type="checkbox" id="four" value="4" @click="check" v-model="levels">
+        <label for="four">4</label>
+        <input type="checkbox" id="five" value="[5-9]" @click="check" v-model="levels">
+        <label for="five">5+</label>
+      </p>
+    </div>
+    <div class="box4">
+      <table class="table-hover" id="thetable">
         <tr>
           <th class="course_code">Course code</th>
           <th class="course_name">Course name</th>
@@ -73,10 +72,7 @@
           <td><a v-bind:href="course.handbook_url">Link</a></td>
         </tr>
       </table>
-  </v-flex>
-  </v-layout>
-  </v-container>
-  </v-jumbotron>
+    </div>
   </div>
 </template>
 
@@ -88,7 +84,7 @@ export default {
     return {
       search: '',
       selected: 'code',
-      faculty: 'faculty',
+      faculty: '',
 
       allChecked: true,
       allLevels: ['0', '1', '2', '3', '4', '[5-9]'],
@@ -174,17 +170,17 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #131414;
 }
 .table-hover tr:hover td {
   background-color: rgb(23, 144, 192);
 }
 .table-hover tr th {
   color: white;
-  background-color: black;
+  background-color: rgb(19, 18, 18);
 }
-.odd{background-color: rgb(69, 53, 90);}
-.even{background-color: rgb(59, 4, 36);}
+.odd{background-color: rgb(158, 173, 187);}
+.even{background-color: rgb(134, 127, 127);}
 .table-hover{width: 100%;}
 .course_code{width: 5%;}
 .course_name{width: 30%;}
@@ -192,16 +188,22 @@ a {
 .course_coreqs{width: 15%;}
 .course_faculty{width: 10%;}
 .course_link{width: 5%;}
-.jumbotron{
-    margin-left:-10px;
-    margin-top:-10px;
-    height:100%;
-    min-width:100%;
-    position:absolute;
+.container{
+  display: flex;
+  flex-direction: column;
+  background:rgb(144, 146, 137);
+  overflow: auto;
 }
-.jumbotron img{
-    height:100%;
-    width:100%;
-    max-width:100%;
+.box1{
+  flex: 1;
+}
+.box2{
+  flex: 1;
+}
+.box3{
+  flex:1;
+}
+.box4{
+  flex: 1
 }
 </style>
