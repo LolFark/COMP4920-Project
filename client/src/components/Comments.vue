@@ -1,32 +1,34 @@
-<template id="post-template">
+<template id="Comments">
+<div>
   <li class="list-group-item">
-    <i class="glyphicon glyphicon-chevron-up" @click="upvote" :class="{disabled: upvoted}"></i>
+    <v-btn flat icon color="pink" @click="upvote">
+      <v-icon>keyboard_arrow_up</v-icon>
+    </v-btn>
     <span class="label label-primary">{{ votes }}</span>
-    <i class="glyphicon glyphicon-chevron-down" @click="downvote" :class="{disabled: downvoted}"></i>
-    <a>{{ post.title }}</a>
+    <a>{{ post.content }}</a>
   </li>
+</div>
 </template>
 
 <script>
-import CommentService from '../services/CommentService.js'
 export default {
+  props: ['post'],
   data () {
     return {
-      comments: [],
-      feedback: ''
+      upvoted: false
+    }
+  },
+  computed: {
+    votes () {
+      if (this.upvoted) {
+        return this.post.overallRating + 1
+      }
+      return this.post.overallRating
     }
   },
   methods: {
-    async getComments () {
-      const response = await CommentService.getComments({ code: this.$route.params.id })
-      this.courses = response.data.comments
-    },
-    async addComment () {
-      await CommentService.addComment({
-        user: this.$store.state.user,
-        course: this.$route.params.id,
-        content: this.feedback
-      })
+    upvote () {
+      this.upvoted = !this.upvoted
     }
   }
 }
