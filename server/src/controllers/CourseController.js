@@ -2,6 +2,15 @@ const Course = require('../../models/course');
 
 module.exports = {
   // Fetch all courses
+  async updateDiff(req, res) {
+    await Course.update({}, {$set: {difficulty: 0}}, {upsert: false, multi: true}, (err) => {
+      console.log('is it even working');
+      if (err) {
+        console.log('you fucked up');
+      }
+    });
+
+  },
   async getCourses(req, res) {
     Course.find({}, (error, courses) => {
       if (error) {
