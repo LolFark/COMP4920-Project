@@ -4,7 +4,7 @@
     <table v-if="course === null">
       <h2><b>COURSE NO LONGER EXISTS</b></h2>
     </table>
-    <v-rating v-model="overallRating"></v-rating>
+    <p> Average rating: {{ overallRating.toFixed(2) }} / 5, based on {{ numComments }} ratings.</p>
     <table class="course_info" v-if="course !== null">
       <tr class="course_code"><b>Code: </b><a v-bind:href="course.handbook_url">{{ course.code }}</a></tr>
       <tr class="course_name"><b>Name: </b>{{ course.name }}</tr>
@@ -84,7 +84,8 @@ export default {
       reply: '',
       comments: [], // previously submitted comments for the course
       rating: 2,
-      overallRating: 3,
+      overallRating: 0,
+      numComments: 0,
 
       errors: [],
 
@@ -147,28 +148,24 @@ export default {
       var ratingSum = 0;
       var numComments = 0;
       var totalComments = allComments.length;
-      console.log('Total: ' + totalComments);
       for (let i = 0; i < allComments.length; i += 1) {
         var cmnt = allComments[i];
         if(cmnt.rating && !Number.isNaN(cmnt.rating)) {
           ratingSum += cmnt.rating;
           numComments += 1;
-          console.log('YESSSSSSSSSSSSSSSSSSSSSSS')
         }
         // ignoring empty comments
+        if(numComments != 0) {
+          this.overallRating = ratingSum / numComments;
+          this.numComments = numComments;
+        }
+        // remove empty comments from display
         if (!cmnt.content) { continue }
         var createdStr = cmnt.created;
         var date = new Date(createdStr).toLocaleString();
         cmnt.created = date;
         this.comments.push(cmnt);
       }
-      if(numComments == 0) {
-        this.overallRating = 0;
-      } else {
-        this.overallRating = ratingSum / numComments;
-      }
-      console.log('Total rating: ' + ratingSum + ', numComments: ' + numComments);
-      console.log('Overall Rating: ' + this.overallRating);
       this.comments.sort((a,b) => {
         if (a.created < b.created) {
           return -1
