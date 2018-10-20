@@ -98,7 +98,7 @@ export default {
   },
   mounted () {
     this.getCourse()
-    this.getComments()
+    // this.getComments()
   },
   methods: {
     async getCourse () {
@@ -146,6 +146,8 @@ export default {
       const allComments = response.data.comments
       var ratingSum = 0;
       var numComments = 0;
+      var totalComments = allComments.length;
+      console.log('Total: ' + totalComments);
       for (let i = 0; i < allComments.length; i += 1) {
         var cmnt = allComments[i];
         if(cmnt.overallRating && !Number.isNaN(cmnt.overallRating)) {
