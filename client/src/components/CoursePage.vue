@@ -150,8 +150,8 @@ export default {
       console.log('Total: ' + totalComments);
       for (let i = 0; i < allComments.length; i += 1) {
         var cmnt = allComments[i];
-        if(cmnt.overallRating && !Number.isNaN(cmnt.overallRating)) {
-          ratingSum += cmnt.overallRating;
+        if(cmnt.rating && !Number.isNaN(cmnt.rating)) {
+          ratingSum += cmnt.rating;
           numComments += 1;
           console.log('YESSSSSSSSSSSSSSSSSSSSSSS')
         }
