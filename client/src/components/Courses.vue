@@ -15,42 +15,54 @@
     <div class="box2">
       <router-link v-bind:to="{ name: 'NewCourse' }" class="add_course_link">Can't find? Add new Course</router-link>
       <p>
-        <input type="radio" id="allf" value="" v-model="faculty"/>
-        <label for="allf">All</label>
-        <input type="radio" id="art" value="Faculty of Arts and Social Sciences" v-model="faculty">
-        <label for="art">Faculty of Arts and Social Sciences</label>
-        <input type="radio" id="env" value="Built Environment" v-model="faculty">
-        <label for="env">Built Environment</label>
-        <input type="radio" id="eng" value="Faculty of Engineering" v-model="faculty">
-        <label for="eng">Faculty of Engineering</label>
-        <input type="radio" id="law" value="Faculty of Law" v-model="faculty">
-        <label for="law">Faculty of Law</label>
-        <input type="radio" id="med" value="Faculty of Medicine" v-model="faculty">
-        <label for="med">Faculty of Medicine</label>
-        <input type="radio" id="sci" value="Faculty of Science" v-model="faculty">
-        <label for="sci">Faculty of Science</label>
-        <input type="radio" id="bus" value="UNSW Business School" v-model="faculty">
-        <label for="bus">UNSW Business School</label>
-        <input type="radio" id="bos" value="Board of Studies" v-model="faculty">
-        <label for="bos">DVC (Academic) Board of Studies</label>
+        <v-radio-group v-model="faculty" row>
+          <v-radio id="allf" label="All" value=""></v-radio>
+          <v-radio id="art" label="Faculty of Arts and Social Sciences" value="Faculty of Arts and Social Sciences"></v-radio>
+          <v-radio id="env" label="Built Environment" value="Built Environment"></v-radio>
+          <v-radio id="eng" label="Faculty of Engineering" value="Faculty of Engineering"></v-radio>
+          <v-radio id="law" label="Faculty of Law" value="Faculty of Law"></v-radio>
+          <v-radio id="med" label="Faculty of Medicine" value="Faculty of Medicine"></v-radio>
+          <v-radio id="sci" label="Faculty of Science" value="Faculty of Science"></v-radio>
+          <v-radio id="bus" label="UNSW Business School" value="UNSW Business School"></v-radio>
+          <v-radio id="bos" label="DVC (Academic) Board of Studies" value="Board of Studies"></v-radio>
+        </v-radio-group>
       </p>
     </div>
+    <hr>
     <div class="box3">
       <p>
-        <input type="checkbox" id="alll"  v-on:change="checkAll" v-model="allChecked">
-        <label for="alll">All</label>
-        <input type="checkbox" id="zero" value="0" v-on:click="check" v-model="levels">
-        <label for="zero">0</label>
-        <input type="checkbox" id="one" value="1" @click="check" v-model="levels">
-        <label for="one">1</label>
-        <input type="checkbox" id="two" value="2" @click="check" v-model="levels">
-        <label for="two">2</label>
-        <input type="checkbox" id="three" value="3" @click="check" v-model="levels">
-        <label for="three">3</label>
-        <input type="checkbox" id="four" value="4" @click="check" v-model="levels">
-        <label for="four">4</label>
-        <input type="checkbox" id="five" value="[5-9]" @click="check" v-model="levels">
-        <label for="five">5+</label>
+        <v-layout raw>
+          <v-checkbox
+            label="All"
+            id="alll"
+            color="indigo"
+            hide-details
+            v-model="allChecked"
+          ></v-checkbox>
+          <v-checkbox
+            id="zero"
+            label="0"
+            color="indigo"
+            value="0"
+            hide-details
+            v-model="levels"
+          ></v-checkbox>
+          <!-- <input type="checkbox" id="alll"  v-on:change="checkAll" v-model="allChecked">
+          <label for="alll">All</label>
+          <span></span>
+          <input type="checkbox" id="zero" value="0" v-on:click="check" v-model="levels">
+          <label for="zero">0</label>
+          <input type="checkbox" id="one" value="1" @click="check" v-model="levels">
+          <label for="one">1</label>
+          <input type="checkbox" id="two" value="2" @click="check" v-model="levels">
+          <label for="two">2</label>
+          <input type="checkbox" id="three" value="3" @click="check" v-model="levels">
+          <label for="three">3</label>
+          <input type="checkbox" id="four" value="4" @click="check" v-model="levels">
+          <label for="four">4</label>
+          <input type="checkbox" id="five" value="[5-9]" @click="check" v-model="levels">
+          <label for="five">5+</label> -->
+        </v-layout>
       </p>
     </div>
     <div class="box4">
