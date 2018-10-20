@@ -50,7 +50,11 @@
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="startEditComment(index)">Edit</v-btn>
             <v-btn class="button" v-on:click="startEditReply(index)">Reply</v-btn>
             <br>
-            <span>{{ comment.content }}</span>
+              <span>{{ comment.content }}</span>
+              <v-btn flat icon color="pink" @click="upvote(index)">
+                <v-icon>keyboard_arrow_up</v-icon>
+              </v-btn>
+              <span>{{ votes(index) }}</span>
           </div>
           <div v-if="reply_index === index && is_editing_reply" class="editable-text">
             <textarea v-model="reply"></textarea>
@@ -68,7 +72,11 @@
 /* eslint-disable */
 import CourseService from '@/services/CourseService'
 import CommentService from '@/services/CommentService'
+import Comments from './Comments'
 export default {
+  props: [
+    'Comments'
+  ],
   data () {
     return {
       name: 'course_page',
@@ -88,8 +96,14 @@ export default {
       reply_index: ''
     }
   },
+  computed: {
+    comments () {
+      return this.$store.state.comments
+    }
+  },
   mounted () {
     this.getCourse()
+    this.getComments()
   },
   methods: {
     async getCourse () {
@@ -134,7 +148,7 @@ export default {
     },
     async getComments () {
       const response = await CommentService.getComments({ course_id: this.course._id })
-      this.comments = response.data.comments
+      this.$store.dispatch('setComments', response.data.comments)
       for (let i = 0; i < this.comments.length; i++) {
         var createdStr = this.comments[i].created
         this.comments[i].created = new Date(createdStr).toLocaleString()
@@ -250,6 +264,13 @@ export default {
       this.cur_index = ''
       this.edit_comment = this.comments[commentIndex].content
       this.errors = []
+    },
+    upvote (commentIndex) {
+      this.$store.state.comments[commentIndex].overallRating + 1
+      votes(commentIndex)
+    },
+    votes (commentIndex) {
+      return this.$store.state.comments[commentIndex].overallRating
     }
   }
 }
