@@ -1,5 +1,10 @@
 {
-    "eslint.autoFixOnSave": false,
+    "eslint.autoFixOnSave": true,
     "javascript.validate.enable": false,
-    "editor.lineNumbers": "relative"
+    "editor.lineNumbers": "relative",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+      ]
 }

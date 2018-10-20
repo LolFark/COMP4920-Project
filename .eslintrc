@@ -3,10 +3,18 @@
         "es6": true,
         "node": true
     },
-    "extends": "airbnb-base",
+    "extends": [
+        "airbnb-base",
+        "plugin:vue/essential"
+    ],
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaVersion": 8,
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
+    "plugins": ["vue"],
     "rules": {
         "no-console": "off",
         "consistent-return": "off",

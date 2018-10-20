@@ -13,28 +13,28 @@
 <script>
 export default {
   props: ['post'],
-  data () {
+  data() {
     return {
-      upvoted: false
-    }
+      upvoted: false,
+    };
   },
   computed: {
-    votes () {
-      if (isNaN(this.post.overallRating)) {
-        return 1
+    votes() {
+      if (Number.isNaN(this.post.overallRating)) {
+        return 1;
       }
       if (this.upvoted) {
-        return this.post.overallRating + 1
+        return this.post.overallRating + 1;
       }
-      return this.post.overallRating
-    }
+      return this.post.overallRating;
+    },
   },
   methods: {
-    upvote () {
-      this.upvoted = !this.upvoted
-    }
-  }
-}
+    upvote() {
+      this.upvoted = !this.upvoted;
+    },
+  },
+};
 </script>
 
 <style>

@@ -1,21 +1,22 @@
-import Api from '@/services/Api'
+import Api from '@/services/Api';
+
 export default {
-  fetchCourses () {
-    return Api().get('courses')
+  fetchCourses() {
+    return Api().get('courses');
   },
 
-  getSpecificCourse (params) {
-    return Api().post('course', params)
+  getSpecificCourse(params) {
+    return Api().post('course', params);
   },
 
-  addCourse (params) {
-    return Api().post('courses', params)
+  addCourse(params) {
+    return Api().post('courses', params);
   },
 
-  editCourse (params) {
-    return Api().post('courses', params)
+  editCourse(params) {
+    return Api().post('courses', params);
   },
-  getComments (params) {
-    return Api().post('comments', params)
-  }
-}
+  getComments(params) {
+    return Api().post('comments', params);
+  },
+};
