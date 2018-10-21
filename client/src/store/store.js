@@ -1,9 +1,9 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import createPersistedState from 'vuex-persistedstate';
+import Vue from 'vue'
+import Vuex from 'vuex'
+import createPersistedState from 'vuex-persistedstate'
 
 // Using Vuex to maintain state
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 const store = new Vuex.Store({
   plugins: [createPersistedState()],
@@ -14,41 +14,15 @@ const store = new Vuex.Store({
     user: null,
     authenticated: false,
     courses: [],
-    currentCourse: null,
+    currentCourse: null
   },
   mutations: {
-    setToken(state, token) {
-      this.state.token = token;
-      this.state.authenticated = !!(token);
+    setToken (state, token) {
+      state.token = token
+      state.authenticated = !!(token)
     },
-    setUser(state, user) {
-      this.state.user = user;
-    },
-    setCourses(state, courses) {
-      this.state.courses = courses;
-    },
-    addLike(state, comment) {
-      if (!this.state.user.likedComments.includes(comment)) {
-        this.state.user.likedComments.push(comment);
-        if (this.state.user.dislikedComments.includes(comment)) {
-          this.state.user.dislikedComments.splice(comment, 1);
-        }
-      } else {
-        this.state.user.likedComments.splice(comment, 1);
-      }
-    },
-    dislike(state, comment) {
-      if (!this.state.user.dislikedComments.includes(comment)) {
-        this.state.user.dislikedComments.push(comment);
-        if (this.state.user.likedComments.includes(comment)) {
-          this.state.user.likedComments.splice(comment, 1);
-        }
-      } else {
-        this.state.user.dislikedComments.splice(comment, 1);
-      }
-    },
-    addComment(state, comment) {
-      this.state.user.comments.push(comment);
+    setUser (state, user) {
+      state.user = user
     },
     setCourses (state, courses) {
       state.courses = courses
@@ -69,28 +43,18 @@ const store = new Vuex.Store({
     setToken ({commit}, token) {
       commit('setToken', token)
     },
-    addLike({ commit }, payload) {
-      commit('addLike', payload);
+    setUser ({commit}, user) {
+      commit('setUser', user)
     },
-    removeLike({ commit }, payload) {
-      commit('removeLike', payload);
-    },
-    dislike({ commit }, payload) {
-      commit('dislike', payload);
-    },
-    removeDislike({ commit }, payload) {
-      commit('removeDislike', payload);
-    },
-    addComment({ commit }, payload) {
-      commit('addComment', payload);
-    },
+    setCourses ({commit}, courses) {
+      commit('setCourses', courses)
+    }
   },
   getters: {
-    user(state) {
-      return state.user;
-    },
-    getCourseByCode: state => code => state.courses.find(course => course.code === code),
-  },
-});
+    getCourse: state => index => {
+      return state.courses[index]
+    }
+  }
+})
 
-export default store;
+export default store

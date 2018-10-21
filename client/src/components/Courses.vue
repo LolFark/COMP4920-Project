@@ -24,7 +24,7 @@
       <input type="radio" id="bus" value="UNSW Business School" v-model="faculty">
       <label for="bus">UNSW Business School</label>
       <input type="radio" id="bos" value="Board of Studies" v-model="faculty">
-      <label for="bos">DVC(Academic) Board of Studies</label>
+      <label for="bos">DVC (Academic) Board of Studies</label>
     </p>
     <p>
       <input type="checkbox" id="alll"  v-on:change="checkAll" v-model="allChecked">
@@ -41,8 +41,6 @@
       <label for="four">4</label>
       <input type="checkbox" id="five" value="[5-9]" @click="check" v-model="levels">
       <label for="five">5+</label>
-    </p>
-    <p>
     </p>
     <table class="table-hover" id="thetable">
         <tr>
@@ -70,11 +68,10 @@
 </template>
 
 <script>
-import CourseService from '../services/CourseService';
-
+import CourseService from '@/services/CourseService'
 export default {
   name: 'Courses',
-  data() {
+  data () {
     return {
       search: '',
       selected: 'code',
@@ -83,13 +80,13 @@ export default {
       allChecked: true,
       allLevels: ['0', '1', '2', '3', '4', '[5-9]'],
       levels: ['0', '1', '2', '3', '4', '[5-9]']
-    };
+    }
   },
-  mounted() {
-    this.getCourses();
+  mounted () {
+    this.getCourses()
   },
-  updated() {
-    this.alternate('thetable');
+  updated () {
+    this.alternate('thetable')
   },
   methods: {
     async sortCourses(key) {
@@ -100,48 +97,48 @@ export default {
       // this.courses = response.data.courses
       this.$store.dispatch('setCourses', response.data.courses)
     },
-    alternate(id) {
+    alternate (id) {
       if (document.getElementsByTagName) {
-        const table = document.getElementById(id);
-        const rows = table.getElementsByTagName('tr');
-        for (let i = 0; i < rows.length; i += 1) {
+        var table = document.getElementById(id)
+        var rows = table.getElementsByTagName('tr')
+        for (let i = 0; i < rows.length; i++) {
           if (i % 2 === 0) {
-            rows[i].className = 'even';
+            rows[i].className = 'even'
           } else {
-            rows[i].className = 'odd';
+            rows[i].className = 'odd'
           }
         }
       }
     },
-    navigate(to) {
-      this.$router.push(to);
+    navigate (to) {
+      this.$router.push(to)
     },
-    checkAll() {
-      this.levels = [];
+    checkAll () {
+      this.levels = []
 
       if (this.allChecked) {
-        for (const level in this.allLevels) {
+        for (var level in this.allLevels) {
           this.levels.push(this.allLevels[level])
         }
       }
     },
-    check() {
-      this.allChecked = false;
-    },
+    check () {
+      this.allChecked = false
+    }
   },
   computed: {
     // Using Vuex
-    courses() {
-      return this.$store.state.courses;
+    courses () {
+      return this.$store.state.courses
     },
-    searchedCourses() {
-      const searchReg = new RegExp(this.search, 'i');
-      const facultyReg = new RegExp(this.faculty);
+    searchedCourses: function () {
+      var searchReg = new RegExp(this.search, 'i')
+      var facultyReg = new RegExp(this.faculty)
       return this.courses.filter((course) => {
-        for(const level in this.levels) {
-          const levelregex = '^[A-Z]{4}' + this.levels[level]
-          const levelReg = new RegExp(levelregex)
-          if(searchReg.test((this.selected === 'code') ? course.code : course.name) &&(facultyReg.test(course.faculty)) &&(levelReg.test(course.code))) {
+        for (var level in this.levels) {
+          var levelregex = '^[A-Z]{4}' + this.levels[level]
+          var levelReg = new RegExp(levelregex)
+          if (searchReg.test((this.selected === 'code') ? course.code : course.name) && (facultyReg.test(course.faculty)) && (levelReg.test(course.code))) {
             return course
           }
         }
