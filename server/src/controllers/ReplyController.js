@@ -24,6 +24,7 @@ module.exports = {
       created,
       content,
       num_likes: 0,
+      ack: false
     };
     Comment.findOneAndUpdate({ _id: comment }, { $push: { replies: newReply } }, (err) => {
         if (err) {
@@ -66,6 +67,18 @@ module.exports = {
         return res.status(400).send({ success: false });
       }
       console.log(`comment by ${reply.username} on ${comment.code} editted successfully`);
+      return res.send({ success: true });
+    });
+  },
+
+  async ackReply(req, res) {
+    const { _id, reply } = req.body;
+    await Comment.findOneAndUpdate({ _id, replies: reply }, { $set: { 'replies.$.ack': true } }, (err) => {
+      if (err) {
+        console.log(`failed to acknowledge reply by ${reply.username} on ${_id.code}`);
+        return res.status(400).send({ success: false });
+      }
+      console.log(`comment by ${reply.username} on ${_id.code} editted successfully`);
       return res.send({ success: true });
     });
   },

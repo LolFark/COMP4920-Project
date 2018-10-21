@@ -28,7 +28,7 @@
       <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
     </ul>
   </p>
-  <div id="replies-component">
+  <div v-if="is_course_page" id="replies-component">
     <!-- Display all replies -->
     <div id="reply-section">
       <ul v-for="(reply, index) in post.replies" v-bind:key="reply._id">
@@ -68,10 +68,15 @@ export default {
       edit_reply_start: false,
       cur_index: '',
       edit_reply: '',
+
+      is_course_page: false,
       original: this.post.content,
       upvoted: false,
       downvoted: false,
     }
+  },
+  mounted () {
+    this.checkPage()
   },
   computed: {
     votes() {
@@ -180,6 +185,13 @@ export default {
       this.cur_index = ''
       this.edit_reply = this.post.replies[commentIndex].content
       this.errors = []
+    },
+    checkPage () {
+      if (this.$route.params.id) {
+        this.is_course_page = true
+      } else {
+        this.is_course_page = false
+      }
     }
   }
 }

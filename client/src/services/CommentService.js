@@ -23,5 +23,8 @@ export default {
   },
   editReply (param) {
     return Api().post('editReply', param)
+  },
+  ackReply (param) {
+    return Api().post('ackReply', param)
   }
 }
