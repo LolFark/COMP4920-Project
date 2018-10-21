@@ -1,0 +1,60 @@
+COMP4920: Diary (z5123583)
+
+September 7, 2018
+Y: Update package-lock
+T: Add script get subject info
+
+September 8, 2018
+Y: Add script to get subject areas
+T: Add eslint config
+
+September 9 - 21, 2018
+I did not do anything for the project
+
+
+September 21, 2018
+Y: Nothing
+T: Add regex based validation for user emails
+
+September 25, 2018
+Y: Nothing
+T: Tweak eslint settings to make it less aggressive
+
+October 1, 2018
+Y: Nothing
+T: Add zxcvbn to the repository, add password strength check
+
+October 2, 2018
+Y: Add password strength check
+T: Add stub for vscode settings
+
+October 3, 2018
+Y: Add stub for vscode settings
+T: Style tweaks
+
+October 4, 2018
+Y: Style tweaks
+T: Add unique constraint on emails
+
+October 5, 2018
+Y: Add unique constraint on emails
+T: Add functionality to delete comments
+
+October 6, 2018
+Y: Add functionality to delete comments
+T: Make comments editable
+
+October 7, 2018
+Y: Make comments editable
+T: Return all promises on the backend for good measure
+
+October 16, 2018
+Y: Nothing
+T: Add functionality to reply to comments
+
+October 20, 2018
+Y: Nothing
+T: Tweak comment schema
+   Create date in backend
+   Display dates in locale string
+   Show popularity and difficulty rating
