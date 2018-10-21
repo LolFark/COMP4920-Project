@@ -78,6 +78,17 @@
         </ul>
       </div>
     </div>
+    <div v-if="$store.state.notifications.length > 0">
+    <h1> NOTIFICATIONS </h1>
+      <ul v-for="(notification, index) in $store.state.notifications" v-bind:key="notification._id">
+        <div class="editable-text">
+          <v-btn class="button" v-on:click="$store.dispatch('delNotification', index)">X</v-btn>
+          <v-btn class="button" v-on:click="$router.push(/courses/ + notification.code)">GoTo</v-btn>
+          <br>
+          <p>{{ notification.username }} has replied to your post in {{ notification.code }}</p>
+        </div>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -264,6 +275,24 @@ export default {
       for (let i = 0; i < this.comments.length; i++) {
         var createdStr = this.comments[i].created
         this.comments[i].created = new Date(createdStr).toLocaleString()
+      }
+      this.getNotifications()
+    },
+    async getNotifications () {
+      for (let i = 0; i < this.comments.length; i++) {
+        for (let j = 0; j < this.comments[i].replies.length; j++) {
+          if (this.$store.state.user.username !== this.comments[i].replies[j].username && this.comments[i].replies[j].ack === false) {
+            // Add to vuex store
+            console.log(`Adding: ${this.comments[i].replies[j].username} to ${this.comments[i].code}`)
+            this.$store.dispatch('addNotification', { username: this.comments[i].replies[j].username, code: this.comments[i].code })
+            // Acknowledge receipt of reply in database
+            await CommentService.ackReply({
+              _id: this.comments[i],
+              reply: this.comments[i].replies[j]
+            })
+            this.comments[i].replies[j].ack = true
+          }
+        }
       }
     }
   }
