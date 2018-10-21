@@ -57,12 +57,13 @@
             <v-btn class="button" v-if="$store.state.authenticated && $store.state.user.username === comment.username" v-on:click="startEditComment(index)">Edit</v-btn>
             <v-btn class="button" v-on:click="startEditReply(index)">Reply</v-btn>
             <br>
+            <div v-if="reply_index === index && is_editing_reply" class="editable-text2">
+              <textarea v-model="reply"></textarea>
+              <v-btn class="button" v-on:click="cancelReply(index)">Cancel</v-btn>
+              <v-btn class="button" v-on:click="addReply(index)">Save</v-btn>
+            </div>
+            <br>
             <comments-template :post="comment"></comments-template>
-          </div>
-          <div v-if="reply_index === index && is_editing_reply" class="editable-text">
-            <textarea v-model="reply"></textarea>
-            <v-btn class="button" v-on:click="cancelReply(index)">Cancel</v-btn>
-            <v-btn class="button" v-on:click="addReply(index)">Save</v-btn>
           </div>
         </ul>
       </div>
@@ -194,23 +195,20 @@ export default {
     },
     async addReply (commentIndex) {
       this.errors = []
-      const myCmnt = this.comments[commentIndex]
-      console.log(myCmnt)
-      const commentId = this.comments[commentIndex]._id
       // If there is no feedback, prevent user from posting comment
       if (this.reply === '') {
         this.errors.push('Empty reply')
       } else {
         const response = await CommentService.addReply({
+          comment: this.comments[commentIndex],
           username: this.$store.state.user.username,
-          commentId: commentId,
           content: this.reply
         })
         if (response.data.error) {
           this.errors.push(response.data.error)
         } else {
-          this.comments.push(response.data.comment)
-          this.feedback = ''
+          this.comments[commentIndex].replies.push(response.data.reply)
+          this.cancelReply(commentIndex)
         }
       }
     },
@@ -220,6 +218,7 @@ export default {
     },
     cancelReply (commentIndex) {
       this.is_editing_reply = false
+      this.reply = ''
       this.reply_index = ''
       this.errors = []
     },
@@ -267,7 +266,6 @@ export default {
       if (this.edit_comment === this.comments[commentIndex].content) {
         this.errors.push('No edit made')
       } else {
-        const cmnt = this.comments[commentIndex]
         const response = await CommentService.editComment({
           username: this.$store.state.user.username,
           code: this.course.code,
@@ -319,6 +317,12 @@ a {
   margin: 5px;
   padding: 5px;
   word-wrap: break-word;
+}
+.editable-text2 {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 40px;
 }
 .button {
   float: right;
