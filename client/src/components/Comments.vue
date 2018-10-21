@@ -1,11 +1,26 @@
 <template id="Comments">
 <div>
-  <li class="list-group-item">
-    <v-btn v-if="$store.state.authenticated" flat icon color="pink" @click="upvote">
-      <v-icon>keyboard_arrow_up</v-icon>
-    </v-btn>
-    <span class="label label-primary">{{ votes }}</span>
+   <li class="list-group-item">
+    <div v-if="this.$store.state.authenticated">
+      <v-btn v-if="upvoted" flat icon color="orange" @click="upvote">
+        <v-icon>keyboard_arrow_up</v-icon>
+      </v-btn>
+      <v-btn v-else flat icon color="grey" @click="upvote">
+        <v-icon>keyboard_arrow_up</v-icon>
+      </v-btn>
+      <span class="label label-primary">{{ votes }}</span>
+      <v-btn v-if="downvoted" flat icon color="blue" @click="downvote">
+        <v-icon>keyboard_arrow_down</v-icon>
+      </v-btn>
+      <v-btn v-else flat icon color="grey" @click="downvote">
+        <v-icon>keyboard_arrow_down</v-icon>
+      </v-btn>
+    </div>
+    <p>Difficulty {{post.difficulty}} </p>
+    <p>Overall rating {{post.rating}} </p>
     <a>{{ post.content }}</a>
+    <v-btn @click="flag()">Flag comment</v-btn>
+    <v-btn @click="show()">Show comment</v-btn>
   </li>
   <p v-if="errors.length">
     <b>Please correct the following error(s):</b>
@@ -54,26 +69,74 @@ export default {
       cur_index: '',
       edit_reply: '',
 
-      is_course_page: false
+      is_course_page: false,
+      original: this.post.content,
+      upvoted: false,
+      downvoted: false,
     }
   },
   mounted () {
     this.checkPage()
   },
   computed: {
-    votes () {
-      if (isNaN(this.post.overallRating)) {
-        return 1
+    votes() {
+      if (Number.isNaN(this.post.commentRating)) {
+        return 1;
       }
       if (this.upvoted) {
-        return this.post.overallRating + 1
+        return this.post.commentRating + 1;
+      } if (this.downvoted) {
+        return this.post.commentRating - 1;
       }
-      return this.post.overallRating
-    }
+      return this.post.commentRating;
+    },
   },
   methods: {
-    upvote () {
-      this.upvoted = !this.upvoted
+    show() {
+      this.post.content = this.original;
+    },
+    flag() {
+      this.post.content = 'Comment has been flagged for inappropriate content'
+    },
+    upvote() {
+      this.upvoted = !this.upvoted;
+      this.downvoted = false;
+      this.upVoteComment();
+      this.addLikedComment();
+    },
+    downvote() {
+      this.downvoted= !this.downvoted;
+      this.upvoted = false;
+      this.downVoteComment();
+      this.removeLikedComment();
+    },
+    async upVoteComment() {
+      const res = await CommentService.upVoteComment({
+        comment: this.post,
+        user: this.$store.state.user,
+        votes: this.votes,
+      });
+      this.post.commentRating = res.data.commentRating;
+    },
+    async downVoteComment() {
+      const res = await CommentService.downVoteComment({
+        comment: this.post,
+        user: this.$store.state.user,
+        votes: this.votes,
+      });
+      this.post.commentRating = res.data.commentRating;
+    },
+    async addLikedComment() {
+      await UserService.likeComment({
+        user: this.$store.state.user,
+        comment: this.post,
+      });
+    },
+    async removeLikedComment() {
+      await UserService.unlikeComment({
+        user: this.$store.state.user,
+        comment: this.post,
+      });
     },
     async deleteReply (commentIndex) {
       const response = await CommentService.deleteReply({

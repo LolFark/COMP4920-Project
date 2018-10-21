@@ -23,8 +23,14 @@ const store = new Vuex.Store({
       state.token = token
       state.authenticated = !!(token)
     },
-    setUser (state, user) {
-      state.user = user
+    setUser(state, user) {
+      state.user = user;
+    },
+    setCourses(state, courses) {
+      state.courses = courses;
+    },
+    addComment(state, comment) {
+      state.user.comments.push(comment);
     },
     setCourses (state, courses) {
       state.courses = courses
@@ -66,6 +72,9 @@ const store = new Vuex.Store({
     },
     setToken ({commit}, token) {
       commit('setToken', token)
+    },
+    addComment({ commit }, payload) {
+      commit('addComment', payload);
     },
     setUser ({commit}, user) {
       commit('setUser', user)
