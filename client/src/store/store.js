@@ -26,9 +26,16 @@ const store = new Vuex.Store({
     },
     setCourses (state, courses) {
       state.courses = courses
+    },
+    sortCourses (state, key) {
+      console.log(key);
+      state.courses.sort((a, b) => { return a[key] < b[key] })
     }
   },
   actions: {
+    sortCourses ({commit}, key) {
+      commit('sortCourses', key)
+    },
     setToken ({commit}, token) {
       commit('setToken', token)
     },
