@@ -71,15 +71,11 @@ export default {
       cur_index: '',
       edit_reply: '',
       original: this.post.content,
+      upvoted: false,
+      downvoted: false,
     }
   },
   computed: {
-    upvoted() {
-      return this.$store.state.user.likedComments.includes(this.post);
-    },
-    downvoted() {
-      return this.$store.state.user.dislikedComments.includes(this.post);
-    },
     votes() {
       if (Number.isNaN(this.post.commentRating)) {
         return 1;
@@ -100,14 +96,16 @@ export default {
       this.post.content = 'Comment has been flagged for inappropriate content'
     },
     upvote() {
+      this.upvoted = !this.upvoted;
+      this.downvoted = false;
       this.upVoteComment();
       this.addLikedComment();
-      this.$store.dispatch('addLike', this.post);
     },
     downvote() {
+      this.downvoted= !this.downvoted;
+      this.upvoted = false;
       this.downVoteComment();
       this.removeLikedComment();
-      this.$store.dispatch('dislike', this.post);
     },
     async upVoteComment() {
       const res = await CommentService.upVoteComment({
