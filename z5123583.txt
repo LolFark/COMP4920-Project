@@ -54,7 +54,7 @@ T: Add functionality to reply to comments
 
 October 20, 2018
 Y: Nothing
-T: Tweak comment schema
+T: Tweak comment schema to include replies
    Create date in backend
    Display dates in locale string
    Show popularity and difficulty rating
