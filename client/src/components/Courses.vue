@@ -75,7 +75,7 @@ export default {
     return {
       search: '',
       selected: 'code',
-      faculty: 'faculty',
+      faculty: '',
 
       allChecked: true,
       allLevels: ['0', '1', '2', '3', '4', '[5-9]'],
