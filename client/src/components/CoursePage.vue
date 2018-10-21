@@ -165,18 +165,22 @@ export default {
         if(cmnt.difficulty && !Number.isNaN(cmnt.difficulty)) {
           difficultySum += cmnt.difficulty;
         }
-        // ignoring empty comments
-        if(numComments != 0) {
-          this.satisfactionRatingAvg = ratingSum / numComments;
-          this.difficultyRatingAvg = difficultySum / numComments;
-          this.numComments = numComments;
-        }
         // remove empty comments from display
         if (!cmnt.content) { continue }
         var createdStr = cmnt.created;
         var date = new Date(createdStr).toLocaleString();
         cmnt.created = date;
         this.comments.push(cmnt);
+      }
+      if(numComments != 0) {
+        this.satisfactionRatingAvg = ratingSum / numComments;
+        this.difficultyRatingAvg = difficultySum / numComments;
+        this.numComments = numComments;
+        CourseService.updateRating({
+          code: this.code,
+          satisfaction: this.satisfactionRatingAvg,
+          difficulty: this.difficultyRatingAvg,
+        });
       }
       this.comments.sort((a,b) => {
         if (a.created < b.created) {

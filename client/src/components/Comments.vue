@@ -50,12 +50,12 @@ export default {
     upvote() {
       this.upvoted = !this.upvoted;
       this.downvoted = false;
-      this.upVoteComment();
-      this.addLikedComment();
       if (this.$store.state.liked.includes(this.post)) {
         // comment already liked so remove the like
         this.$store.dispatch('removeLike', this.post);
       } else {
+        this.upVoteComment();
+        this.addLikedComment();
         this.$store.dispatch('addLike', this.post);
         if (this.$store.state.disliked.includes(this.post)) {
           this.$store.dispatch('removeDislike', this.post);
