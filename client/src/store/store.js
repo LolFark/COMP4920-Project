@@ -15,7 +15,8 @@ const store = new Vuex.Store({
     authenticated: false,
     courses: [],
     currentCourse: null,
-    notifications: []
+    notifications: [],
+    visited: []
   },
   mutations: {
     setToken (state, token) {
@@ -36,6 +37,19 @@ const store = new Vuex.Store({
     },
     delAllNotifications (state) {
       state.notifications = []
+    },
+    addVisited (state, code) {
+      if (state.visited.length === 5) {
+        state.visited.splice(0, 1)
+      }
+      state.visited.push(code)
+    },
+    moveToRecent (state, code, index) {
+      state.visited.splice(index, 1)
+      state.visited.push(code)
+    },
+    delAllVisited (state) {
+      state.visited = []
     }
   },
   actions: {
@@ -56,6 +70,15 @@ const store = new Vuex.Store({
     },
     delAllNotifications ({commit}) {
       commit('delAllNotifications')
+    },
+    addVisited ({commit}, code) {
+      commit('addVisited', code)
+    },
+    moveToRecent ({commit}, code, index) {
+      commit('moveToRecent', code, index)
+    },
+    delAllVisited ({commit}) {
+      commit('delAllVisited')
     }
   },
   getters: {

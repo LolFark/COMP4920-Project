@@ -42,6 +42,11 @@
       <input type="checkbox" id="five" value="[5-9]" @click="check" v-model="levels">
       <label for="five">5+</label>
     </p>
+    <div v-if="$store.state.visited.length > 0">
+      You have visited these course pages recently: <br>
+      <v-btn v-for="(code, index) in $store.state.visited" v-bind:key="code._id" v-on:click="navigate(/courses/ + code, code, index)"> {{ code }} </v-btn>
+      <v-btn v-on:click="$store.dispatch('delAllVisited')">Clear All</v-btn>
+    </div>
     <table class="table-hover" id="thetable">
         <tr>
           <th class="course_code">Course code</th>
@@ -51,7 +56,7 @@
           <th class="course_faculty" align="center">Faculty</th>
           <th class="course_link" align="center">Handbook Link</th>
         </tr>
-        <tr v-for="course in searchedCourses" v-bind:key="course._id" v-on:click="navigate(/courses/ + course.code)">
+        <tr v-for="course in searchedCourses" v-bind:key="course._id" v-on:click="findThenNavigate(/courses/ + course.code, course.code)">
           <td>{{ course.code }}</td>
           <td>{{ course.name }}</td>
           <td>{{ course.pre_reqs }}</td>
@@ -81,14 +86,12 @@ export default {
   mounted () {
     this.getCourses()
   },
-  updated () {
-    this.alternate('thetable')
-  },
   methods: {
     async getCourses () {
       const response = await CourseService.fetchCourses()
       // this.courses = response.data.courses
       this.$store.dispatch('setCourses', response.data.courses)
+      this.alternate('thetable')
     },
     alternate (id) {
       if (document.getElementsByTagName) {
@@ -103,8 +106,20 @@ export default {
         }
       }
     },
-    navigate (to) {
+    navigate (to, code, index) {
       this.$router.push(to)
+      if (this.$store.state.visited.indexOf(code) === -1) {
+        this.$store.dispatch('addVisited', code)
+      } else {
+        this.$store.dispatch('moveToRecent', code, index)
+      }
+    },
+    findThenNavigate (to, code) {
+      if (this.$store.state.visited.indexOf(code) === -1) {
+        this.navigate(to, code, 0)
+      } else {
+        this.navigate(to, code, this.$store.state.visited.indexOf(code))
+      }
     },
     checkAll () {
       this.levels = []
