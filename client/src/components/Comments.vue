@@ -1,6 +1,6 @@
 <template id="Comments">
 <div>
-  <li class="list-group-item">
+   <li class="list-group-item">
     <div v-if="this.$store.state.authenticated">
       <v-btn v-if="upvoted" flat icon color="orange" @click="upvote">
         <v-icon>keyboard_arrow_up</v-icon>
@@ -49,7 +49,6 @@
           <br>
           {{ reply.content }}
         </div>
-
       </ul>
     </div>
   </div>
@@ -58,12 +57,11 @@
 
 <script>
 import CommentService from '@/services/CommentService'
-import UserService from '@/services/UserService'
-
 export default {
   props: ['post'],
-  data() {
+  data () {
     return {
+      upvoted: false,
       errors: [],
 
       // Edit user replies
@@ -183,8 +181,8 @@ export default {
       this.edit_reply = this.post.replies[commentIndex].content
       this.errors = []
     }
-  },
-};
+  }
+}
 </script>
 
 <style>

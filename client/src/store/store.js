@@ -1,9 +1,9 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import createPersistedState from 'vuex-persistedstate';
+import Vue from 'vue'
+import Vuex from 'vuex'
+import createPersistedState from 'vuex-persistedstate'
 
 // Using Vuex to maintain state
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 const store = new Vuex.Store({
   plugins: [createPersistedState()],
@@ -14,21 +14,21 @@ const store = new Vuex.Store({
     user: null,
     authenticated: false,
     courses: [],
-    currentCourse: null,
+    currentCourse: null
   },
   mutations: {
-    setToken(state, token) {
-      this.state.token = token;
-      this.state.authenticated = !!(token);
+    setToken (state, token) {
+      state.token = token
+      state.authenticated = !!(token)
     },
     setUser(state, user) {
-      this.state.user = user;
+      state.user = user;
     },
     setCourses(state, courses) {
-      this.state.courses = courses;
+      state.courses = courses;
     },
     addComment(state, comment) {
-      this.state.user.comments.push(comment);
+      state.user.comments.push(comment);
     },
     setCourses (state, courses) {
       state.courses = courses
@@ -52,13 +52,18 @@ const store = new Vuex.Store({
     addComment({ commit }, payload) {
       commit('addComment', payload);
     },
+    setUser ({commit}, user) {
+      commit('setUser', user)
+    },
+    setCourses ({commit}, courses) {
+      commit('setCourses', courses)
+    }
   },
   getters: {
-    user(state) {
-      return state.user;
-    },
-    getCourseByCode: state => code => state.courses.find(course => course.code === code),
-  },
-});
+    getCourse: state => index => {
+      return state.courses[index]
+    }
+  }
+})
 
-export default store;
+export default store
