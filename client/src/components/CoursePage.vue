@@ -107,7 +107,7 @@ export default {
   },
   mounted () {
     this.getCourse()
-    this.getComments()
+    // this.getComments()
   },
   methods: {
     async getCourse () {
@@ -236,8 +236,6 @@ export default {
       } else {
         this.comments.push(response.data.comment)
         this.feedback = ''
-        // also save the comment to Vuex as the user's comment
-        this.$store.dispatch('addComment', response.data.comment);
       }
     },
     async deleteComment (commentIndex) {

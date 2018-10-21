@@ -18,6 +18,7 @@
       </v-flex>
       </v-layout>
       <div>
+        <!-- have to change this button later cuz it prevents reloads-->
         <v-btn v-on:click="login()">Login</v-btn>
       </div>
     </form>
@@ -25,37 +26,35 @@
 </template>
 
 <script>
-import AuthenticationService from '../services/AuthenticationService';
-
+import AuthenticationService from '@/services/AuthenticationService'
 export default {
-  data() {
+  data () {
     return {
       username: '',
       password: '',
-      error: null,
-    };
+      error: null
+    }
   },
   methods: {
-    async login() {
-      console.log(`Login with ${this.username}`);
+    async login () {
+      console.log('Logging in with ' + this.username + ' ' + this.password)
       try {
         const response = await AuthenticationService.login({
           username: this.username,
-          password: this.password,
-        });
-        this.$store.dispatch('setToken', response.data.token);
-        console.log(response.data.token);
-        this.$store.dispatch('setUser', response.data.user);
+          password: this.password
+        })
+        this.$store.dispatch('setToken', response.data.token)
+        console.log(response.data.token)
+        this.$store.dispatch('setUser', response.data.user)
         this.$router.push({
-          name: 'Courses',
-        });
+          name: 'Courses'
+        })
       } catch (error) {
-        this.error = error.response.data.error;
+        this.error = error.response.data.error
       }
-    },
-  },
-};
-
+    }
+  }
+}
 </script>
 
 <style>
