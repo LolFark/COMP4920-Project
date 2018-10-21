@@ -13,6 +13,7 @@ const CommentSchema = new Schema({
     created: Date,
     content: String,
     num_likes: Number,
+    ack: Boolean,
   }],
   rating: { type: Number },
   difficulty: { type: Number },

@@ -18,6 +18,7 @@ module.exports = (app) => {
   app.post('/addReply', ReplyController.addReply);
   app.post('/editReply', ReplyController.editReply);
   app.post('/deleteReply', ReplyController.deleteReply);
+  app.post('/ackReply', ReplyController.ackReply);
   app.get('/users', UserController.getUsers);
   app.post('/user', UserController.getUser);
   app.post('/updatePassword', UserController.updatePassword);
