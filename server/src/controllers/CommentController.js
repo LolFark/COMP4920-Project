@@ -91,7 +91,7 @@ module.exports = {
   },
   async upVoteComment(req, res) {
     const { comment, user, votes } = req.body;
-    await Comment.findOneAndUpdate({ _id: comment._id }, {$addToSet: {likedUsers: user.username}, $set: {commentRating: votes}}, {new: true}, (err) => {
+    await Comment.findOneAndUpdate({ _id: comment._id }, {$addToSet: {likedUsers: user.username}, $set: {commentRating: votes + 1}}, {new: true}, (err) => {
       if (err) {
         console.log(`failed to add ${user.username} to ${comment.course}'s comment's liked users`)
         return res.status(400).send({ success: false });

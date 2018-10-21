@@ -1,6 +1,5 @@
 <template id="Comments">
 <div>
-  <p>test</p>
   <li class="list-group-item">
     <div v-if="this.$store.state.authenticated">
       <v-btn v-if="upvoted" flat icon color="orange" @click="upvote">
@@ -17,7 +16,11 @@
         <v-icon>keyboard_arrow_down</v-icon>
       </v-btn>
     </div>
+    <p>Difficulty {{post.difficulty}} </p>
+    <p>Overall rating {{post.rating}} </p>
     <a>{{ post.content }}</a>
+    <v-btn @click="flag()">Flag comment</v-btn>
+    <v-btn @click="show()">Show comment</v-btn>
   </li>
   <p v-if="errors.length">
     <b>Please correct the following error(s):</b>
@@ -46,6 +49,7 @@
           <br>
           {{ reply.content }}
         </div>
+
       </ul>
     </div>
   </div>
@@ -60,13 +64,13 @@ export default {
   props: ['post'],
   data() {
     return {
-      upvoted: false,
       errors: [],
 
       // Edit user replies
       edit_reply_start: false,
       cur_index: '',
-      edit_reply: ''
+      edit_reply: '',
+      original: this.post.content,
     }
   },
   computed: {
@@ -89,6 +93,12 @@ export default {
     },
   },
   methods: {
+    show() {
+      this.post.content = this.original;
+    },
+    flag() {
+      this.post.content = 'Comment has been flagged for inappropriate content'
+    },
     upvote() {
       this.upVoteComment();
       this.addLikedComment();
@@ -177,16 +187,6 @@ export default {
     }
   },
 };
-</script>
-
-<style>
-  .disabled{
-    color: orange
-  }
-    upvote () {
-      this.upvoted = !this.upvoted
-    },
-}
 </script>
 
 <style>
