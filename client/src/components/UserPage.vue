@@ -124,7 +124,7 @@ export default {
   },
   computed: {
     likedComments () {
-      return this.$store.state.liked;
+      return this.$store.state.user.likedComments;
     }
   },
   mounted () {

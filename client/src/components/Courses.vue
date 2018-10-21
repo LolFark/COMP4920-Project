@@ -42,6 +42,8 @@
       <input type="checkbox" id="five" value="[5-9]" @click="check" v-model="levels">
       <label for="five">5+</label>
     </p>
+    <p>
+    </p>
     <table class="table-hover" id="thetable">
         <tr>
           <th class="course_code">Course code</th>

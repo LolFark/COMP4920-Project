@@ -106,7 +106,7 @@ export default {
   },
   mounted () {
     this.getCourse()
-    // this.getComments()
+    this.getComments()
   },
   methods: {
     async getCourse () {

@@ -15,9 +15,6 @@ const store = new Vuex.Store({
     authenticated: false,
     courses: [],
     currentCourse: null,
-    liked: [],
-    disliked: [],
-    comments: [],
   },
   mutations: {
     setToken(state, token) {
@@ -31,28 +28,27 @@ const store = new Vuex.Store({
       this.state.courses = courses;
     },
     addLike(state, comment) {
-      this.state.liked.push(comment);
-    },
-    removeLike(state, comment) {
-      this.state.liked.splice(comment, 1);
+      if (!this.state.user.likedComments.includes(comment)) {
+        this.state.user.likedComments.push(comment);
+        if (this.state.user.dislikedComments.includes(comment)) {
+          this.state.user.dislikedComments.splice(comment, 1);
+        }
+      } else {
+        this.state.user.likedComments.splice(comment, 1);
+      }
     },
     dislike(state, comment) {
-      this.state.disliked.push(comment);
-    },
-    removeDislike(state, comment) {
-      this.state.disliked.splice(comment, 1);
-    },
-    getLikedComments(state, comments) {
-      this.state.liked = comments;
-    },
-    getDislikedComments(state, comments) {
-      this.state.disliked = comments;
-    },
-    getComments(state, comments) {
-      this.state.comments = comments;
+      if (!this.state.user.dislikedComments.includes(comment)) {
+        this.state.user.dislikedComments.push(comment);
+        if (this.state.user.likedComments.includes(comment)) {
+          this.state.user.likedComments.splice(comment, 1);
+        }
+      } else {
+        this.state.user.dislikedComments.splice(comment, 1);
+      }
     },
     addComment(state, comment) {
-      this.state.comments.push(comment);
+      this.state.user.comments.push(comment);
     },
   },
   actions: {
@@ -77,18 +73,15 @@ const store = new Vuex.Store({
     removeDislike({ commit }, payload) {
       commit('removeDislike', payload);
     },
-    getLikedComments({ commit }, payload) {
-      commit('getLikedComments', payload);
-    },
-    getDislikedComments({ commit }, payload) {
-      commit('getDislikedComments', payload);
-    },
-    getComments({ commit }, payload) {
-      commit('getComments', payload);
-    },
     addComment({ commit }, payload) {
       commit('addComment', payload);
     },
+  },
+  getters: {
+    user(state) {
+      return state.user;
+    },
+    getCourseByCode: state => code => state.courses.find(course => course.code === code),
   },
 });
 

@@ -46,9 +46,6 @@ export default {
         this.$store.dispatch('setToken', response.data.token);
         console.log(response.data.token);
         this.$store.dispatch('setUser', response.data.user);
-        this.$store.dispatch('getLikedComments', response.data.likedComments);
-        this.$store.dispatch('getDislikedComments', response.data.likedComments);
-        this.$store.dispatch('getComments', response.data.comments);
         this.$router.push({
           name: 'Courses',
         });

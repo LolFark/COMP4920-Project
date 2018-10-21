@@ -37,9 +37,6 @@ export default {
     logout() {
       this.setToken(null);
       this.setUser(null);
-      this.getComments(null);
-      this.getLikedComments(null);
-      this.getDislikedComments(null);
       this.$router.push({
         name: 'Courses',
       });
@@ -47,9 +44,6 @@ export default {
     ...mapActions([
       'setToken',
       'setUser',
-      'getComments',
-      'getLikedComments',
-      'getDislikedComments',
     ]),
   }
 }
