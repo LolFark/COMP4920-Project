@@ -79,7 +79,8 @@
       </div>
     </div>
     <div v-if="$store.state.notifications.length > 0">
-    <h1> NOTIFICATIONS </h1>
+      <v-btn class="button" v-on:click="$store.dispatch('delAllNotifications')">Clear All</v-btn>
+      <h1> NOTIFICATIONS </h1>
       <ul v-for="(notification, index) in $store.state.notifications" v-bind:key="notification._id">
         <div class="editable-text">
           <v-btn class="button" v-on:click="$store.dispatch('delNotification', index)">X</v-btn>
