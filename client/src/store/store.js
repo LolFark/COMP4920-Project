@@ -30,7 +30,9 @@ const store = new Vuex.Store({
     sortCourses (state, key) {
       console.log(key);
       state.courses = state.courses.sort((a, b) => {
-        return b[key] - a[key]
+        if (a[key] > b[key]) { return -1 }
+        if (a[key] < b[key]) { return 1 }
+        return 0
       })
     }
   },
