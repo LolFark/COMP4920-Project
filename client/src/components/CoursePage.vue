@@ -4,7 +4,9 @@
     <table v-if="course === null">
       <h2><b>COURSE NO LONGER EXISTS</b></h2>
     </table>
-    <p> Average rating: {{ overallRating.toFixed(2) }} / 5, based on {{ numComments }} ratings.</p>
+    <p> Satisfaction rating: {{ satisfactionRatingAvg.toFixed(2) }} / 5.</p>
+    <p> Difficulty rating: {{ difficultyRatingAvg.toFixed(2) }} / 5.</p>
+    <p> This is based on {{ numComments }} ratings. </p>
     <table class="course_info" v-if="course !== null">
       <tr class="course_code"><b>Code: </b><a v-bind:href="course.handbook_url">{{ course.code }}</a></tr>
       <tr class="course_name"><b>Name: </b>{{ course.name }}</tr>
@@ -28,8 +30,11 @@
       <!-- If user is authenticated, allow them to post a comment -->
       <div v-if="$store.state.authenticated">
         <form>
-          <v-rating half-increments hover v-model="rating"></v-rating>
-          <textarea placeholder="Leave some feedback" v-model="feedback"></textarea>
+          Rate your satisfaction of the course - 5 being very satisfied, 0.5 being completely dissatisfied
+          <v-rating half-increments hover v-model="satRating"></v-rating>
+          Rate the difficulty of the course - 5 being extremely difficult, 0.5 being almost too easy
+          <v-rating half-increments hover v-model="diffRating"></v-rating>
+          <textarea placeholder="Leave some feedback (Optional)" v-model="feedback"></textarea>
           <v-btn v-on:click="addComment">Post</v-btn>
         </form>
       </div>
@@ -84,8 +89,10 @@ export default {
       feedback: '', // feedback by the current user
       reply: '',
       comments: [], // previously submitted comments for the course
-      rating: 2,
-      overallRating: 0,
+      satRating: 2.5,
+      diffRating: 2.5,
+      satisfactionRatingAvg: 0,
+      difficultyRatingAvg: 0,
       numComments: 0,
 
       errors: [],
@@ -147,6 +154,7 @@ export default {
       const response = await CommentService.getComments({ code: this.course.code })
       const allComments = response.data.comments
       var ratingSum = 0;
+      var difficultySum = 0;
       var numComments = 0;
       var totalComments = allComments.length;
       for (let i = 0; i < allComments.length; i += 1) {
@@ -155,10 +163,8 @@ export default {
           ratingSum += cmnt.rating;
           numComments += 1;
         }
-        // ignoring empty comments
-        if(numComments != 0) {
-          this.overallRating = ratingSum / numComments;
-          this.numComments = numComments;
+        if(cmnt.difficulty && !Number.isNaN(cmnt.difficulty)) {
+          difficultySum += cmnt.difficulty;
         }
         // remove empty comments from display
         if (!cmnt.content) { continue }
@@ -166,6 +172,16 @@ export default {
         var date = new Date(createdStr).toLocaleString();
         cmnt.created = date;
         this.comments.push(cmnt);
+      }
+      if(numComments != 0) {
+        this.satisfactionRatingAvg = ratingSum / numComments;
+        this.difficultyRatingAvg = difficultySum / numComments;
+        this.numComments = numComments;
+        CourseService.updateRating({
+          code: this.code,
+          satisfaction: this.satisfactionRatingAvg,
+          difficulty: this.difficultyRatingAvg,
+        });
       }
       this.comments.sort((a,b) => {
         if (a.created < b.created) {
@@ -212,7 +228,8 @@ export default {
         username: this.$store.state.user.username,
         code: this.course.code,
         content: this.feedback,
-        rating: this.rating,
+        rating: this.satRating,
+        difficulty: this.diffRating
       })
       if (response.data.error) {
         this.errors.push(response.data.error)

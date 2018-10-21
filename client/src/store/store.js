@@ -50,9 +50,20 @@ const store = new Vuex.Store({
     },
     delAllVisited (state) {
       state.visited = []
+    },
+    sortCourses (state, key) {
+      console.log(key)
+      state.courses = state.courses.sort((a, b) => {
+        if (a[key] > b[key]) { return -1 }
+        if (a[key] < b[key]) { return 1 }
+        return 0
+      })
     }
   },
   actions: {
+    sortCourses ({commit}, key) {
+      commit('sortCourses', key)
+    },
     setToken ({commit}, token) {
       commit('setToken', token)
     },

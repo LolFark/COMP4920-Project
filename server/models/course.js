@@ -13,7 +13,7 @@ const CourseSchema = new Schema({
   course_des: { type: String },
   handbook_url: { type: String },
   popularity: { type: Number },
-  diffculty: { type: Number },
+  difficulty: { type: Number },
 });
 
 const Course = mongoose.model('Course', CourseSchema);

@@ -21,6 +21,7 @@ module.exports = {
       code,
       content,
       rating,
+      difficulty,
     } = req.body;
     const created = new Date();
     const newComment = new Comment({
@@ -29,16 +30,17 @@ module.exports = {
       created,
       content,
       rating,
+      difficulty,
     });
     await newComment.save((error, comment) => {
       if (error) {
         console.log(error);
-        res.send({
+        return res.send({
           error: 'Failed to post comment',
         });
       }
       console.log(`new comment added to ${code}`);
-      res.send({
+      return res.send({
         comment,
       });
     });
