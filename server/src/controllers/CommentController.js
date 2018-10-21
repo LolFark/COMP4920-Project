@@ -45,6 +45,12 @@ module.exports = {
         comment,
       });
     });
+    // also save the comment to the user
+    await User.findOneAndUpdate({username}, {$addToSet: {comments: newComment}}, {new: true}, (err) => {
+      if (err) {
+        console.log(`could not add the comment to the user`);
+      }
+    });
   },
 
   async deleteComment(req, res) {
