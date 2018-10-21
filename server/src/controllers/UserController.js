@@ -16,14 +16,16 @@ module.exports = {
   },
   async getUser(req, res) {
     const { username } = req.body;
-    User.findOne({ username }, 'username email password description comments liked_comments isAdmin', (error, user) => {
-      if (error) {
-        console.error(error);
+    User.findOne({ username }).populate('likedComments').populate('dislikedComments').exec(function (err, user){
+      if (err) {
+        console.log(`could not get user ${username}, not found`);
+        return res.status(400);
       }
+      console.log(`get user ${username} success`);
       res.send({
         user,
-      });
-    });
+      })
+    })
   },
   // Checks that the old password is valid and updates database if it is with new password
   async updatePassword(req, res) {
@@ -89,4 +91,32 @@ module.exports = {
       });
     });
   },
+  async likeComment(req, res) {
+    const { user, comment } = req.body; User.findOneAndUpdate({ _id: user._id}, {$addToSet: {likedComments: comment}}, {new: true}, (err) => {
+      if (err) {
+        console.log(`could not add comment to ${user}'s liked comments`);
+        return res.status(400).send({
+          success: false,
+        })
+      }
+      console.log(`added to ${user}'s liked comments`);
+      return res.send({
+        success: true,
+      });
+    });
+  },
+  async unlikeComment(req, res) {
+    const { user, comment } = req.body; User.findOneAndUpdate({ _id: user._id}, {$pull: {likedComments: comment._id}}, {new: true}, (err) => {
+      if (err) {
+        console.log(`could not remove comment from ${user}'s liked comments`);
+        return res.status(400).send({
+          success: false,
+        })
+      }
+      console.log(`removed from ${user}'s liked comments`);
+      return res.send({
+        success: true,
+      });
+    });
+  }
 };

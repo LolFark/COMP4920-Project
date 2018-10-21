@@ -1,4 +1,5 @@
 const Comment = require('../../models/comment');
+const User = require('../../models/user');
 
 module.exports = {
   async getComments(req, res) {
@@ -44,6 +45,12 @@ module.exports = {
         comment,
       });
     });
+    // also save the comment to the user
+    await User.findOneAndUpdate({username}, {$addToSet: {comments: newComment}}, {new: true}, (err) => {
+      if (err) {
+        console.log(`could not add the comment to the user`);
+      }
+    });
   },
 
   async deleteComment(req, res) {
@@ -81,6 +88,30 @@ module.exports = {
       console.log(`comment by ${username} on ${code} editted successfully`);
       return res.send({ success: true });
     });
+  },
+  async upVoteComment(req, res) {
+    const { comment, user, votes } = req.body;
+    await Comment.findOneAndUpdate({ _id: comment._id }, {$addToSet: {likedUsers: user.username}, $set: {commentRating: votes + 1}}, {new: true}, (err) => {
+      if (err) {
+        console.log(`failed to add ${user.username} to ${comment.course}'s comment's liked users`)
+        return res.status(400).send({ success: false });
+      }
+      console.log(`${user.username} successfully added to comment's liked users`)
+      console.log(`comment now has ${comment.commentRating}`);
+      return res.send({ commentRating: comment.commentRating });
+    });
+  },
+  async downVoteComment(req, res) {
+    const { comment, user, votes } = req.body;
+    await Comment.findOneAndUpdate({ _id: comment._id }, {$pull: {likedUsers: user.username}, $set: {commentRating: votes }}, {new: true}, (err) => {
+      if (err) {
+        console.log(`failed to add ${user.username} to ${comment.course}'s comment's liked users`)
+        return res.status(400).send({ success: false });
+      }
+      console.log(`${user.username} successfully added to comment's liked users`)
+      console.log(`comment now has ${comment.commentRating}`);
+      return res.send({ commentRating: comment.commentRating });
+    })
   },
   async getUserComments(req, res) {
     Comment.find({ username: req.body.username }, (err, comments) => {

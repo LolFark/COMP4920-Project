@@ -15,6 +15,8 @@ module.exports = (app) => {
   app.post('/addComment', CommentController.addComment);
   app.post('/editComment', CommentController.editComment);
   app.post('/deleteComment', CommentController.deleteComment);
+  app.post('/upVoteComment', CommentController.upVoteComment);
+  app.post('/downVoteComment', CommentController.downVoteComment);
   app.post('/getUserComments', CommentController.getUserComments);
   app.post('/addReply', ReplyController.addReply);
   app.post('/editReply', ReplyController.editReply);
@@ -23,4 +25,7 @@ module.exports = (app) => {
   app.post('/user', UserController.getUser);
   app.post('/updatePassword', UserController.updatePassword);
   app.post('/updateProfile', UserController.updateProfile);
+  app.post('/likeComment', UserController.likeComment);
+  app.post('/unlikeComment', UserController.unlikeComment);
+  app.get('/updateDiff', CourseController.updateDiff);
 };

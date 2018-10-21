@@ -54,6 +54,11 @@
         <v-btn v-on:click="startChangeProfile()">Edit</v-btn>
       </p>
     </div>
+    <div id="liked-comments">
+      <ul v-for="liked in likedComments" :key="liked._id">
+        <li>{{ liked.content }}</li>
+      </ul>
+    </div>
     <div id="Comments-component">
       <!-- Display all comments -->
       <div id="comment-section">
@@ -114,7 +119,12 @@ export default {
       // Returned from backend to display
       message: '',
       errors: [],
-      comments: []
+      comments: [],
+    }
+  },
+  computed: {
+    likedComments () {
+      return this.$store.state.user.likedComments;
     }
   },
   mounted () {
@@ -265,7 +275,7 @@ export default {
         var createdStr = this.comments[i].created
         this.comments[i].created = new Date(createdStr).toLocaleString()
       }
-    }
+    },
   }
 }
 </script>

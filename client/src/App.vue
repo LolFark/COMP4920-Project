@@ -29,16 +29,22 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   name: 'App',
   methods: {
-    logout () {
-      this.$store.dispatch('setToken', null)
-      this.$store.dispatch('setUser', null)
+    logout() {
+      this.setToken(null);
+      this.setUser(null);
       this.$router.push({
-        name: 'Courses'
-      })
-    }
+        name: 'Courses',
+      });
+    },
+    ...mapActions([
+      'setToken',
+      'setUser',
+    ]),
   }
 }
 </script>

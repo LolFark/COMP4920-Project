@@ -4,8 +4,8 @@ const { Schema } = mongoose;
 
 const CommentSchema = new Schema({
   username: { type: String },
+  likedUsers: [{ type: String }],
   code: { type: String },
-  likedUsers: [{ type: Schema.Types.ObjectId, ref: 'User' }],
   created: { type: Date },
   edited: { type: Boolean },
   replies: [{
@@ -16,6 +16,7 @@ const CommentSchema = new Schema({
   }],
   rating: { type: Number },
   difficulty: { type: Number },
+  commentRating: { type: Number, default: 1},
   content: String,
 });
 
