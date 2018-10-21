@@ -44,12 +44,14 @@
     </p>
     <table class="table-hover" id="thetable">
         <tr>
-          <th class="course_code">Course code</th>
-          <th class="course_name">Course name</th>
+          <th @click="sortCourses('code')" class="course_code">Course code</th>
+          <th @click="sortCourses('name')" class="course_name">Course name</th>
           <th class="course_prereqs" align="center">Prerequisites</th>
           <th class="course_coreqs" align="center">Corequisites</th>
           <th class="course_faculty" align="center">Faculty</th>
           <th class="course_link" align="center">Handbook Link</th>
+          <th @click="sortCourses('popularity')" class="popularity" align="center"> Popularity </th>
+          <th @click="sortCourses('difficulty')" class="difficulty" align="center">Difficulty</th>
         </tr>
         <tr v-for="course in searchedCourses" v-bind:key="course._id" v-on:click="navigate(/courses/ + course.code)">
           <td>{{ course.code }}</td>
@@ -58,6 +60,8 @@
           <td>{{ course.co_reqs }}</td>
           <td>{{ course.faculty }}</td>
           <td><a v-bind:href="course.handbook_url">Link</a></td>
+          <td>{{ course.popularity }}</td>
+          <td>{{ course.difficulty }}</td>
         </tr>
       </table>
   </div>
@@ -85,6 +89,9 @@ export default {
     this.alternate('thetable')
   },
   methods: {
+    async sortCourses(key) {
+      this.$store.dispatch('sortCourses', key);
+    },
     async getCourses () {
       const response = await CourseService.fetchCourses()
       // this.courses = response.data.courses
