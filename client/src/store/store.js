@@ -51,6 +51,9 @@ const store = new Vuex.Store({
     getComments(state, comments) {
       this.state.comments = comments;
     },
+    addComment(state, comment) {
+      this.state.comments.push(comment);
+    },
   },
   actions: {
     setToken({ commit }, token) {
@@ -82,6 +85,9 @@ const store = new Vuex.Store({
     },
     getComments({ commit }, payload) {
       commit('getComments', payload);
+    },
+    addComment({ commit }, payload) {
+      commit('addComment', payload);
     },
   },
 });
