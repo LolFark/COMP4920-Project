@@ -10,6 +10,7 @@ const UserSchema = new Schema({
   description: { type: String },
   comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
   likedComments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
+  dislikedComments: [{ type: Schema.Types.ObjectId, ref: 'Comment'}],
   isAdmin: Boolean,
 });
 

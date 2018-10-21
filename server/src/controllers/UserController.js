@@ -16,7 +16,7 @@ module.exports = {
   },
   async getUser(req, res) {
     const { username } = req.body;
-    User.findOne({ username }).populate('likedComments').exec(function (err, user){
+    User.findOne({ username }).populate('likedComments').populate('dislikedComments').exec(function (err, user){
       if (err) {
         console.log(`could not get user ${username}, not found`);
         return res.status(400);

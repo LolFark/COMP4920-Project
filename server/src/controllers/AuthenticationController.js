@@ -58,19 +58,20 @@ module.exports = {
   async login(req, res) {
     const { username, password } = req.body;
     console.log('login attempt');
-    User.findOne({ username }, (error, user) => {
-      if (error) {
-        console.log(error);
+    User.findOne({ username }).populate('likedComments').populate('dislikedComments').populate('comments').exec(function (err, user) {
+      if (err) {
+        console.log(err);
         return res.status(500).send({
-          error,
+          err,
         });
       }
 
+      console.log(user.likedComments);
       // Authentication failed
       if (!user) {
         console.log(`${username} not found`);
         return res.status(403).send({
-          error: 'Username or password incorrect',
+          err: 'Username or password incorrect',
         });
       }
       console.log(`${user.username} exists`);
@@ -94,6 +95,9 @@ module.exports = {
         return res.status(200).send({
           user: foundUser,
           token,
+          likedComments: user.likedComments,
+          dislikedComments: user.dislikedComments,
+          comments: user.comments,
         });
       });
     });

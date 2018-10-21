@@ -17,6 +17,7 @@ const store = new Vuex.Store({
     currentCourse: null,
     liked: [],
     disliked: [],
+    comments: [],
   },
   mutations: {
     setToken(state, token) {
@@ -41,6 +42,15 @@ const store = new Vuex.Store({
     removeDislike(state, comment) {
       this.state.disliked.splice(comment, 1);
     },
+    getLikedComments(state, comments) {
+      this.state.liked = comments;
+    },
+    getDislikedComments(state, comments) {
+      this.state.disliked = comments;
+    },
+    getComments(state, comments) {
+      this.state.comments = comments;
+    },
   },
   actions: {
     setToken({ commit }, token) {
@@ -63,6 +73,15 @@ const store = new Vuex.Store({
     },
     removeDislike({ commit }, payload) {
       commit('removeDislike', payload);
+    },
+    getLikedComments({ commit }, payload) {
+      commit('getLikedComments', payload);
+    },
+    getDislikedComments({ commit }, payload) {
+      commit('getDislikedComments', payload);
+    },
+    getComments({ commit }, payload) {
+      commit('getComments', payload);
     },
   },
 });

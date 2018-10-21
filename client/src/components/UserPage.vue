@@ -122,6 +122,11 @@ export default {
       comments: [],
     }
   },
+  computed: {
+    likedComments () {
+      return this.$store.state.liked;
+    }
+  },
   mounted () {
     this.getUser()
     this.getComments()
@@ -135,7 +140,6 @@ export default {
       this.user = response.data.user
       this.email = this.user.email
       this.description = this.user.description
-      this.likedComments = this.user.likedComments
     },
     // Set data to start password change option
     startChangePassword () {
