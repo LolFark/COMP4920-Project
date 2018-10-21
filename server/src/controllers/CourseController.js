@@ -28,7 +28,7 @@ module.exports = {
 
   addCourse(req, res) {
     const {
-      code, name, faculty, coReqs, preReqs, exclusions, handbookURL,
+      code, name, faculty, coReqs, preReqs, exclusions, handbookURL, courseDescription,
     } = req.body;
     const newCourse = new Course({
       code,
@@ -37,14 +37,20 @@ module.exports = {
       co_reqs: coReqs,
       pre_reqs: preReqs,
       exclusions,
-      handbook_URL: handbookURL,
+      handbook_url: handbookURL,
+      popularity: 0,
+      course_des: courseDescription,
+      difficulty: 0,
     });
-    newCourse.save((error) => {
+    return newCourse.save((error) => {
       if (error) {
         console.log(error);
+        return res.status(500).send({
+          error: `Could not add course ${code}`,
+        });
       }
       console.log(`Course ${code} ${name} added`);
-      res.send({
+      return res.send({
         success: true,
         message: `Course ${code} added`,
       });
@@ -59,7 +65,7 @@ module.exports = {
         popularity: satisfaction,
         difficulty,
       },
-      (err, _results) => {
+      (err) => {
         if (err) {
           console.log(err);
           return res.status(500).send('Could not update');
