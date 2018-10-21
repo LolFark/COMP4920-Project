@@ -35,12 +35,12 @@ module.exports = {
     await newComment.save((error, comment) => {
       if (error) {
         console.log(error);
-        res.send({
+        return res.send({
           error: 'Failed to post comment',
         });
       }
       console.log(`new comment added to ${code}`);
-      res.send({
+      return res.send({
         comment,
       });
     });

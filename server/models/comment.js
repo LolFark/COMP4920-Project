@@ -19,5 +19,7 @@ const CommentSchema = new Schema({
   content: String,
 });
 
+CommentSchema.index({ username: 1, code: -1 }, { unique: true });
+
 const Comment = mongoose.model('Comment', CommentSchema);
 module.exports = Comment;

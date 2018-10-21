@@ -17,5 +17,8 @@ export default {
   },
   getComments (params) {
     return Api().post('comments', params)
+  },
+  updateRating (params) {
+    return Api().post('updateRating', params)
   }
 }
